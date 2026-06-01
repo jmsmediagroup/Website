@@ -38,7 +38,10 @@ exports.handler = async (event) => {
         'Content-Type': 'application/json',
         'Accept': 'application/json',
       },
-      body: JSON.stringify({ email, groups: [GROUP_ID], status: 'active' }),
+      // NOTE: do NOT send status:'active'. A pre-set status makes MailerLite treat
+      // the subscriber as an import, which does NOT fire "subscriber joins group"
+      // automations (e.g. the welcome email). Omitting it lets the join trigger fire.
+      body: JSON.stringify({ email, fields: { source: 'jmstruijk.com' }, groups: [GROUP_ID] }),
     });
 
     // MailerLite returns 200/201 on success, 200 when the subscriber already exists.
