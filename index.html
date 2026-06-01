@@ -692,6 +692,13 @@ h1 em {
   transition: background 0.2s ease, transform 0.15s ease;
 }
 .signup-form button:hover { background: var(--coral); transform: translateY(-1px); }
+.signup-form button:disabled, .hero-form button:disabled { opacity: 0.6; cursor: default; }
+.form-status { margin-top: 12px; font-size: 14px; font-weight: 600; line-height: 1.4; }
+.form-status:empty { display: none; }
+.form-status.is-ok { color: var(--coral-deep); }
+.form-status.is-error { color: #b00020; }
+.hero-form ~ .form-status { color: #fff; }
+.hero-form ~ .form-status.is-error { color: #ffd6d6; }
 
 .signup-trust { display: flex; align-items: center; gap: 14px; margin-top: 18px; padding-top: 18px; border-top: 1px solid var(--rule); font-size: 12px; color: var(--muted); flex-wrap: wrap; }
 .signup-trust-item { display: flex; align-items: center; gap: 5px; }
@@ -1153,16 +1160,56 @@ const observer = new IntersectionObserver((entries) => {
 
 document.querySelectorAll('[data-reveal]').forEach(el => observer.observe(el));
 
-document.querySelectorAll('form').forEach(form => {
-  form.addEventListener('submit', (e) => {
+document.querySelectorAll('form.hero-form, form.signup-form').forEach(form => {
+  const button = form.querySelector('button');
+  const input = form.querySelector('input[type="email"]');
+  const defaultLabel = button.textContent;
+  let status = form.querySelector('.form-status');
+  if (!status) {
+    status = document.createElement('p');
+    status.className = 'form-status';
+    status.setAttribute('role', 'status');
+    status.setAttribute('aria-live', 'polite');
+    form.insertAdjacentElement('afterend', status);
+  }
+
+  const setStatus = (msg, ok) => {
+    status.textContent = msg;
+    status.classList.toggle('is-error', !ok);
+    status.classList.toggle('is-ok', ok);
+  };
+
+  form.addEventListener('submit', async (e) => {
     e.preventDefault();
-    const email = form.querySelector('input[type="email"]').value;
-    if (!email || !email.includes('@')) {
-      alert('Please enter a valid email address.');
+    const email = input.value.trim();
+    if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+      setStatus('Please enter a valid email address.', false);
       return;
     }
-    alert('Thanks — once the email service is connected (ConvertKit / MailerLite / Beehiiv), the Survival Kit will land in your inbox here. (Placeholder)');
-    form.reset();
+
+    button.disabled = true;
+    button.textContent = 'Sending…';
+    setStatus('', true);
+
+    try {
+      const res = await fetch('/.netlify/functions/subscribe', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email }),
+      });
+      const data = await res.json().catch(() => ({}));
+      if (res.ok) {
+        form.reset();
+        setStatus('Done! Check your inbox — your Survival Kit is on the way.', true);
+      } else {
+        setStatus(data.error || 'Something went wrong. Please try again.', false);
+      }
+    } catch (err) {
+      setStatus('Network error — please try again.', false);
+    } finally {
+      button.disabled = false;
+      button.textContent = defaultLabel;
+    }
   });
 });
 </script>
