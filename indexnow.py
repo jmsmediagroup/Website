@@ -20,7 +20,7 @@ import urllib.request
 ROOT = os.path.dirname(os.path.abspath(__file__))
 HOST = "jmstruijk.com"
 SITE = "https://" + HOST
-KEY = "bdfddbaeee5a3e963dfb206dff189f0d"
+KEY = "6f136448afb448c3b01ece01bac2a530"
 
 
 def sitemap_urls():

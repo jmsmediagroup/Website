@@ -509,14 +509,24 @@ SIGNUP = """<section class="post-signup">
     </section>"""
 
 
-def book_card(book, heading="h3"):
+def cover_frame(book, badge="", eager=False):
+    """A cover image in a frame that hugs it, so badges sit on the artwork.
+
+    Covers are not all 2:3; sizing by height keeps every one of them edge to edge.
+    """
     w, h = book["cover_size"]
+    loading = 'fetchpriority="high"' if eager else 'loading="lazy"'
+    return ('<span class="cover-frame"><img src="/assets/covers/%s.jpg" alt="%s book cover" '
+            'width="%d" height="%d" %s decoding="async">%s</span>'
+            % (book["slug"], esc(book["title"]), w, h, loading, badge))
+
+
+def book_card(book, heading="h3"):
     return ('<a class="shelf-book" href="/books/{slug}/">'
-            '<span class="shelf-cover"><img src="/assets/covers/{slug}.jpg" alt="{title} book cover" '
-            'width="{w}" height="{h}" loading="lazy" decoding="async"></span>'
+            '<span class="shelf-cover">{frame}</span>'
             '<{hd} class="shelf-title">{title}</{hd}><span class="shelf-tagline">{tagline}</span></a>'
             ).format(slug=book["slug"], title=esc(book["title"]), tagline=esc(book["tagline"]),
-                     w=w, h=h, hd=heading)
+                     frame=cover_frame(book), hd=heading)
 
 
 def post_cards(posts, heading):
@@ -534,11 +544,8 @@ def post_cards(posts, heading):
 def book_cta(book):
     if not book:
         return ""
-    w, h = book["cover_size"]
     return """<aside class="book-cta">
-      <a class="book-cta-cover" href="/books/{slug}/">
-        <img src="/assets/covers/{slug}.jpg" alt="{title} book cover" width="{w}" height="{h}" loading="lazy" decoding="async">
-      </a>
+      <a class="book-cta-cover" href="/books/{slug}/">{frame}</a>
       <div class="book-cta-body">
         <div class="book-cta-label">The book on this</div>
         <h2 class="book-cta-title"><a href="/books/{slug}/">{title}</a></h2>
@@ -549,7 +556,7 @@ def book_cta(book):
         </div>
       </div>
     </aside>""".format(slug=book["slug"], title=esc(book["title"]), tagline=esc(book["tagline"]),
-                       amazon=amazon(book["asin"]), w=w, h=h)
+                       amazon=amazon(book["asin"]), frame=cover_frame(book))
 
 
 def render_post(post, by_post, by_book):
@@ -719,7 +726,7 @@ def render_book(book, posts, books):
             + '\n<meta property="book:release_date" content="%s">' % book["published"]
             + '\n<meta name="keywords" content="%s">' % esc(book.get("keywords", "")),
         schema=schema(graph),
-        slug=book["slug"],
+        cover=cover_frame(book, eager=True),
         title=esc(book["title"]),
         subtitle=esc(book["subtitle"]),
         series_label=esc(series_label(book)),
@@ -893,16 +900,14 @@ def render_start(situations, by_book):
     blocks = []
     for s in situations:
         book = by_book[s["book"]]
-        w, h = book["cover_size"]
         blocks.append(
             '    <section class="situation" id="%s"><div class="situation-text"><h2>%s</h2><p>%s</p>'
             '<ul class="situation-links">%s</ul></div>'
-            '<a class="situation-book" href="/books/%s/"><img src="/assets/covers/%s.jpg" alt="%s book cover" '
-            'width="%d" height="%d" loading="lazy" decoding="async"><span><span class="situation-book-label">'
+            '<a class="situation-book" href="/books/%s/">%s<span><span class="situation-book-label">'
             'The book on this</span><strong>%s</strong></span></a></section>'
             % (s["id"], esc(s["question"]), esc(s["answer"]),
                "".join("<li>%s</li>" % internal_link(l) for l in s["links"]),
-               book["slug"], book["slug"], esc(book["title"]), w, h, esc(book["title"])))
+               book["slug"], cover_frame(book), esc(book["title"])))
     graph = [
         {"@type": "WebPage", "@id": SITE + path, "url": SITE + path, "name": "Start here",
          "description": "A guide to where to begin, by situation.", "isPartOf": {"@id": WEBSITE_ID},
@@ -1097,18 +1102,15 @@ def home_catalogue(books):
             if b.get("badge"):
                 cls, label = BADGES[b["badge"]]
                 badge = '\n            <div class="badge %s">%s</div>' % (cls, label)
-            w, h = b["cover_size"]
             cards.append("""        <a href="/books/{slug}/" class="book" aria-label="{title}">
-          <div class="book-cover">
-            <img src="/assets/covers/{slug}.jpg" alt="{title} book cover" loading="lazy" width="{w}" height="{h}">{badge}
-          </div>
+          <div class="book-cover">{frame}</div>
           <div class="book-meta">
             <div class="book-title">{title}</div>
             <div class="book-subtitle">{tagline}</div>
             <div class="book-link">About the book</div>
           </div>
         </a>""".format(slug=b["slug"], title=esc(b["title"]), tagline=esc(b["tagline"]),
-                       w=w, h=h, badge=badge))
+                       frame=cover_frame(b, badge)))
         blocks.append("""    <div class="series-block" id="{anchor}" data-reveal>
       <div class="series-header">
         <h3 class="series-name"><span class="series-color-dot" style="background:{colour};"></span>{series}</h3>

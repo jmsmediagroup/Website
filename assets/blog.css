@@ -216,12 +216,8 @@ a { color: inherit; text-decoration: none; }
   display: flex; gap: 28px; align-items: center;
   margin: 50px 0; padding: 28px; background: var(--ink); border-radius: 3px;
 }
-.book-cta-cover { flex: none; width: 132px; }
-.book-cta-cover img {
-  width: 100%; aspect-ratio: 2/3; object-fit: contain;
-  background: var(--cream-deeper); border-radius: 2px; display: block;
-  box-shadow: 0 10px 26px -8px rgba(0,0,0,0.5);
-}
+.book-cta-cover { flex: none; display: block; }
+.book-cta-cover .cover-frame img { height: 198px; box-shadow: 0 10px 26px -8px rgba(0,0,0,0.5); }
 .book-cta-label {
   font-size: 10px; font-weight: 700; text-transform: uppercase;
   letter-spacing: 0.2em; color: var(--coral-soft); margin-bottom: 8px;
@@ -243,7 +239,7 @@ a { color: inherit; text-decoration: none; }
 .book-cta-more:hover { color: var(--cream); border-color: var(--cream); }
 @media (max-width: 560px) {
   .book-cta { flex-direction: column; align-items: flex-start; gap: 20px; padding: 24px; }
-  .book-cta-cover { width: 110px; }
+  .book-cta-cover .cover-frame img { height: 165px; }
 }
 
 /* author, disclaimer, related */
@@ -334,9 +330,9 @@ a { color: inherit; text-decoration: none; }
   display: grid; grid-template-columns: 240px 1fr; gap: 44px; align-items: center;
   padding-bottom: 36px; border-bottom: 1px solid var(--rule);
 }
-.book-hero-cover img {
-  width: 100%; aspect-ratio: 2/3; object-fit: contain; display: block;
-  background: var(--cream-deeper); border-radius: 3px;
+.book-hero-cover { display: flex; align-items: flex-end; justify-content: center; }
+.book-hero-cover .cover-frame img {
+  height: 360px; border-radius: 3px;
   box-shadow: 0 1px 0 rgba(0,0,0,0.06), 0 14px 30px -8px rgba(60,30,20,0.3), 0 30px 60px -18px rgba(60,30,20,0.22);
 }
 .book-series-label {
@@ -368,7 +364,8 @@ a { color: inherit; text-decoration: none; }
 @media (max-width: 680px) {
   .book-page { padding: 34px 0 30px; }
   .book-hero { grid-template-columns: 1fr; gap: 26px; }
-  .book-hero-cover { width: 190px; }
+  .book-hero-cover { justify-content: flex-start; }
+  .book-hero-cover .cover-frame img { height: 270px; }
 }
 
 /* ---------------- shelves (books index, series lists) ---------------- */
@@ -387,12 +384,16 @@ a { color: inherit; text-decoration: none; }
 .shelf-grid-small { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 24px 20px; }
 .shelf-book { display: flex; flex-direction: column; gap: 6px; transition: transform 0.2s ease; }
 .shelf-book:hover { transform: translateY(-4px); }
-.shelf-cover { display: block; margin-bottom: 8px; }
-.shelf-cover img {
-  width: 100%; aspect-ratio: 2/3; object-fit: contain; display: block;
-  background: var(--cream-deeper); border-radius: 2px;
+.shelf-cover { display: flex; align-items: flex-end; justify-content: center; margin-bottom: 8px; }
+/* Covers are sized by image height, so each keeps its own width and fills its
+   own edges. A percentage height inside a flex item computed to zero width. */
+.cover-frame { position: relative; display: inline-block; }
+.cover-frame img {
+  display: block; width: auto; max-width: 100%; object-fit: contain; border-radius: 2px;
   box-shadow: 0 10px 24px -8px rgba(60,30,20,0.24), 0 22px 50px -16px rgba(60,30,20,0.18);
 }
+.shelf-cover .cover-frame img { height: 260px; }
+.shelf-grid-small .shelf-cover .cover-frame img { height: 210px; }
 .shelf-title {
   font-family: var(--serif); font-weight: 600; font-size: 17px; line-height: 1.25;
   letter-spacing: -0.014em; margin: 0;
@@ -537,17 +538,14 @@ a { color: inherit; text-decoration: none; }
 .situation-links a:hover { color: var(--coral); border-color: var(--coral); }
 .situation-links a::after { content: " \2192"; }
 .situation-book { display: flex; flex-direction: column; gap: 10px; }
-.situation-book img {
-  width: 100%; aspect-ratio: 2/3; object-fit: contain; background: var(--cream-deeper); border-radius: 2px;
-  box-shadow: 0 10px 24px -8px rgba(60,30,20,0.24);
-}
+.situation-book .cover-frame img { height: 210px; box-shadow: 0 10px 24px -8px rgba(60,30,20,0.24); }
 .situation-book-label { display: block; font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.16em; color: var(--muted-light); }
 .situation-book strong { font-family: var(--serif); font-size: 15px; line-height: 1.3; }
 .situation-book:hover strong { color: var(--coral); }
 @media (max-width: 560px) {
   .situation { grid-template-columns: 1fr; gap: 18px; }
   .situation-book { flex-direction: row; align-items: center; }
-  .situation-book img { width: 72px; }
+  .situation-book .cover-frame img { height: 108px; }
 }
 
 /* ---------------- calculator ---------------- */
@@ -613,4 +611,76 @@ a { color: inherit; text-decoration: none; }
   .calc-results-inner { box-shadow: none; border: 2px solid #000; background: #fff; color: #000; }
   .calc-top-tip, .calc-projection dt, .calc-total small, .calc-empty { color: #333; }
   body { background: #fff; }
+}
+
+/* ---------------- phones ----------------
+   Headless Chrome clamps windows to 500px wide, so these widths have to be
+   checked inside an iframe. See docs/superpowers/specs. */
+@media (max-width: 620px) {
+  .page-header { padding: 34px 0 26px; }
+  .page-lede { font-size: 16.5px; }
+  .post { padding: 28px 0 24px; }
+  .post-header { padding-bottom: 20px; }
+  .post-standfirst { font-size: 17px; margin-top: 14px; }
+  .post-toc { margin-top: 24px; padding: 18px 20px; }
+  .post-body h2 { margin: 34px 0 12px; }
+  .post-body h3 { margin: 24px 0 8px; }
+  .related { margin-top: 38px; }
+  .post-signup { margin-top: 38px; }
+  .author-box { gap: 16px; padding: 22px 0; }
+  .author-box img { width: 60px; height: 60px; }
+  .shelf { padding: 6px 0 34px; }
+  .series-header { margin-bottom: 20px; }
+  .series-name { font-size: 20px; gap: 10px; }
+  .book-page { padding: 28px 0 24px; }
+  .book-hero { padding-bottom: 26px; }
+  .az-letter { padding-top: 22px; }
+  .term { padding: 16px 0; }
+  .res-section { padding-top: 26px; }
+  .topic-page, .start-page, .resources-page, .glossary, .calc-page { padding-bottom: 20px; }
+}
+
+@media (max-width: 520px) {
+  /* These grids were falling back to a single full-width column, which made
+     every cover as tall as the screen. */
+  .shelf-grid { grid-template-columns: repeat(2, 1fr); gap: 24px 16px; }
+  .shelf-grid .shelf-cover .cover-frame img { height: 195px; }
+  .shelf-grid-small { grid-template-columns: repeat(2, 1fr); gap: 22px 16px; }
+  .shelf-grid-small .shelf-cover .cover-frame img { height: 175px; }
+  .shelf-title { font-size: 15px; }
+  .shelf-tagline { font-size: 12.5px; }
+
+  /* The sticky A-Z wraps to three rows on a phone and covers the terms. */
+  .az { position: static; padding: 14px 0 18px; gap: 5px; }
+  .az a { min-width: 32px; height: 32px; font-size: 13px; }
+  .resources-jump a { padding: 0 10px; font-size: 12.5px; }
+
+  .calc-results { position: static; }
+  .calc-cat { padding: 16px 16px 12px; }
+  .calc-row { grid-template-columns: 1fr 104px; gap: 10px; font-size: 14.5px; }
+  .calc-total { font-size: 34px; }
+  .calc-projection dd { font-size: 19px; }
+  .calc-results-inner { padding: 22px; box-shadow: 4px 4px 0 var(--coral); }
+
+  .tool-cta { padding: 20px; gap: 16px; }
+  .tool-cta .btn-amazon { width: 100%; text-align: center; }
+  .topic-card { padding: 20px; }
+  .topic-card h2 { font-size: 20px; }
+  .situation { padding: 24px 0; }
+  .situation h2 { font-size: 21px; }
+  .btn-amazon { padding: 13px 20px; }
+  .footer-links { gap: 14px 18px; }
+}
+
+@media (max-width: 360px) {
+  .shelf-grid .shelf-cover .cover-frame img { height: 172px; }
+  .shelf-grid-small .shelf-cover .cover-frame img { height: 156px; }
+}
+
+/* Comfortable tap targets on touch screens. */
+@media (hover: none) {
+  .nav-links a { padding-block: 6px; }
+  .az a { min-height: 40px; min-width: 40px; }
+  .start-chips a, .topic-chips a, .topic-tags a { padding-block: 10px; }
+  .post-faq-item summary, .faq-item summary { padding-block: 20px; }
 }
