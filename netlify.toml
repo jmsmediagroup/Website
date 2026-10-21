@@ -37,6 +37,24 @@
   [headers.values]
     Cache-Control = "public, max-age=604800"
 
+# blog.css and blog.js carry no fingerprint, so they get a short cache to
+# avoid serving a stale stylesheet after a redeploy.
+[[headers]]
+  for = "/assets/*.css"
+  [headers.values]
+    Cache-Control = "public, max-age=3600, must-revalidate"
+
+[[headers]]
+  for = "/assets/*.js"
+  [headers.values]
+    Cache-Control = "public, max-age=3600, must-revalidate"
+
+[[headers]]
+  for = "/blog/feed.xml"
+  [headers.values]
+    Content-Type = "application/rss+xml; charset=utf-8"
+    Cache-Control = "public, max-age=3600"
+
 [[headers]]
   for = "/og-image.jpg"
   [headers.values]

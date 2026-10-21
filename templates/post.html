@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>{title} — J.M. Struijk</title>
+<meta name="description" content="{description}">
+<meta name="keywords" content="{keywords}">
+<meta name="author" content="J.M. Struijk">
+<link rel="canonical" href="https://jmstruijk.com/blog/{slug}/">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<meta name="theme-color" content="#f5f1ea">
+
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://jmstruijk.com/blog/{slug}/">
+<meta property="og:title" content="{title}">
+<meta property="og:description" content="{description}">
+<meta property="og:image" content="https://jmstruijk.com/og-image.jpg">
+<meta property="og:site_name" content="J.M. Struijk">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="{date_iso}">
+<meta property="article:author" content="J.M. Struijk">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{title}">
+<meta name="twitter:description" content="{description}">
+<meta name="twitter:image" content="https://jmstruijk.com/og-image.jpg">
+
+<link rel="alternate" type="application/rss+xml" title="J.M. Struijk on ADHD and autism" href="https://jmstruijk.com/blog/feed.xml">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23f5f1ea'/%3E%3Ctext x='50' y='68' font-family='Georgia,serif' font-size='52' fill='%23c54632' text-anchor='middle' font-weight='500'%3EJ%3C/text%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..700&family=Inter+Tight:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/blog.css">
+
+<script type="application/ld+json">
+{schema}
+</script>
+</head>
+<body>
+
+<div class="announce">
+  <strong>Free</strong> · The ADHD Survival Kit — printable PDF, sent to your inbox <a href="/#toolkit">Get it here →</a>
+</div>
+
+<div class="container">
+
+  <nav>
+    <div class="nav-inner">
+      <a href="/" class="nav-mark">J.M. Struijk</a>
+      <div class="nav-links">
+        <a href="/#books">Books</a>
+        <a href="/blog/">Blog</a>
+        <a href="/#about" class="nav-hide-mobile">About</a>
+        <a href="/#toolkit" class="nav-btn">Free toolkit</a>
+      </div>
+    </div>
+  </nav>
+
+  <article class="post">
+
+    <nav class="crumbs" aria-label="Breadcrumb">
+      <a href="/">Home</a> <span>/</span> <a href="/blog/">Blog</a>
+    </nav>
+
+    <header class="post-header">
+      <h1>{title}</h1>
+      <p class="post-standfirst">{description}</p>
+      <div class="post-meta">
+        <span>By J.M. Struijk</span>
+        <span class="post-dot">·</span>
+        <time datetime="{date_iso}">{date_human}</time>
+        <span class="post-dot">·</span>
+        <span>{reading_time} min read</span>
+      </div>
+    </header>
+
+    {toc}
+
+    <div class="post-body">
+{body}
+    </div>
+
+    {book_cta}
+
+    <section class="author-box">
+      <img src="/assets/images/author.jpg" alt="J.M. Struijk" width="562" height="900" loading="lazy" decoding="async">
+      <div>
+        <div class="author-label">About the author</div>
+        <p><strong>J.M. Struijk</strong> is a late-diagnosed ADHD and autistic author. I write practical companions for the brain you actually have, published independently through JMS Media Group LLC. There are eleven books in print across three series. <a href="/#about">More about me</a>.</p>
+      </div>
+    </section>
+
+    <p class="disclaimer">{disclaimer}</p>
+
+    {related}
+
+    <section class="post-signup">
+      <div>
+        <h2>The ADHD Survival Kit</h2>
+        <p>Six printable tools I keep coming back to myself. Free PDF, sent to your inbox.</p>
+      </div>
+      <form class="signup-form" action="#" method="post" novalidate>
+        <input type="email" name="email" placeholder="your@email.com" required aria-label="Email address">
+        <button type="submit">Send me the kit</button>
+      </form>
+    </section>
+
+  </article>
+
+  <footer>
+    <div class="footer-mark">© 2026 J.M. Struijk · JMS Media Group LLC</div>
+    <div>Wyoming, USA · <a href="mailto:hello@jmstruijk.com">hello@jmstruijk.com</a></div>
+  </footer>
+
+</div>
+
+<script src="/assets/blog.js" defer></script>
+</body>
+</html>
