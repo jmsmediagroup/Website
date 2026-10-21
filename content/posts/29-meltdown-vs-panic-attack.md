@@ -33,6 +33,20 @@ A panic attack is generally a fear response. The body's alarm system fires, ofte
 
 That difference in driver is the most useful thing to hold onto. One is a system that has run out of capacity. The other is a system that has sounded an alarm.
 
+## The differences at a glance
+
+| | Autistic meltdown | Panic attack |
+| --- | --- | --- |
+| What drives it | Accumulated sensory, social or emotional overload | Fear, often without a proportionate cause |
+| How it starts | Usually a build-up over hours or days | Often sudden, sometimes from a calm state |
+| The trigger | Frequently trivial, and not the real cause | May be a situation, a thought or nothing obvious |
+| Physical signature | Distress, but not typically terror plus racing heart | Racing heart, breathlessness, chest tightness, dizziness |
+| What is in your head | Flooded, past language, no specific fear | Fear with content: something bad is happening |
+| What helps | Less input: quiet, dim, few words | Grounding, slower breathing, reassurance |
+| Reassurance | Usually adds demand and makes it worse | Usually helps |
+
+They are not mutually exclusive, and an episode can move from one into the other.
+
 ## Differences people describe
 
 **The build.** Meltdowns usually have a run-up, even if you did not notice it: rising irritability, sounds getting sharper, stimming increasing, an urge to leave. Panic attacks more often arrive suddenly, sometimes with no warning at all.

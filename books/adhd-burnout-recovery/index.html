@@ -26,11 +26,13 @@
 <meta name="author" content="J.M. Struijk">
 <meta name="theme-color" content="#f5f1ea">
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23f5f1ea'/%3E%3Ctext x='50' y='68' font-family='Georgia,serif' font-size='52' fill='%23c54632' text-anchor='middle' font-weight='500'%3EJ%3C/text%3E%3C/svg%3E">
+<link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="512x512" href="/assets/images/logo.png">
 <link rel="alternate" type="application/rss+xml" title="J.M. Struijk on ADHD and autism" href="https://jmstruijk.com/blog/feed.xml">
 <link rel="alternate" type="text/plain" href="https://jmstruijk.com/llms.txt" title="Site summary for AI answer engines">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..700&family=Inter+Tight:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preload" href="/assets/fonts/inter-tight-latin-83d548cd.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/fraunces-latin-48282a41.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/fonts/fonts.css">
 <link rel="stylesheet" href="/assets/blog.css">
 
 <!-- Google tag (gtag.js) -->
@@ -72,7 +74,13 @@
         "@type": "Organization",
         "@id": "https://jmstruijk.com/#publisher",
         "name": "JMS Media Group LLC",
-        "url": "https://jmstruijk.com/"
+        "url": "https://jmstruijk.com/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://jmstruijk.com/assets/images/logo.png",
+          "width": 512,
+          "height": 512
+        }
       },
       "datePublished": "2026-01-01",
       "inLanguage": "en",
@@ -199,7 +207,7 @@
         <div class="book-series-label">Standalone guide</div>
         <h1>The ADHD Burnout Recovery Guide</h1>
         <p class="book-hero-subtitle">Triage, Recovery, and Prevention for the Brain You Actually Have</p>
-        <div class="book-facts"><span>Published 1 January 2026</span><span class="book-facts-sep">·</span><span>178 pages</span><span class="book-facts-sep">·</span><span>By <a href="/#about">J.M. Struijk</a></span></div>
+        <div class="book-facts"><span>Published 1 January 2026</span><span class="book-facts-sep">·</span><span>178 pages</span><span class="book-facts-sep">·</span><span>By <a href="/about/">J.M. Struijk</a></span></div>
         <a class="btn-amazon" href="https://www.amazon.com/dp/B0GDLRFXQ3" target="_blank" rel="noopener">View on Amazon</a>
         <p class="book-hero-note">Kindle and print editions, where available, are listed on the Amazon page.</p>
       </div>
@@ -233,7 +241,7 @@
       <img src="/assets/images/author.jpg" alt="J.M. Struijk" width="562" height="900" loading="lazy" decoding="async">
       <div>
         <div class="author-label">About the author</div>
-        <p><strong>J.M. Struijk</strong> is a late-diagnosed ADHD and autistic author. I write practical companions for the brain you actually have, published independently through JMS Media Group LLC. <a href="/books/">See all the books</a> or <a href="/#about">read more about me</a>.</p>
+        <p><strong>J.M. Struijk</strong> is a late-diagnosed ADHD and autistic author. I write practical companions for the brain you actually have, published independently through JMS Media Group LLC. <a href="/books/">See all the books</a> or <a href="/about/">read more about me</a>.</p>
       </div>
     </section>
 
@@ -250,7 +258,7 @@
       <a href="/resources/">Resources</a>
       <a href="/glossary/">Glossary</a>
       <a href="/tools/adhd-tax-calculator/">ADHD Tax Calculator</a>
-      <a href="/#about">About</a>
+      <a href="/about/">About</a>
       <a href="/blog/feed.xml">RSS</a>
     </div>
     <div class="footer-meta">

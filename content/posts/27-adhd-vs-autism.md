@@ -41,6 +41,21 @@ The outward behaviour is the same. The mechanism is not.
 
 > Checklists compare behaviours. The two conditions are easier to separate by asking what the behaviour is doing for you.
 
+## The differences at a glance
+
+| | More typical of ADHD | More typical of autism |
+| --- | --- | --- |
+| Interrupting | The thought will be gone if it is not said now | Missing the pause, or being absorbed in the topic |
+| A busy shop | Too many competing things to attend to | The sensory load itself: light, noise, choice |
+| Routine | Needed to stop the day evaporating, then abandoned when dull | Needed because change is genuinely costly to process |
+| Novelty | Sought out; repetition is hard to tolerate | Costly; sameness is usually preferred |
+| Interests | Intense and short-lived, often a new one every few months | Deep and durable, often lifelong, and regulating |
+| Social difficulty | Knowing the rules and breaking them anyway | Not absorbing the unwritten rules in the first place |
+| Losing time | A weak felt sense of time passing | A deep interest absorbing everything |
+| Sensory needs | Present for some people | Usually lifelong and shaping daily choices |
+
+No row on its own decides anything, and a great many people recognise themselves in both columns, which is usually the most informative result.
+
 ## Where they pull in opposite directions
 
 A few patterns tend to separate more cleanly.

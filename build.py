@@ -174,6 +174,28 @@ def render_markdown(body):
             i += 1
             continue
 
+        # Pipe tables. Comparison tables are the format answer engines and
+        # featured snippets quote most readily, so they earn their keep.
+        if line.startswith("|") and i + 1 < len(lines) and re.match(r"^\|[\s:|-]+\|$", lines[i + 1].strip()):
+            def cells(row):
+                return [c.strip() for c in row.strip().strip("|").split("|")]
+
+            head = cells(line)
+            i += 2
+            body_rows = []
+            while i < len(lines) and lines[i].strip().startswith("|"):
+                body_rows.append(cells(lines[i]))
+                i += 1
+            thead = "".join("<th scope=\"col\">%s</th>" % inline(c) for c in head)
+            tbody = "".join(
+                "<tr>%s</tr>" % "".join(
+                    ("<th scope=\"row\">%s</th>" if n == 0 else "<td>%s</td>") % inline(c)
+                    for n, c in enumerate(row))
+                for row in body_rows)
+            out.append('<div class="table-wrap"><table><thead><tr>%s</tr></thead><tbody>%s</tbody></table></div>'
+                       % (thead, tbody))
+            continue
+
         if line.startswith("> "):
             quote = []
             while i < len(lines) and lines[i].startswith("> "):
@@ -542,7 +564,9 @@ def person_node():
 
 
 def publisher_ref():
-    return {"@type": "Organization", "@id": PUBLISHER_ID, "name": "JMS Media Group LLC", "url": SITE + "/"}
+    return {"@type": "Organization", "@id": PUBLISHER_ID, "name": "JMS Media Group LLC", "url": SITE + "/",
+            "logo": {"@type": "ImageObject", "url": SITE + "/assets/images/logo.png",
+                     "width": 512, "height": 512}}
 
 
 def about_nodes(keys):
@@ -574,7 +598,7 @@ AUTHOR_BOX = """<section class="author-box">
       <img src="/assets/images/author.jpg" alt="J.M. Struijk" width="562" height="900" loading="lazy" decoding="async">
       <div>
         <div class="author-label">About the author</div>
-        <p><strong>J.M. Struijk</strong> is a late-diagnosed ADHD and autistic author. I write practical companions for the brain you actually have, published independently through JMS Media Group LLC. <a href="/books/">See all the books</a> or <a href="/#about">read more about me</a>.</p>
+        <p><strong>J.M. Struijk</strong> is a late-diagnosed ADHD and autistic author. I write practical companions for the brain you actually have, published independently through JMS Media Group LLC. <a href="/books/">See all the books</a> or <a href="/about/">read more about me</a>.</p>
       </div>
     </section>"""
 
@@ -694,7 +718,11 @@ def render_post(post, by_post, by_book):
         # seo_title is an optional shorter <title> for search results; the page keeps the full headline.
         seo=seo_head(post.get("seo_title") or post["title"], post["description"], path, image, "article")
             + '\n<meta property="article:published_time" content="%s">' % post["date"]
+            + ('\n<meta property="article:modified_time" content="%s">' % post["updated"] if post.get("updated") else "")
             + '\n<meta property="article:author" content="J.M. Struijk">'
+            + '\n<meta property="article:section" content="%s">' % esc(TOPICS[post["topics"][0]]["title"])
+            + "".join('\n<meta property="article:tag" content="%s">' % esc(t.strip())
+                      for t in post.get("keywords", "").split(",") if t.strip())
             + '\n<meta name="keywords" content="%s">' % esc(post.get("keywords", "")),
         schema=schema(graph),
         title=esc(post["title"]),
@@ -702,6 +730,8 @@ def render_post(post, by_post, by_book):
         date_iso=str(post["date"]),
         date_human=human_date(post["date"]),
         reading_time=minutes(post["words"]),
+        updated=('<span class="post-dot">·</span><span class="post-updated">Updated %s</span>'
+                 % human_date(post["updated"])) if post.get("updated") else "",
         topics=topic_tags(post["topics"]),
         toc=toc,
         body=autolink_glossary(post["body"]),
@@ -761,7 +791,7 @@ def render_book(book, posts, books):
     facts = ['<span>Published %s</span>' % human_date(book["published"])]
     if book.get("pages"):
         facts.append("<span>%d pages</span>" % book["pages"])
-    facts.append('<span>By <a href="/#about">J.M. Struijk</a></span>')
+    facts.append('<span>By <a href="/about/">J.M. Struijk</a></span>')
 
     node = {
         "@type": "Book",
@@ -1419,6 +1449,9 @@ def home_schema(text, books):
     for n in graph:
         if n.get("@type") == "Person":
             n["sameAs"] = [AMAZON_AUTHOR]
+        if n.get("@type") == "Organization":
+            n["logo"] = {"@type": "ImageObject", "url": SITE + "/assets/images/logo.png",
+                         "width": 512, "height": 512}
     data["@graph"] = graph
     block = json.dumps(data, indent=2, ensure_ascii=False).replace("</", "<\\/")
     return text[:m.start(2)] + block + text[m.end(2):]

@@ -35,6 +35,20 @@ Sleep is similar in both. Anxiety keeps you awake with worry; ADHD keeps you awa
 
 And avoidance looks identical. Anxious avoidance is about the feared outcome. ADHD avoidance is usually about the wall between deciding to start and starting. Both end with the task not done and a growing sense of dread about it.
 
+## The differences at a glance
+
+| | More typical of ADHD | More typical of anxiety |
+| --- | --- | --- |
+| Focus on a calm day | Still unreliable | Usually fine until worry starts |
+| When it started | Present from early childhood | Often traceable to a period or event |
+| Where it shows up | Across most settings | Often tied to particular situations |
+| The restlessness | Looking for stimulation | Braced for something |
+| The thought itself | Volume, tangents, replays, no central fear | Specific fear, scenario or consequence |
+| Avoidance | The wall between deciding and starting | The feared outcome |
+| After anxiety treatment | Lateness and unfinished things remain | Focus tends to recover with the worry |
+
+These are patterns rather than tests, and the two occur together often enough that recognising both is common.
+
 ## Questions that help separate them
 
 None of these is a test. They are the questions I have found most useful for describing the difference accurately to someone qualified.

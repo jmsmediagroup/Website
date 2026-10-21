@@ -917,6 +917,21 @@ The outward behaviour is the same. The mechanism is not.
 
 > Checklists compare behaviours. The two conditions are easier to separate by asking what the behaviour is doing for you.
 
+### The differences at a glance
+
+| | More typical of ADHD | More typical of autism |
+| --- | --- | --- |
+| Interrupting | The thought will be gone if it is not said now | Missing the pause, or being absorbed in the topic |
+| A busy shop | Too many competing things to attend to | The sensory load itself: light, noise, choice |
+| Routine | Needed to stop the day evaporating, then abandoned when dull | Needed because change is genuinely costly to process |
+| Novelty | Sought out; repetition is hard to tolerate | Costly; sameness is usually preferred |
+| Interests | Intense and short-lived, often a new one every few months | Deep and durable, often lifelong, and regulating |
+| Social difficulty | Knowing the rules and breaking them anyway | Not absorbing the unwritten rules in the first place |
+| Losing time | A weak felt sense of time passing | A deep interest absorbing everything |
+| Sensory needs | Present for some people | Usually lifelong and shaping daily choices |
+
+No row on its own decides anything, and a great many people recognise themselves in both columns, which is usually the most informative result.
+
 ### Where they pull in opposite directions
 
 A few patterns tend to separate more cleanly.
@@ -1000,6 +1015,20 @@ Restlessness looks alike too. Anxious restlessness is driven by threat: the body
 Sleep is similar in both. Anxiety keeps you awake with worry; ADHD keeps you awake with a mind that will not stop generating material and an evening that finally belongs to you.
 
 And avoidance looks identical. Anxious avoidance is about the feared outcome. ADHD avoidance is usually about the wall between deciding to start and starting. Both end with the task not done and a growing sense of dread about it.
+
+### The differences at a glance
+
+| | More typical of ADHD | More typical of anxiety |
+| --- | --- | --- |
+| Focus on a calm day | Still unreliable | Usually fine until worry starts |
+| When it started | Present from early childhood | Often traceable to a period or event |
+| Where it shows up | Across most settings | Often tied to particular situations |
+| The restlessness | Looking for stimulation | Braced for something |
+| The thought itself | Volume, tangents, replays, no central fear | Specific fear, scenario or consequence |
+| Avoidance | The wall between deciding and starting | The feared outcome |
+| After anxiety treatment | Lateness and unfinished things remain | Focus tends to recover with the worry |
+
+These are patterns rather than tests, and the two occur together often enough that recognising both is common.
 
 ### Questions that help separate them
 
@@ -1086,6 +1115,20 @@ A meltdown is generally the end of a load problem. Sensory input, social effort,
 A panic attack is generally a fear response. The body's alarm system fires, often without a proportionate external cause, and produces intense physical symptoms: racing heart, shortness of breath, chest tightness, dizziness, sweating, and frequently a sense of dread or a conviction that something terrible is happening.
 
 That difference in driver is the most useful thing to hold onto. One is a system that has run out of capacity. The other is a system that has sounded an alarm.
+
+### The differences at a glance
+
+| | Autistic meltdown | Panic attack |
+| --- | --- | --- |
+| What drives it | Accumulated sensory, social or emotional overload | Fear, often without a proportionate cause |
+| How it starts | Usually a build-up over hours or days | Often sudden, sometimes from a calm state |
+| The trigger | Frequently trivial, and not the real cause | May be a situation, a thought or nothing obvious |
+| Physical signature | Distress, but not typically terror plus racing heart | Racing heart, breathlessness, chest tightness, dizziness |
+| What is in your head | Flooded, past language, no specific fear | Fear with content: something bad is happening |
+| What helps | Less input: quiet, dim, few words | Grounding, slower breathing, reassurance |
+| Reassurance | Usually adds demand and makes it worse | Usually helps |
+
+They are not mutually exclusive, and an episode can move from one into the other.
 
 ### Differences people describe
 
