@@ -1,13 +1,16 @@
 ---
 title: "Hyperfocus without the crash: using the good days without paying for them twice"
+seo_title: "ADHD hyperfocus: how to use it without the crash"
 slug: adhd-hyperfocus-without-burnout
-description: "Hyperfocus is the part of ADHD people call a superpower, usually right before it costs them a week. Here is how it actually works and how to use it without the crash that follows."
+description: "Hyperfocus gets called an ADHD superpower, usually right before it costs you a week. How it works, and how to use it without the crash."
 date: 2026-10-21
 keywords: adhd hyperfocus, hyperfocus burnout, adhd productivity, adhd side income, adhd crash after hyperfocus, adhd energy management
 book: adhd-side-hustle
+about: [adhd, hyperfocus]
 related:
   - autistic-burnout-vs-adhd-burnout-vs-depression
   - adhd-overthinking-2am-spiral
+  - adhd-time-blindness
 ---
 
 Someone will eventually tell you that hyperfocus is your superpower. They usually mean well, and they have usually only seen the first half.

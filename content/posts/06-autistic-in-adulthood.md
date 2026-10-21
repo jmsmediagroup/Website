@@ -1,13 +1,15 @@
 ---
 title: "Finding out you are autistic in adulthood"
 slug: autistic-in-adulthood-late-diagnosis
-description: "What changes when you discover in your thirties or forties that you are autistic, why so many people are missed, and what the first months of knowing tend to involve."
+description: "What changes when you find out in your thirties or forties that you are autistic, why so many adults are missed, and what the first months involve."
 date: 2026-10-21
 keywords: late autism diagnosis, autistic adult diagnosis, diagnosed autistic as an adult, adult autism assessment, late diagnosed autistic, autism in women
 book: late-diagnosed-autistic-workbook
+about: [autism, masking]
 related:
   - adhd-diagnosis-as-an-adult-first-year
   - autistic-masking-and-what-it-costs
+  - stimming-and-sensory-overload
 ---
 
 It rarely starts with a doctor. For most people I have spoken to, it starts with a video, or a thread, or a friend's offhand comment, and then a long quiet period of reading at night without telling anyone.

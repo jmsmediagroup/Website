@@ -1,10 +1,12 @@
 ---
 title: "ADHD and debt: why payoff plans keep failing, and what to do instead"
+seo_title: "ADHD and debt: why payoff plans fail, and what works"
 slug: adhd-debt-and-payoff-plans
-description: "Debt payoff plans assume consistency, which is the one thing ADHD does not reliably supply. Here is why the standard methods break down and how to build one that survives a bad month."
+description: "Debt payoff plans assume consistency, which ADHD does not reliably supply. Why the usual methods fail, and how to build one that survives a bad month."
 date: 2026-10-21
 keywords: adhd and debt, adhd debt payoff, adhd credit card debt, debt snowball adhd, adhd money management, adhd avoidance bills
 book: adhd-debt-payoff-workbook
+about: [adhd]
 related:
   - adhd-tax-what-it-costs
   - why-adhd-brains-overspend

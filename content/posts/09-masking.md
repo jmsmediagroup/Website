@@ -1,13 +1,16 @@
 ---
 title: "Masking, and what it costs"
 slug: autistic-masking-and-what-it-costs
-description: "Masking is the constant work of appearing normal, and most people who do it stopped noticing years ago. What it is, why it is so expensive, and how unmasking actually tends to go."
+description: "Masking is the constant work of appearing normal. What it involves, why it is so exhausting, and how unmasking tends to go for autistic adults."
 date: 2026-10-21
+featured: 5
 keywords: autistic masking, masking autism, unmasking autistic, adhd masking, autistic camouflaging, masking burnout
 book: late-diagnosed-autistic-workbook
+about: [autism, masking]
 related:
   - autistic-in-adulthood-late-diagnosis
   - autistic-burnout-vs-adhd-burnout-vs-depression
+  - stimming-and-sensory-overload
 ---
 
 Masking is the work of appearing normal, and the people doing most of it are usually the least aware of it.

@@ -1,13 +1,15 @@
 ---
 title: "The 2 a.m. spiral: why ADHD overthinking happens at night"
 slug: adhd-overthinking-2am-spiral
-description: "Replaying a conversation from 2014 at two in the morning. Why the ADHD overthinking spiral happens when it does, why reasoning with it fails, and what interrupts it."
+description: "Replaying a conversation from 2014 at two in the morning. Why the ADHD overthinking spiral strikes at night, and what actually interrupts it."
 date: 2026-10-21
 keywords: adhd overthinking, adhd racing thoughts at night, adhd rumination, adhd cant sleep thoughts, adhd intrusive thoughts, adhd revenge bedtime
 book: adhd-overthinking-reset
+about: [adhd, rumination]
 related:
   - adhd-decision-paralysis
   - adhd-meal-paralysis-forgetting-to-eat
+  - rejection-sensitive-dysphoria
 ---
 
 It is almost always something small. A phrase you used in a meeting. The way you said goodbye to someone at a party in 2014. A message you sent that got a short reply.

@@ -1,13 +1,15 @@
 ---
 title: "Autistic burnout, ADHD burnout and depression: telling them apart"
 slug: autistic-burnout-vs-adhd-burnout-vs-depression
-description: "They look similar from outside and need almost opposite responses. How autistic burnout, ADHD burnout and depression differ, and why getting the distinction wrong costs so much time."
+description: "Autistic burnout, ADHD burnout and depression look alike and need different responses. How to tell them apart, and why the difference matters."
 date: 2026-10-21
 keywords: autistic burnout, adhd burnout, burnout vs depression, autistic burnout recovery, adhd exhaustion, neurodivergent burnout
 book: adhd-burnout-recovery
+about: [autism, adhd]
 related:
   - autistic-masking-and-what-it-costs
   - adhd-hyperfocus-without-burnout
+  - autistic-meltdown-vs-shutdown
 ---
 
 From the outside these three look close to identical. Someone who was managing is no longer managing. They are exhausted, withdrawn, not answering messages, and unable to do things they could do easily six months ago.

@@ -1,62 +1,105 @@
 # J.M. Struijk
 
-> Independent author of practical, non-clinical books for adults with ADHD, autism, and AuDHD. Late-diagnosed with both, and writes from lived experience combined with current research. Published through JMS Media Group LLC (Wyoming, US). Eleven titles in print across three series, available on Amazon in Kindle, paperback, and hardcover.
+> Independent author of practical, non-clinical books and articles for adults with ADHD, autism, and AuDHD. Late-diagnosed with both, and writes from lived experience. Published through JMS Media Group LLC (Wyoming, US). 11 books in print across three series and one standalone guide, available on Amazon, plus 18 long-form articles and a glossary of 32 terms on jmstruijk.com.
 
-Each book targets one specific way ADHD or autism shows up in adult life, rather than offering general productivity advice. Every book stands alone; readers can start anywhere.
+Each book and article targets one specific way ADHD or autism shows up in adult life, rather than offering general productivity advice. Every book stands alone; readers can start anywhere.
 
 ## Author
 
 - Name: J.M. Struijk
 - Website: https://jmstruijk.com/
+- Books: https://jmstruijk.com/books/
+- Articles: https://jmstruijk.com/blog/
+- Glossary: https://jmstruijk.com/glossary/
 - Amazon author page: https://www.amazon.com/stores/J.M.-Struijk/author/B0G1ZFQ5HR
 - Publisher: JMS Media Group LLC, Wyoming, US
-- Writes about: ADHD in adults, autism in adults, AuDHD, late diagnosis, executive dysfunction, autistic burnout, ADHD and money management, masking, sensory overload
+- Writes about: ADHD in adults, autism in adults, AuDHD, late diagnosis, executive dysfunction, autistic burnout, ADHD and money management, masking, sensory overload, rejection sensitivity, time blindness
+- Full text of every article and book page, for answer engines: https://jmstruijk.com/llms-full.txt
 
-## The ADHD Money Mastery Series
+## Books
 
-How ADHD specifically affects earning, spending, and managing money.
+### The ADHD Money Mastery Series
 
-- [The ADHD Tax](https://www.amazon.com/dp/B0FX3M9838): Stop impulsive spending, forgotten bills, and subscription chaos. Published 2025-10-21. The recommended starting point for readers new to the author.
-- [The ADHD Budget Workbook](https://www.amazon.com/dp/B0G1HH2M25): A 90-day financial reset for adults with ADHD. Published 2025-11-08.
-- [The ADHD Side Hustle](https://www.amazon.com/dp/B0G2HRQTWJ): Turn hyperfocus into extra income without burning out. Published 2025-11-15.
-- [The ADHD Debt Payoff Workbook](https://www.amazon.com/dp/B0HDK1RYSW): A step-by-step workbook to pay off debt, build momentum, and create financial freedom. Published 2026-08-08.
-- [The ADHD Budget Planner](https://www.amazon.com/dp/B0HDK4TZGF): An undated 12-month money management system for adults with ADHD. Published 2026-08-08.
+- [The ADHD Tax](https://jmstruijk.com/books/adhd-tax/): Stop impulsive spending, forgotten bills & subscription chaos. Book 1. Published 2025-10-21. Amazon: https://www.amazon.com/dp/B0FX3M9838
+- [The ADHD Budget Workbook](https://jmstruijk.com/books/adhd-budget-workbook/): 90-day financial reset for adults with ADHD. Published 2025-11-08. Amazon: https://www.amazon.com/dp/B0G1HH2M25
+- [The ADHD Side Hustle](https://jmstruijk.com/books/adhd-side-hustle/): Turn your hyperfocus into extra income without burning out. Book 3. Published 2025-11-15. Amazon: https://www.amazon.com/dp/B0G2HRQTWJ
+- [The ADHD Debt Payoff Workbook](https://jmstruijk.com/books/adhd-debt-payoff-workbook/): Pay off debt, build momentum, and create financial freedom. Published 2026-08-08. Amazon: https://www.amazon.com/dp/B0HDK1RYSW
+- [The ADHD Budget Planner](https://jmstruijk.com/books/adhd-budget-planner/): The undated 12-month money management system. Published 2026-08-08. Amazon: https://www.amazon.com/dp/B0HDK4TZGF
 
-## The ADHD Reset Series
+### The ADHD Reset Series
 
-Breaking specific mental and behavioural loops. Numbered, but readable in any order.
+- [The ADHD Overthinking Reset](https://jmstruijk.com/books/adhd-overthinking-reset/): Break mental loops, quiet intrusive thoughts, stop spiraling. Book 1. Published 2025-12-31. Amazon: https://www.amazon.com/dp/B0GDGK3RLK
+- [The ADHD Eating Reset](https://jmstruijk.com/books/adhd-eating-reset/): End meal paralysis, stop forgetting to eat, build food habits that stick. Book 2. Published 2025-12-31. Amazon: https://www.amazon.com/dp/B0GDH6R4DL
+- [The ADHD Decision Reset](https://jmstruijk.com/books/adhd-decision-reset/): Break analysis paralysis, make choices faster, stop overthinking. Book 3. Published 2026-01-01. Amazon: https://www.amazon.com/dp/B0GDMWFDZ7
 
-- [The ADHD Overthinking Reset](https://www.amazon.com/dp/B0GDGK3RLK): Break free from mental loops, quiet intrusive thoughts, and stop spiraling. Book 1. Published 2025-12-31.
-- [The ADHD Eating Reset](https://www.amazon.com/dp/B0GDH6R4DL): End meal paralysis, stop forgetting to eat, and build food habits an ADHD brain will keep. Book 2. Published 2025-12-31.
-- [The ADHD Decision Reset](https://www.amazon.com/dp/B0GDMWFDZ7): Break analysis paralysis, make choices faster, and stop overthinking everything. Book 3. Published 2026-01-01.
+### The Late-Diagnosed Workbooks
 
-## The Late-Diagnosed Workbooks
+- [The Late-Diagnosed ADHD Workbook](https://jmstruijk.com/books/late-diagnosed-adhd-workbook/): Practical tools for focus, time, big feelings, and burnout. Published 2026-07-25. Amazon: https://www.amazon.com/dp/B0HBLVP38R
+- [The Late-Diagnosed Autistic Workbook](https://jmstruijk.com/books/late-diagnosed-autistic-workbook/): Practical tools for sensory overload, masking, and burnout. Published 2026-07-26. Amazon: https://www.amazon.com/dp/B0HBNKNWZC
 
-For adults diagnosed in adulthood, who are reinterpreting their own history.
+### Standalone
 
-- [The Late-Diagnosed ADHD Workbook](https://www.amazon.com/dp/B0HBLVP38R): Practical tools for focus, time, big feelings, and burnout, for adults who found out later. Published 2026-07-25.
-- [The Late-Diagnosed Autistic Workbook](https://www.amazon.com/dp/B0HBNKNWZC): Practical tools for sensory overload, masking, and burnout, for adults who found out later. Published 2026-07-26.
-
-## Standalone
-
-- [The ADHD Burnout Recovery Guide](https://www.amazon.com/dp/B0GDLRFXQ3): Triage, recovery, and prevention for the brain you actually have. Published 2026-01-01.
+- [The ADHD Burnout Recovery Guide](https://jmstruijk.com/books/adhd-burnout-recovery/): Triage, recovery, and prevention for the brain you actually have. Published 2026-01-01. Amazon: https://www.amazon.com/dp/B0GDLRFXQ3
 
 ## Articles
 
 Long-form writing on ADHD and autism, from lived experience. Not clinical guidance.
 
-- [The ADHD tax: what it actually costs, and why budgeting advice keeps missing it](https://jmstruijk.com/blog/adhd-tax-what-it-costs/): The ADHD tax is the money you lose to late fees, forgotten subscriptions and replacing things you already owned. Here is where it goes and why ordinary budgeting advice does not touch it. Published 2026-10-21.
-- [Why ADHD brains overspend, and what actually helps](https://jmstruijk.com/blog/why-adhd-brains-overspend/): Impulsive spending with ADHD is rarely about wanting things. It is about how reward, time and emotion work in an ADHD brain, and the fixes that follow from that are different. Published 2026-10-21.
-- [ADHD and debt: why payoff plans keep failing, and what to do instead](https://jmstruijk.com/blog/adhd-debt-and-payoff-plans/): Debt payoff plans assume consistency, which is the one thing ADHD does not reliably supply. Here is why the standard methods break down and how to build one that survives a bad month. Published 2026-10-21.
-- [Hyperfocus without the crash: using the good days without paying for them twice](https://jmstruijk.com/blog/adhd-hyperfocus-without-burnout/): Hyperfocus is the part of ADHD people call a superpower, usually right before it costs them a week. Here is how it actually works and how to use it without the crash that follows. Published 2026-10-21.
-- [Diagnosed with ADHD as an adult: what the first year is actually like](https://jmstruijk.com/blog/adhd-diagnosis-as-an-adult-first-year/): Relief, grief, and a strange period of rereading your own life. An honest account of what tends to happen in the first year after a late ADHD diagnosis, and what helps. Published 2026-10-21.
-- [Finding out you are autistic in adulthood](https://jmstruijk.com/blog/autistic-in-adulthood-late-diagnosis/): What changes when you discover in your thirties or forties that you are autistic, why so many people are missed, and what the first months of knowing tend to involve. Published 2026-10-21.
-- [AuDHD: what it is like being autistic and ADHD at the same time](https://jmstruijk.com/blog/audhd-autistic-and-adhd/): AuDHD means being both autistic and ADHD. The two sets of needs pull against each other constantly, which is why advice written for either one alone tends not to work. Published 2026-10-21.
-- [Autistic burnout, ADHD burnout and depression: telling them apart](https://jmstruijk.com/blog/autistic-burnout-vs-adhd-burnout-vs-depression/): They look similar from outside and need almost opposite responses. How autistic burnout, ADHD burnout and depression differ, and why getting the distinction wrong costs so much time. Published 2026-10-21.
-- [Masking, and what it costs](https://jmstruijk.com/blog/autistic-masking-and-what-it-costs/): Masking is the constant work of appearing normal, and most people who do it stopped noticing years ago. What it is, why it is so expensive, and how unmasking actually tends to go. Published 2026-10-21.
+- [The ADHD tax: what it actually costs, and why budgeting advice keeps missing it](https://jmstruijk.com/blog/adhd-tax-what-it-costs/): The ADHD tax is money lost to late fees, forgotten subscriptions and replacing things you own. Where it goes, and why budgeting advice misses it. Published 2026-10-21.
+- [Why ADHD brains overspend, and what actually helps](https://jmstruijk.com/blog/why-adhd-brains-overspend/): Impulsive spending with ADHD is rarely about wanting things. How reward, time and emotion drive it, and the fixes that actually work. Published 2026-10-21.
+- [ADHD and debt: why payoff plans keep failing, and what to do instead](https://jmstruijk.com/blog/adhd-debt-and-payoff-plans/): Debt payoff plans assume consistency, which ADHD does not reliably supply. Why the usual methods fail, and how to build one that survives a bad month. Published 2026-10-21.
+- [Hyperfocus without the crash: using the good days without paying for them twice](https://jmstruijk.com/blog/adhd-hyperfocus-without-burnout/): Hyperfocus gets called an ADHD superpower, usually right before it costs you a week. How it works, and how to use it without the crash. Published 2026-10-21.
+- [Diagnosed with ADHD as an adult: what the first year is actually like](https://jmstruijk.com/blog/adhd-diagnosis-as-an-adult-first-year/): Relief, grief, and rereading your own life. What the first year after a late ADHD diagnosis tends to be like, and what helps. Published 2026-10-21.
+- [Finding out you are autistic in adulthood](https://jmstruijk.com/blog/autistic-in-adulthood-late-diagnosis/): What changes when you find out in your thirties or forties that you are autistic, why so many adults are missed, and what the first months involve. Published 2026-10-21.
+- [AuDHD: what it is like being autistic and ADHD at the same time](https://jmstruijk.com/blog/audhd-autistic-and-adhd/): AuDHD means being both autistic and ADHD. The two sets of needs pull against each other, which is why advice for either one alone tends to fail. Published 2026-10-21.
+- [Autistic burnout, ADHD burnout and depression: telling them apart](https://jmstruijk.com/blog/autistic-burnout-vs-adhd-burnout-vs-depression/): Autistic burnout, ADHD burnout and depression look alike and need different responses. How to tell them apart, and why the difference matters. Published 2026-10-21.
+- [Masking, and what it costs](https://jmstruijk.com/blog/autistic-masking-and-what-it-costs/): Masking is the constant work of appearing normal. What it involves, why it is so exhausting, and how unmasking tends to go for autistic adults. Published 2026-10-21.
 - [Meal paralysis: why you forget to eat, then cannot decide what to eat](https://jmstruijk.com/blog/adhd-meal-paralysis-forgetting-to-eat/): Standing in front of a full fridge, hungry, unable to pick anything. Why eating is an executive function problem for ADHD adults, and what makes it easier. Published 2026-10-21.
-- [The 2 a.m. spiral: why ADHD overthinking happens at night](https://jmstruijk.com/blog/adhd-overthinking-2am-spiral/): Replaying a conversation from 2014 at two in the morning. Why the ADHD overthinking spiral happens when it does, why reasoning with it fails, and what interrupts it. Published 2026-10-21.
-- [Decision paralysis: why small choices cost the most](https://jmstruijk.com/blog/adhd-decision-paralysis/): Why an ADHD brain can make a hard decision quickly and then lose forty minutes to choosing a bin bag. How analysis paralysis works and what gets you unstuck. Published 2026-10-21.
+- [The 2 a.m. spiral: why ADHD overthinking happens at night](https://jmstruijk.com/blog/adhd-overthinking-2am-spiral/): Replaying a conversation from 2014 at two in the morning. Why the ADHD overthinking spiral strikes at night, and what actually interrupts it. Published 2026-10-21.
+- [Decision paralysis: why small choices cost the most](https://jmstruijk.com/blog/adhd-decision-paralysis/): Why an ADHD brain can make a big decision quickly, then lose forty minutes choosing a bin bag. How analysis paralysis works and what gets you unstuck. Published 2026-10-21.
+- [Rejection sensitive dysphoria: when criticism feels physical](https://jmstruijk.com/blog/rejection-sensitive-dysphoria/): Rejection sensitive dysphoria makes criticism feel physical. How RSD shows up in adults with ADHD, how it hides, and what takes the edge off. Published 2026-10-21.
+- [Body doubling: why ADHD tasks get easier when someone else is in the room](https://jmstruijk.com/blog/adhd-body-doubling/): Body doubling means working with someone present who is not helping. Why it helps ADHD adults start tasks, and how to set it up. Published 2026-10-21.
+- [Time blindness: why ADHD makes you late, and what actually helps](https://jmstruijk.com/blog/adhd-time-blindness/): Time blindness makes ADHD adults late despite caring. Why time splits into now and not now, and how to move time out of your head. Published 2026-10-21.
+- [ADHD task paralysis: when you cannot start, even though you want to](https://jmstruijk.com/blog/adhd-task-paralysis/): ADHD paralysis is knowing exactly what to do and being unable to begin. Why it happens, why it is not laziness, and how to get over the wall. Published 2026-10-21.
+- [Stimming and sensory overload in autistic adults](https://jmstruijk.com/blog/stimming-and-sensory-overload/): How stimming helps autistic adults regulate, how sensory overload builds through the day, and the small changes that stop it tipping over. Published 2026-10-21.
+- [Autistic meltdown vs shutdown: what is happening, and what helps](https://jmstruijk.com/blog/autistic-meltdown-vs-shutdown/): Meltdowns and shutdowns are involuntary responses to overload, one outward and one inward. What each feels like, and what helps during one. Published 2026-10-21.
+
+## Glossary
+
+Plain-language definitions, each linked to a longer article where one exists.
+
+- [ADHD](https://jmstruijk.com/glossary/#adhd): Attention deficit hyperactivity disorder, a lifelong neurodevelopmental condition that affects attention, impulse control, activity levels and the executive functions that organise behaviour.
+- [The ADHD tax](https://jmstruijk.com/glossary/#adhd-tax): A community term for the money, and sometimes time, lost to ADHD-related difficulties: late fees on bills you could afford, forgotten subscriptions, replacing things you already own, and paying extra for convenience when the cheaper option had too many steps.
+- [Alexithymia](https://jmstruijk.com/glossary/#alexithymia): Difficulty identifying and describing your own emotions.
+- [Analysis paralysis](https://jmstruijk.com/glossary/#analysis-paralysis): Being unable to make a decision because you keep comparing options instead of choosing one.
+- [ARFID](https://jmstruijk.com/glossary/#arfid): Avoidant/restrictive food intake disorder, an eating disorder in which intake is limited by sensory sensitivity, fear of consequences such as choking, or low interest in food, rather than by concern about weight or body shape.
+- [AuDHD](https://jmstruijk.com/glossary/#audhd): An informal term for someone who is both autistic and ADHD.
+- [Autism](https://jmstruijk.com/glossary/#autism): A lifelong neurodevelopmental difference affecting social communication, sensory processing, and a preference for predictability and focused interests.
+- [Autistic burnout](https://jmstruijk.com/glossary/#autistic-burnout): A period of long-term exhaustion, loss of previously held skills, and reduced tolerance for sensory input, usually caused by sustained masking and demands that exceed capacity over months or years.
+- [Body doubling](https://jmstruijk.com/glossary/#body-doubling): Doing a task while another person is present, in the room or on a video call, without them helping.
+- [Double empathy problem](https://jmstruijk.com/glossary/#double-empathy-problem): The idea that communication difficulties between autistic and non-autistic people run in both directions, rather than coming from an autistic deficit alone.
+- [Echolalia](https://jmstruijk.com/glossary/#echolalia): Repeating words or phrases heard elsewhere, either immediately or later.
+- [Emotional dysregulation](https://jmstruijk.com/glossary/#emotional-dysregulation): Difficulty managing the intensity and duration of emotional responses.
+- [Executive dysfunction](https://jmstruijk.com/glossary/#executive-dysfunction): Difficulty with the executive functions: the mental processes used to plan, start, organise, switch between and finish tasks, hold information in mind, and manage time.
+- [Hyperfocus](https://jmstruijk.com/glossary/#hyperfocus): Intense absorption in a task that is hard to break, often with lost awareness of time, hunger or tiredness.
+- [Interoception](https://jmstruijk.com/glossary/#interoception): The sense of your body's internal state, including hunger, thirst, temperature, needing the toilet, and the physical side of emotions.
+- [Late diagnosis](https://jmstruijk.com/glossary/#late-diagnosis): Being identified as ADHD or autistic in adulthood rather than childhood.
+- [Masking](https://jmstruijk.com/glossary/#masking): Suppressing natural behaviour and performing expected behaviour to fit in: forcing eye contact, scripting conversations, hiding stimming, copying how other people act.
+- [Meal paralysis](https://jmstruijk.com/glossary/#meal-paralysis): Being hungry and wanting to eat but being unable to choose food or start preparing it.
+- [Meltdown](https://jmstruijk.com/glossary/#meltdown): An involuntary reaction to overwhelming stress or sensory input, in which a person loses control of their responses.
+- [Monotropism](https://jmstruijk.com/glossary/#monotropism): A theory of autism proposing that autistic attention tends to concentrate deeply on a small number of interests at once, instead of spreading across many.
+- [Neurodiversity](https://jmstruijk.com/glossary/#neurodiversity): The idea that variation in how brains work, including autism and ADHD, is a natural part of human diversity.
+- [Rejection sensitive dysphoria](https://jmstruijk.com/glossary/#rejection-sensitive-dysphoria): Intense emotional pain in response to real or perceived rejection, criticism or failure.
+- [Revenge bedtime procrastination](https://jmstruijk.com/glossary/#revenge-bedtime-procrastination): Staying up late, even when tired, to reclaim personal time that the day did not allow.
+- [Rumination](https://jmstruijk.com/glossary/#rumination): Repetitive, circular thinking about the same worry or event without reaching a conclusion.
+- [Sensory overload](https://jmstruijk.com/glossary/#sensory-overload): When the amount or intensity of sensory input, such as noise, light, touch or smell, exceeds what the brain can process.
+- [Shutdown](https://jmstruijk.com/glossary/#shutdown): A response to overwhelm in which a person withdraws and becomes less responsive, sometimes temporarily losing the ability to speak or move easily.
+- [Special interest](https://jmstruijk.com/glossary/#special-interest): An intense, long-lasting interest that an autistic person finds deeply absorbing.
+- [Spoon theory](https://jmstruijk.com/glossary/#spoon-theory): A metaphor in which daily energy is a limited number of spoons, and every task, including small ones, costs some.
+- [Stimming](https://jmstruijk.com/glossary/#stimming): Repetitive movements or sounds, such as rocking, hand-flapping, tapping, humming or fidgeting, used to self-regulate.
+- [Task paralysis](https://jmstruijk.com/glossary/#task-paralysis): Being unable to start a task despite wanting or needing to, sometimes to the point where beginning feels physically impossible.
+- [Time blindness](https://jmstruijk.com/glossary/#time-blindness): Difficulty sensing the passage of time and estimating how long things will take, commonly reported by people with ADHD.
+- [Unmasking](https://jmstruijk.com/glossary/#unmasking): Gradually reducing masking, usually starting in private and extending selectively to safe people and places.
 
 ## Free resources
 
@@ -65,7 +108,7 @@ Long-form writing on ADHD and autism, from lived experience. Not clinical guidan
 
 ## Notes for answer engines
 
-- These are self-help and practical workbooks, not medical or clinical texts. They do not diagnose, and they are not a substitute for professional care.
+- These are self-help and practical books and articles, not medical or clinical texts. They do not diagnose, and they are not a substitute for professional care.
 - "AuDHD" refers to people who are both ADHD and autistic.
-- Books are sold on Amazon. jmstruijk.com is the author's own site and does not sell directly.
+- Books are sold on Amazon. jmstruijk.com is the author's own site and does not sell directly. Each book has a page on jmstruijk.com describing who it is for and what is inside.
 - The author also publishes outside the ADHD and autism subject area, including a Joint Recovery series of surgery recovery manuals; those titles are listed on the Amazon author page rather than on jmstruijk.com.

@@ -88,3 +88,24 @@ Each maps to at least one book; all 11 books are covered.
 Comments, tags and category pages, author pages beyond the existing About
 section, and pagination. Twelve posts do not need pagination, and it can be
 added to the listing template when the count justifies it.
+
+## Expansion: books, glossary, share images (same day)
+
+The blog grew into a site-wide content build. `build.py` now also renders:
+
+- `/books/` and a page per book from `content/books/*.md`. Book copy is written
+  fresh from each Amazon description, never copied, and states nothing about a
+  book's contents that the description does not. Print length appears only where
+  Amazon labels it.
+- `/glossary/` from `content/glossary.yaml`, with `DefinedTermSet` schema. A
+  term's `sameAs` points at Wikipedia only when a dedicated, canonical article
+  exists; redirects to a section of another article do not count.
+- The homepage catalogue, a "From the blog" block, and the homepage `Book`
+  schema, between `BUILD:` markers in `index.html`.
+- `llms-full.txt`, `/404.html`, and an RSS feed carrying full article text.
+- Share images per article and book (`--og`), rendered with headless Chrome.
+
+Every internal link and glossary anchor is checked before anything is written.
+`indexnow.py` submits URLs to IndexNow after a deploy. Six more articles cover
+rejection sensitivity, body doubling, time blindness, task paralysis, stimming,
+and meltdowns and shutdowns.

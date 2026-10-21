@@ -1,13 +1,16 @@
 ---
 title: "Diagnosed with ADHD as an adult: what the first year is actually like"
+seo_title: "Diagnosed with ADHD as an adult: the first year"
 slug: adhd-diagnosis-as-an-adult-first-year
-description: "Relief, grief, and a strange period of rereading your own life. An honest account of what tends to happen in the first year after a late ADHD diagnosis, and what helps."
+description: "Relief, grief, and rereading your own life. What the first year after a late ADHD diagnosis tends to be like, and what helps."
 date: 2026-10-21
 keywords: late adhd diagnosis, adhd diagnosed as an adult, adult adhd diagnosis grief, after adhd diagnosis, late diagnosed adhd, adhd in adults
 book: late-diagnosed-adhd-workbook
+about: [adhd]
 related:
   - autistic-in-adulthood-late-diagnosis
   - audhd-autistic-and-adhd
+  - adhd-time-blindness
 ---
 
 Nobody warns you about the grief.

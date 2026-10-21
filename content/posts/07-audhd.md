@@ -1,13 +1,16 @@
 ---
 title: "AuDHD: what it is like being autistic and ADHD at the same time"
 slug: audhd-autistic-and-adhd
-description: "AuDHD means being both autistic and ADHD. The two sets of needs pull against each other constantly, which is why advice written for either one alone tends not to work."
+description: "AuDHD means being both autistic and ADHD. The two sets of needs pull against each other, which is why advice for either one alone tends to fail."
 date: 2026-10-21
+featured: 3
 keywords: audhd, autistic and adhd, adhd and autism together, audhd traits, autism adhd comorbidity, audhd burnout
 book: late-diagnosed-adhd-workbook
+about: [adhd, autism]
 related:
   - adhd-diagnosis-as-an-adult-first-year
   - autistic-in-adulthood-late-diagnosis
+  - rejection-sensitive-dysphoria
 ---
 
 For a long time these two were not allowed to coexist. Diagnostic rules in several countries actively prevented clinicians from recording both, which means a generation of people were given whichever label was noticed first and sent away with half an explanation.

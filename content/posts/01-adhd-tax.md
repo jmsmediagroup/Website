@@ -1,10 +1,13 @@
 ---
 title: "The ADHD tax: what it actually costs, and why budgeting advice keeps missing it"
+seo_title: "The ADHD tax: what it costs and why budgeting misses it"
 slug: adhd-tax-what-it-costs
-description: "The ADHD tax is the money you lose to late fees, forgotten subscriptions and replacing things you already owned. Here is where it goes and why ordinary budgeting advice does not touch it."
+description: "The ADHD tax is money lost to late fees, forgotten subscriptions and replacing things you own. Where it goes, and why budgeting advice misses it."
 date: 2026-10-21
+featured: 1
 keywords: adhd tax, adhd and money, adhd late fees, adhd impulsive spending, adhd forgotten subscriptions, adhd finances
 book: adhd-tax
+about: [adhd]
 related:
   - why-adhd-brains-overspend
   - adhd-debt-and-payoff-plans

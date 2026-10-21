@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+{seo}
+{head}
+<script type="application/ld+json">
+{schema}
+</script>
+</head>
+<body>
+{header}
+
+  <article class="book-page">
+
+    <nav class="crumbs" aria-label="Breadcrumb">
+      <a href="/">Home</a> <span>/</span> <a href="/books/">Books</a>
+    </nav>
+
+    <header class="book-hero">
+      <div class="book-hero-cover">
+        <img src="/assets/covers/{slug}.jpg" alt="{title} book cover" width="700" height="1050" fetchpriority="high" decoding="async">
+      </div>
+      <div class="book-hero-info">
+        <div class="book-series-label">{series_label}</div>
+        <h1>{title}</h1>
+        <p class="book-hero-subtitle">{subtitle}</p>
+        <div class="book-facts">{facts}</div>
+        <a class="btn-amazon" href="https://www.amazon.com/dp/{asin}" target="_blank" rel="noopener">View on Amazon</a>
+        <p class="book-hero-note">Kindle and print editions, where available, are listed on the Amazon page.</p>
+      </div>
+    </header>
+
+    <div class="post-body book-body">
+{body}
+    </div>
+
+    <div class="book-buy-again">
+      <a class="btn-amazon" href="https://www.amazon.com/dp/{asin}" target="_blank" rel="noopener">Get {title} on Amazon</a>
+    </div>
+
+    {articles}
+
+    {series_more}
+
+    {author_box}
+
+    <p class="disclaimer">{disclaimer}</p>
+
+  </article>
+
+{footer}
+</body>
+</html>

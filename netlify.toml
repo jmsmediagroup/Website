@@ -68,6 +68,17 @@
     Cache-Control = "public, max-age=3600"
 
 [[headers]]
+  for = "/llms-full.txt"
+  [headers.values]
+    Content-Type = "text/plain; charset=utf-8"
+    Cache-Control = "public, max-age=3600"
+
+[[headers]]
+  for = "/assets/og/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+
+[[headers]]
   for = "/robots.txt"
   [headers.values]
     Cache-Control = "public, max-age=3600"

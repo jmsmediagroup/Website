@@ -1,13 +1,16 @@
 ---
 title: "Meal paralysis: why you forget to eat, then cannot decide what to eat"
+seo_title: "ADHD meal paralysis: why you forget to eat"
 slug: adhd-meal-paralysis-forgetting-to-eat
 description: "Standing in front of a full fridge, hungry, unable to pick anything. Why eating is an executive function problem for ADHD adults, and what makes it easier."
 date: 2026-10-21
 keywords: adhd meal paralysis, adhd forgetting to eat, adhd and food, adhd cooking executive dysfunction, adhd eating habits, adhd hunger cues
 book: adhd-eating-reset
+about: [adhd, interoception]
 related:
   - adhd-decision-paralysis
   - adhd-overthinking-2am-spiral
+  - adhd-task-paralysis
 ---
 
 The fridge is full. You are hungry, genuinely hungry, the kind that has started to make you irritable. You open the door, look at everything in it, close the door, and eat a handful of dry cereal standing up.

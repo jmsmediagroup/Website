@@ -1,0 +1,288 @@
+# Glossary of ADHD and autism terms, rendered to /glossary/.
+#
+# entity: a key from ENTITIES in build.py, used as the term's schema sameAs.
+#         Only add one where Wikipedia has a dedicated article for the term.
+# see:    internal pages to read next; the build fails if any do not exist.
+
+- term: ADHD
+  slug: adhd
+  aka: [attention deficit hyperactivity disorder]
+  entity: adhd
+  definition: >-
+    Attention deficit hyperactivity disorder, a lifelong neurodevelopmental condition that affects attention,
+    impulse control, activity levels and the executive functions that organise behaviour. In adults it often
+    shows up less as visible hyperactivity and more as difficulty starting tasks, managing time, regulating
+    emotion and following through.
+  see: [/blog/adhd-diagnosis-as-an-adult-first-year/, /books/late-diagnosed-adhd-workbook/]
+
+- term: The ADHD tax
+  slug: adhd-tax
+  definition: >-
+    A community term for the money, and sometimes time, lost to ADHD-related difficulties: late fees on bills
+    you could afford, forgotten subscriptions, replacing things you already own, and paying extra for convenience
+    when the cheaper option had too many steps. It is not an official financial or clinical term.
+  see: [/blog/adhd-tax-what-it-costs/, /books/adhd-tax/]
+
+- term: Alexithymia
+  slug: alexithymia
+  entity: alexithymia
+  definition: >-
+    Difficulty identifying and describing your own emotions. It is a trait rather than a diagnosis, and it occurs
+    more often in autistic people than in the general population. Someone with alexithymia may notice the
+    physical side of a feeling, like a tight chest, without being able to name the emotion behind it.
+  see: [/blog/autistic-meltdown-vs-shutdown/]
+
+- term: Analysis paralysis
+  slug: analysis-paralysis
+  aka: [decision paralysis]
+  entity: analysis-paralysis
+  definition: >-
+    Being unable to make a decision because you keep comparing options instead of choosing one. With ADHD it
+    often hits small decisions hardest, because they have close options, no deadline and no obvious criterion,
+    so the comparison never has to end.
+  see: [/blog/adhd-decision-paralysis/, /books/adhd-decision-reset/]
+
+- term: ARFID
+  slug: arfid
+  aka: [avoidant/restrictive food intake disorder]
+  entity: arfid
+  definition: >-
+    Avoidant/restrictive food intake disorder, an eating disorder in which intake is limited by sensory
+    sensitivity, fear of consequences such as choking, or low interest in food, rather than by concern about
+    weight or body shape. It occurs at higher rates in autistic people and people with ADHD, and needs
+    professional assessment rather than self-management.
+  see: [/blog/adhd-meal-paralysis-forgetting-to-eat/]
+
+- term: AuDHD
+  slug: audhd
+  definition: >-
+    An informal term for someone who is both autistic and ADHD. It is not a separate diagnosis, since each
+    condition is diagnosed on its own. The word exists because the combination produces conflicts, such as
+    needing routine while craving novelty, that neither diagnosis describes alone.
+  see: [/blog/audhd-autistic-and-adhd/]
+
+- term: Autism
+  slug: autism
+  aka: [autism spectrum disorder, ASD]
+  entity: autism
+  definition: >-
+    A lifelong neurodevelopmental difference affecting social communication, sensory processing, and a
+    preference for predictability and focused interests. Clinically it is called autism spectrum disorder.
+    Many autistic adults prefer the word autistic. Adults who mask are frequently identified late.
+  see: [/blog/autistic-in-adulthood-late-diagnosis/, /books/late-diagnosed-autistic-workbook/]
+
+- term: Autistic burnout
+  slug: autistic-burnout
+  definition: >-
+    A period of long-term exhaustion, loss of previously held skills, and reduced tolerance for sensory input,
+    usually caused by sustained masking and demands that exceed capacity over months or years. It is widely
+    described by autistic adults but is not a formal diagnosis. It differs from depression, although the two
+    can occur together.
+  see: [/blog/autistic-burnout-vs-adhd-burnout-vs-depression/]
+
+- term: Body doubling
+  slug: body-doubling
+  entity: body-doubling
+  definition: >-
+    Doing a task while another person is present, in the room or on a video call, without them helping. Many
+    people with ADHD find it much easier to start and keep going this way, particularly with boring or avoided
+    tasks.
+  see: [/blog/adhd-body-doubling/]
+
+- term: Double empathy problem
+  slug: double-empathy-problem
+  entity: double-empathy
+  definition: >-
+    The idea that communication difficulties between autistic and non-autistic people run in both directions,
+    rather than coming from an autistic deficit alone. Each group can find the other hard to read, and
+    autistic people often communicate easily with one another.
+  see: [/blog/autistic-in-adulthood-late-diagnosis/]
+
+- term: Echolalia
+  slug: echolalia
+  entity: echolalia
+  definition: >-
+    Repeating words or phrases heard elsewhere, either immediately or later. It is common in autism and can
+    serve communication, processing or self-regulation. In adults it often takes the form of quotes or scripts
+    borrowed from films, shows or other people.
+
+- term: Emotional dysregulation
+  slug: emotional-dysregulation
+  entity: emotional-dysregulation
+  definition: >-
+    Difficulty managing the intensity and duration of emotional responses. It is not among the formal
+    diagnostic criteria for ADHD, but it is very commonly reported by adults with ADHD and is a large part of
+    how many of them experience the condition.
+  see: [/blog/rejection-sensitive-dysphoria/]
+
+- term: Executive dysfunction
+  slug: executive-dysfunction
+  aka: [executive function]
+  entity: executive-dysfunction
+  definition: >-
+    Difficulty with the executive functions: the mental processes used to plan, start, organise, switch between
+    and finish tasks, hold information in mind, and manage time. It is central to ADHD and common in autism.
+    It often feels like knowing exactly what to do and being unable to begin.
+  see: [/blog/adhd-task-paralysis/, /blog/adhd-time-blindness/]
+
+- term: Hyperfocus
+  slug: hyperfocus
+  entity: hyperfocus
+  definition: >-
+    Intense absorption in a task that is hard to break, often with lost awareness of time, hunger or tiredness.
+    It is not under voluntary control: it attaches to whatever is interesting or urgent enough, which is not
+    always the thing that needs doing.
+  see: [/blog/adhd-hyperfocus-without-burnout/, /books/adhd-side-hustle/]
+
+- term: Interoception
+  slug: interoception
+  entity: interoception
+  definition: >-
+    The sense of your body's internal state, including hunger, thirst, temperature, needing the toilet, and the
+    physical side of emotions. Differences in interoception are common in autism and ADHD, and they help explain
+    forgetting to eat or only noticing overwhelm once it is already severe.
+  see: [/blog/adhd-meal-paralysis-forgetting-to-eat/]
+
+- term: Late diagnosis
+  slug: late-diagnosis
+  aka: [late identification]
+  definition: >-
+    Being identified as ADHD or autistic in adulthood rather than childhood. It is common among people who masked
+    well, did well at school, or did not match the narrow descriptions used when they were young. It often
+    brings relief and grief at the same time.
+  see: [/blog/adhd-diagnosis-as-an-adult-first-year/, /blog/autistic-in-adulthood-late-diagnosis/]
+
+- term: Masking
+  slug: masking
+  aka: [camouflaging]
+  entity: masking
+  definition: >-
+    Suppressing natural behaviour and performing expected behaviour to fit in: forcing eye contact, scripting
+    conversations, hiding stimming, copying how other people act. It is common in autistic people and also
+    occurs in ADHD. It is tiring to sustain and is strongly associated with burnout.
+  see: [/blog/autistic-masking-and-what-it-costs/, /books/late-diagnosed-autistic-workbook/]
+
+- term: Meal paralysis
+  slug: meal-paralysis
+  definition: >-
+    Being hungry and wanting to eat but being unable to choose food or start preparing it. It is a community
+    term for executive dysfunction applied to eating, and it is often worse when hunger has already become
+    urgent.
+  see: [/blog/adhd-meal-paralysis-forgetting-to-eat/, /books/adhd-eating-reset/]
+
+- term: Meltdown
+  slug: meltdown
+  definition: >-
+    An involuntary reaction to overwhelming stress or sensory input, in which a person loses control of their
+    responses. It may involve crying, shouting or physical agitation. It is not a tantrum, because it is neither
+    chosen nor aimed at getting something.
+  see: [/blog/autistic-meltdown-vs-shutdown/]
+
+- term: Monotropism
+  slug: monotropism
+  entity: monotropism
+  definition: >-
+    A theory of autism proposing that autistic attention tends to concentrate deeply on a small number of
+    interests at once, instead of spreading across many. It is used to explain both the depth of autistic focus
+    and the difficulty of switching between tasks.
+  see: [/blog/audhd-autistic-and-adhd/]
+
+- term: Neurodiversity
+  slug: neurodiversity
+  aka: [neurodivergent]
+  entity: neurodiversity
+  definition: >-
+    The idea that variation in how brains work, including autism and ADHD, is a natural part of human
+    diversity. A neurodivergent person is someone whose brain works differently from the typical pattern.
+
+- term: Rejection sensitive dysphoria
+  slug: rejection-sensitive-dysphoria
+  aka: [RSD, rejection sensitivity]
+  definition: >-
+    Intense emotional pain in response to real or perceived rejection, criticism or failure. The term is widely
+    used in ADHD communities to describe something many people with ADHD recognise immediately. It is not a
+    formal diagnosis and does not appear in diagnostic manuals.
+  see: [/blog/rejection-sensitive-dysphoria/, /books/adhd-overthinking-reset/]
+
+- term: Revenge bedtime procrastination
+  slug: revenge-bedtime-procrastination
+  definition: >-
+    Staying up late, even when tired, to reclaim personal time that the day did not allow. It is common among
+    people with ADHD and anyone whose days are full of other people's demands.
+  see: [/blog/adhd-overthinking-2am-spiral/]
+
+- term: Rumination
+  slug: rumination
+  entity: rumination
+  definition: >-
+    Repetitive, circular thinking about the same worry or event without reaching a conclusion. It feels like
+    problem-solving but produces no decisions, and it is often worst at night when there is nothing else to
+    occupy attention.
+  see: [/blog/adhd-overthinking-2am-spiral/, /books/adhd-overthinking-reset/]
+
+- term: Sensory overload
+  slug: sensory-overload
+  entity: sensory-overload
+  definition: >-
+    When the amount or intensity of sensory input, such as noise, light, touch or smell, exceeds what the brain
+    can process. It can cause distress, irritability, shutdown or meltdown. It is very common in autism and also
+    occurs in ADHD.
+  see: [/blog/stimming-and-sensory-overload/, /blog/autistic-meltdown-vs-shutdown/]
+
+- term: Shutdown
+  slug: shutdown
+  definition: >-
+    A response to overwhelm in which a person withdraws and becomes less responsive, sometimes temporarily losing
+    the ability to speak or move easily. Like a meltdown it is involuntary, but the reaction turns inward rather
+    than outward.
+  see: [/blog/autistic-meltdown-vs-shutdown/]
+
+- term: Special interest
+  slug: special-interest
+  entity: special-interest
+  definition: >-
+    An intense, long-lasting interest that an autistic person finds deeply absorbing. Many autistic adults
+    describe their special interests as a source of joy and regulation rather than simply a hobby.
+
+- term: Spoon theory
+  slug: spoon-theory
+  entity: spoon-theory
+  definition: >-
+    A metaphor in which daily energy is a limited number of spoons, and every task, including small ones, costs
+    some. It began in the chronic illness community and is now widely used by disabled and neurodivergent people
+    to explain why capacity runs out.
+  see: [/blog/autistic-burnout-vs-adhd-burnout-vs-depression/]
+
+- term: Stimming
+  slug: stimming
+  aka: [self-stimulatory behaviour]
+  entity: stimming
+  definition: >-
+    Repetitive movements or sounds, such as rocking, hand-flapping, tapping, humming or fidgeting, used to
+    self-regulate. It is common in autism and also occurs in ADHD. Many autistic adults were trained to suppress
+    it as children.
+  see: [/blog/stimming-and-sensory-overload/]
+
+- term: Task paralysis
+  slug: task-paralysis
+  aka: [ADHD paralysis]
+  definition: >-
+    Being unable to start a task despite wanting or needing to, sometimes to the point where beginning feels
+    physically impossible. It is linked to executive dysfunction and is one of the most commonly described
+    experiences of adult ADHD.
+  see: [/blog/adhd-task-paralysis/, /books/adhd-decision-reset/]
+
+- term: Time blindness
+  slug: time-blindness
+  definition: >-
+    Difficulty sensing the passage of time and estimating how long things will take, commonly reported by people
+    with ADHD. It leads to lateness, missed deadlines and tasks that take far longer than expected. It is a
+    community term rather than a clinical one.
+  see: [/blog/adhd-time-blindness/, /books/late-diagnosed-adhd-workbook/]
+
+- term: Unmasking
+  slug: unmasking
+  definition: >-
+    Gradually reducing masking, usually starting in private and extending selectively to safe people and places.
+    It tends to be slow and partial, and safety has to come first.
+  see: [/blog/autistic-masking-and-what-it-costs/]

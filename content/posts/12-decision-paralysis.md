@@ -1,13 +1,15 @@
 ---
 title: "Decision paralysis: why small choices cost the most"
 slug: adhd-decision-paralysis
-description: "Why an ADHD brain can make a hard decision quickly and then lose forty minutes to choosing a bin bag. How analysis paralysis works and what gets you unstuck."
+description: "Why an ADHD brain can make a big decision quickly, then lose forty minutes choosing a bin bag. How analysis paralysis works and what gets you unstuck."
 date: 2026-10-21
 keywords: adhd decision paralysis, adhd analysis paralysis, adhd cant make decisions, adhd indecision, adhd overwhelm choices, decision fatigue adhd
 book: adhd-decision-reset
+about: [adhd, analysis-paralysis]
 related:
   - adhd-overthinking-2am-spiral
   - adhd-meal-paralysis-forgetting-to-eat
+  - adhd-task-paralysis
 ---
 
 I have changed career on a fortnight's reflection and lost most of an evening to choosing between two almost identical kettles.

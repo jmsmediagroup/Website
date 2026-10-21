@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Page not found — J.M. Struijk</title>
+<meta name="robots" content="noindex, follow">
+{head}
+</head>
+<body>
+{header}
+
+  <article class="page-header not-found">
+    <span class="section-tag">404</span>
+    <h1>This page wandered off. <em>It happens.</em></h1>
+    <p class="page-lede">
+      The link may be old, or the page may have moved. Here are the places most people are looking for.
+    </p>
+    <div class="not-found-links">
+      <a href="/books/">All {book_count} books →</a>
+      <a href="/blog/">All {post_count} articles →</a>
+      <a href="/glossary/">The glossary →</a>
+      <a href="/">Home →</a>
+    </div>
+    <h2>Recent articles</h2>
+    <ul class="not-found-posts">
+{recent}
+    </ul>
+  </article>
+
+{footer}
+</body>
+</html>
