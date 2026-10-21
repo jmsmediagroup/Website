@@ -8,6 +8,7 @@ featured: 1
 keywords: adhd tax, adhd and money, adhd late fees, adhd impulsive spending, adhd forgotten subscriptions, adhd finances
 book: adhd-tax
 about: [adhd]
+topics: [adhd-and-money]
 related:
   - why-adhd-brains-overspend
   - adhd-debt-and-payoff-plans
@@ -86,6 +87,8 @@ Count the last three months.
 Open your statements, write down anything that was a fee, a forgotten renewal, a replacement, or a late charge, and total it. Do not categorise it, do not judge it, do not plan yet. Just get the number.
 
 Most people find it is larger than the feeling they had, and more fixable than they feared, because four or five sources usually account for the bulk of it. That is a tractable problem. The feeling of being bad with money is not.
+
+If you would rather not do it on paper, the [ADHD Tax Calculator](/tools/adhd-tax-calculator/) walks through the same seven categories as the worksheet in the book and adds them up for you.
 
 ## Common questions
 

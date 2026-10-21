@@ -1,0 +1,52 @@
+# ADHD Tax Calculator, rendered to /tools/adhd-tax-calculator/.
+# Categories and line items follow the ADHD Tax Calculator worksheet in
+# Chapter 1 of The ADHD Tax, so the tool and the book give the same answer.
+
+- id: forgetfulness
+  name: Forgetfulness tax
+  blurb: Money paid for things you stopped using but never stopped paying for.
+  items: [Unused subscriptions, Forgotten memberships, Auto-renewals you don't use]
+  tip: One pass through your card statement, cancelling everything you cannot justify, beats any resolution to stay on top of it.
+  link: /blog/adhd-tax-what-it-costs/
+
+- id: time-blindness
+  name: Time blindness tax
+  blurb: Penalties for paying, returning or arriving late, and paying extra to make up time.
+  items: [Late fees on bills and cards, Overdraft fees, Parking tickets and meters, Rush shipping and expedited services, Other time-related penalties]
+  tip: Put every recurring bill on autopay. It turns a monthly memory task into a one-time setup task.
+  link: /blog/adhd-time-blindness/
+
+- id: impulse
+  name: Impulse purchase tax
+  blurb: Spending driven by stimulation or relief rather than by wanting the thing.
+  items: [Online shopping on non-essentials, In-app purchases, Treat-yourself spending, Hobby supplies you don't use]
+  tip: Take saved card details off the two or three sites where most of this happens. A few seconds of friction outlasts many impulses.
+  link: /blog/why-adhd-brains-overspend/
+
+- id: disorganisation
+  name: Disorganisation tax
+  blurb: Buying things you already own because you cannot find them.
+  items: [Duplicate purchases, Replacement items, Lost-item replacements]
+  tip: The fix is usually storage, not willpower. Give the things you keep losing a fixed home.
+  link: /blog/adhd-tax-what-it-costs/
+
+- id: convenience
+  name: Convenience tax
+  blurb: Paying extra because the cheaper option had too many steps on a low-energy day.
+  items: [Food delivery fees and tips, Grocery delivery, Express shipping, Convenience store markups, Ride-sharing instead of a cheaper option]
+  tip: Some of this is a reasonable trade. The part worth fixing is what you pay daily because the cheaper route was never set up.
+  link: /blog/adhd-meal-paralysis-forgetting-to-eat/
+
+- id: avoidance
+  name: Avoidance tax
+  blurb: What it costs to not open the letter, not make the call, not do the form.
+  items: [Penalties from avoided tasks, Extra interest and fees, Missed savings or rebates]
+  tip: The pile is almost always worse than its contents. Open everything in one sitting, ideally with someone else in the room.
+  link: /blog/adhd-debt-and-payoff-plans/
+
+- id: hyperfocus
+  name: Hyperfocus tax
+  blurb: Money spent during bursts of intense interest that faded.
+  items: [New hobby supplies, Abandoned project costs, Courses and training not completed]
+  tip: Put a waiting period on anything bought for a brand-new interest. If it still matters in two weeks, buy it then.
+  link: /blog/adhd-hyperfocus-without-burnout/

@@ -1,6 +1,6 @@
 # J.M. Struijk
 
-> Independent author of practical, non-clinical books and articles for adults with ADHD, autism, and AuDHD. Late-diagnosed with both, and writes from lived experience. Published through JMS Media Group LLC (Wyoming, US). 11 books in print across three series and one standalone guide, available on Amazon, plus 18 long-form articles and a glossary of 32 terms on jmstruijk.com.
+> Independent author of practical, non-clinical books and articles for adults with ADHD, autism, and AuDHD. Late-diagnosed with both, and writes from lived experience. Published through JMS Media Group LLC (Wyoming, US). 11 books in print across three series and one standalone guide, available on Amazon, plus 26 long-form articles and a glossary of 32 terms on jmstruijk.com.
 
 Each book and article targets one specific way ADHD or autism shows up in adult life, rather than offering general productivity advice. Every book stands alone; readers can start anywhere.
 
@@ -15,6 +15,22 @@ Each book and article targets one specific way ADHD or autism shows up in adult 
 - Publisher: JMS Media Group LLC, Wyoming, US
 - Writes about: ADHD in adults, autism in adults, AuDHD, late diagnosis, executive dysfunction, autistic burnout, ADHD and money management, masking, sensory overload, rejection sensitivity, time blindness
 - Full text of every article and book page, for answer engines: https://jmstruijk.com/llms-full.txt
+
+## Start here
+
+- [Start here](https://jmstruijk.com/start/): A guide for new readers, organised by situation (money, debt, wondering about a diagnosis, task paralysis, overthinking, burnout, sensory overload, work, relationships), pointing to the right article and book for each.
+
+## Topics
+
+- [ADHD and money](https://jmstruijk.com/topics/adhd-and-money/): Writing, books and tools on ADHD and money: the ADHD tax, impulsive spending, debt, budgeting that survives a bad month, and earning around your energy.
+- [Everyday ADHD: focus, time and feelings](https://jmstruijk.com/topics/everyday-adhd/): Articles on how ADHD shows up day to day: task paralysis, time blindness, overthinking, rejection sensitivity, decisions, food, work and relationships.
+- [Late diagnosis: ADHD and autism in adulthood](https://jmstruijk.com/topics/late-diagnosis/): For adults who suspect or have just found out they are ADHD or autistic: assessment, online tests, the first year, AuDHD, and why women are often missed.
+- [Autism in adults](https://jmstruijk.com/topics/autism/): Writing on autistic adult life from the inside: masking, stimming and sensory overload, meltdowns and shutdowns, burnout, work, and late identification.
+- [Burnout, sleep and energy](https://jmstruijk.com/topics/burnout-and-energy/): On ADHD and autistic burnout, how it differs from depression, hyperfocus crashes, meltdowns, sleep, and managing energy instead of time.
+
+## Tools
+
+- [ADHD Tax Calculator](https://jmstruijk.com/tools/adhd-tax-calculator/): Free, browser-only calculator for the monthly, yearly and ten-year cost of ADHD-related late fees, forgotten subscriptions, impulse buys, lost items, convenience spending, avoidance and abandoned hyperfocus projects. Uses the seven categories from the Chapter 1 worksheet of The ADHD Tax.
 
 ## Books
 
@@ -63,6 +79,14 @@ Long-form writing on ADHD and autism, from lived experience. Not clinical guidan
 - [ADHD task paralysis: when you cannot start, even though you want to](https://jmstruijk.com/blog/adhd-task-paralysis/): ADHD paralysis is knowing exactly what to do and being unable to begin. Why it happens, why it is not laziness, and how to get over the wall. Published 2026-10-21.
 - [Stimming and sensory overload in autistic adults](https://jmstruijk.com/blog/stimming-and-sensory-overload/): How stimming helps autistic adults regulate, how sensory overload builds through the day, and the small changes that stop it tipping over. Published 2026-10-21.
 - [Autistic meltdown vs shutdown: what is happening, and what helps](https://jmstruijk.com/blog/autistic-meltdown-vs-shutdown/): Meltdowns and shutdowns are involuntary responses to overload, one outward and one inward. What each feels like, and what helps during one. Published 2026-10-21.
+- [ADHD at work: what goes wrong, what helps, and asking for adjustments](https://jmstruijk.com/blog/adhd-at-work/): Why work is where ADHD often costs the most, the adjustments that make a real difference, and how to decide whether to tell your employer. Published 2026-10-21.
+- [Autistic at work: the hidden costs, and the adjustments that help](https://jmstruijk.com/blog/autism-at-work/): Why autistic adults often find work exhausting even when they are good at it, what the real costs are, and the adjustments and conversations that help. Published 2026-10-21.
+- [ADHD in women: why it is missed, and how it actually shows up](https://jmstruijk.com/blog/adhd-in-women/): Why so many women find out they have ADHD in their thirties or forties, how it looks different from the classic picture, and what changes once you know. Published 2026-10-21.
+- [Autism in women: camouflage, late diagnosis, and the wrong labels](https://jmstruijk.com/blog/autism-in-women/): Why many autistic women are identified late or given other diagnoses first, how camouflaging hides autism, and what tends to change once you know. Published 2026-10-21.
+- [ADHD in relationships: when forgetting looks like not caring](https://jmstruijk.com/blog/adhd-and-relationships/): How ADHD shows up in relationships: forgetting read as indifference, the parent-partner trap, rejection sensitivity, and what helps couples work with it. Published 2026-10-21.
+- [ADHD and sleep: why bedtime keeps sliding later](https://jmstruijk.com/blog/adhd-and-sleep/): Why so many ADHD adults feel most awake at night, how a racing mind and revenge bedtime procrastination keep sleep late, and what actually helps. Published 2026-10-21.
+- [How to get assessed for ADHD or autism as an adult](https://jmstruijk.com/blog/adult-adhd-autism-assessment/): What an adult ADHD or autism assessment involves, how to prepare, the routes in the UK and US, and what to do while you wait. Published 2026-10-21.
+- [Online ADHD and autism tests: what they can and cannot tell you](https://jmstruijk.com/blog/online-adhd-autism-tests/): Online ADHD and autism self-tests are screeners, not diagnoses. What a high or low score means, why results mislead, and how to use them well. Published 2026-10-21.
 
 ## Glossary
 
@@ -101,6 +125,20 @@ Plain-language definitions, each linked to a longer article where one exists.
 - [Time blindness](https://jmstruijk.com/glossary/#time-blindness): Difficulty sensing the passage of time and estimating how long things will take, commonly reported by people with ADHD.
 - [Unmasking](https://jmstruijk.com/glossary/#unmasking): Gradually reducing masking, usually starting in private and extending selectively to safe people and places.
 
+## Resource directory
+
+A checked directory of 43 external organisations and services for ADHD and autistic adults, by country where relevant: https://jmstruijk.com/resources/
+
+- [If you need help right now](https://jmstruijk.com/resources/#crisis): 6 entries, including 988 Suicide & Crisis Lifeline, 9-8-8 Suicide Crisis Helpline, Samaritans.
+- [ADHD organisations](https://jmstruijk.com/resources/#adhd-organisations): 5 entries, including ADDA, Attention Deficit Disorder Association, CHADD, ADHD UK.
+- [Autism organisations](https://jmstruijk.com/resources/#autism-organisations): 5 entries, including Autistic Self Advocacy Network (ASAN), Autistic Women & Nonbinary Network (AWN), National Autistic Society.
+- [Getting assessed as an adult](https://jmstruijk.com/resources/#assessment): 7 entries, including NHS: ADHD in adults, NHS: Autism assessments, ADHD UK: Right to Choose.
+- [Self-screening questionnaires](https://jmstruijk.com/resources/#screeners): 2 entries, including ADDA Adult ADHD Test, Embrace Autism tests.
+- [Finding a professional](https://jmstruijk.com/resources/#professionals): 3 entries, including CHADD Professional Directory, ADHD Coaches Organization, Psychology Today therapist directory.
+- [Peer support and body doubling](https://jmstruijk.com/resources/#community): 3 entries, including Adult ADHD community (CHADD on HealthUnlocked), Women with ADHD community (CHADD on HealthUnlocked), Focusmate.
+- [Work and reasonable adjustments](https://jmstruijk.com/resources/#work): 6 entries, including Job Accommodation Network (JAN), JAN: ADHD accommodation ideas, JAN: Autism accommodation ideas.
+- [Free debt and money advice](https://jmstruijk.com/resources/#money): 6 entries, including NFCC, National Foundation for Credit Counseling, StepChange, National Debtline.
+
 ## Free resources
 
 - [The ADHD Survival Kit](https://jmstruijk.com/#toolkit): A free printable PDF of tools that work on a bad week. Sent by email.
@@ -116,6 +154,186 @@ Plain-language definitions, each linked to a longer article where one exists.
 ---
 
 # Full text
+
+## Topic: ADHD and money
+
+URL: https://jmstruijk.com/topics/adhd-and-money/
+
+Money is where ADHD tends to leave the clearest evidence. Late fees on bills you could afford, subscriptions you meant to cancel, impulse purchases you cannot remember wanting, and debt plans abandoned in month three. None of it comes from not caring about money. It comes from the same executive function that ADHD affects everywhere else, applied to a part of life with a running total.
+
+The writing collected here starts from that point. It treats money problems as patterns with causes rather than as failures of character, and it looks for systems that keep working on the weeks when you do not: autopay instead of memory, friction placed where your spending is worst, plans built to restart rather than to be followed perfectly.
+
+If you are new to this, the article on [the ADHD tax](https://jmstruijk.com/blog/adhd-tax-what-it-costs/) is the place to begin, and the [ADHD Tax Calculator](https://jmstruijk.com/tools/adhd-tax-calculator/) will show you roughly what it is costing you. If you are carrying debt, the free not-for-profit services listed below will look at your situation for nothing.
+
+## Topic: Everyday ADHD: focus, time and feelings
+
+URL: https://jmstruijk.com/topics/everyday-adhd/
+
+Most of ADHD in adult life is not dramatic. It is the email you have meant to send for nine days, the meeting you were late for despite thinking about it all morning, the menu you could not choose from, the comment from a colleague that you replayed until two in the morning.
+
+These are the articles about that everyday layer: starting things, feeling time pass, making decisions, eating, sleeping, working, and the emotional intensity that sits underneath much of it. Each one tries to explain what is actually going on before suggesting anything, because most of the standard advice fails by misreading the problem. Trying harder does not fix a task you cannot start, and a better planner does not fix a sense of time that splits into now and not now.
+
+A good place to begin is [task paralysis](https://jmstruijk.com/blog/adhd-task-paralysis/), since being unable to start sits behind so much else, followed by [time blindness](https://jmstruijk.com/blog/adhd-time-blindness/) and [rejection sensitive dysphoria](https://jmstruijk.com/blog/rejection-sensitive-dysphoria/).
+
+## Topic: Late diagnosis: ADHD and autism in adulthood
+
+URL: https://jmstruijk.com/topics/late-diagnosis/
+
+Finding out as an adult that you are ADHD, autistic, or both tends to arrive as two things at once. There is relief, because a lifetime of feeling slightly out of step suddenly has a reason. And there is grief, for the years spent believing the problem was your character, and for the version of you who tried so hard at things that were never going to work the way they were being attempted.
+
+This is the collection for that stage, whether you are still wondering, waiting for an assessment, or a few months past the answer. It covers how adult assessment works and how to prepare for it, what online tests can and cannot tell you, why so many women in particular were missed, and what the first year after finding out is usually like.
+
+If you are only starting to wonder, read [what online tests can tell you](https://jmstruijk.com/blog/online-adhd-autism-tests/) and [how to get assessed as an adult](https://jmstruijk.com/blog/adult-adhd-autism-assessment/). If you already know, [the first year after an ADHD diagnosis](https://jmstruijk.com/blog/adhd-diagnosis-as-an-adult-first-year/) and [finding out you are autistic](https://jmstruijk.com/blog/autistic-in-adulthood-late-diagnosis/) are where most people find themselves.
+
+## Topic: Autism in adults
+
+URL: https://jmstruijk.com/topics/autism/
+
+Most writing about autism describes it from the outside, in terms of what other people can observe. This collection tries to describe it from the inside: what masking costs, why a noisy office can be harder than the work itself, what a shutdown feels like, and why a day that looked easy can take three days to recover from.
+
+Many of the adults these articles are written for were identified late, often after decades of camouflaging so effectively that even they did not see it. For them, the useful questions are rarely about deficits. They are about cost and fit: where the effort is going, which environments drain it fastest, and what changes make daily life less expensive to run.
+
+If you are new to this, start with [finding out you are autistic in adulthood](https://jmstruijk.com/blog/autistic-in-adulthood-late-diagnosis/) and [masking, and what it costs](https://jmstruijk.com/blog/autistic-masking-and-what-it-costs/). The autistic-led organisations listed below are, in my experience, the best next step after anything written here.
+
+## Topic: Burnout, sleep and energy
+
+URL: https://jmstruijk.com/topics/burnout-and-energy/
+
+Neurodivergent brains tend to cost more to run. Masking, filtering sensory input, starting tasks through sheer effort, compensating for difficulties nobody else can see: all of it draws on the same limited supply, and most of it does not register as work. That is why burnout so often seems to come from nowhere.
+
+The articles here are about that supply. How to tell autistic burnout from ADHD burnout and from depression, which need very different responses. Why a brilliant hyperfocus day can cost you the rest of the week. Why sleep keeps sliding later, and why a meltdown or a shutdown says something about load rather than character.
+
+The thread running through all of them is that rest only works when it matches the kind of depletion, and that energy is a more useful thing to manage than time. If you are struggling right now, please look at the crisis support listed below, and start with [telling the three kinds of burnout apart](https://jmstruijk.com/blog/autistic-burnout-vs-adhd-burnout-vs-depression/).
+
+## Tool: ADHD Tax Calculator
+
+URL: https://jmstruijk.com/tools/adhd-tax-calculator/
+
+## What counts as the ADHD tax
+
+The ADHD tax is money that leaves your account because of how your brain works rather than because of anything you chose to buy. Late fees on bills you could afford, subscriptions you meant to cancel, a second charger because the first one is somewhere in the house. None of it is a decision, which is why it rarely shows up as a line in a budget.
+
+The seven categories here come from the ADHD Tax Calculator worksheet in Chapter 1 of [The ADHD Tax](https://jmstruijk.com/books/adhd-tax/). If you prefer paper, the same worksheet is in the free [printable worksheets](https://jmstruijk.com/adhd-tax-worksheets/).
+
+### Reading your result
+
+The ten-year figure is there to make the number concrete, not to make you feel bad. Most people find the total is larger than they expected and more fixable than they feared, because a handful of sources usually account for most of it.
+
+Start with your top category and nothing else. For most people that means putting bills on autopay or doing one subscription audit. One change that sticks is worth more than a plan to fix everything. The article on [what the ADHD tax costs](https://jmstruijk.com/blog/adhd-tax-what-it-costs/) explains each category in more depth.
+
+### Common questions
+
+### What is the ADHD tax?
+
+A community term for the money lost to ADHD-related difficulties: late fees, forgotten subscriptions, replacing things you already own, and paying extra for convenience when the cheaper option had too many steps. It is not an official financial or clinical term.
+
+### Is my information stored or sent anywhere?
+
+Nothing you enter is sent anywhere. The calculation happens in your browser, and your numbers are remembered only on this device, if your browser allows it, so you can come back to them. The Clear button removes them.
+
+### How accurate is the result?
+
+As accurate as your estimates. Working from three months of bank and card statements and dividing by three gives a fair monthly figure. Rough numbers are fine, because the point is to see the pattern.
+
+### Where do the categories come from?
+
+From the ADHD Tax Calculator worksheet in Chapter 1 of The ADHD Tax by J.M. Struijk. The calculator uses the same seven categories so the tool and the book give the same answer.
+
+### What should I do with my total?
+
+Pick the single largest category and fix one thing in it, usually autopay for late fees or a subscription audit for forgotten renewals. The tip shown for each of your top categories is a good first move.
+
+## Resource directory
+
+URL: https://jmstruijk.com/resources/
+
+### If you need help right now
+
+If you are in immediate danger, call your local emergency number. These services offer free, confidential support from trained people when things feel unmanageable.
+
+- 988 Suicide & Crisis Lifeline (United States): Free, confidential support 24 hours a day from trained crisis counsellors, by phone, text or online chat. Call, text or chat 988. https://988lifeline.org/
+- 9-8-8 Suicide Crisis Helpline (Canada): Free support for anyone thinking about suicide, available 24 hours a day, every day of the year. Call or text 9-8-8. https://988.ca/
+- Samaritans (UK and Ireland): A listening service for anyone who is struggling, whatever the reason. Call 116 123 for free. https://www.samaritans.org/
+- Lifeline (Australia): Crisis support and suicide prevention, with phone, text and online options. Call 13 11 14. https://www.lifeline.org.au/
+- 1737, Need to talk? (New Zealand): Free, confidential support around the clock from trained counsellors for anyone in New Zealand. Call or text 1737. https://1737.org.nz/
+- Find A Helpline (International): A directory of verified crisis helplines in other countries, searchable by location and topic. https://findahelpline.com/
+
+### ADHD organisations
+
+National charities and nonprofits for adults with ADHD. Most offer free information, and several run peer support groups, helplines or directories of professionals.
+
+- ADDA, Attention Deficit Disorder Association (International): An organisation focused specifically on adults with ADHD, offering virtual support groups, webinars, a professional directory, and body doubling sessions for members. https://add.org/
+- CHADD (United States): A US nonprofit that runs the National Resource Center on ADHD, with fact sheets, local chapters, online communities, and directories of ADHD professionals and centres. https://chadd.org/
+- ADHD UK (United Kingdom): A UK charity with information on getting diagnosed, including the NHS Right to Choose route, plus guidance on work and education and online support groups. https://adhduk.co.uk/
+- CADDAC, Centre for ADHD Awareness Canada (Canada): A national charity working on ADHD awareness, education and advocacy across Canada. https://caddac.ca/
+- ADHD Australia (Australia): A national organisation providing ADHD information, resources and community support for individuals, families, educators and employers. https://www.adhdaustralia.org.au/
+
+### Autism organisations
+
+Several of these are run by autistic people themselves, which tends to show in how they write about autism: as a difference to understand and accommodate rather than a problem to fix.
+
+- Autistic Self Advocacy Network (ASAN) (United States): A nonprofit run by and for autistic people, working on policy and self-advocacy, with resources on health care, education, community living and accessibility. https://autisticadvocacy.org/
+- Autistic Women & Nonbinary Network (AWN) (United States): A nonprofit focused on autistic women, girls, nonbinary and trans people, working from a neurodiversity and disability justice perspective. https://awnnetwork.org/
+- National Autistic Society (United Kingdom): The UK's main autism charity, with advice across fourteen topic areas from diagnosis and employment to money and relationships, an online community, and an autism services directory. https://www.autism.org.uk/
+- Reframing Autism (Australia): An autistic-led charity with a free Autistic Welcome Pack and a free Autism Essentials course, plus resources for people who are newly identified or still questioning. https://reframingautism.org.au/
+- Autistica (United Kingdom): A UK autism research and campaigning charity focused on helping autistic people live long, healthy lives. https://www.autistica.org.uk/
+
+### Getting assessed as an adult
+
+Official information on how adult assessment works. Routes, waits and costs differ a great deal between countries, so start with the source for where you live.
+
+- NHS: ADHD in adults (United Kingdom): How adult ADHD shows up and how assessment works on the NHS, starting with an appointment with a GP. https://www.nhs.uk/conditions/adhd-adults/
+- NHS: Autism assessments (United Kingdom): What an NHS autism assessment involves and how to ask for one as an adult. https://www.nhs.uk/conditions/autism/assessments/
+- ADHD UK: Right to Choose (England): In England you have a legal right to choose who carries out your NHS ADHD or autism assessment, which can shorten long local waits. This guide explains how to ask your GP. https://adhduk.co.uk/right-to-choose/
+- NICE guideline NG87: ADHD (United Kingdom): The clinical guideline UK services follow for diagnosing and managing ADHD, including in adults. https://www.nice.org.uk/guidance/ng87
+- NICE guideline CG142: Autism in adults (United Kingdom): The clinical guideline for recognising, referring and diagnosing autism in adults in the UK. https://www.nice.org.uk/guidance/cg142
+- NIMH: ADHD (United States): Plain-language information on ADHD from the US National Institute of Mental Health. https://www.nimh.nih.gov/health/topics/attention-deficit-hyperactivity-disorder-adhd
+- NIMH: Autism spectrum disorder (United States): Plain-language information on autism from the US National Institute of Mental Health. https://www.nimh.nih.gov/health/topics/autism-spectrum-disorders-asd
+
+### Self-screening questionnaires
+
+Screeners can tell you whether an assessment is worth pursuing. They cannot diagnose you, and both sites below say so plainly. My article on what online ADHD and autism tests can tell you covers how to read the results.
+
+- ADDA Adult ADHD Test (International): A short online self-screener based on the World Health Organization's Adult ADHD Self-Report Scale (ASRS). ADDA describes it as a screening tool, not a diagnosis. https://add.org/adhd-test/
+- Embrace Autism tests (International): Free online versions of widely used autism questionnaires, including the AQ, RAADS-R and the CAT-Q, which measures camouflaging. The site notes its content is not medical advice. https://embrace-autism.com/tests
+
+### Finding a professional
+
+Directories for finding clinicians, therapists and coaches who work with ADHD and autistic adults.
+
+- CHADD Professional Directory (United States): A searchable directory of professionals and service providers working with ADHD. https://chadd.org/professional-directory/
+- ADHD Coaches Organization (International): The professional association for ADHD coaches, with a searchable directory of coaches. https://www.adhdcoaches.org/
+- Psychology Today therapist directory (United States): A large directory of therapists and counsellors, searchable by location, speciality and insurance. https://www.psychologytoday.com/us/therapists
+
+### Peer support and body doubling
+
+Talking to people who already understand saves a great deal of explaining. Virtual body doubling is included here because, for a lot of ADHD adults, other people's presence is what makes starting possible.
+
+- Adult ADHD community (CHADD on HealthUnlocked) (International): A free online peer community for adults with ADHD, run with CHADD. https://healthunlocked.com/adult-ADHD
+- Women with ADHD community (CHADD on HealthUnlocked) (International): A free online peer community for women with ADHD, run with CHADD. https://healthunlocked.com/adhd-women
+- Focusmate (International): Virtual body doubling: short video sessions where you and another person each work on your own task. There is a free tier. https://www.focusmate.com/
+
+### Work and reasonable adjustments
+
+Your rights at work depend on where you live and who employs you. These are the official and expert sources, and they are a better guide than anything general I could write.
+
+- Job Accommodation Network (JAN) (United States): Free, expert and confidential guidance on workplace accommodations, for employees and employers. https://askjan.org/
+- JAN: ADHD accommodation ideas (United States): Practical workplace accommodation ideas for ADHD, organised by the difficulty they address. https://askjan.org/disabilities/Attention-Deficit-Hyperactivity-Disorder-AD-HD.cfm
+- JAN: Autism accommodation ideas (United States): Practical workplace accommodation ideas for autistic employees. https://askjan.org/disabilities/Autism-Spectrum.cfm
+- EEOC: Disability-related resources (United States): The US federal agency that enforces disability discrimination law at work. Its employment protections apply to employers with 15 or more employees. https://www.eeoc.gov/eeoc-disability-related-resources
+- Acas: Reasonable adjustments at work (United Kingdom): What reasonable adjustments are and when the Equality Act 2010 requires an employer to make them. https://www.acas.org.uk/reasonable-adjustments
+- Access to Work (England, Scotland and Wales): A UK government scheme that can fund support at work for disabled people and people with health conditions. Northern Ireland has a separate system. https://www.gov.uk/access-to-work
+
+### Free debt and money advice
+
+Not-for-profit services that will look at your situation for free. If anyone wants a fee to manage your debt, try one of these first.
+
+- NFCC, National Foundation for Credit Counseling (United States): A network of non-profit credit counselling agencies that can help you work out a plan for your debt. https://www.nfcc.org/
+- StepChange (United Kingdom): A UK debt charity offering free debt advice and fee-free debt management. https://www.stepchange.org/
+- National Debtline (England and Wales): Free, confidential debt advice by phone, online chat or self-help tools. https://nationaldebtline.org/
+- MABS, Money Advice and Budgeting Service (Ireland): Free, confidential help with money, debt and budgeting for people in Ireland. https://www.mabs.ie/en/
+- National Debt Helpline (Australia): Free, confidential, not-for-profit financial counselling and step-by-step guides. https://ndh.org.au/
+- Credit Counselling Canada (Canada): A national association of not-for-profit credit counselling agencies. https://creditcounsellingcanada.ca/
 
 ## Book: The ADHD Tax
 
@@ -154,7 +372,7 @@ There is no shaming in it and no neurotypical budgeting template with ADHD stick
 
 ### Where it fits
 
-The ADHD Tax diagnoses where the money goes. [The ADHD Budget Workbook](https://jmstruijk.com/books/adhd-budget-workbook/) is the guided 12-week version of putting a system in place, and [The ADHD Debt Payoff Workbook](https://jmstruijk.com/books/adhd-debt-payoff-workbook/) goes deeper on clearing debt. If you want the short version first, the article on [what the ADHD tax actually costs](https://jmstruijk.com/blog/adhd-tax-what-it-costs/) covers the core idea.
+The ADHD Tax diagnoses where the money goes. [The ADHD Budget Workbook](https://jmstruijk.com/books/adhd-budget-workbook/) is the guided 12-week version of putting a system in place, and [The ADHD Debt Payoff Workbook](https://jmstruijk.com/books/adhd-debt-payoff-workbook/) goes deeper on clearing debt. If you want the short version first, the article on [what the ADHD tax actually costs](https://jmstruijk.com/blog/adhd-tax-what-it-costs/) covers the core idea, and the free [ADHD Tax Calculator](https://jmstruijk.com/tools/adhd-tax-calculator/) uses the same categories as the book's Chapter 1 worksheet.
 
 ### Common questions
 
@@ -728,6 +946,8 @@ Count the last three months.
 Open your statements, write down anything that was a fee, a forgotten renewal, a replacement, or a late charge, and total it. Do not categorise it, do not judge it, do not plan yet. Just get the number.
 
 Most people find it is larger than the feeling they had, and more fixable than they feared, because four or five sources usually account for the bulk of it. That is a tractable problem. The feeling of being bad with money is not.
+
+If you would rather not do it on paper, the [ADHD Tax Calculator](https://jmstruijk.com/tools/adhd-tax-calculator/) walks through the same seven categories as the worksheet in the book and adds them up for you.
 
 ### Common questions
 
@@ -2352,6 +2572,660 @@ Reduce the input around them, speak very little and calmly, avoid touching them 
 ### Can meltdowns be prevented?
 
 Not always, but they can often be made less frequent by reducing the overall load and by learning your early warning signs. [The Late-Diagnosed Autistic Workbook](https://jmstruijk.com/books/late-diagnosed-autistic-workbook/) covers reading your energy and sensory load before it reaches zero.
+
+## Article: ADHD at work: what goes wrong, what helps, and asking for adjustments
+
+URL: https://jmstruijk.com/blog/adhd-at-work/
+Published: 2026-10-21
+Summary: Why work is where ADHD often costs the most, the adjustments that make a real difference, and how to decide whether to tell your employer.
+
+Most of us with ADHD have a work story that goes the same way. A new job starts brilliantly. You are full of ideas, you learn fast, people notice. Then the novelty wears off, the work becomes routine, the admin piles up, and somewhere around month six someone uses the phrase "attention to detail" in a review.
+
+Work tends to be where ADHD costs the most, because it combines almost everything ADHD finds hard: sustained attention on things that are not interesting, deadlines that are weeks away, open-plan noise, long meetings, and a constant stream of small administrative tasks that nobody notices until they are not done.
+
+### Key takeaways
+
+- Work often exposes ADHD more than any other part of life, because it rewards consistency over intensity.
+- The problems cluster around starting, time, routine admin, and environments full of interruptions.
+- Many of the most useful adjustments are cheap: written instructions, quieter space, flexible timing, regular check-ins.
+- In many countries, employers have legal duties to make reasonable adjustments, but the rules differ by place and employer size.
+- Telling your employer is a personal decision, and you can ask for specific adjustments without disclosing a diagnosis.
+
+### Where it tends to go wrong
+
+The first pressure point is boring, recurring work. Expense reports, timesheets, filing, updating the system nobody likes. An ADHD brain can do difficult, interesting work at a high level and still fall badly behind on admin that takes ten minutes, because nothing about it engages attention.
+
+Time is the second. Projects with distant deadlines feel weightless until they suddenly do not, which produces a pattern of last-minute heroics that looks unreliable from outside, even when the result is good.
+
+Then there is the environment. Open-plan offices, constant messages, back-to-back meetings. Every interruption costs more than it should, because getting back into a task is itself an effort. A day can be completely full and produce almost nothing.
+
+Feedback is a quieter problem. If rejection sensitivity is part of your ADHD, an ordinary review comment can land very hard, and the fear of the next one can start shaping everything you do.
+
+And there is the inconsistency. Some weeks you are the most productive person in the building. Other weeks you cannot make yourself start anything. Most workplaces measure the average, and they are much less forgiving of the troughs than they are impressed by the peaks.
+
+### What actually helps
+
+The adjustments that help most are rarely dramatic. They are small changes that take load off the parts of the job ADHD finds hardest.
+
+Written instructions and agreed priorities, so you are not relying on remembering a conversation. A short follow-up email after a meeting, summarising what was decided and who is doing what, does a surprising amount of work.
+
+Somewhere quieter to work, or noise-cancelling headphones, or permission to work from home for focused tasks. Reducing interruptions is often worth more than any productivity system.
+
+Breaking large projects into smaller pieces with their own deadlines. A project due in eight weeks is invisible. Eight checkpoints, one a week, are not.
+
+Regular short check-ins with a manager. Not to be monitored, but to turn distant deadlines into near ones and catch drift early.
+
+Flexibility over when you work, where that is possible. Many people with ADHD have reliable windows of good focus, and being able to put demanding work into them changes output dramatically.
+
+And tools that move things out of your head: shared task lists, calendar reminders, templates for recurring work. The less the job depends on memory, the better ADHD tends to do in it.
+
+> The most useful adjustment is usually the one that removes a reliance on remembering.
+
+### Your rights, briefly
+
+I am not a lawyer, and the rules depend heavily on where you live, so treat this as a pointer rather than advice.
+
+In the United States, the Americans with Disabilities Act can require employers to provide reasonable accommodations, and its employment protections apply to employers with 15 or more employees. The Job Accommodation Network offers free, confidential guidance on what accommodations might help.
+
+In the United Kingdom, the Equality Act 2010 sets out when employers must make reasonable adjustments, and Acas explains how that works in practice. In England, Scotland and Wales, the Access to Work scheme can fund support at work, and Northern Ireland has its own system.
+
+Other countries have their own frameworks. The [resources directory](https://jmstruijk.com/resources/#work) links to the official sources I trust.
+
+### Whether to tell your employer
+
+There is no universally right answer, and anyone who tells you otherwise is not weighing your situation.
+
+Disclosing can give you access to formal adjustments and legal protection, and some people find it a relief to stop hiding. It can also change how you are seen, and not every workplace handles it well.
+
+A middle route works for many people: ask for the specific adjustment without naming a diagnosis. "I do my best work with written priorities; could we confirm tasks by email after our meetings?" is a reasonable request in any workplace, and it gets you the help without the disclosure. If that is not enough, or you need formal protection, you can always disclose later.
+
+If you do disclose, it usually goes better framed around solutions than around difficulties. Here is what I find hard, here is what helps, here is what I am asking for.
+
+### Choosing work that fits
+
+Adjustments help, but fit helps more. Roles with variety, visible results, clear short-term goals and some autonomy tend to suit ADHD better than roles built on long stretches of routine work with distant feedback. That does not mean every person with ADHD should be a firefighter or start a business. It does mean that struggling in a particular job may say more about the job than about you.
+
+### Common questions
+
+### Should I tell my employer I have ADHD?
+
+It depends on your workplace, your legal protections and what you need. Disclosure can give you access to formal adjustments and protection, but it carries some risk depending on the culture. Many people start by asking for specific adjustments without disclosing, and disclose later only if they need to.
+
+### What are reasonable adjustments for ADHD?
+
+Common examples include written instructions, a quieter workspace or noise-cancelling headphones, flexible hours or remote work for focused tasks, breaking projects into smaller deadlines, and regular check-ins. The Job Accommodation Network publishes a longer list of ideas organised by the difficulty they address.
+
+### Do I need a diagnosis to ask for adjustments?
+
+Not to ask. Many adjustments are reasonable requests in any workplace. Formal legal protection usually depends on meeting a legal definition of disability where you live, and evidence may help. Official sources such as JAN in the US or Acas in the UK can explain the specifics.
+
+### Why do I do brilliantly at the start of a job, then struggle?
+
+Novelty and challenge engage ADHD attention, and both fade as a role becomes routine. The learning phase can show you at your best, while the maintenance phase demands the consistency ADHD finds hardest. Building variety and short-term goals into the role helps more than trying to force consistency.
+
+### Where can I find out about my rights at work?
+
+The [resources directory](https://jmstruijk.com/resources/#work) lists official and expert sources by country, including the Job Accommodation Network in the US, and Acas and Access to Work in the UK. [The Late-Diagnosed ADHD Workbook](https://jmstruijk.com/books/late-diagnosed-adhd-workbook/) has a section on self-advocacy with wording you can borrow.
+
+## Article: Autistic at work: the hidden costs, and the adjustments that help
+
+URL: https://jmstruijk.com/blog/autism-at-work/
+Published: 2026-10-21
+Summary: Why autistic adults often find work exhausting even when they are good at it, what the real costs are, and the adjustments and conversations that help.
+
+Plenty of autistic adults are very good at their jobs. Thorough, accurate, honest, deeply knowledgeable about the things they work on. And plenty of them are exhausted by work in a way that has very little to do with the work itself.
+
+The tasks are often the easy part. The hard part is everything around them: the office, the meetings, the small talk, the unwritten rules, the constant performance of being an easy colleague.
+
+### Key takeaways
+
+- For many autistic adults, the cost of work comes from the environment and the social layer, not the tasks.
+- Masking at work is common, effective and expensive, and it is a frequent route into burnout.
+- Sensory adjustments and clear communication are usually the most valuable and the cheapest to provide.
+- Recruitment processes often test social performance rather than ability, which filters out capable autistic people.
+- Legal rights to adjustments exist in many countries, and you can ask for specific changes without disclosing.
+
+### Where the cost actually comes from
+
+Sensory load is usually first. Open-plan offices combine noise, overhead lighting, movement in your peripheral vision, strong smells from the kitchen and someone else's phone conversation. You can be completely capable of the work and still spend most of your energy filtering the room.
+
+The social layer is next. Small talk in the kitchen, lunch with the team, knowing when a joke is a joke, reading what your manager meant rather than what they said. Each interaction requires translation, and translation is effort.
+
+Then the unwritten rules. Many workplaces run on expectations nobody states: how quickly to reply to messages, how direct you can be, who actually decides things. Autistic people often follow the written rules exactly and get caught out by the unwritten ones.
+
+Uncertainty adds to all of it. Last-minute meeting changes, vague instructions, shifting priorities. Each one costs more than it seems to from outside.
+
+And masking runs underneath everything. Monitoring your face, rehearsing what to say, suppressing movement you would normally use to regulate. It works, which is why people do it, and it is exhausting, which is why so many autistic adults reach burnout through work.
+
+> The work might take six hours. Being seen to fit in while doing it takes the rest of the day.
+
+### Adjustments that help
+
+The most useful changes tend to be cheap and specific.
+
+Sensory adjustments come first. A quieter desk away from the kitchen and the walkways, permission to wear noise-cancelling headphones, softer lighting or a desk lamp instead of overhead fluorescents, the option to work from home on demanding days.
+
+Clear, written communication. Instructions in writing, agendas before meetings, decisions confirmed by email afterwards. This removes guesswork and gives you something to refer back to.
+
+Notice of change. Knowing about schedule changes in advance, even by a day, makes a large difference to how much they cost.
+
+Explicit expectations. What does good work look like in this role? How fast should messages be answered? What counts as urgent? Unwritten rules made written.
+
+Flexibility around social events. Team lunches and away-days can be optional, or attended briefly, without it being treated as a lack of commitment.
+
+A named person to ask. Someone you can check things with directly, rather than having to decode what is expected.
+
+### Interviews
+
+Recruitment is often where autistic people are filtered out before ability is ever tested. Traditional interviews reward eye contact, confident small talk and quick answers to hypothetical questions, none of which predict whether someone can do the job.
+
+Things that help: asking for the questions in advance, a work sample or practical task instead of, or alongside, the interview, extra time, or a written format. Many employers will agree if asked, and some now offer these routinely.
+
+### Your rights, briefly
+
+I am not a lawyer, and this varies by country, so use it as a starting point. In the United States, the Americans with Disabilities Act can require reasonable accommodations, with employment protections applying to employers of 15 or more people, and the Job Accommodation Network gives free, confidential guidance. In the United Kingdom, the Equality Act 2010 sets out when employers must make reasonable adjustments, and Access to Work can fund support in England, Scotland and Wales. The [resources directory](https://jmstruijk.com/resources/#work) links to the official sources.
+
+### Telling your employer
+
+Disclosing can make adjustments easier to get and can give legal protection. It can also change how you are treated, and workplaces vary enormously in how well they handle it.
+
+You can ask for many adjustments without disclosing anything. "I concentrate much better somewhere quieter; could I move to the desk by the window?" is a reasonable request on its own terms. If you need formal adjustments or protection later, you can disclose then.
+
+### Common questions
+
+### Should I tell my employer I am autistic?
+
+That depends on your workplace, your legal protections and what you need. Disclosure can make formal adjustments easier to get, while asking for specific changes without disclosing works well in many places. It is your decision, and you can change it later.
+
+### What reasonable adjustments help autistic employees?
+
+Common examples include a quieter workspace, noise-cancelling headphones, adjusted lighting, written instructions and agendas, advance notice of changes, clearly stated expectations, flexible hours or remote work, and optional social events. The Job Accommodation Network lists more ideas.
+
+### Why is work so exhausting when I am good at my job?
+
+For many autistic adults, the effort goes into the environment and the social layer: filtering sensory input, translating communication, following unwritten rules and masking. That load continues all day regardless of how easy the tasks are, and it is a common route into burnout.
+
+### How can I make job interviews easier?
+
+Ask for the questions in advance, a practical task or work sample, extra time, or a written format. Many employers will agree to these if asked. Explaining that you communicate best in writing is a reasonable request without needing to disclose a diagnosis.
+
+### Where can I find out about my rights?
+
+The [resources directory](https://jmstruijk.com/resources/#work) lists official and expert sources, including the Job Accommodation Network, Acas and Access to Work. [The Late-Diagnosed Autistic Workbook](https://jmstruijk.com/books/late-diagnosed-autistic-workbook/) includes self-advocacy scripts and a section on accommodations.
+
+## Article: ADHD in women: why it is missed, and how it actually shows up
+
+URL: https://jmstruijk.com/blog/adhd-in-women/
+Published: 2026-10-21
+Summary: Why so many women find out they have ADHD in their thirties or forties, how it looks different from the classic picture, and what changes once you know.
+
+For a long time the picture of ADHD was a boy who could not sit still in class. That picture is accurate for some children. It also left a great many girls without an explanation, and many of them grew into women who were told they were anxious, disorganised, too emotional, or simply not trying hard enough.
+
+A lot of women now find out about their ADHD in their thirties or forties, often after a child is diagnosed, or after life finally asks more than their coping strategies can supply.
+
+### Key takeaways
+
+- ADHD in women is frequently missed because it often shows up as inattention and internal restlessness rather than visible hyperactivity.
+- Many women build elaborate coping systems that hide the difficulty until demands outgrow them.
+- Anxiety and depression are often diagnosed first, sometimes with the ADHD underneath never examined.
+- Many women describe their symptoms changing across hormonal shifts, which is worth raising with a clinician.
+- Late identification usually brings relief and grief together, and both deserve room.
+
+### Why it gets missed
+
+The quiet presentation is the main reason. Inattentive ADHD does not disrupt a classroom. A girl who daydreams, loses things, and works in frantic bursts before deadlines may be called dreamy or careless, but she is rarely referred for assessment.
+
+Hyperactivity, where it exists, often turns inward. Instead of running around, it shows up as a racing mind, constant talking, fidgeting that is easy to hide, or an inability to relax.
+
+Then there is compensation. Many girls learn early that being disorganised is unacceptable and build intensive systems to avoid it: lists, overpreparation, staying up late to catch up, perfectionism. Those systems work, at a cost, and the cost is invisible. From outside she looks capable. From inside she is working twice as hard to stay level.
+
+And the effects often get labelled as something else. Anxiety, depression and low self-esteem are common responses to years of struggling without an explanation, and they are frequently what gets treated, while the ADHD driving them goes unexamined.
+
+### How it often shows up in adulthood
+
+Every person is different, and none of this is a checklist. These are patterns many women describe.
+
+A sense of running constantly behind, despite effort that looks excessive to others. Mental clutter: dozens of open loops, half-finished tasks, things to remember that never quite get done. Emotional intensity, including rejection sensitivity, which can make criticism or perceived disapproval hit unusually hard.
+
+Overwhelm around household and family logistics, which often fall disproportionately on women and are almost entirely executive function: appointments, forms, meals, school emails, birthdays.
+
+A history of being called "too much" or "too sensitive", and of shrinking to fit. And frequently, exhaustion that has been attributed to everything except the effort of compensating.
+
+> From outside she looks capable. From inside she is working twice as hard to stay level.
+
+### Hormones
+
+Many women describe their ADHD symptoms shifting with hormonal changes: across the menstrual cycle, after pregnancy, and around perimenopause and menopause. Some first seek help in midlife, when strategies that worked for decades suddenly stop working.
+
+I am not in a position to explain the mechanisms, and this is an area where a knowledgeable clinician matters. What I would say is that if your symptoms seem to change with hormonal shifts, it is worth tracking that and raising it, because it can affect what support makes sense.
+
+### After finding out
+
+Relief usually comes first: a reason for a lifetime of feeling slightly out of step. Grief often follows, for the years spent believing the problem was character.
+
+What helps is generally the same as for any late diagnosis. Go slower than the relief suggests. Lower the standard for the systems you were maintaining at great cost, and let some of them go. Find other women who were identified late, because the recognition is worth more than most advice. And put the effort into building supports that work with your brain rather than into compensating harder.
+
+### Common questions
+
+### Why is ADHD in women missed so often?
+
+Mostly because it often presents as inattention and internal restlessness rather than disruptive hyperactivity, and because many women build coping strategies that hide their difficulties. Anxiety or depression is frequently diagnosed first, and the ADHD underneath can go unrecognised for years.
+
+### What does ADHD look like in adult women?
+
+Patterns many women describe include feeling constantly behind despite great effort, mental clutter, emotional intensity and rejection sensitivity, overwhelm with household logistics, and exhaustion from compensating. It varies a great deal between people, and only an assessment can tell you whether it is ADHD.
+
+### Can hormones affect ADHD symptoms?
+
+Many women report that their symptoms change across the menstrual cycle, after pregnancy, and around perimenopause and menopause. It is worth tracking any pattern and discussing it with a clinician who understands ADHD.
+
+### Is it common to be diagnosed with ADHD as an adult woman?
+
+Many women are now identified in adulthood, often in their thirties or forties, sometimes after a child is diagnosed. Being identified later says more about how ADHD was recognised in the past than about the severity of your experience.
+
+### Where should I start if I think I might have ADHD?
+
+Write down specific examples of how it affects you, then speak to a doctor about assessment. The article on [getting assessed as an adult](https://jmstruijk.com/blog/adult-adhd-autism-assessment/) covers the process, and [The Late-Diagnosed ADHD Workbook](https://jmstruijk.com/books/late-diagnosed-adhd-workbook/) is for the stage after you find out.
+
+## Article: Autism in women: camouflage, late diagnosis, and the wrong labels
+
+URL: https://jmstruijk.com/blog/autism-in-women/
+Published: 2026-10-21
+Summary: Why many autistic women are identified late or given other diagnoses first, how camouflaging hides autism, and what tends to change once you know.
+
+Many autistic women describe the same strange experience on finding out: everything suddenly makes sense, and at the same time they cannot believe nobody noticed. They were the quiet, well-behaved girl, the one with intense interests, the one who studied other people carefully and copied what worked. They passed, and passing was the problem.
+
+### Key takeaways
+
+- Many autistic women are identified late because they camouflage effectively and do not match older descriptions of autism.
+- Camouflaging works socially and costs a great deal, and it is a common route into burnout.
+- Women are often given other diagnoses first, sometimes several, before autism is considered.
+- Special interests may be overlooked because they look socially ordinary.
+- Recognition usually brings relief, grief and a period of reinterpreting your own history.
+
+### Why so many are missed
+
+Older descriptions of autism were built mainly from observations of boys, and many autistic women simply do not look like that picture. A girl who is socially motivated, who wants friends and works hard to keep them, does not match the stereotype of someone uninterested in people.
+
+Camouflaging is the bigger reason. Many autistic girls learn early to watch other people closely and imitate them: expressions, phrases, interests, the right amount of eye contact. They rehearse conversations. They script. Done well enough, it hides autism from teachers, parents and clinicians, and often from the girl herself.
+
+Interests can be overlooked too. An intense, absorbing interest in horses, a band, a book series or psychology looks age-appropriate, so its depth and intensity go unremarked.
+
+### The wrong labels
+
+Many autistic women describe receiving other diagnoses first. Anxiety and depression are the most common, and they are often real: years of camouflaging and not fitting in take a toll. Eating difficulties, sometimes linked to sensory issues or a need for control and sameness, are also reported. Some are given personality disorder diagnoses before anyone considers autism.
+
+The problem is not that these conditions never apply. Sometimes they do, alongside autism. The problem is when they are treated as the whole explanation, so the underlying difference goes unaddressed and the treatment works less well than it should.
+
+> Being good at blending in is not the same as not being autistic. It is often the reason nobody looked.
+
+### What it often looks like in adulthood
+
+These are patterns, not criteria, and only an assessment can tell you what applies.
+
+Exhaustion after social time that you genuinely enjoyed. A sense of running a social script and watching yourself perform it. Sensory sensitivities that you have always managed quietly: clothing labels, certain sounds, crowded places, particular food textures. A strong need for routine that looks like organisation from outside. Difficulty knowing what you feel until later. Deep, long-lasting interests. A history of friendships that ended without you understanding why.
+
+And often burnout: periods where the effort of camouflaging became unsustainable and everything, including things you used to manage, became too much.
+
+### After recognition
+
+Relief usually comes first. Then grief, for the years spent believing you were a badly made version of everyone else. Then a long period of rereading your own history.
+
+Unmasking, gradually and where it is safe, is part of what tends to help, along with sensory changes that make daily life less costly, and finding other autistic women whose experiences mirror yours. Many describe autistic community as the first place they did not have to translate.
+
+### Common questions
+
+### Why are autistic women diagnosed later?
+
+Many camouflage effectively and do not match older descriptions of autism, which were built mostly from observations of boys. Socially motivated girls with age-appropriate interests often went unnoticed, and their difficulties were attributed to anxiety, shyness or sensitivity instead.
+
+### What is camouflaging?
+
+Camouflaging, also called masking, is hiding autistic traits and performing expected behaviour to fit in: copying others, scripting conversations, forcing eye contact and suppressing stimming. It can work socially but is very tiring to sustain, and it is closely associated with burnout.
+
+### What are common misdiagnoses for autistic women?
+
+Many autistic women describe being diagnosed with anxiety or depression first, and some with eating disorders or personality disorders. These conditions can also occur alongside autism. The concern is when they are treated as the full explanation and autism is never considered.
+
+### Can I be autistic if I have friends and make eye contact?
+
+Yes. Many autistic people have friends, want social connection and can make eye contact, often through learned effort. What matters in assessment is the underlying experience and its cost, not whether you can perform expected behaviour.
+
+### Where should I start?
+
+Reading accounts from autistic women and considering an assessment if you want formal confirmation. The articles on [getting assessed as an adult](https://jmstruijk.com/blog/adult-adhd-autism-assessment/) and [masking](https://jmstruijk.com/blog/autistic-masking-and-what-it-costs/) go further, and [The Late-Diagnosed Autistic Workbook](https://jmstruijk.com/books/late-diagnosed-autistic-workbook/) is written for after you find out.
+
+## Article: ADHD in relationships: when forgetting looks like not caring
+
+URL: https://jmstruijk.com/blog/adhd-and-relationships/
+Published: 2026-10-21
+Summary: How ADHD shows up in relationships: forgetting read as indifference, the parent-partner trap, rejection sensitivity, and what helps couples work with it.
+
+The argument usually is not about the thing it seems to be about. It is about the bins, or the forgotten anniversary, or being twenty minutes late again. Underneath, one person is hearing "you don't care about me" and the other is hearing "you are failing at being an adult", and both are hurt.
+
+ADHD affects relationships less through dramatic events than through small, repeated misunderstandings. The behaviour is visible. The intention behind it is not, and the gap between the two is where most of the damage happens.
+
+### Key takeaways
+
+- ADHD behaviour is often misread as a lack of care, when it comes from attention and memory rather than feeling.
+- A common pattern is the parent-partner dynamic, where one person ends up managing the other.
+- Rejection sensitivity and emotional intensity can turn small conflicts into large ones.
+- External systems help far more than promises to try harder.
+- Separating the person from the symptom changes how couples talk about problems.
+
+### When forgetting looks like not caring
+
+Remembering things is a common way people show love. Remembering a birthday, a favourite food, what someone said last week was worrying them. When an ADHD partner forgets, it is natural to read it as a sign of how much they care.
+
+It usually is not. ADHD affects working memory and attention, not affection. Someone can care intensely and still forget, because caring and remembering run on different systems.
+
+The same applies to lateness, to tuning out mid-conversation, to unfinished household tasks. Each one looks like a message about priorities. Most of the time it is a message about executive function. Knowing that does not make the behaviour less frustrating, but it does change what the frustration is about.
+
+### The honeymoon and what comes after
+
+Many people with ADHD describe a particular pattern in new relationships. At the start, the relationship is novel and intensely interesting, and attention locks on completely: long conversations, thoughtful gestures, total focus.
+
+Then the novelty fades, as it does in every relationship, and ADHD attention moves elsewhere. The partner who was the focus of everything now feels ignored, and reasonably wonders what changed. Nothing changed about the feelings. What changed was the novelty that was engaging the attention.
+
+Understanding this early can prevent a lot of hurt, on both sides.
+
+### The parent-partner trap
+
+One of the most common difficulties is when one partner gradually becomes responsible for managing the other. Reminding, checking, planning, picking up the dropped tasks.
+
+It usually starts helpfully and becomes corrosive. The managing partner feels exhausted and resentful, carrying a mental load they never agreed to. The managed partner feels criticised and infantilised, which can trigger rejection sensitivity and withdrawal. Neither is the relationship either of them wanted.
+
+The way out is rarely more reminding. It is moving the managing work out of the relationship and into shared systems that neither person has to embody.
+
+> If one of you has become the other's memory, the fix is a system, not a better memory.
+
+### Emotional intensity
+
+Rejection sensitivity can make ordinary relationship friction feel catastrophic. A partner's mild irritation lands as rejection. A request to change something sounds like a judgement of your whole person. The response can be withdrawal, defensiveness, or anger that is out of proportion to what was said.
+
+Emotional intensity runs the other way too. ADHD often brings warmth, enthusiasm, spontaneity and generosity, the qualities many partners fell for in the first place.
+
+### What helps
+
+Shared external systems, so nothing depends on one person's memory. A shared calendar for everything that involves you both. A visible list for household tasks. Recurring reminders for anniversaries and birthdays set years in advance. Automated bills.
+
+Explicit agreements about who does what. Unspoken expectations are where ADHD gets caught most. Written divisions of tasks remove the guessing.
+
+Separating the person from the symptom. "The ADHD forgot the bins" is a different conversation from "you forgot the bins again". It lets you both look at the problem from the same side.
+
+Repair, quickly. Name what happened, acknowledge the effect, without long self-criticism. Over-apologising is its own burden on the partner.
+
+Gentle explicitness. Partners who know about rejection sensitivity can head off spirals with small clarifications: "I'm not annoyed with you, I'm just tired."
+
+And a therapist who understands ADHD, if things are stuck. Couples therapy that treats ADHD behaviour as a choice can make things worse.
+
+### Common questions
+
+### Can ADHD cause relationship problems?
+
+ADHD can contribute to recurring friction, mostly through forgetting, lateness, distraction, unfinished tasks and emotional intensity being misread as not caring. Many couples where one or both partners have ADHD have strong relationships, especially once they understand what is behind these patterns and build systems around them.
+
+### Why does my partner with ADHD forget important things?
+
+Usually because ADHD affects working memory and attention, not how much they care. Remembering and caring use different systems. External reminders and shared calendars tend to help far more than promises to try harder.
+
+### What is the parent-partner dynamic?
+
+It is when one partner gradually takes on the role of managing the other: reminding, checking and covering for dropped tasks. It tends to leave one person resentful and the other feeling criticised. Moving that work into shared systems helps more than more reminding.
+
+### How can couples manage ADHD together?
+
+Shared calendars and task lists, explicit agreements about responsibilities, separating the person from the symptom in conversations, quick repair after conflicts, and an ADHD-informed therapist if you get stuck. The aim is for neither person to carry the other's executive function.
+
+### Does ADHD affect emotions in relationships?
+
+Often. Rejection sensitivity can make small conflicts feel enormous, and emotional intensity can drive quick reactions. The article on [rejection sensitive dysphoria](https://jmstruijk.com/blog/rejection-sensitive-dysphoria/) covers this, and [The ADHD Overthinking Reset](https://jmstruijk.com/books/adhd-overthinking-reset/) includes relationship overthinking.
+
+## Article: ADHD and sleep: why bedtime keeps sliding later
+
+URL: https://jmstruijk.com/blog/adhd-and-sleep/
+Published: 2026-10-21
+Summary: Why so many ADHD adults feel most awake at night, how a racing mind and revenge bedtime procrastination keep sleep late, and what actually helps.
+
+At eleven at night, after a day of fighting your own attention, your brain finally switches on. Ideas arrive. The project you could not face at two in the afternoon suddenly looks interesting. It is quiet, nobody needs anything from you, and for the first time all day you feel like yourself.
+
+Then it is two in the morning, the alarm is set for seven, and tomorrow is going to be hard again.
+
+Sleep problems are some of the most common things adults with ADHD describe, and they make every other part of ADHD worse.
+
+### Key takeaways
+
+- Many ADHD adults feel most alert late at night, which pushes sleep later and later.
+- A racing mind, hyperfocus and revenge bedtime procrastination all keep people up past the point of tiredness.
+- Poor sleep worsens attention, mood and emotional regulation, so the effects compound.
+- Consistent timing and a wind-down that occupies the mind help more than willpower.
+- Persistent sleep problems deserve a doctor's attention, because treatable sleep disorders can look like ADHD.
+
+### Why nights get later
+
+Many adults with ADHD describe a natural pull toward late nights. Alertness arrives in the evening, and the hours when everyone else winds down are the hours that feel most productive.
+
+Several things add to that pull.
+
+The quiet itself. Evenings have fewer demands and interruptions, which can make them the first stretch of the day that feels free. That makes them very hard to give up.
+
+Revenge bedtime procrastination: staying up late to reclaim personal time the day did not allow. Going to bed means the evening is over and tomorrow begins, so the brain resists it.
+
+Hyperfocus. Starting something absorbing late in the evening is a reliable way to look up and find it is three in the morning.
+
+And the racing mind. Lying down in a dark, quiet room removes the input that was keeping thoughts in check, and the overthinking starts.
+
+### Why it matters so much
+
+Tiredness hits an ADHD brain particularly hard. Attention, working memory, emotional regulation and impulse control all get worse with poor sleep, and those are the exact functions ADHD already strains. A bad night can make the next day feel like a much more severe version of ADHD.
+
+It also compounds. A tired day produces less, which creates more pressure, which leaves less unclaimed time, which makes the evening feel more precious, which pushes bedtime later.
+
+> A late night borrows from tomorrow, and tomorrow is when the ADHD is already hardest to manage.
+
+### What helps
+
+Consistent timing beats perfect timing. Getting up at roughly the same time every day, including weekends, does more than trying to force an early bedtime. Morning light, ideally outdoors soon after waking, helps anchor the rhythm.
+
+Protect the evening, so you do not need to steal it from sleep. If revenge bedtime procrastination is the problem, the fix is more unclaimed time earlier in the evening, not more discipline at midnight.
+
+Set an alarm to start winding down, not just to wake up. Time blindness makes bedtime slip without warning. An alarm an hour before bed marks the point to stop starting new things.
+
+Avoid starting absorbing tasks late. No new projects, no games with no natural stopping point, no research rabbit holes after a set time.
+
+Give the racing mind something to hold. An audiobook or podcast on a sleep timer, or a mildly engaging mental task, occupies the loop without being stimulating enough to keep you awake.
+
+Keep the phone across the room. It is the most common accelerant, and the friction of getting up is often enough to break the automatic reach.
+
+And if you take stimulant medication, talk to your prescriber about timing and sleep rather than adjusting it yourself.
+
+### When to see a doctor
+
+If you snore heavily, wake gasping, are exhausted despite enough hours in bed, or have persistent insomnia, please see a doctor. Sleep disorders are common, treatable, and can produce attention problems that look a lot like ADHD, or make existing ADHD much worse.
+
+### Common questions
+
+### Why can't people with ADHD sleep?
+
+Many adults with ADHD describe feeling most alert late at night, combined with a racing mind, hyperfocus and revenge bedtime procrastination. These push sleep later, and the resulting tiredness makes ADHD symptoms worse the next day.
+
+### Is being a night owl an ADHD thing?
+
+Many adults with ADHD describe a strong pull toward late nights. It is not universal, and sleep timing varies a lot between people. If your sleep pattern is causing problems, a doctor can help work out what is going on.
+
+### What is revenge bedtime procrastination?
+
+It is staying up late, even when tired, to reclaim personal time the day did not allow. It is common among people with ADHD and anyone whose days are full of other people's demands. Building free time into the earlier evening tends to help more than forcing an earlier bedtime.
+
+### Does poor sleep make ADHD worse?
+
+Yes, for most people. Attention, memory, emotional regulation and impulse control all suffer with poor sleep, and those are the functions ADHD already affects.
+
+### What is the first thing to try?
+
+A fixed wake-up time every day and a wind-down alarm an hour before bed. [The Late-Diagnosed ADHD Workbook](https://jmstruijk.com/books/late-diagnosed-adhd-workbook/) has a section on energy, sleep and burnout, and [the 2 a.m. spiral](https://jmstruijk.com/blog/adhd-overthinking-2am-spiral/) covers the racing mind in more depth.
+
+## Article: How to get assessed for ADHD or autism as an adult
+
+URL: https://jmstruijk.com/blog/adult-adhd-autism-assessment/
+Published: 2026-10-21
+Summary: What an adult ADHD or autism assessment involves, how to prepare, the routes in the UK and US, and what to do while you wait.
+
+Deciding to seek an assessment as an adult usually comes after a long stretch of suspicion. You have read the descriptions, recognised yourself, wondered whether you are imagining it, and finally decided you want to know.
+
+The process can feel opaque, slow and expensive. This is a practical overview of how it tends to work. Details change, and they differ a lot between countries and providers, so treat the [official sources in the resources directory](https://jmstruijk.com/resources/#assessment) as the authority for where you live.
+
+### Key takeaways
+
+- Assessment usually starts with your doctor or primary care provider, who may refer you to a specialist.
+- Assessments typically involve detailed interviews about your current life and your childhood, plus questionnaires.
+- Preparing specific, concrete examples makes a large difference to how useful the assessment is.
+- In England, Right to Choose can let you pick a different NHS provider when local waits are long.
+- Waits can be long, and there is a great deal you can do in the meantime.
+
+### Where it starts
+
+For most people the first step is an appointment with a GP or primary care doctor. In the UK, the NHS describes the GP asking about your symptoms and how they affect your life, considering other possible explanations, and then deciding whether to refer you for a specialist assessment.
+
+In the United States, people may start with a primary care doctor, or go directly to a psychiatrist or psychologist. Insurance coverage and costs vary a great deal, so it is worth checking what your plan covers before you book.
+
+Private assessments are available in many countries and can be faster, at a cost. If you go private, check what happens afterwards. In the UK, for example, people who want their GP to take over prescribing after a private ADHD diagnosis usually need a shared care agreement, and ADHD UK suggests speaking to your GP about it before the private assessment rather than after.
+
+### Right to Choose, in England
+
+In England, you have a legal right to choose who carries out your NHS ADHD or autism assessment. If your local wait is very long, your GP can refer you to another NHS-approved provider. ADHD UK has a clear guide to how this works, linked in the [resources directory](https://jmstruijk.com/resources/#assessment).
+
+### What an assessment involves
+
+The details vary, but the general shape is similar.
+
+For ADHD, expect a detailed clinical interview about how you function now, across work, home, relationships and daily tasks, and about your childhood, because ADHD is present from early in life. You will usually fill in questionnaires. Some clinicians also ask for input from someone who knew you as a child, such as a parent or sibling, or for old school reports.
+
+For autism, expect interviews about your social communication, sensory experiences, routines and interests, and your developmental history, again often with input from someone who knew you young. Some assessments include structured observational tasks.
+
+Clinicians are also checking for other explanations, and for conditions that commonly occur alongside, such as anxiety or depression.
+
+### How to prepare
+
+This is the part most people underestimate.
+
+Write down specific examples. "I struggle with organisation" is less useful than "I have paid late fees on bills I could afford at least six times this year" or "I left three jobs in five years after the first six months". Concrete examples give the clinician something to work with.
+
+Cover your childhood. Ask family what you were like. Find school reports if you can; comments like "could do better if she applied herself" or "very quiet, keeps to herself" can be informative.
+
+Note what you do to cope. Masking and compensation can hide difficulties, so describe the effort behind things that look fine from outside.
+
+Bring a list of questions, because you will forget them in the room.
+
+> Bring examples, not adjectives. "Late fees six times this year" says more than "disorganised".
+
+### While you wait
+
+Waits can be long. Waiting does not have to mean doing nothing.
+
+Many of the practical strategies that help with ADHD or autism do not require a diagnosis: sensory adjustments, external reminders, body doubling, automating bills. Peer communities welcome people who are questioning. And keeping notes while you wait builds the material that will make your assessment more useful.
+
+### Common questions
+
+### How do I get assessed for ADHD as an adult?
+
+Usually by starting with your GP or primary care doctor, who may refer you to a specialist. Private assessments are also available in many places. The process differs by country, so check the official guidance where you live, which is linked in the resources directory.
+
+### What happens in an adult autism assessment?
+
+Typically a detailed interview about social communication, sensory experiences, routines and interests, plus your developmental history, often with input from someone who knew you as a child. Some assessments include structured observation. Clinicians also consider other explanations and co-occurring conditions.
+
+### What is Right to Choose?
+
+In England, Right to Choose is the legal right to choose who carries out your NHS ADHD or autism assessment. If local waits are long, your GP can refer you to another NHS-approved provider. It applies in England specifically.
+
+### How can I prepare for an ADHD or autism assessment?
+
+Write down specific, concrete examples of how things affect you now, gather information about your childhood, including school reports and family memories, describe the effort behind things that look fine, and bring a list of questions.
+
+### Do I need an assessment to get help?
+
+No. Many practical strategies and peer communities do not require a diagnosis. A formal assessment can matter for medication, workplace adjustments and some services. Before booking, [what online tests can tell you](https://jmstruijk.com/blog/online-adhd-autism-tests/) explains how to read self-screeners.
+
+## Article: Online ADHD and autism tests: what they can and cannot tell you
+
+URL: https://jmstruijk.com/blog/online-adhd-autism-tests/
+Published: 2026-10-21
+Summary: Online ADHD and autism self-tests are screeners, not diagnoses. What a high or low score means, why results mislead, and how to use them well.
+
+Most people who suspect they are ADHD or autistic take an online test at some point, usually late at night, usually more than once. Then they sit with a score and try to work out what it means.
+
+Online tests can be genuinely useful. They are also easy to misread, in both directions. This is an honest guide to what they are, what they measure, and how to use the result.
+
+### Key takeaways
+
+- Online ADHD and autism tests are screening questionnaires, and none of them can diagnose you.
+- A high score suggests an assessment may be worth pursuing. It does not confirm anything.
+- Anxiety, depression, trauma and burnout can raise scores, and masking can lower them.
+- A low score does not rule anything out, especially if you have spent years compensating.
+- The most useful thing a test gives you is language for a conversation with a clinician.
+
+### Screening is not diagnosis
+
+The questionnaires most often found online are screening tools. They were designed to flag people who might benefit from a proper assessment, not to make a diagnosis on their own.
+
+For ADHD, the most widely used adult screener is the World Health Organization's Adult ADHD Self-Report Scale, usually shortened to ASRS. ADDA offers a free online version and states plainly that it is a screening tool rather than a diagnosis.
+
+For autism, common questionnaires include the AQ, or Autism-Spectrum Quotient, the RAADS-R, and the CAT-Q, which measures camouflaging rather than autism itself. Embrace Autism hosts free versions of these and others. Links to both sites are in the [resources directory](https://jmstruijk.com/resources/#screeners).
+
+A diagnosis comes from a clinician, through a detailed interview, developmental history and clinical judgement, ideally considering other explanations. A questionnaire is one small input into that process at most.
+
+### What a high score means
+
+A high score means your answers resemble those of people who were later diagnosed. That is worth taking seriously, and it may be a good reason to seek an assessment.
+
+It is not confirmation, because several other things can produce similar answers.
+
+Anxiety can look like inattention, restlessness and difficulty concentrating. Depression can look like poor motivation and executive dysfunction. Trauma can produce hypervigilance, dissociation and difficulty with focus. Burnout can make almost any executive function questionnaire look severe. Sleep deprivation affects attention dramatically.
+
+None of that means your experience is not real. It means the cause needs working out by someone who can consider all the options.
+
+### What a low score means
+
+A low score is easier to over-trust, and it can do more harm.
+
+Many late-identified adults have spent decades compensating. They answer questions about how they behave, and their behaviour looks fine, because they have built it carefully. Questions like "do you find it hard to make eye contact?" can be answered "no" by someone who forces eye contact through deliberate effort every day.
+
+If you score low but strongly recognise yourself in descriptions of ADHD or autism, or if a test measuring camouflaging suggests you mask heavily, a low score on a trait questionnaire should not end the question.
+
+> A low score from someone who has spent thirty years compensating is not the reassurance it looks like.
+
+### How to use a result well
+
+Treat it as a conversation starter. Bring your score and, more importantly, the specific questions you answered strongly, to a clinician. "I scored high on the screener, and these items in particular describe my life" is a good way to begin.
+
+Pay attention to which items resonate, more than the total. The items you recognised instantly are often more informative than the number.
+
+Take tests on a reasonably ordinary day. Answering in the middle of a crisis or a burnout can inflate scores in ways that do not reflect your baseline.
+
+Do not take dozens. Repeating tests until you get the answer you are hoping for, in either direction, tends to produce anxiety rather than clarity.
+
+### Common questions
+
+### Are online ADHD tests accurate?
+
+They are screening tools, designed to identify people who might benefit from assessment, not to diagnose. A high score suggests an assessment could be worthwhile, but anxiety, depression, trauma, burnout and poor sleep can all raise scores. Only a clinician can diagnose ADHD.
+
+### Can an online test tell me if I am autistic?
+
+No. Online autism questionnaires such as the AQ and RAADS-R are screening tools. They can suggest whether an assessment may be worth pursuing, but diagnosis requires a clinical assessment. Masking can also lower scores for people who are autistic.
+
+### What is the ASRS?
+
+The Adult ADHD Self-Report Scale is a screening questionnaire developed with the World Health Organization. It is widely used as a first step to identify adults who might benefit from a full ADHD assessment. It does not provide a diagnosis.
+
+### What does a low score on an autism test mean?
+
+It means your answers did not closely resemble those of diagnosed autistic people on that questionnaire. For people who mask heavily, trait questionnaires can underestimate autistic traits, so a low score does not necessarily rule autism out if you strongly recognise yourself in autistic accounts.
+
+### What should I do after a high score?
+
+Note which questions resonated most, write down concrete examples from your life, and talk to a doctor about assessment. The article on [how to get assessed as an adult](https://jmstruijk.com/blog/adult-adhd-autism-assessment/) covers the process and how to prepare.
 
 ## Glossary
 

@@ -7,6 +7,7 @@ date: 2026-10-21
 keywords: adhd and debt, adhd debt payoff, adhd credit card debt, debt snowball adhd, adhd money management, adhd avoidance bills
 book: adhd-debt-payoff-workbook
 about: [adhd]
+topics: [adhd-and-money]
 related:
   - adhd-tax-what-it-costs
   - why-adhd-brains-overspend

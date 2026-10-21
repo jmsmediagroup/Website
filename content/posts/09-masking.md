@@ -7,6 +7,7 @@ featured: 5
 keywords: autistic masking, masking autism, unmasking autistic, adhd masking, autistic camouflaging, masking burnout
 book: late-diagnosed-autistic-workbook
 about: [autism, masking]
+topics: [autism, burnout-and-energy]
 related:
   - autistic-in-adulthood-late-diagnosis
   - autistic-burnout-vs-adhd-burnout-vs-depression

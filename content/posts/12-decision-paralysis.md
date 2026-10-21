@@ -6,6 +6,7 @@ date: 2026-10-21
 keywords: adhd decision paralysis, adhd analysis paralysis, adhd cant make decisions, adhd indecision, adhd overwhelm choices, decision fatigue adhd
 book: adhd-decision-reset
 about: [adhd, analysis-paralysis]
+topics: [everyday-adhd]
 related:
   - adhd-overthinking-2am-spiral
   - adhd-meal-paralysis-forgetting-to-eat

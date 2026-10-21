@@ -7,6 +7,7 @@ date: 2026-10-21
 keywords: adhd meal paralysis, adhd forgetting to eat, adhd and food, adhd cooking executive dysfunction, adhd eating habits, adhd hunger cues
 book: adhd-eating-reset
 about: [adhd, interoception]
+topics: [everyday-adhd]
 related:
   - adhd-decision-paralysis
   - adhd-overthinking-2am-spiral

@@ -7,6 +7,7 @@ date: 2026-10-21
 keywords: body doubling, body doubling adhd, adhd body double, virtual body doubling, adhd focus with others, adhd coworking
 book: late-diagnosed-adhd-workbook
 about: [adhd, body-doubling]
+topics: [everyday-adhd]
 related:
   - adhd-task-paralysis
   - adhd-time-blindness

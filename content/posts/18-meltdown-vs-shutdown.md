@@ -7,6 +7,7 @@ featured: 6
 keywords: autistic meltdown, autistic shutdown, meltdown vs shutdown, autistic meltdown adults, autism overwhelm, sensory meltdown
 book: late-diagnosed-autistic-workbook
 about: [autism, sensory-overload]
+topics: [autism, burnout-and-energy]
 related:
   - stimming-and-sensory-overload
   - autistic-burnout-vs-adhd-burnout-vs-depression

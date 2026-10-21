@@ -7,6 +7,7 @@ featured: 3
 keywords: audhd, autistic and adhd, adhd and autism together, audhd traits, autism adhd comorbidity, audhd burnout
 book: late-diagnosed-adhd-workbook
 about: [adhd, autism]
+topics: [late-diagnosis, autism]
 related:
   - adhd-diagnosis-as-an-adult-first-year
   - autistic-in-adulthood-late-diagnosis

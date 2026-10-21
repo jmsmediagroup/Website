@@ -6,6 +6,7 @@ date: 2026-10-21
 keywords: adhd overthinking, adhd racing thoughts at night, adhd rumination, adhd cant sleep thoughts, adhd intrusive thoughts, adhd revenge bedtime
 book: adhd-overthinking-reset
 about: [adhd, rumination]
+topics: [everyday-adhd]
 related:
   - adhd-decision-paralysis
   - adhd-meal-paralysis-forgetting-to-eat

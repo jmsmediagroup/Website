@@ -4,6 +4,7 @@
     python3 build.py            pages, feed, sitemap, llms files, homepage blocks
     python3 build.py --og       also render share images that are missing (needs Chrome)
     python3 build.py --og-all   re-render every share image
+    python3 build.py --check-links   also open every directory link and report breakage
 
 Content lives in content/. Output is committed, because Netlify serves this repo
 as static files with no build step. Everything is rendered in memory and every
@@ -280,14 +281,17 @@ def load_books():
     return books
 
 
-def load_posts(by_book):
+def load_posts(by_book, topic_slugs):
     posts = []
     for path in sorted(glob.glob(os.path.join(CONTENT, "posts", "*.md"))):
         name = os.path.relpath(path, ROOT)
         meta, body = read_source(path)
-        require(meta, ("title", "slug", "description", "date"), name)
+        require(meta, ("title", "slug", "description", "date", "topics"), name)
         if meta.get("book") and meta["book"] not in by_book:
             fail("%s names unknown book '%s'." % (name, meta["book"]))
+        for t in meta["topics"]:
+            if t not in topic_slugs:
+                fail("%s is filed under unknown topic '%s'." % (name, t))
         if len(meta.get("related") or []) > 3:
             fail("%s has more than three related posts." % name)
         check_about(meta.get("about"), name)
@@ -327,9 +331,69 @@ def load_glossary():
     return terms, mtime_date(path)
 
 
+def load_yaml_list(name):
+    path = os.path.join(CONTENT, name)
+    return yaml.safe_load(open(path, encoding="utf-8")) or [], mtime_date(path)
+
+
+def load_resources():
+    sections, modified = load_yaml_list("resources.yaml")
+    ids = [s["id"] for s in sections]
+    if len(set(ids)) != len(ids):
+        fail("duplicate resource section ids.")
+    for s in sections:
+        require(s, ("id", "title", "intro", "items"), "resource section %r" % s.get("id"))
+        for item in s["items"]:
+            require(item, ("name", "url", "description"), "resource %r" % item.get("name"))
+            if not item["url"].startswith("https://"):
+                fail("resource '%s' must use https." % item["name"])
+    return sections, modified
+
+
+def load_topics(by_book, term_slugs, resource_ids):
+    topics = []
+    for path in sorted(glob.glob(os.path.join(CONTENT, "topics", "*.md"))):
+        name = os.path.relpath(path, ROOT)
+        meta, body = read_source(path)
+        require(meta, ("slug", "title", "order", "description"), name)
+        for b in meta.get("books") or []:
+            if b not in by_book:
+                fail("%s lists unknown book '%s'." % (name, b))
+        for t in meta.get("terms") or []:
+            if t not in term_slugs:
+                fail("%s lists unknown glossary term '%s'." % (name, t))
+        for r in meta.get("resources") or []:
+            if r not in resource_ids:
+                fail("%s lists unknown resource section '%s'." % (name, r))
+        check_about(meta.get("about"), name)
+        meta.update(body=render_markdown(body)[0], markdown=body, modified=mtime_date(path))
+        topics.append(meta)
+    topics.sort(key=lambda t: t["order"])
+    return topics
+
+
 # ---------------------------------------------------------------- shared
 
 PARTIALS = {}
+# Filled in by main(): page path -> page title, and topic slug -> topic. Lets any
+# page link to any other by path and get the right label.
+TITLES = {}
+TOPICS = {}
+
+
+def internal_link(path, label=None):
+    # Anchored paths such as /resources/#money can have their own title.
+    title = TITLES.get(path) or TITLES.get(path.split("#")[0])
+    if title is None:
+        fail("link to unknown page %s" % path)
+    return '<a href="%s">%s</a>' % (path, esc(label or title))
+
+
+def topic_tags(slugs):
+    if not slugs:
+        return ""
+    return ('<div class="topic-tags"><span>Filed under</span>%s</div>'
+            % "".join('<a href="/topics/%s/">%s</a>' % (s, esc(TOPICS[s]["title"])) for s in slugs))
 
 
 def render(template, **values):
@@ -545,6 +609,7 @@ def render_post(post, by_post, by_book):
         date_iso=str(post["date"]),
         date_human=human_date(post["date"]),
         reading_time=minutes(post["words"]),
+        topics=topic_tags(post["topics"]),
         toc=toc,
         body=post["body"],
         book_cta=book_cta(book),
@@ -586,7 +651,10 @@ def render_blog_index(posts, by_book):
         seo=seo_head("Blog: Writing on ADHD, Autism & AuDHD — J.M. Struijk",
                      "Practical articles on ADHD, autism and AuDHD by a late-diagnosed author: "
                      "the ADHD tax, rejection sensitivity, masking, burnout and task paralysis.", "/blog/"),
-        schema=schema(graph), count=len(posts), cards="\n".join(cards))
+        schema=schema(graph), count=len(posts), cards="\n".join(cards),
+        topic_chips='<nav class="topic-chips" aria-label="Browse by topic">%s</nav>'
+                    % "".join('<a href="/topics/%s/">%s</a>' % (t["slug"], esc(t["title"]))
+                              for t in TOPICS.values()))
 
 
 # ---------------------------------------------------------------- books
@@ -713,15 +781,7 @@ def render_glossary(terms, by_post, by_book):
             letters.append(letter)
             blocks.append('    <section class="az-letter" id="letter-%s"><h2>%s</h2>' % (letter.lower(), letter))
 
-        see = []
-        for target in t.get("see") or []:
-            m = re.match(r"^/(blog|books)/([^/]+)/$", target)
-            if not m:
-                fail("glossary term '%s' links to '%s', which is not a /blog/ or /books/ page." % (t["term"], target))
-            source = by_post if m.group(1) == "blog" else by_book
-            if m.group(2) not in source:
-                fail("glossary term '%s' links to missing page %s." % (t["term"], target))
-            see.append('<a href="%s">%s</a>' % (target, esc(source[m.group(2)]["title"])))
+        see = [internal_link(target) for target in t.get("see") or []]
 
         aka = ""
         if t.get("aka"):
@@ -771,6 +831,248 @@ def render_404(posts, books):
     recent = "\n".join('      <li><a href="/blog/%s/">%s</a></li>' % (p["slug"], esc(p["title"]))
                        for p in posts[:6])
     return render("404.html", book_count=len(books), post_count=len(posts), recent=recent)
+
+
+# ---------------------------------------------------------------- directory
+
+def resource_item(item):
+    region = '<span class="res-region">%s</span>' % esc(item["region"]) if item.get("region") else ""
+    detail = '<p class="res-detail">%s</p>' % esc(item["detail"]) if item.get("detail") else ""
+    return ('<li class="res-item"><div class="res-head"><a class="res-name" href="%s" target="_blank" '
+            'rel="noopener">%s</a>%s</div>%s<p class="res-desc">%s</p></li>'
+            % (esc(item["url"]), esc(item["name"]), region, detail, esc(item["description"])))
+
+
+def resource_section(section, heading="h2"):
+    see = '<p class="res-see">Related: %s</p>' % internal_link(section["see"]) if section.get("see") else ""
+    return ('<section class="res-section%s" id="%s"><%s>%s</%s><p class="res-intro">%s</p>'
+            '<ul class="res-list">%s</ul>%s</section>'
+            % (" res-crisis" if section["id"] == "crisis" else "", section["id"], heading,
+               esc(section["title"]), heading, esc(section["intro"]),
+               "".join(resource_item(i) for i in section["items"]), see))
+
+
+def render_resources(sections):
+    path = "/resources/"
+    url = SITE + path
+    count = sum(len(s["items"]) for s in sections)
+    checked_file = os.path.join(CONTENT, "resources-checked.txt")
+    checked = ""
+    if os.path.exists(checked_file):
+        checked = '<p class="res-checked">Links last checked %s.</p>' % human_date(open(checked_file).read().strip())
+    items, n = [], 0
+    for s in sections:
+        for i in s["items"]:
+            n += 1
+            node = {"@type": "WebPage", "name": i["name"], "url": i["url"], "description": i["description"]}
+            items.append({"@type": "ListItem", "position": n, "item": node})
+    graph = [
+        {"@type": "CollectionPage", "@id": url, "url": url,
+         "name": "ADHD and Autism Resources for Adults", "isPartOf": {"@id": WEBSITE_ID},
+         "inLanguage": "en-US", "about": about_nodes(["adhd", "autism"]),
+         "mainEntity": {"@type": "ItemList", "numberOfItems": count, "itemListElement": items}},
+        person_node(),
+        breadcrumbs((AUTHOR, "/"), ("Resources", path)),
+    ]
+    return render(
+        "resources.html",
+        seo=seo_head("ADHD & Autism Resources for Adults: Helplines, Assessment, Work",
+                     "A checked directory of ADHD and autism organisations, crisis lines, assessment "
+                     "guidance, screeners, peer support, work rights and free debt advice.", path),
+        schema=schema(graph), count=count, checked=checked,
+        jump="".join('<a href="#%s">%s</a>' % (s["id"], esc(s["title"])) for s in sections),
+        sections="\n".join(resource_section(s) for s in sections),
+        disclaimer=esc(DISCLAIMER))
+
+
+# ---------------------------------------------------------------- start here
+
+def render_start(situations, by_book):
+    path = "/start/"
+    chips = "\n".join('      <a href="#%s">%s</a>' % (s["id"], esc(s["chip"])) for s in situations)
+    blocks = []
+    for s in situations:
+        book = by_book[s["book"]]
+        w, h = book["cover_size"]
+        blocks.append(
+            '    <section class="situation" id="%s"><div class="situation-text"><h2>%s</h2><p>%s</p>'
+            '<ul class="situation-links">%s</ul></div>'
+            '<a class="situation-book" href="/books/%s/"><img src="/assets/covers/%s.jpg" alt="%s book cover" '
+            'width="%d" height="%d" loading="lazy" decoding="async"><span><span class="situation-book-label">'
+            'The book on this</span><strong>%s</strong></span></a></section>'
+            % (s["id"], esc(s["question"]), esc(s["answer"]),
+               "".join("<li>%s</li>" % internal_link(l) for l in s["links"]),
+               book["slug"], book["slug"], esc(book["title"]), w, h, esc(book["title"])))
+    graph = [
+        {"@type": "WebPage", "@id": SITE + path, "url": SITE + path, "name": "Start here",
+         "description": "A guide to where to begin, by situation.", "isPartOf": {"@id": WEBSITE_ID},
+         "inLanguage": "en-US", "about": about_nodes(["adhd", "autism"])},
+        person_node(),
+        breadcrumbs((AUTHOR, "/"), ("Start here", path)),
+    ]
+    return render(
+        "start.html",
+        seo=seo_head("Start Here: Where to Begin With ADHD, Autism or AuDHD",
+                     "Not sure where to start? Pick what is costing you most, from money and burnout to "
+                     "overthinking and work, and find the right article and book.", path),
+        schema=schema(graph), chips=chips, situations="\n".join(blocks), disclaimer=esc(DISCLAIMER))
+
+
+# ---------------------------------------------------------------- topics
+
+def render_topic(topic, posts, books, by_book, terms_by_slug, resources_by_id):
+    path = "/topics/%s/" % topic["slug"]
+    url = SITE + path
+    articles = [p for p in posts if topic["slug"] in p["topics"]]
+
+    tool = ""
+    if topic.get("tool"):
+        tool = ('<aside class="tool-cta"><div><span class="tool-cta-label">Free tool</span>'
+                '<strong>%s</strong><p>See roughly what late fees, forgotten subscriptions and impulse buys '
+                'cost you, by category.</p></div><a class="btn-amazon" href="%s">Open the calculator</a></aside>'
+                % (esc(TITLES[topic["tool"]]), topic["tool"]))
+
+    shelf = ""
+    if topic.get("books"):
+        shelf = ('<section class="related"><h2>Books</h2><div class="shelf-grid shelf-grid-small">%s</div></section>'
+                 % "".join(book_card(by_book[b]) for b in topic["books"]))
+
+    terms = ""
+    if topic.get("terms"):
+        terms = ('<section class="related"><h2>Key terms</h2><dl class="topic-terms">%s</dl></section>'
+                 % "".join('<div><dt><a href="/glossary/#%s">%s</a></dt><dd>%s</dd></div>'
+                           % (t, esc(terms_by_slug[t]["term"]), esc(first_sentence(terms_by_slug[t]["definition"])))
+                           for t in topic["terms"]))
+
+    help_ = ""
+    if topic.get("resources"):
+        help_ = ('<section class="related topic-resources"><h2>Organisations and help</h2>%s</section>'
+                 % "".join(resource_section(resources_by_id[r], "h3") for r in topic["resources"]))
+
+    others = ('<nav class="topic-chips topic-chips-end" aria-label="Other topics"><span>Other topics</span>%s</nav>'
+              % "".join('<a href="/topics/%s/">%s</a>' % (t["slug"], esc(t["title"]))
+                        for t in TOPICS.values() if t["slug"] != topic["slug"]))
+
+    graph = [
+        {"@type": "CollectionPage", "@id": url, "url": url, "name": topic["title"],
+         "description": topic["description"], "isPartOf": {"@id": WEBSITE_ID}, "inLanguage": "en-US",
+         "about": about_nodes(topic.get("about")),
+         "hasPart": [{"@type": "BlogPosting", "headline": p["title"], "url": SITE + "/blog/%s/" % p["slug"]}
+                     for p in articles]},
+        person_node(),
+        breadcrumbs((AUTHOR, "/"), ("Topics", "/topics/"), (topic["title"], path)),
+    ]
+    return render(
+        "topic.html",
+        seo=seo_head("%s — J.M. Struijk" % topic["title"], topic["description"], path,
+                     og_image("topic", topic["slug"])),
+        schema=schema(graph), title=esc(topic["title"]), description=esc(topic["description"]),
+        body=topic["body"], tool=tool, articles=post_cards(articles, "Articles"), books=shelf,
+        terms=terms, resources=help_, other_topics=others, disclaimer=esc(DISCLAIMER))
+
+
+def render_topics_index(topics, posts):
+    cards = []
+    for t in topics:
+        n = sum(1 for p in posts if t["slug"] in p["topics"])
+        cards.append('    <a class="topic-card" href="/topics/%s/"><h2>%s</h2><p>%s</p>'
+                     '<span class="topic-count">%d article%s · %d book%s</span></a>'
+                     % (t["slug"], esc(t["title"]), esc(t["description"]), n, "" if n == 1 else "s",
+                        len(t.get("books") or []), "" if len(t.get("books") or []) == 1 else "s"))
+    graph = [
+        {"@type": "CollectionPage", "@id": SITE + "/topics/", "url": SITE + "/topics/",
+         "name": "Topics", "isPartOf": {"@id": WEBSITE_ID}, "inLanguage": "en-US",
+         "hasPart": [{"@type": "CollectionPage", "name": t["title"], "url": SITE + "/topics/%s/" % t["slug"]}
+                     for t in topics]},
+        person_node(),
+        breadcrumbs((AUTHOR, "/"), ("Topics", "/topics/")),
+    ]
+    return render(
+        "topics.html",
+        seo=seo_head("Topics: ADHD, Autism, Money and Burnout — J.M. Struijk",
+                     "Browse articles, books and tools on ADHD and autism by subject: money, everyday ADHD, "
+                     "late diagnosis, autism in adults, and burnout.", "/topics/"),
+        schema=schema(graph), cards="\n".join(cards))
+
+
+# ---------------------------------------------------------------- calculator
+
+CALC_PATH = "/tools/adhd-tax-calculator/"
+
+CALC_EXPLAINER = """## What counts as the ADHD tax
+
+The ADHD tax is money that leaves your account because of how your brain works rather than because of anything you chose to buy. Late fees on bills you could afford, subscriptions you meant to cancel, a second charger because the first one is somewhere in the house. None of it is a decision, which is why it rarely shows up as a line in a budget.
+
+The seven categories here come from the ADHD Tax Calculator worksheet in Chapter 1 of [The ADHD Tax](/books/adhd-tax/). If you prefer paper, the same worksheet is in the free [printable worksheets](/adhd-tax-worksheets/).
+
+## Reading your result
+
+The ten-year figure is there to make the number concrete, not to make you feel bad. Most people find the total is larger than they expected and more fixable than they feared, because a handful of sources usually account for most of it.
+
+Start with your top category and nothing else. For most people that means putting bills on autopay or doing one subscription audit. One change that sticks is worth more than a plan to fix everything. The article on [what the ADHD tax costs](/blog/adhd-tax-what-it-costs/) explains each category in more depth.
+
+## Common questions
+
+### What is the ADHD tax?
+
+A community term for the money lost to ADHD-related difficulties: late fees, forgotten subscriptions, replacing things you already own, and paying extra for convenience when the cheaper option had too many steps. It is not an official financial or clinical term.
+
+### Is my information stored or sent anywhere?
+
+Nothing you enter is sent anywhere. The calculation happens in your browser, and your numbers are remembered only on this device, if your browser allows it, so you can come back to them. The Clear button removes them.
+
+### How accurate is the result?
+
+As accurate as your estimates. Working from three months of bank and card statements and dividing by three gives a fair monthly figure. Rough numbers are fine, because the point is to see the pattern.
+
+### Where do the categories come from?
+
+From the ADHD Tax Calculator worksheet in Chapter 1 of The ADHD Tax by J.M. Struijk. The calculator uses the same seven categories so the tool and the book give the same answer.
+
+### What should I do with my total?
+
+Pick the single largest category and fix one thing in it, usually autopay for late fees or a subscription audit for forgotten renewals. The tip shown for each of your top categories is a good first move."""
+
+
+def render_calculator(categories, by_book):
+    fieldsets = []
+    for cat in categories:
+        rows = "".join(
+            '<label class="calc-row"><span>%s</span><input type="text" inputmode="decimal" autocomplete="off" '
+            'name="%s-%d" data-cat="%s" placeholder="0"></label>' % (esc(item), cat["id"], i, cat["id"])
+            for i, item in enumerate(cat["items"]))
+        fieldsets.append(
+            '        <fieldset class="calc-cat"><legend>%s</legend><p class="calc-blurb">%s</p>'
+            '<div class="calc-rows">%s</div><div class="calc-subtotal">Monthly subtotal '
+            '<strong data-subtotal="%s">0</strong></div></fieldset>'
+            % (esc(cat["name"]), esc(cat["blurb"]), rows, cat["id"]))
+        if cat["link"] not in TITLES:
+            fail("calculator category '%s' links to unknown page %s." % (cat["id"], cat["link"]))
+
+    data = json.dumps([{"id": c["id"], "name": c["name"], "tip": c["tip"], "link": c["link"]} for c in categories],
+                      ensure_ascii=False).replace("</", "<\\/")
+    body, _, _, faq = render_markdown(CALC_EXPLAINER)
+    url = SITE + CALC_PATH
+    graph = [
+        {"@type": "WebApplication", "@id": url + "#app", "name": "ADHD Tax Calculator", "url": url,
+         "description": "Estimate what late fees, forgotten subscriptions, impulse buys and lost items cost you "
+                        "each month, by category, using the worksheet from The ADHD Tax.",
+         "applicationCategory": "FinanceApplication", "operatingSystem": "Any",
+         "browserRequirements": "Requires JavaScript", "isAccessibleForFree": True,
+         "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"},
+         "author": {"@id": PERSON_ID}, "about": about_nodes(["adhd"]),
+         "isBasedOn": {"@id": SITE + "/books/adhd-tax/#book"}},
+        person_node(),
+        breadcrumbs((AUTHOR, "/"), ("ADHD and money", "/topics/adhd-and-money/"), ("ADHD Tax Calculator", CALC_PATH)),
+        faq_node(url, faq),
+    ]
+    return render(
+        "calculator.html",
+        seo=seo_head("ADHD Tax Calculator: What Is ADHD Costing You?",
+                     "Free ADHD Tax Calculator: add up late fees, forgotten subscriptions, impulse buys and lost "
+                     "items to see your monthly, yearly and ten-year cost.", CALC_PATH, og_image("tool", "adhd-tax-calculator")),
+        schema=schema(graph), fieldsets="\n".join(fieldsets), explainer=body, data=data,
+        book_cta=book_cta(by_book["adhd-tax"]), author_box=AUTHOR_BOX, disclaimer=esc(DISCLAIMER))
 
 
 # ---------------------------------------------------------------- homepage
@@ -926,7 +1228,8 @@ def render_feed(posts):
             % (SITE, SITE, "\n".join(items)))
 
 
-def render_sitemap(posts, books, glossary_date):
+def render_sitemap(posts, books, glossary_date, extra):
+    """extra: (path, lastmod, changefreq, priority) for pages outside posts and books."""
     home_date = mtime_date(os.path.join(ROOT, "index.html"))
     newest_post = max(str(p.get("updated") or p["date"]) for p in posts)
     newest_book = max(b["modified"] for b in books)
@@ -946,6 +1249,7 @@ def render_sitemap(posts, books, glossary_date):
                    [og_image("post", p["slug"])] if og_image("post", p["slug"]) != DEFAULT_OG else [])
              for p in posts]
     urls.append(entry("/glossary/", glossary_date, "monthly", "0.8"))
+    urls += [entry(path, lastmod, freq, priority) for path, lastmod, freq, priority in extra]
     urls.append(entry("/adhd-tax-worksheets/",
                       mtime_date(os.path.join(ROOT, "adhd-tax-worksheets", "index.html")), "yearly", "0.5"))
     return ('<?xml version="1.0" encoding="UTF-8"?>\n'
@@ -960,7 +1264,7 @@ def first_sentence(text):
     return m.group(1) if m else text
 
 
-def render_llms(posts, books, terms):
+def render_llms(posts, books, terms, topics, resources):
     groups = []
     for series in SERIES:
         group = [b for b in books if b["series"] == series]
@@ -978,17 +1282,38 @@ def render_llms(posts, books, terms):
                             for p in posts)
     glossary_md = "\n".join("- [%s](%s/glossary/#%s): %s" % (t["term"], SITE, t["slug"], first_sentence(t["definition"]))
                             for t in terms)
+    topics_md = "\n".join("- [%s](%s/topics/%s/): %s" % (t["title"], SITE, t["slug"], t["description"])
+                          for t in topics)
+    resources_md = "\n".join("- [%s](%s/resources/#%s): %d entries, including %s."
+                             % (s["title"], SITE, s["id"], len(s["items"]),
+                                ", ".join(i["name"] for i in s["items"][:3]))
+                             for s in resources)
     tpl = open(os.path.join(TEMPLATES, "llms.md"), encoding="utf-8").read()
     return tpl.format(book_count=len(books), post_count=len(posts), term_count=len(terms),
-                      books=books_md, articles=articles_md, glossary=glossary_md)
+                      books=books_md, articles=articles_md, glossary=glossary_md,
+                      topics=topics_md, resources=resources_md,
+                      resource_count=sum(len(s["items"]) for s in resources))
 
 
 def absolute_links(markdown):
     return re.sub(r"\]\(/", "](%s/" % SITE, markdown)
 
 
-def render_llms_full(llms, posts, books, terms):
+def render_llms_full(llms, posts, books, terms, topics, resources):
     parts = [llms.rstrip(), "", "---", "", "# Full text", ""]
+    for t in topics:
+        parts += ["## Topic: %s" % t["title"], "", "URL: %s/topics/%s/" % (SITE, t["slug"]), "",
+                  absolute_links(t["markdown"]), ""]
+    parts += ["## Tool: ADHD Tax Calculator", "", "URL: %s%s" % (SITE, CALC_PATH), "",
+              absolute_links(CALC_EXPLAINER).replace("\n## ", "\n### "), ""]
+    parts += ["## Resource directory", "", "URL: %s/resources/" % SITE, ""]
+    for s in resources:
+        parts += ["### %s" % s["title"], "", s["intro"], ""]
+        for i in s["items"]:
+            region = " (%s)" % i["region"] if i.get("region") else ""
+            detail = " %s." % i["detail"] if i.get("detail") else ""
+            parts.append("- %s%s: %s%s %s" % (i["name"], region, i["description"], detail, i["url"]))
+        parts.append("")
     for b in books:
         parts += ["## Book: %s" % b["title"], "",
                   "URL: %s/books/%s/" % (SITE, b["slug"]),
@@ -1030,6 +1355,49 @@ def check_links(pages, known, anchors):
         fail("broken internal links:\n  " + "\n  ".join(sorted(errors)))
 
 
+def check_external(resources):
+    """Open every directory link and report anything moved, gone or unreachable.
+
+    Sites marked blocked refuse automated requests, so a 403 from them is
+    reported as unverifiable rather than broken. On a clean run the date is
+    recorded and shown on the directory page.
+    """
+    import urllib.error
+    import urllib.request
+
+    ua = ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 "
+          "(KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36")
+    broken, unverifiable, ok = [], [], 0
+    for section in resources:
+        for item in section["items"]:
+            request = urllib.request.Request(item["url"], headers={"User-Agent": ua, "Accept-Language": "en-US,en;q=0.9"})
+            try:
+                with urllib.request.urlopen(request, timeout=25) as response:
+                    final = response.geturl().rstrip("/")
+                    if final != item["url"].rstrip("/"):
+                        broken.append("%s redirects to %s (update the url)" % (item["url"], response.geturl()))
+                    else:
+                        ok += 1
+            except urllib.error.HTTPError as e:
+                if item.get("blocked") and e.code in (403, 429, 503):
+                    unverifiable.append(item["url"])
+                else:
+                    broken.append("%s returned HTTP %d" % (item["url"], e.code))
+            except Exception as e:  # DNS failure, timeout, TLS error
+                broken.append("%s could not be reached (%s)" % (item["url"], e.__class__.__name__))
+
+    print("external links: %d ok, %d unverifiable (bot protection), %d need attention"
+          % (ok, len(unverifiable), len(broken)))
+    for u in unverifiable:
+        print("  unverifiable: " + u)
+    for b in broken:
+        print("  ATTENTION: " + b)
+    if not broken:
+        with open(os.path.join(CONTENT, "resources-checked.txt"), "w") as f:
+            f.write(datetime.now().strftime("%Y-%m-%d") + "\n")
+    return not broken
+
+
 # ---------------------------------------------------------------- share images
 
 def find_chrome():
@@ -1049,7 +1417,7 @@ def topic_label(keys):
     return "Autism" if "autism" in keys else "ADHD"
 
 
-def render_og_images(posts, books, force):
+def render_og_images(posts, books, topics, force):
     chrome = find_chrome()
     if not chrome:
         print("share images skipped: Chrome not found (set CHROME to its path)")
@@ -1062,6 +1430,9 @@ def render_og_images(posts, books, force):
     jobs = [("post", p["slug"], p["title"], "Article · " + topic_label(p.get("about")), p.get("book"))
             for p in posts]
     jobs += [("book", b["slug"], b["title"], "Book · " + SERIES[b["series"]][2], b["slug"]) for b in books]
+    jobs += [("topic", t["slug"], t["title"], "Topic · " + topic_label(t.get("about")), (t.get("books") or [None])[0])
+             for t in topics]
+    jobs.append(("tool", "adhd-tax-calculator", "The ADHD Tax Calculator", "Free tool", "adhd-tax"))
 
     made = 0
     for kind, slug, title, kicker, cover_slug in jobs:
@@ -1113,25 +1484,57 @@ def prune(section, keep):
 
 def main():
     args = set(sys.argv[1:])
+
+    # Load in dependency order: topics reference books, terms and resources;
+    # posts reference books and topics.
     books = load_books()
     by_book = {b["slug"]: b for b in books}
-    posts = load_posts(by_book)
-    by_post = {p["slug"]: p for p in posts}
     terms, glossary_date = load_glossary()
+    terms_by_slug = {t["slug"]: t for t in terms}
+    resources, resources_date = load_resources()
+    resources_by_id = {s["id"]: s for s in resources}
+    topics = load_topics(by_book, set(terms_by_slug), set(resources_by_id))
+    TOPICS.update((t["slug"], t) for t in topics)
+    posts = load_posts(by_book, set(TOPICS))
+    by_post = {p["slug"]: p for p in posts}
+    situations, start_date = load_yaml_list("start.yaml")
+    for s in situations:
+        require(s, ("id", "chip", "question", "answer", "links", "book"), "start situation %r" % s.get("id"))
+        if s["book"] not in by_book:
+            fail("start situation '%s' names unknown book '%s'." % (s["id"], s["book"]))
+    calculator, calculator_date = load_yaml_list("calculator.yaml")
 
+    TITLES.update({"/": "Home", "/blog/": "All articles", "/books/": "All books", "/topics/": "Topics",
+                   "/glossary/": "Glossary", "/start/": "Start here", "/resources/": "Resources directory",
+                   CALC_PATH: "ADHD Tax Calculator", "/adhd-tax-worksheets/": "ADHD Tax printable worksheets"})
+    TITLES.update(("/blog/%s/" % p["slug"], p["title"]) for p in posts)
+    TITLES.update(("/books/%s/" % b["slug"], b["title"]) for b in books)
+    TITLES.update(("/topics/%s/" % t["slug"], t["title"]) for t in topics)
+    TITLES.update(("/resources/#%s" % s["id"], s["title"]) for s in resources)
+
+    if "--check-links" in args:
+        check_external(resources)
     if "--og" in args or "--og-all" in args:
-        render_og_images(posts, books, force="--og-all" in args)
+        render_og_images(posts, books, topics, force="--og-all" in args)
 
     pages = {"/blog/%s/" % p["slug"]: render_post(p, by_post, by_book) for p in posts}
     pages["/blog/"] = render_blog_index(posts, by_book)
     pages.update({"/books/%s/" % b["slug"]: render_book(b, posts, books) for b in books})
     pages["/books/"] = render_books_index(books)
     pages["/glossary/"] = render_glossary(terms, by_post, by_book)
+    pages.update({"/topics/%s/" % t["slug"]: render_topic(t, posts, books, by_book, terms_by_slug, resources_by_id)
+                  for t in topics})
+    pages["/topics/"] = render_topics_index(topics, posts)
+    pages["/start/"] = render_start(situations, by_book)
+    pages["/resources/"] = render_resources(resources)
+    pages[CALC_PATH] = render_calculator(calculator, by_book)
     home = build_homepage(posts, books)
     not_found = render_404(posts, books)
 
     known = set(pages) | {"/", "/adhd-tax-worksheets/", "/blog/feed.xml", "/llms.txt", "/llms-full.txt"}
-    anchors = {"/glossary/": {t["slug"] for t in terms} | {"letter-" + c for c in "abcdefghijklmnopqrstuvwxyz"}}
+    anchors = {"/glossary/": set(terms_by_slug) | {"letter-" + c for c in "abcdefghijklmnopqrstuvwxyz"},
+               "/resources/": set(resources_by_id),
+               "/start/": {s["id"] for s in situations}}
     check_links(dict(pages, **{"/": home, "/404.html": not_found}), known, anchors)
 
     for path, page in pages.items():
@@ -1139,18 +1542,26 @@ def main():
     write("index.html", home)
     write("404.html", not_found)
     write("blog/feed.xml", render_feed(posts))
-    write("sitemap.xml", render_sitemap(posts, books, glossary_date))
-    llms = render_llms(posts, books, terms)
+    newest_topic = max(t["modified"] for t in topics)
+    write("sitemap.xml", render_sitemap(posts, books, glossary_date, [
+        ("/start/", start_date, "monthly", "0.9"),
+        ("/topics/", newest_topic, "monthly", "0.8"),
+    ] + [("/topics/%s/" % t["slug"], t["modified"], "monthly", "0.8") for t in topics] + [
+        ("/resources/", resources_date, "monthly", "0.8"),
+        (CALC_PATH, calculator_date, "monthly", "0.9"),
+    ]))
+    llms = render_llms(posts, books, terms, topics, resources)
     write("llms.txt", llms)
-    write("llms-full.txt", render_llms_full(llms, posts, books, terms))
+    write("llms-full.txt", render_llms_full(llms, posts, books, terms, topics, resources))
     prune("blog", set(by_post))
     prune("books", set(by_book))
+    prune("topics", set(TOPICS))
 
     words = sum(p["words"] for p in posts)
-    print("%d articles (%d words), %d book pages, %d glossary terms, %d pages checked"
-          % (len(posts), words, len(books), len(terms), len(pages) + 2))
-    print("FAQ questions: %d in articles, %d on book pages"
-          % (sum(len(p["faq"]) for p in posts), sum(len(b["faq"]) for b in books)))
+    print("%d articles (%d words), %d book pages, %d topics, %d glossary terms, %d directory entries"
+          % (len(posts), words, len(books), len(topics), len(terms), sum(len(s["items"]) for s in resources)))
+    print("%d pages link-checked; FAQ questions: %d in articles, %d on book pages"
+          % (len(pages) + 2, sum(len(p["faq"]) for p in posts), sum(len(b["faq"]) for b in books)))
 
 
 if __name__ == "__main__":

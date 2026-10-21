@@ -7,6 +7,7 @@ date: 2026-10-21
 keywords: adhd hyperfocus, hyperfocus burnout, adhd productivity, adhd side income, adhd crash after hyperfocus, adhd energy management
 book: adhd-side-hustle
 about: [adhd, hyperfocus]
+topics: [everyday-adhd, burnout-and-energy]
 related:
   - autistic-burnout-vs-adhd-burnout-vs-depression
   - adhd-overthinking-2am-spiral

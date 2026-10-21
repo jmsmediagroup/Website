@@ -8,6 +8,7 @@ featured: 4
 keywords: adhd paralysis, adhd task paralysis, cant start tasks adhd, executive dysfunction, adhd procrastination, adhd freeze
 book: adhd-decision-reset
 about: [adhd, executive-dysfunction]
+topics: [everyday-adhd]
 related:
   - adhd-body-doubling
   - adhd-decision-paralysis

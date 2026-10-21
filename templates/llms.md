@@ -16,6 +16,18 @@ Each book and article targets one specific way ADHD or autism shows up in adult 
 - Writes about: ADHD in adults, autism in adults, AuDHD, late diagnosis, executive dysfunction, autistic burnout, ADHD and money management, masking, sensory overload, rejection sensitivity, time blindness
 - Full text of every article and book page, for answer engines: https://jmstruijk.com/llms-full.txt
 
+## Start here
+
+- [Start here](https://jmstruijk.com/start/): A guide for new readers, organised by situation (money, debt, wondering about a diagnosis, task paralysis, overthinking, burnout, sensory overload, work, relationships), pointing to the right article and book for each.
+
+## Topics
+
+{topics}
+
+## Tools
+
+- [ADHD Tax Calculator](https://jmstruijk.com/tools/adhd-tax-calculator/): Free, browser-only calculator for the monthly, yearly and ten-year cost of ADHD-related late fees, forgotten subscriptions, impulse buys, lost items, convenience spending, avoidance and abandoned hyperfocus projects. Uses the seven categories from the Chapter 1 worksheet of The ADHD Tax.
+
 {books}
 
 ## Articles
@@ -29,6 +41,12 @@ Long-form writing on ADHD and autism, from lived experience. Not clinical guidan
 Plain-language definitions, each linked to a longer article where one exists.
 
 {glossary}
+
+## Resource directory
+
+A checked directory of {resource_count} external organisations and services for ADHD and autistic adults, by country where relevant: https://jmstruijk.com/resources/
+
+{resources}
 
 ## Free resources
 

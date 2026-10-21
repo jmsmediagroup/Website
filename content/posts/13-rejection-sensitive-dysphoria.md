@@ -7,6 +7,7 @@ featured: 2
 keywords: rejection sensitive dysphoria, rsd adhd, adhd rejection sensitivity, rsd symptoms adults, adhd criticism sensitivity, rejection sensitivity
 book: adhd-overthinking-reset
 about: [adhd, emotional-dysregulation]
+topics: [everyday-adhd]
 related:
   - adhd-overthinking-2am-spiral
   - autistic-masking-and-what-it-costs

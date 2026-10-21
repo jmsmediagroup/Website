@@ -6,6 +6,7 @@ date: 2026-10-21
 keywords: adhd impulsive spending, adhd overspending, adhd shopping, adhd dopamine spending, adhd budgeting, adhd and money
 book: adhd-budget-workbook
 about: [adhd]
+topics: [adhd-and-money]
 related:
   - adhd-tax-what-it-costs
   - adhd-debt-and-payoff-plans

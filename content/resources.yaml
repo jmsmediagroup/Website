@@ -1,0 +1,285 @@
+# Resource directory, rendered to /resources/.
+#
+# Every url was opened and checked when it was added. `python3 build.py --check-links`
+# re-checks them all and reports anything that has moved or gone.
+#
+# blocked: true marks a site that refuses automated requests (bot protection).
+# Those were confirmed by hand or through a search index instead, and the link
+# checker reports them as unverifiable rather than broken.
+#
+# Descriptions say what each organisation itself says it offers. Phone numbers
+# were copied from each service's own website.
+
+- id: crisis
+  title: If you need help right now
+  intro: >-
+    If you are in immediate danger, call your local emergency number. These services offer free, confidential
+    support from trained people when things feel unmanageable.
+  items:
+    - name: 988 Suicide & Crisis Lifeline
+      region: United States
+      url: https://988lifeline.org/
+      detail: Call, text or chat 988
+      description: >-
+        Free, confidential support 24 hours a day from trained crisis counsellors, by phone, text or online chat.
+    - name: 9-8-8 Suicide Crisis Helpline
+      region: Canada
+      url: https://988.ca/
+      detail: Call or text 9-8-8
+      description: Free support for anyone thinking about suicide, available 24 hours a day, every day of the year.
+    - name: Samaritans
+      region: UK and Ireland
+      url: https://www.samaritans.org/
+      detail: Call 116 123 for free
+      description: A listening service for anyone who is struggling, whatever the reason.
+    - name: Lifeline
+      region: Australia
+      url: https://www.lifeline.org.au/
+      detail: Call 13 11 14
+      description: Crisis support and suicide prevention, with phone, text and online options.
+    - name: 1737, Need to talk?
+      region: New Zealand
+      url: https://1737.org.nz/
+      detail: Call or text 1737
+      description: Free, confidential support around the clock from trained counsellors for anyone in New Zealand.
+    - name: Find A Helpline
+      region: International
+      url: https://findahelpline.com/
+      description: A directory of verified crisis helplines in other countries, searchable by location and topic.
+
+- id: adhd-organisations
+  title: ADHD organisations
+  intro: >-
+    National charities and nonprofits for adults with ADHD. Most offer free information, and several run peer
+    support groups, helplines or directories of professionals.
+  items:
+    - name: ADDA, Attention Deficit Disorder Association
+      region: International
+      url: https://add.org/
+      blocked: true
+      description: >-
+        An organisation focused specifically on adults with ADHD, offering virtual support groups, webinars, a
+        professional directory, and body doubling sessions for members.
+    - name: CHADD
+      region: United States
+      url: https://chadd.org/
+      description: >-
+        A US nonprofit that runs the National Resource Center on ADHD, with fact sheets, local chapters, online
+        communities, and directories of ADHD professionals and centres.
+    - name: ADHD UK
+      region: United Kingdom
+      url: https://adhduk.co.uk/
+      description: >-
+        A UK charity with information on getting diagnosed, including the NHS Right to Choose route, plus guidance on
+        work and education and online support groups.
+    - name: CADDAC, Centre for ADHD Awareness Canada
+      region: Canada
+      url: https://caddac.ca/
+      description: A national charity working on ADHD awareness, education and advocacy across Canada.
+    - name: ADHD Australia
+      region: Australia
+      url: https://www.adhdaustralia.org.au/
+      description: >-
+        A national organisation providing ADHD information, resources and community support for individuals,
+        families, educators and employers.
+
+- id: autism-organisations
+  title: Autism organisations
+  intro: >-
+    Several of these are run by autistic people themselves, which tends to show in how they write about autism:
+    as a difference to understand and accommodate rather than a problem to fix.
+  items:
+    - name: Autistic Self Advocacy Network (ASAN)
+      region: United States
+      url: https://autisticadvocacy.org/
+      description: >-
+        A nonprofit run by and for autistic people, working on policy and self-advocacy, with resources on health
+        care, education, community living and accessibility.
+    - name: Autistic Women & Nonbinary Network (AWN)
+      region: United States
+      url: https://awnnetwork.org/
+      description: >-
+        A nonprofit focused on autistic women, girls, nonbinary and trans people, working from a neurodiversity and
+        disability justice perspective.
+    - name: National Autistic Society
+      region: United Kingdom
+      url: https://www.autism.org.uk/
+      description: >-
+        The UK's main autism charity, with advice across fourteen topic areas from diagnosis and employment to money
+        and relationships, an online community, and an autism services directory.
+    - name: Reframing Autism
+      region: Australia
+      url: https://reframingautism.org.au/
+      description: >-
+        An autistic-led charity with a free Autistic Welcome Pack and a free Autism Essentials course, plus resources
+        for people who are newly identified or still questioning.
+    - name: Autistica
+      region: United Kingdom
+      url: https://www.autistica.org.uk/
+      description: A UK autism research and campaigning charity focused on helping autistic people live long, healthy lives.
+
+- id: assessment
+  title: Getting assessed as an adult
+  intro: >-
+    Official information on how adult assessment works. Routes, waits and costs differ a great deal between
+    countries, so start with the source for where you live.
+  items:
+    - name: "NHS: ADHD in adults"
+      region: United Kingdom
+      url: https://www.nhs.uk/conditions/adhd-adults/
+      description: How adult ADHD shows up and how assessment works on the NHS, starting with an appointment with a GP.
+    - name: "NHS: Autism assessments"
+      region: United Kingdom
+      url: https://www.nhs.uk/conditions/autism/assessments/
+      description: What an NHS autism assessment involves and how to ask for one as an adult.
+    - name: "ADHD UK: Right to Choose"
+      region: England
+      url: https://adhduk.co.uk/right-to-choose/
+      description: >-
+        In England you have a legal right to choose who carries out your NHS ADHD or autism assessment, which can
+        shorten long local waits. This guide explains how to ask your GP.
+    - name: "NICE guideline NG87: ADHD"
+      region: United Kingdom
+      url: https://www.nice.org.uk/guidance/ng87
+      description: The clinical guideline UK services follow for diagnosing and managing ADHD, including in adults.
+    - name: "NICE guideline CG142: Autism in adults"
+      region: United Kingdom
+      url: https://www.nice.org.uk/guidance/cg142
+      description: The clinical guideline for recognising, referring and diagnosing autism in adults in the UK.
+    - name: "NIMH: ADHD"
+      region: United States
+      url: https://www.nimh.nih.gov/health/topics/attention-deficit-hyperactivity-disorder-adhd
+      description: Plain-language information on ADHD from the US National Institute of Mental Health.
+    - name: "NIMH: Autism spectrum disorder"
+      region: United States
+      url: https://www.nimh.nih.gov/health/topics/autism-spectrum-disorders-asd
+      description: Plain-language information on autism from the US National Institute of Mental Health.
+
+- id: screeners
+  title: Self-screening questionnaires
+  intro: >-
+    Screeners can tell you whether an assessment is worth pursuing. They cannot diagnose you, and both sites below
+    say so plainly. My article on what online ADHD and autism tests can tell you covers how to read the results.
+  see: /blog/online-adhd-autism-tests/
+  items:
+    - name: ADDA Adult ADHD Test
+      region: International
+      url: https://add.org/adhd-test/
+      blocked: true
+      description: >-
+        A short online self-screener based on the World Health Organization's Adult ADHD Self-Report Scale (ASRS).
+        ADDA describes it as a screening tool, not a diagnosis.
+    - name: Embrace Autism tests
+      region: International
+      url: https://embrace-autism.com/tests
+      blocked: true
+      description: >-
+        Free online versions of widely used autism questionnaires, including the AQ, RAADS-R and the CAT-Q, which
+        measures camouflaging. The site notes its content is not medical advice.
+
+- id: professionals
+  title: Finding a professional
+  intro: Directories for finding clinicians, therapists and coaches who work with ADHD and autistic adults.
+  items:
+    - name: CHADD Professional Directory
+      region: United States
+      url: https://chadd.org/professional-directory/
+      description: A searchable directory of professionals and service providers working with ADHD.
+    - name: ADHD Coaches Organization
+      region: International
+      url: https://www.adhdcoaches.org/
+      description: The professional association for ADHD coaches, with a searchable directory of coaches.
+    - name: Psychology Today therapist directory
+      region: United States
+      url: https://www.psychologytoday.com/us/therapists
+      description: A large directory of therapists and counsellors, searchable by location, speciality and insurance.
+
+- id: community
+  title: Peer support and body doubling
+  intro: >-
+    Talking to people who already understand saves a great deal of explaining. Virtual body doubling is included
+    here because, for a lot of ADHD adults, other people's presence is what makes starting possible.
+  see: /blog/adhd-body-doubling/
+  items:
+    - name: Adult ADHD community (CHADD on HealthUnlocked)
+      region: International
+      url: https://healthunlocked.com/adult-ADHD
+      description: A free online peer community for adults with ADHD, run with CHADD.
+    - name: Women with ADHD community (CHADD on HealthUnlocked)
+      region: International
+      url: https://healthunlocked.com/adhd-women
+      description: A free online peer community for women with ADHD, run with CHADD.
+    - name: Focusmate
+      region: International
+      url: https://www.focusmate.com/
+      description: >-
+        Virtual body doubling: short video sessions where you and another person each work on your own task. There is
+        a free tier.
+
+- id: work
+  title: Work and reasonable adjustments
+  intro: >-
+    Your rights at work depend on where you live and who employs you. These are the official and expert sources,
+    and they are a better guide than anything general I could write.
+  see: /blog/adhd-at-work/
+  items:
+    - name: Job Accommodation Network (JAN)
+      region: United States
+      url: https://askjan.org/
+      description: Free, expert and confidential guidance on workplace accommodations, for employees and employers.
+    - name: "JAN: ADHD accommodation ideas"
+      region: United States
+      url: https://askjan.org/disabilities/Attention-Deficit-Hyperactivity-Disorder-AD-HD.cfm
+      description: Practical workplace accommodation ideas for ADHD, organised by the difficulty they address.
+    - name: "JAN: Autism accommodation ideas"
+      region: United States
+      url: https://askjan.org/disabilities/Autism-Spectrum.cfm
+      description: Practical workplace accommodation ideas for autistic employees.
+    - name: "EEOC: Disability-related resources"
+      region: United States
+      url: https://www.eeoc.gov/eeoc-disability-related-resources
+      description: >-
+        The US federal agency that enforces disability discrimination law at work. Its employment protections apply to
+        employers with 15 or more employees.
+    - name: "Acas: Reasonable adjustments at work"
+      region: United Kingdom
+      url: https://www.acas.org.uk/reasonable-adjustments
+      description: What reasonable adjustments are and when the Equality Act 2010 requires an employer to make them.
+    - name: Access to Work
+      region: England, Scotland and Wales
+      url: https://www.gov.uk/access-to-work
+      description: >-
+        A UK government scheme that can fund support at work for disabled people and people with health conditions.
+        Northern Ireland has a separate system.
+
+- id: money
+  title: Free debt and money advice
+  intro: >-
+    Not-for-profit services that will look at your situation for free. If anyone wants a fee to manage your debt,
+    try one of these first.
+  see: /blog/adhd-debt-and-payoff-plans/
+  items:
+    - name: NFCC, National Foundation for Credit Counseling
+      region: United States
+      url: https://www.nfcc.org/
+      description: A network of non-profit credit counselling agencies that can help you work out a plan for your debt.
+    - name: StepChange
+      region: United Kingdom
+      url: https://www.stepchange.org/
+      description: A UK debt charity offering free debt advice and fee-free debt management.
+    - name: National Debtline
+      region: England and Wales
+      url: https://nationaldebtline.org/
+      description: Free, confidential debt advice by phone, online chat or self-help tools.
+    - name: MABS, Money Advice and Budgeting Service
+      region: Ireland
+      url: https://www.mabs.ie/en/
+      description: Free, confidential help with money, debt and budgeting for people in Ireland.
+    - name: National Debt Helpline
+      region: Australia
+      url: https://ndh.org.au/
+      description: Free, confidential, not-for-profit financial counselling and step-by-step guides.
+    - name: Credit Counselling Canada
+      region: Canada
+      url: https://creditcounsellingcanada.ca/
+      description: A national association of not-for-profit credit counselling agencies.

@@ -7,6 +7,7 @@ date: 2026-10-21
 keywords: late adhd diagnosis, adhd diagnosed as an adult, adult adhd diagnosis grief, after adhd diagnosis, late diagnosed adhd, adhd in adults
 book: late-diagnosed-adhd-workbook
 about: [adhd]
+topics: [late-diagnosis]
 related:
   - autistic-in-adulthood-late-diagnosis
   - audhd-autistic-and-adhd

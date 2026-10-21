@@ -6,6 +6,7 @@ date: 2026-10-21
 keywords: late autism diagnosis, autistic adult diagnosis, diagnosed autistic as an adult, adult autism assessment, late diagnosed autistic, autism in women
 book: late-diagnosed-autistic-workbook
 about: [autism, masking]
+topics: [late-diagnosis, autism]
 related:
   - adhd-diagnosis-as-an-adult-first-year
   - autistic-masking-and-what-it-costs

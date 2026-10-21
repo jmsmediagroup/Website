@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+{seo}
+{head}
+<script type="application/ld+json">
+{schema}
+</script>
+</head>
+<body>
+{header}
+
+  <article class="calc-page">
+
+    <header class="page-header">
+      <nav class="crumbs" aria-label="Breadcrumb">
+        <a href="/">Home</a> <span>/</span> <a href="/topics/adhd-and-money/">ADHD and money</a>
+      </nav>
+      <span class="section-tag">Free tool</span>
+      <h1>The ADHD Tax <em>Calculator.</em></h1>
+      <p class="page-lede">
+        Add up what late fees, forgotten subscriptions, impulse buys and lost things cost you each month, and see it over a year and over ten. It uses the same seven categories as the worksheet in Chapter 1 of The ADHD Tax.
+      </p>
+    </header>
+
+    <ol class="calc-steps">
+      <li><strong>Open your last three months of statements.</strong> Bank account and credit cards.</li>
+      <li><strong>Enter a rough monthly amount for anything that applies.</strong> Add the three months together and divide by three. Estimates are fine; this is about visibility, not precision.</li>
+      <li><strong>Look at your top three categories.</strong> That is where to start.</li>
+    </ol>
+
+    <p class="calc-privacy">Everything is calculated in your browser. Nothing you type is sent anywhere.</p>
+
+    <noscript><p class="calc-noscript">The calculator needs JavaScript. You can do the same thing on paper with the free <a href="/adhd-tax-worksheets/">printable worksheets</a>.</p></noscript>
+
+    <div class="calc-layout">
+      <form class="calc-form" id="adhd-tax-calc" novalidate>
+        <div class="calc-currency">
+          <label for="calc-currency">Currency</label>
+          <select id="calc-currency" name="currency">
+            <option value="USD">$ US dollar</option>
+            <option value="GBP">£ Pound sterling</option>
+            <option value="EUR">€ Euro</option>
+            <option value="CAD">$ Canadian dollar</option>
+            <option value="AUD">$ Australian dollar</option>
+          </select>
+        </div>
+{fieldsets}
+      </form>
+
+      <aside class="calc-results" aria-live="polite">
+        <div class="calc-results-inner">
+          <div class="calc-label">Your ADHD tax</div>
+          <div class="calc-total"><span id="calc-month">0</span><small> a month</small></div>
+          <dl class="calc-projection">
+            <div><dt>A year</dt><dd id="calc-year">0</dd></div>
+            <div><dt>Ten years</dt><dd id="calc-decade">0</dd></div>
+          </dl>
+          <div class="calc-top" id="calc-top">
+            <p class="calc-empty">Enter some amounts to see where most of it goes.</p>
+          </div>
+          <div class="calc-actions">
+            <button type="button" id="calc-print">Print</button>
+            <button type="button" id="calc-reset">Clear</button>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <div class="post-body calc-explainer">
+{explainer}
+    </div>
+
+    {book_cta}
+
+    {author_box}
+
+    <p class="disclaimer">{disclaimer}</p>
+
+  </article>
+
+  <script type="application/json" id="calc-data">{data}</script>
+  <script src="/assets/calculator.js" defer></script>
+
+{footer}
+</body>
+</html>

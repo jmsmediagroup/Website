@@ -6,6 +6,7 @@ date: 2026-10-21
 keywords: autistic burnout, adhd burnout, burnout vs depression, autistic burnout recovery, adhd exhaustion, neurodivergent burnout
 book: adhd-burnout-recovery
 about: [autism, adhd]
+topics: [burnout-and-energy, autism]
 related:
   - autistic-masking-and-what-it-costs
   - adhd-hyperfocus-without-burnout

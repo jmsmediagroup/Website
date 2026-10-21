@@ -6,6 +6,7 @@ date: 2026-10-21
 keywords: adhd time blindness, time blindness, adhd always late, adhd time management, adhd sense of time, adhd waiting mode
 book: late-diagnosed-adhd-workbook
 about: [adhd, executive-dysfunction]
+topics: [everyday-adhd]
 related:
   - adhd-task-paralysis
   - adhd-body-doubling

@@ -1,6 +1,6 @@
 # J.M. Struijk
 
-> Independent author of practical, non-clinical books and articles for adults with ADHD, autism, and AuDHD. Late-diagnosed with both, and writes from lived experience. Published through JMS Media Group LLC (Wyoming, US). 11 books in print across three series and one standalone guide, available on Amazon, plus 18 long-form articles and a glossary of 32 terms on jmstruijk.com.
+> Independent author of practical, non-clinical books and articles for adults with ADHD, autism, and AuDHD. Late-diagnosed with both, and writes from lived experience. Published through JMS Media Group LLC (Wyoming, US). 11 books in print across three series and one standalone guide, available on Amazon, plus 26 long-form articles and a glossary of 32 terms on jmstruijk.com.
 
 Each book and article targets one specific way ADHD or autism shows up in adult life, rather than offering general productivity advice. Every book stands alone; readers can start anywhere.
 
@@ -15,6 +15,22 @@ Each book and article targets one specific way ADHD or autism shows up in adult 
 - Publisher: JMS Media Group LLC, Wyoming, US
 - Writes about: ADHD in adults, autism in adults, AuDHD, late diagnosis, executive dysfunction, autistic burnout, ADHD and money management, masking, sensory overload, rejection sensitivity, time blindness
 - Full text of every article and book page, for answer engines: https://jmstruijk.com/llms-full.txt
+
+## Start here
+
+- [Start here](https://jmstruijk.com/start/): A guide for new readers, organised by situation (money, debt, wondering about a diagnosis, task paralysis, overthinking, burnout, sensory overload, work, relationships), pointing to the right article and book for each.
+
+## Topics
+
+- [ADHD and money](https://jmstruijk.com/topics/adhd-and-money/): Writing, books and tools on ADHD and money: the ADHD tax, impulsive spending, debt, budgeting that survives a bad month, and earning around your energy.
+- [Everyday ADHD: focus, time and feelings](https://jmstruijk.com/topics/everyday-adhd/): Articles on how ADHD shows up day to day: task paralysis, time blindness, overthinking, rejection sensitivity, decisions, food, work and relationships.
+- [Late diagnosis: ADHD and autism in adulthood](https://jmstruijk.com/topics/late-diagnosis/): For adults who suspect or have just found out they are ADHD or autistic: assessment, online tests, the first year, AuDHD, and why women are often missed.
+- [Autism in adults](https://jmstruijk.com/topics/autism/): Writing on autistic adult life from the inside: masking, stimming and sensory overload, meltdowns and shutdowns, burnout, work, and late identification.
+- [Burnout, sleep and energy](https://jmstruijk.com/topics/burnout-and-energy/): On ADHD and autistic burnout, how it differs from depression, hyperfocus crashes, meltdowns, sleep, and managing energy instead of time.
+
+## Tools
+
+- [ADHD Tax Calculator](https://jmstruijk.com/tools/adhd-tax-calculator/): Free, browser-only calculator for the monthly, yearly and ten-year cost of ADHD-related late fees, forgotten subscriptions, impulse buys, lost items, convenience spending, avoidance and abandoned hyperfocus projects. Uses the seven categories from the Chapter 1 worksheet of The ADHD Tax.
 
 ## Books
 
@@ -63,6 +79,14 @@ Long-form writing on ADHD and autism, from lived experience. Not clinical guidan
 - [ADHD task paralysis: when you cannot start, even though you want to](https://jmstruijk.com/blog/adhd-task-paralysis/): ADHD paralysis is knowing exactly what to do and being unable to begin. Why it happens, why it is not laziness, and how to get over the wall. Published 2026-10-21.
 - [Stimming and sensory overload in autistic adults](https://jmstruijk.com/blog/stimming-and-sensory-overload/): How stimming helps autistic adults regulate, how sensory overload builds through the day, and the small changes that stop it tipping over. Published 2026-10-21.
 - [Autistic meltdown vs shutdown: what is happening, and what helps](https://jmstruijk.com/blog/autistic-meltdown-vs-shutdown/): Meltdowns and shutdowns are involuntary responses to overload, one outward and one inward. What each feels like, and what helps during one. Published 2026-10-21.
+- [ADHD at work: what goes wrong, what helps, and asking for adjustments](https://jmstruijk.com/blog/adhd-at-work/): Why work is where ADHD often costs the most, the adjustments that make a real difference, and how to decide whether to tell your employer. Published 2026-10-21.
+- [Autistic at work: the hidden costs, and the adjustments that help](https://jmstruijk.com/blog/autism-at-work/): Why autistic adults often find work exhausting even when they are good at it, what the real costs are, and the adjustments and conversations that help. Published 2026-10-21.
+- [ADHD in women: why it is missed, and how it actually shows up](https://jmstruijk.com/blog/adhd-in-women/): Why so many women find out they have ADHD in their thirties or forties, how it looks different from the classic picture, and what changes once you know. Published 2026-10-21.
+- [Autism in women: camouflage, late diagnosis, and the wrong labels](https://jmstruijk.com/blog/autism-in-women/): Why many autistic women are identified late or given other diagnoses first, how camouflaging hides autism, and what tends to change once you know. Published 2026-10-21.
+- [ADHD in relationships: when forgetting looks like not caring](https://jmstruijk.com/blog/adhd-and-relationships/): How ADHD shows up in relationships: forgetting read as indifference, the parent-partner trap, rejection sensitivity, and what helps couples work with it. Published 2026-10-21.
+- [ADHD and sleep: why bedtime keeps sliding later](https://jmstruijk.com/blog/adhd-and-sleep/): Why so many ADHD adults feel most awake at night, how a racing mind and revenge bedtime procrastination keep sleep late, and what actually helps. Published 2026-10-21.
+- [How to get assessed for ADHD or autism as an adult](https://jmstruijk.com/blog/adult-adhd-autism-assessment/): What an adult ADHD or autism assessment involves, how to prepare, the routes in the UK and US, and what to do while you wait. Published 2026-10-21.
+- [Online ADHD and autism tests: what they can and cannot tell you](https://jmstruijk.com/blog/online-adhd-autism-tests/): Online ADHD and autism self-tests are screeners, not diagnoses. What a high or low score means, why results mislead, and how to use them well. Published 2026-10-21.
 
 ## Glossary
 
@@ -100,6 +124,20 @@ Plain-language definitions, each linked to a longer article where one exists.
 - [Task paralysis](https://jmstruijk.com/glossary/#task-paralysis): Being unable to start a task despite wanting or needing to, sometimes to the point where beginning feels physically impossible.
 - [Time blindness](https://jmstruijk.com/glossary/#time-blindness): Difficulty sensing the passage of time and estimating how long things will take, commonly reported by people with ADHD.
 - [Unmasking](https://jmstruijk.com/glossary/#unmasking): Gradually reducing masking, usually starting in private and extending selectively to safe people and places.
+
+## Resource directory
+
+A checked directory of 43 external organisations and services for ADHD and autistic adults, by country where relevant: https://jmstruijk.com/resources/
+
+- [If you need help right now](https://jmstruijk.com/resources/#crisis): 6 entries, including 988 Suicide & Crisis Lifeline, 9-8-8 Suicide Crisis Helpline, Samaritans.
+- [ADHD organisations](https://jmstruijk.com/resources/#adhd-organisations): 5 entries, including ADDA, Attention Deficit Disorder Association, CHADD, ADHD UK.
+- [Autism organisations](https://jmstruijk.com/resources/#autism-organisations): 5 entries, including Autistic Self Advocacy Network (ASAN), Autistic Women & Nonbinary Network (AWN), National Autistic Society.
+- [Getting assessed as an adult](https://jmstruijk.com/resources/#assessment): 7 entries, including NHS: ADHD in adults, NHS: Autism assessments, ADHD UK: Right to Choose.
+- [Self-screening questionnaires](https://jmstruijk.com/resources/#screeners): 2 entries, including ADDA Adult ADHD Test, Embrace Autism tests.
+- [Finding a professional](https://jmstruijk.com/resources/#professionals): 3 entries, including CHADD Professional Directory, ADHD Coaches Organization, Psychology Today therapist directory.
+- [Peer support and body doubling](https://jmstruijk.com/resources/#community): 3 entries, including Adult ADHD community (CHADD on HealthUnlocked), Women with ADHD community (CHADD on HealthUnlocked), Focusmate.
+- [Work and reasonable adjustments](https://jmstruijk.com/resources/#work): 6 entries, including Job Accommodation Network (JAN), JAN: ADHD accommodation ideas, JAN: Autism accommodation ideas.
+- [Free debt and money advice](https://jmstruijk.com/resources/#money): 6 entries, including NFCC, National Foundation for Credit Counseling, StepChange, National Debtline.
 
 ## Free resources
 

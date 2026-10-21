@@ -6,6 +6,7 @@ date: 2026-10-21
 keywords: stimming adults, autistic stimming, sensory overload adults, autism sensory overload, sensory processing autism, stimming adhd
 book: late-diagnosed-autistic-workbook
 about: [autism, stimming, sensory-overload]
+topics: [autism]
 related:
   - autistic-meltdown-vs-shutdown
   - autistic-masking-and-what-it-costs
