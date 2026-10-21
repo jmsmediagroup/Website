@@ -311,7 +311,7 @@ Official information on how adult assessment works. Routes, waits and costs diff
 Screeners can tell you whether an assessment is worth pursuing. They cannot diagnose you, and both sites below say so plainly. My article on what online ADHD and autism tests can tell you covers how to read the results.
 
 - ADDA Adult ADHD Test (International): A short online self-screener based on the World Health Organization's Adult ADHD Self-Report Scale (ASRS). ADDA describes it as a screening tool, not a diagnosis. https://add.org/adhd-test/
-- Embrace Autism tests (International): Free online versions of widely used autism questionnaires, including the AQ, RAADS-R and the CAT-Q, which measures camouflaging. The site notes its content is not medical advice. https://embrace-autism.com/tests
+- Embrace Autism tests (International): Free online versions of widely used autism questionnaires, including the AQ, RAADS-R and the CAT-Q, which measures camouflaging. The site notes its content is not medical advice. https://embrace-autism.com/autism-tests/
 
 ### Finding a professional
 
