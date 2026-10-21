@@ -684,3 +684,77 @@ a { color: inherit; text-decoration: none; }
   .start-chips a, .topic-chips a, .topic-tags a { padding-block: 10px; }
   .post-faq-item summary, .faq-item summary { padding-block: 20px; }
 }
+
+/* Auto-linked glossary terms: present but quieter than a normal link. */
+.post-body a.gloss, .topic-intro a.gloss {
+  color: inherit;
+  border-bottom: 1px dotted var(--rule-strong);
+}
+.post-body a.gloss:hover, .topic-intro a.gloss:hover {
+  color: var(--coral);
+  border-bottom-style: solid;
+  border-bottom-color: var(--coral);
+}
+
+/* ---------------- about page ---------------- */
+.about-page { max-width: 900px; padding-bottom: 30px; }
+.about-layout { display: grid; grid-template-columns: 240px 1fr; gap: 40px; align-items: start; }
+.about-portrait img { width: 100%; border-radius: 3px; display: block; box-shadow: 0 14px 30px -10px rgba(60,30,20,0.3); }
+.about-portrait-caption { margin-top: 12px; font-size: 13px; line-height: 1.5; color: var(--muted); }
+.about-facts { margin-top: 18px; border-top: 1px solid var(--rule); }
+.about-facts > div { display: flex; justify-content: space-between; gap: 10px; padding: 9px 0; border-bottom: 1px solid var(--rule); }
+.about-facts dt { font-size: 12px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--muted-light); font-weight: 600; }
+.about-facts dd { font-size: 14px; font-weight: 600; text-align: right; }
+.about-body { max-width: none; }
+@media (max-width: 760px) {
+  .about-layout { grid-template-columns: 1fr; gap: 26px; }
+  .about-portrait { display: grid; grid-template-columns: 150px 1fr; gap: 18px; align-items: start; }
+  .about-portrait-caption { margin-top: 0; }
+  .about-facts { margin-top: 0; }
+}
+
+/* ---------------- subscription audit ---------------- */
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.sub-head, .sub-row { display: grid; grid-template-columns: 1fr 108px 190px 32px; gap: 10px; align-items: center; }
+.sub-head {
+  font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em;
+  color: var(--muted-light); padding-bottom: 8px; border-bottom: 1px solid var(--rule);
+}
+.sub-row { padding: 8px 0; border-bottom: 1px solid var(--rule); }
+.sub-row.is-cancel .sub-name { text-decoration: line-through; color: var(--muted-light); }
+.sub-row input {
+  font: inherit; font-size: 15px; padding: 9px 10px; border: 1px solid var(--rule-strong);
+  border-radius: 2px; background: var(--cream); color: var(--ink); width: 100%;
+}
+.sub-row .sub-cost { text-align: right; }
+.sub-row input:focus { outline: 2px solid var(--coral); outline-offset: -1px; border-color: var(--coral); }
+.sub-choice { display: grid; grid-template-columns: repeat(3, 1fr); gap: 4px; }
+.sub-pick {
+  font: inherit; font-size: 12.5px; font-weight: 600; padding: 8px 4px; cursor: pointer;
+  border: 1px solid var(--rule-strong); border-radius: 2px; background: var(--cream); color: var(--muted);
+}
+.sub-pick:hover { border-color: var(--ink); color: var(--ink); }
+.sub-pick[aria-pressed="true"] { background: var(--ink); color: var(--cream); border-color: var(--ink); }
+.sub-pick[data-value="cancel"][aria-pressed="true"] { background: var(--coral); border-color: var(--coral); }
+.sub-remove {
+  font: inherit; font-size: 18px; line-height: 1; cursor: pointer; color: var(--muted-light);
+  background: none; border: 0; padding: 6px;
+}
+.sub-remove:hover { color: var(--coral); }
+.sub-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 16px; }
+.sub-actions button {
+  font: inherit; font-size: 13.5px; font-weight: 600; padding: 10px 16px; cursor: pointer;
+  border: 1px solid var(--ink); border-radius: 2px; background: var(--cream); color: var(--ink);
+}
+.sub-actions button:hover { background: var(--ink); color: var(--cream); }
+.sub-summary-list { list-style: none; display: grid; gap: 8px; margin-top: 10px; font-size: 14.5px; }
+.sub-nudge { margin-top: 12px; font-size: 13px; line-height: 1.5; color: rgba(245,241,234,0.75); }
+@media (max-width: 620px) {
+  .sub-head { display: none; }
+  .sub-row { grid-template-columns: 1fr 96px; grid-template-areas: "name cost" "choice choice"; gap: 8px; padding: 12px 0; }
+  .sub-row .sub-name { grid-area: name; }
+  .sub-row .sub-cost { grid-area: cost; }
+  .sub-choice { grid-area: choice; }
+  .sub-remove { position: absolute; right: 0; margin-top: -6px; }
+  .sub-row { position: relative; padding-right: 26px; }
+}

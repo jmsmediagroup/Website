@@ -6,6 +6,7 @@
 
 - term: ADHD
   slug: adhd
+  autolink: false
   aka: [attention deficit hyperactivity disorder]
   entity: adhd
   definition: >-
@@ -63,6 +64,7 @@
 
 - term: Autism
   slug: autism
+  autolink: false
   aka: [autism spectrum disorder, ASD]
   entity: autism
   definition: >-
@@ -286,3 +288,29 @@
     Gradually reducing masking, usually starting in private and extending selectively to safe people and places.
     It tends to be slow and partial, and safety has to come first.
   see: [/blog/autistic-masking-and-what-it-costs/]
+
+- term: Doom pile
+  slug: doom-pile
+  aka: [doom box, doom piling]
+  definition: >-
+    A pile or container of mixed items swept together to clear a surface quickly, meant to be sorted later. The
+    acronym is usually given as "didn't organise, only moved". It forms because putting items away one by one
+    requires a decision for every object, and it tends to persist because the result is an open-ended task.
+  see: [/blog/adhd-doom-piles/]
+
+- term: Inattentive ADHD
+  slug: inattentive-adhd
+  aka: [ADD, inattentive presentation]
+  definition: >-
+    The presentation of ADHD involving attention, organisation and follow-through without prominent outward
+    hyperactivity. Restlessness is often internal rather than visible. It is frequently missed in childhood
+    because it disrupts nobody else, and it is the same condition as other presentations.
+  see: [/blog/inattentive-adhd-adults/, /blog/adhd-in-women/]
+
+- term: Panic attack
+  slug: panic-attack
+  definition: >-
+    A sudden episode of intense fear with strong physical symptoms such as a racing heart, shortness of breath,
+    chest tightness and dizziness, often with a sense of dread. It differs from an autistic meltdown mainly in
+    being driven by fear rather than accumulated overload, and the two can occur together.
+  see: [/blog/autistic-meltdown-vs-panic-attack/]

@@ -1,6 +1,6 @@
 # J.M. Struijk
 
-> Independent author of practical, non-clinical books and articles for adults with ADHD, autism, and AuDHD. Late-diagnosed with both, and writes from lived experience. Published through JMS Media Group LLC (Wyoming, US). 11 books in print across three series and one standalone guide, available on Amazon, plus 26 long-form articles and a glossary of 32 terms on jmstruijk.com.
+> Independent author of practical, non-clinical books and articles for adults with ADHD, autism, and AuDHD. Late-diagnosed with both, and writes from lived experience. Published through JMS Media Group LLC (Wyoming, US). 11 books in print across three series and one standalone guide, available on Amazon, plus 31 long-form articles and a glossary of 35 terms on jmstruijk.com.
 
 Each book and article targets one specific way ADHD or autism shows up in adult life, rather than offering general productivity advice. Every book stands alone; readers can start anywhere.
 
@@ -30,7 +30,15 @@ Each book and article targets one specific way ADHD or autism shows up in adult 
 
 ## Tools
 
-- [ADHD Tax Calculator](https://jmstruijk.com/tools/adhd-tax-calculator/): Free, browser-only calculator for the monthly, yearly and ten-year cost of ADHD-related late fees, forgotten subscriptions, impulse buys, lost items, convenience spending, avoidance and abandoned hyperfocus projects. Uses the seven categories from the Chapter 1 worksheet of The ADHD Tax.
+All free, with no sign-up, and computed entirely in the reader's browser.
+
+- [ADHD Tax Calculator](https://jmstruijk.com/tools/adhd-tax-calculator/): Monthly, yearly and ten-year cost of ADHD-related late fees, forgotten subscriptions, impulse buys, lost items, convenience spending, avoidance and abandoned hyperfocus projects. Uses the seven categories from the Chapter 1 worksheet of The ADHD Tax.
+- [Subscription Audit](https://jmstruijk.com/tools/subscription-audit/): List recurring charges, mark each keep, cancel or unsure, and see what cancelling is worth over a year.
+- [All tools](https://jmstruijk.com/tools/)
+
+## About the author
+
+- [About J.M. Struijk](https://jmstruijk.com/about/): How the books came about, and the three rules the writing follows: nothing invented, not clinical, and systems that assume you will fail sometimes.
 
 ## Books
 
@@ -61,6 +69,11 @@ Each book and article targets one specific way ADHD or autism shows up in adult 
 
 Long-form writing on ADHD and autism, from lived experience. Not clinical guidance.
 
+- [ADHD or autism? How to tell them apart in adults](https://jmstruijk.com/blog/adhd-vs-autism-adults/): ADHD and autism overlap more than most descriptions admit. The differences that actually help adults tell which is which, and why it is often both. Published 2026-10-22.
+- [ADHD or anxiety? Which came first, and why it matters](https://jmstruijk.com/blog/adhd-vs-anxiety/): ADHD and anxiety look alike and often occur together. The questions that help separate them, and why treating anxiety alone sometimes only half works. Published 2026-10-22.
+- [Autistic meltdown or panic attack? Telling them apart](https://jmstruijk.com/blog/autistic-meltdown-vs-panic-attack/): Meltdowns and panic attacks can look alike from outside and need different responses. What distinguishes them, and what helps during each. Published 2026-10-22.
+- [Inattentive ADHD in adults: the quiet presentation](https://jmstruijk.com/blog/inattentive-adhd-adults/): Inattentive ADHD has no visible hyperactivity, which is why so many adults reach their thirties without it being noticed. How it actually shows up. Published 2026-10-22.
+- [Doom piles and doom boxes: the ADHD clutter cycle](https://jmstruijk.com/blog/adhd-doom-piles/): The pile on the chair, the box of everything, the drawer you cannot open. Why ADHD produces doom piles, and how to clear one without a decluttering plan. Published 2026-10-22.
 - [The ADHD tax: what it actually costs, and why budgeting advice keeps missing it](https://jmstruijk.com/blog/adhd-tax-what-it-costs/): The ADHD tax is money lost to late fees, forgotten subscriptions and replacing things you own. Where it goes, and why budgeting advice misses it. Published 2026-10-21.
 - [Why ADHD brains overspend, and what actually helps](https://jmstruijk.com/blog/why-adhd-brains-overspend/): Impulsive spending with ADHD is rarely about wanting things. How reward, time and emotion drive it, and the fixes that actually work. Published 2026-10-21.
 - [ADHD and debt: why payoff plans keep failing, and what to do instead](https://jmstruijk.com/blog/adhd-debt-and-payoff-plans/): Debt payoff plans assume consistency, which ADHD does not reliably supply. Why the usual methods fail, and how to build one that survives a bad month. Published 2026-10-21.
@@ -101,11 +114,13 @@ Plain-language definitions, each linked to a longer article where one exists.
 - [Autism](https://jmstruijk.com/glossary/#autism): A lifelong neurodevelopmental difference affecting social communication, sensory processing, and a preference for predictability and focused interests.
 - [Autistic burnout](https://jmstruijk.com/glossary/#autistic-burnout): A period of long-term exhaustion, loss of previously held skills, and reduced tolerance for sensory input, usually caused by sustained masking and demands that exceed capacity over months or years.
 - [Body doubling](https://jmstruijk.com/glossary/#body-doubling): Doing a task while another person is present, in the room or on a video call, without them helping.
+- [Doom pile](https://jmstruijk.com/glossary/#doom-pile): A pile or container of mixed items swept together to clear a surface quickly, meant to be sorted later.
 - [Double empathy problem](https://jmstruijk.com/glossary/#double-empathy-problem): The idea that communication difficulties between autistic and non-autistic people run in both directions, rather than coming from an autistic deficit alone.
 - [Echolalia](https://jmstruijk.com/glossary/#echolalia): Repeating words or phrases heard elsewhere, either immediately or later.
 - [Emotional dysregulation](https://jmstruijk.com/glossary/#emotional-dysregulation): Difficulty managing the intensity and duration of emotional responses.
 - [Executive dysfunction](https://jmstruijk.com/glossary/#executive-dysfunction): Difficulty with the executive functions: the mental processes used to plan, start, organise, switch between and finish tasks, hold information in mind, and manage time.
 - [Hyperfocus](https://jmstruijk.com/glossary/#hyperfocus): Intense absorption in a task that is hard to break, often with lost awareness of time, hunger or tiredness.
+- [Inattentive ADHD](https://jmstruijk.com/glossary/#inattentive-adhd): The presentation of ADHD involving attention, organisation and follow-through without prominent outward hyperactivity.
 - [Interoception](https://jmstruijk.com/glossary/#interoception): The sense of your body's internal state, including hunger, thirst, temperature, needing the toilet, and the physical side of emotions.
 - [Late diagnosis](https://jmstruijk.com/glossary/#late-diagnosis): Being identified as ADHD or autistic in adulthood rather than childhood.
 - [Masking](https://jmstruijk.com/glossary/#masking): Suppressing natural behaviour and performing expected behaviour to fit in: forcing eye contact, scripting conversations, hiding stimming, copying how other people act.
@@ -113,6 +128,7 @@ Plain-language definitions, each linked to a longer article where one exists.
 - [Meltdown](https://jmstruijk.com/glossary/#meltdown): An involuntary reaction to overwhelming stress or sensory input, in which a person loses control of their responses.
 - [Monotropism](https://jmstruijk.com/glossary/#monotropism): A theory of autism proposing that autistic attention tends to concentrate deeply on a small number of interests at once, instead of spreading across many.
 - [Neurodiversity](https://jmstruijk.com/glossary/#neurodiversity): The idea that variation in how brains work, including autism and ADHD, is a natural part of human diversity.
+- [Panic attack](https://jmstruijk.com/glossary/#panic-attack): A sudden episode of intense fear with strong physical symptoms such as a racing heart, shortness of breath, chest tightness and dizziness, often with a sense of dread.
 - [Rejection sensitive dysphoria](https://jmstruijk.com/glossary/#rejection-sensitive-dysphoria): Intense emotional pain in response to real or perceived rejection, criticism or failure.
 - [Revenge bedtime procrastination](https://jmstruijk.com/glossary/#revenge-bedtime-procrastination): Staying up late, even when tired, to reclaim personal time that the day did not allow.
 - [Rumination](https://jmstruijk.com/glossary/#rumination): Repetitive, circular thinking about the same worry or event without reaching a conclusion.

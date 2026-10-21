@@ -26,7 +26,15 @@ Each book and article targets one specific way ADHD or autism shows up in adult 
 
 ## Tools
 
-- [ADHD Tax Calculator](https://jmstruijk.com/tools/adhd-tax-calculator/): Free, browser-only calculator for the monthly, yearly and ten-year cost of ADHD-related late fees, forgotten subscriptions, impulse buys, lost items, convenience spending, avoidance and abandoned hyperfocus projects. Uses the seven categories from the Chapter 1 worksheet of The ADHD Tax.
+All free, with no sign-up, and computed entirely in the reader's browser.
+
+- [ADHD Tax Calculator](https://jmstruijk.com/tools/adhd-tax-calculator/): Monthly, yearly and ten-year cost of ADHD-related late fees, forgotten subscriptions, impulse buys, lost items, convenience spending, avoidance and abandoned hyperfocus projects. Uses the seven categories from the Chapter 1 worksheet of The ADHD Tax.
+- [Subscription Audit](https://jmstruijk.com/tools/subscription-audit/): List recurring charges, mark each keep, cancel or unsure, and see what cancelling is worth over a year.
+- [All tools](https://jmstruijk.com/tools/)
+
+## About the author
+
+- [About J.M. Struijk](https://jmstruijk.com/about/): How the books came about, and the three rules the writing follows: nothing invented, not clinical, and systems that assume you will fail sometimes.
 
 {books}
 

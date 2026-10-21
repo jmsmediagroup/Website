@@ -381,6 +381,87 @@ TITLES = {}
 TOPICS = {}
 
 
+AUTOLINK = []  # (compiled pattern, glossary slug), longest term first.
+# Tags whose text should never be turned into a link.
+NO_LINK_INSIDE = {"a", "h1", "h2", "h3", "h4", "code", "summary", "figcaption"}
+
+
+def build_autolinks(terms):
+    """Patterns for linking the first mention of each glossary term in a body."""
+    names = []
+    for t in terms:
+        if t.get("autolink") is False:
+            continue
+        for name in [t["term"]] + list(t.get("aka") or []):
+            names.append((name, t["slug"]))
+    # Longest first, so "sensory overload" wins before a shorter overlapping term.
+    names.sort(key=lambda n: -len(n[0]))
+    return [(re.compile(r"\b%s\b" % re.escape(name).replace(r"\ ", r"[\s ]+"), re.I), slug)
+            for name, slug in names]
+
+
+def _link_run(text, used, remaining):
+    """Link the first mention of each unused term in one run of plain text.
+
+    All matches are found against the original text and spliced in one pass, so
+    a later term can never match inside a link this function just inserted.
+    """
+    spans = []
+    for pattern, slug in AUTOLINK:
+        if slug in used:
+            continue
+        m = pattern.search(text)
+        if m:
+            spans.append((m.start(), m.end(), slug))
+    spans.sort()
+
+    chosen, end_of_last = [], 0
+    for start, end, slug in spans:
+        if start >= end_of_last and slug not in used and len(chosen) < remaining:
+            chosen.append((start, end, slug))
+            used.add(slug)
+            end_of_last = end
+    if not chosen:
+        return text, 0
+
+    out, prev = [], 0
+    for start, end, slug in chosen:
+        out.append(text[prev:start])
+        out.append('<a class="gloss" href="/glossary/#%s">%s</a>' % (slug, text[start:end]))
+        prev = end
+    out.append(text[prev:])
+    return "".join(out), len(chosen)
+
+
+def autolink_glossary(body, skip_slug=None, limit=9):
+    """Link first mentions of glossary terms, skipping headings and existing links."""
+    if not AUTOLINK:
+        return body
+    used = {skip_slug} if skip_slug else set()
+    out, pos, depth, linked = [], 0, 0, 0
+
+    for tag in re.finditer(r"<[^>]+>", body):
+        run = body[pos:tag.start()]
+        if depth == 0 and linked < limit and run.strip():
+            run, n = _link_run(run, used, limit - linked)
+            linked += n
+        out.append(run)
+        out.append(tag.group(0))
+        name = re.match(r"</?([a-zA-Z0-9]+)", tag.group(0))
+        if name and name.group(1).lower() in NO_LINK_INSIDE:
+            if tag.group(0).startswith("</"):
+                depth = max(0, depth - 1)
+            elif not tag.group(0).endswith("/>"):
+                depth += 1
+        pos = tag.end()
+
+    tail = body[pos:]
+    if depth == 0 and linked < limit:
+        tail, _ = _link_run(tail, used, limit - linked)
+    out.append(tail)
+    return "".join(out)
+
+
 def internal_link(path, label=None):
     # Anchored paths such as /resources/#money can have their own title.
     title = TITLES.get(path) or TITLES.get(path.split("#")[0])
@@ -516,9 +597,14 @@ def cover_frame(book, badge="", eager=False):
     """
     w, h = book["cover_size"]
     loading = 'fetchpriority="high"' if eager else 'loading="lazy"'
-    return ('<span class="cover-frame"><img src="/assets/covers/%s.jpg" alt="%s book cover" '
-            'width="%d" height="%d" %s decoding="async">%s</span>'
-            % (book["slug"], esc(book["title"]), w, h, loading, badge))
+    # Covers render between about 130px and 250px wide, so a phone should not
+    # download the 700px file.
+    return ('<span class="cover-frame"><img src="/assets/covers/{slug}.jpg" '
+            'srcset="/assets/covers/{slug}-400.jpg 400w, /assets/covers/{slug}.jpg 700w" '
+            'sizes="(max-width: 520px) 170px, (max-width: 880px) 220px, 260px" '
+            'alt="{title} book cover" width="{w}" height="{h}" {loading} decoding="async">{badge}</span>'
+            ).format(slug=book["slug"], title=esc(book["title"]), w=w, h=h,
+                     loading=loading, badge=badge)
 
 
 def book_card(book, heading="h3"):
@@ -618,7 +704,7 @@ def render_post(post, by_post, by_book):
         reading_time=minutes(post["words"]),
         topics=topic_tags(post["topics"]),
         toc=toc,
-        body=post["body"],
+        body=autolink_glossary(post["body"]),
         book_cta=book_cta(book),
         author_box=AUTHOR_BOX,
         disclaimer=esc(DISCLAIMER),
@@ -732,7 +818,7 @@ def render_book(book, posts, books):
         series_label=esc(series_label(book)),
         facts='<span class="book-facts-sep">·</span>'.join(facts),
         asin=book["asin"],
-        body=book["body"],
+        body=autolink_glossary(book["body"]),
         articles=post_cards(on_topic, "Articles on this subject"),
         series_more=series_more,
         author_box=AUTHOR_BOX,
@@ -972,7 +1058,7 @@ def render_topic(topic, posts, books, by_book, terms_by_slug, resources_by_id):
         seo=seo_head("%s — J.M. Struijk" % topic["title"], topic["description"], path,
                      og_image("topic", topic["slug"])),
         schema=schema(graph), title=esc(topic["title"]), description=esc(topic["description"]),
-        body=topic["body"], tool=tool, articles=post_cards(articles, "Articles"), books=shelf,
+        body=autolink_glossary(topic["body"]), tool=tool, articles=post_cards(articles, "Articles"), books=shelf,
         terms=terms, resources=help_, other_topics=others, disclaimer=esc(DISCLAIMER))
 
 
@@ -1078,6 +1164,154 @@ def render_calculator(categories, by_book):
                      "items to see your monthly, yearly and ten-year cost.", CALC_PATH, og_image("tool", "adhd-tax-calculator")),
         schema=schema(graph), fieldsets="\n".join(fieldsets), explainer=body, data=data,
         book_cta=book_cta(by_book["adhd-tax"]), author_box=AUTHOR_BOX, disclaimer=esc(DISCLAIMER))
+
+
+# ---------------------------------------------------------------- about
+
+def render_about(books, posts):
+    path = "/about/"
+    url = SITE + path
+    meta, body = read_source(os.path.join(CONTENT, "about.md"))
+    require(meta, ("title", "description"), "content/about.md")
+    check_about(meta.get("about"), "content/about.md")
+    rendered, _, _, faq = render_markdown(body)
+
+    person = person_node()
+    person.update({
+        "description": meta["description"],
+        "jobTitle": "Author",
+        "image": SITE + "/assets/images/author.jpg",
+        "mainEntityOfPage": {"@id": url},
+        "worksFor": {"@id": PUBLISHER_ID},
+        "knowsAbout": ["ADHD in adults", "Autism in adults", "AuDHD", "Late diagnosis of ADHD",
+                       "Late diagnosis of autism", "Executive dysfunction", "Autistic burnout",
+                       "Masking", "Sensory overload", "ADHD and personal finance"],
+    })
+    graph = [
+        {"@type": "AboutPage", "@id": url, "url": url, "name": meta["title"],
+         "description": meta["description"], "isPartOf": {"@id": WEBSITE_ID},
+         "inLanguage": "en-US", "mainEntity": {"@id": PERSON_ID}},
+        person, publisher_ref(),
+        breadcrumbs((AUTHOR, "/"), ("About", path)),
+    ]
+    shelf = ('<section class="related"><h2>The books</h2><div class="shelf-grid shelf-grid-small">%s</div></section>'
+             % "".join(book_card(b) for b in books))
+    return render(
+        "about.html",
+        seo=seo_head("About J.M. Struijk, ADHD & Autistic Author", meta["description"], path,
+                     og_image("page", "about"), "profile")
+            + '\n<meta name="keywords" content="%s">' % esc(meta.get("keywords", "")),
+        schema=schema(graph), description=esc(meta["description"]),
+        body=autolink_glossary(rendered), shelf=shelf,
+        book_count=len(books), post_count=len(posts), disclaimer=esc(DISCLAIMER))
+
+
+# ---------------------------------------------------------------- tools
+
+SUB_PATH = "/tools/subscription-audit/"
+
+SUB_EXPLAINER = """## Why subscriptions are the ADHD tax at its purest
+
+Nothing about a forgotten subscription was ever a decision. You signed up once, for a reason that was good at the time, and the charge kept arriving because cancelling needs you to remember something boring at a moment when nothing is prompting you.
+
+That is why they are also the most recoverable part. Unlike impulse spending, which needs a system and some self-knowledge, this one is a single afternoon's work with a permanent result. One pass through a statement, a handful of cancellations, and the money stops leaving for good.
+
+## Doing it properly
+
+Work from statements, not memory. Almost everyone underestimates, because the ones you forget are precisely the ones you cannot recall. Check a second card and any payment service you use, since those are where the oldest ones hide.
+
+Watch for annual charges. A yearly renewal will not appear on one month's statement and is usually the largest single item people find. If you can, scan a full year.
+
+Treat "unsure" as a real answer rather than a reason to stop. Mark it, finish the list, and come back. Unsure items are often free trials you forgot converted, and the decision is easier once you can see the yearly figure next to it.
+
+Then cancel the same day. This is the part that fails. A list of subscriptions you intend to cancel is just another [doom pile](/blog/adhd-doom-piles/), and it will still be there in six months. If a cancellation needs a phone call, put that call in the calendar before you close the laptop.
+
+## What to do with the money
+
+Something automatic, ideally the same week, or it will quietly be absorbed. Moving the saved amount into a separate account on a standing order is the version most likely to survive, because it does not depend on you deciding again next month.
+
+## Common questions
+
+### How do I find subscriptions I have forgotten about?
+
+Work through bank and credit card statements line by line rather than from memory, including any second card and payment services such as PayPal. Scan a full year if you can, because annual renewals will not show up in a single month and are usually the biggest items.
+
+### Is my information stored or sent anywhere?
+
+No. The tool runs entirely in your browser, and your list is kept only on this device, if your browser allows it, so you can come back to it. The Clear button removes it.
+
+### Why do people with ADHD accumulate subscriptions?
+
+Because cancelling requires remembering a boring task with no deadline and no prompt, which is the exact shape of task ADHD finds hardest. Each individual charge is small enough to feel not worth the friction, and they compound for the same reason.
+
+### What counts as a subscription?
+
+Anything that recurs without you deciding again: streaming, music, cloud storage, apps, software, memberships, delivery services, insurance add-ons, phone extras, and donations you set up once. Small recurring charges count, since they are the ones that survive.
+
+### What should I do after the audit?
+
+Cancel the cancels the same day, then move the saved amount somewhere automatically. [The ADHD Tax](/books/adhd-tax/) covers the wider pattern, and the [ADHD Tax Calculator](/tools/adhd-tax-calculator/) adds up the rest of it."""
+
+
+def render_subscription_audit(by_book):
+    url = SITE + SUB_PATH
+    body, _, _, faq = render_markdown(SUB_EXPLAINER)
+    graph = [
+        {"@type": "WebApplication", "@id": url + "#app", "name": "Subscription Audit", "url": url,
+         "description": "List recurring charges, mark what to cancel, and see what cancelling is worth "
+                        "over a year. Built for finding forgotten subscriptions.",
+         "applicationCategory": "FinanceApplication", "operatingSystem": "Any",
+         "browserRequirements": "Requires JavaScript", "isAccessibleForFree": True,
+         "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"},
+         "author": {"@id": PERSON_ID}, "about": about_nodes(["adhd"])},
+        person_node(),
+        breadcrumbs((AUTHOR, "/"), ("Tools", "/tools/"), ("Subscription Audit", SUB_PATH)),
+        faq_node(url, faq),
+    ]
+    return render(
+        "subscription-audit.html",
+        seo=seo_head("Subscription Audit: Find What You Forgot You Pay For",
+                     "Free subscription audit tool. List recurring charges, mark what to cancel, and see "
+                     "the yearly saving. Nothing leaves your browser.", SUB_PATH,
+                     og_image("tool", "subscription-audit")),
+        schema=schema(graph), explainer=autolink_glossary(body),
+        book_cta=book_cta(by_book["adhd-tax"]), author_box=AUTHOR_BOX, disclaimer=esc(DISCLAIMER))
+
+
+TOOLS = [
+    (CALC_PATH, "ADHD Tax Calculator",
+     "Add up what late fees, forgotten subscriptions, impulse buys and lost things cost you, by category, "
+     "and see it over a year and over ten.", "Interactive"),
+    (SUB_PATH, "Subscription Audit",
+     "List every recurring charge, mark what goes, and see what cancelling is worth over a year.",
+     "Interactive"),
+    ("/adhd-tax-worksheets/", "The ADHD Tax printable worksheets",
+     "Five printable worksheets from the book: the ADHD Tax Calculator, a money personality quiz, a trigger "
+     "map, a 48-hour action plan and a monthly check-in.", "PDF, A4 and US Letter"),
+]
+
+
+def render_tools_index():
+    cards = "\n".join(
+        '    <a class="topic-card" href="%s"><span class="topic-count">%s</span><h2>%s</h2><p>%s</p></a>'
+        % (path, esc(kind), esc(name), esc(blurb)) for path, name, blurb, kind in TOOLS)
+    graph = [
+        {"@type": "CollectionPage", "@id": SITE + "/tools/", "url": SITE + "/tools/",
+         "name": "Free ADHD tools", "isPartOf": {"@id": WEBSITE_ID}, "inLanguage": "en-US",
+         "about": about_nodes(["adhd"]),
+         "mainEntity": {"@type": "ItemList", "numberOfItems": len(TOOLS),
+                        "itemListElement": [{"@type": "ListItem", "position": i + 1,
+                                             "url": SITE + p, "name": n}
+                                            for i, (p, n, _, _) in enumerate(TOOLS)]}},
+        person_node(),
+        breadcrumbs((AUTHOR, "/"), ("Tools", "/tools/")),
+    ]
+    return render(
+        "tools.html",
+        seo=seo_head("Free ADHD Tools: Tax Calculator & Subscription Audit",
+                     "Free tools for adults with ADHD: work out what the ADHD tax costs you, audit forgotten "
+                     "subscriptions, and print the worksheets. No sign-up.", "/tools/"),
+        schema=schema(graph), cards=cards)
 
 
 # ---------------------------------------------------------------- homepage
@@ -1435,6 +1669,8 @@ def render_og_images(posts, books, topics, force):
     jobs += [("topic", t["slug"], t["title"], "Topic · " + topic_label(t.get("about")), (t.get("books") or [None])[0])
              for t in topics]
     jobs.append(("tool", "adhd-tax-calculator", "The ADHD Tax Calculator", "Free tool", "adhd-tax"))
+    jobs.append(("tool", "subscription-audit", "The Subscription Audit", "Free tool", "adhd-tax"))
+    jobs.append(("page", "about", "J.M. Struijk", "About the author", "late-diagnosed-adhd-workbook"))
 
     made = 0
     for kind, slug, title, kicker, cover_slug in jobs:
@@ -1495,6 +1731,7 @@ def main():
     terms_by_slug = {t["slug"]: t for t in terms}
     resources, resources_date = load_resources()
     resources_by_id = {s["id"]: s for s in resources}
+    AUTOLINK.extend(build_autolinks(terms))
     topics = load_topics(by_book, set(terms_by_slug), set(resources_by_id))
     TOPICS.update((t["slug"], t) for t in topics)
     posts = load_posts(by_book, set(TOPICS))
@@ -1508,7 +1745,9 @@ def main():
 
     TITLES.update({"/": "Home", "/blog/": "All articles", "/books/": "All books", "/topics/": "Topics",
                    "/glossary/": "Glossary", "/start/": "Start here", "/resources/": "Resources directory",
-                   CALC_PATH: "ADHD Tax Calculator", "/adhd-tax-worksheets/": "ADHD Tax printable worksheets"})
+                   "/about/": "About J.M. Struijk", "/tools/": "Free tools",
+                   CALC_PATH: "ADHD Tax Calculator", SUB_PATH: "Subscription Audit",
+                   "/adhd-tax-worksheets/": "ADHD Tax printable worksheets"})
     TITLES.update(("/blog/%s/" % p["slug"], p["title"]) for p in posts)
     TITLES.update(("/books/%s/" % b["slug"], b["title"]) for b in books)
     TITLES.update(("/topics/%s/" % t["slug"], t["title"]) for t in topics)
@@ -1530,6 +1769,9 @@ def main():
     pages["/start/"] = render_start(situations, by_book)
     pages["/resources/"] = render_resources(resources)
     pages[CALC_PATH] = render_calculator(calculator, by_book)
+    pages[SUB_PATH] = render_subscription_audit(by_book)
+    pages["/tools/"] = render_tools_index()
+    pages["/about/"] = render_about(books, posts)
     home = build_homepage(posts, books)
     not_found = render_404(posts, books)
 
@@ -1550,7 +1792,10 @@ def main():
         ("/topics/", newest_topic, "monthly", "0.8"),
     ] + [("/topics/%s/" % t["slug"], t["modified"], "monthly", "0.8") for t in topics] + [
         ("/resources/", resources_date, "monthly", "0.8"),
+        ("/about/", mtime_date(os.path.join(CONTENT, "about.md")), "monthly", "0.8"),
+        ("/tools/", calculator_date, "monthly", "0.8"),
         (CALC_PATH, calculator_date, "monthly", "0.9"),
+        (SUB_PATH, mtime_date(os.path.join(ROOT, "assets", "subscription-audit.js")), "monthly", "0.9"),
     ]))
     llms = render_llms(posts, books, terms, topics, resources)
     write("llms.txt", llms)
@@ -1562,6 +1807,8 @@ def main():
     words = sum(p["words"] for p in posts)
     print("%d articles (%d words), %d book pages, %d topics, %d glossary terms, %d directory entries"
           % (len(posts), words, len(books), len(topics), len(terms), sum(len(s["items"]) for s in resources)))
+    gloss_links = sum(p.count('class="gloss"') for p in pages.values())
+    print("glossary cross-links inserted: %d" % gloss_links)
     print("%d pages link-checked; FAQ questions: %d in articles, %d on book pages"
           % (len(pages) + 2, sum(len(p["faq"]) for p in posts), sum(len(b["faq"]) for b in books)))
 

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+{seo}
+{head}
+<script type="application/ld+json">
+{schema}
+</script>
+</head>
+<body>
+{header}
+
+  <article class="calc-page">
+
+    <header class="page-header">
+      <nav class="crumbs" aria-label="Breadcrumb">
+        <a href="/">Home</a> <span>/</span> <a href="/tools/">Tools</a>
+      </nav>
+      <span class="section-tag">Free tool</span>
+      <h1>The Subscription <em>Audit.</em></h1>
+      <p class="page-lede">
+        List what you are paying for, mark what goes, and see what cancelling is worth over a year. Forgotten subscriptions are the single most recoverable part of the ADHD tax, and one pass through a statement usually finds more than people expect.
+      </p>
+    </header>
+
+    <ol class="calc-steps">
+      <li><strong>Open last month's bank and card statements.</strong> Including any second card and PayPal.</li>
+      <li><strong>Add every recurring charge, even the small ones.</strong> Small is how they survive.</li>
+      <li><strong>Mark each one keep, cancel, or unsure.</strong> Unsure is a real answer; come back to it.</li>
+      <li><strong>Cancel the cancels today, in one sitting.</strong> A list of intentions is another doom pile.</li>
+    </ol>
+
+    <p class="calc-privacy">Everything stays in your browser. Nothing you type is sent anywhere.</p>
+
+    <noscript><p class="calc-noscript">This tool needs JavaScript. The same audit is in the free <a href="/adhd-tax-worksheets/">printable worksheets</a>.</p></noscript>
+
+    <div class="calc-layout">
+      <form class="calc-form" id="sub-audit" novalidate>
+        <div class="calc-currency">
+          <label for="sub-currency">Currency</label>
+          <select id="sub-currency" name="currency">
+            <option value="USD">$ US dollar</option>
+            <option value="GBP">£ Pound sterling</option>
+            <option value="EUR">€ Euro</option>
+            <option value="CAD">$ Canadian dollar</option>
+            <option value="AUD">$ Australian dollar</option>
+          </select>
+        </div>
+
+        <div class="sub-head">
+          <span>Subscription</span><span>Per month</span><span>Decision</span><span class="sr-only">Remove</span>
+        </div>
+        <div id="sub-rows"></div>
+
+        <div class="sub-actions">
+          <button type="button" id="sub-add">+ Add a subscription</button>
+          <button type="button" id="sub-common">Add common ones</button>
+        </div>
+      </form>
+
+      <aside class="calc-results" aria-live="polite">
+        <div class="calc-results-inner">
+          <div class="calc-label">Cancelling saves</div>
+          <div class="calc-total"><span id="sub-year">0</span><small> a year</small></div>
+          <dl class="calc-projection">
+            <div><dt>Per month</dt><dd id="sub-month">0</dd></div>
+            <div><dt>Still paying</dt><dd id="sub-keep">0</dd></div>
+          </dl>
+          <div class="calc-top" id="sub-summary">
+            <p class="calc-empty">Add a few subscriptions to see what this is worth.</p>
+          </div>
+          <div class="calc-actions">
+            <button type="button" id="sub-print">Print</button>
+            <button type="button" id="sub-reset">Clear</button>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <div class="post-body calc-explainer">
+{explainer}
+    </div>
+
+    {book_cta}
+
+    {author_box}
+
+    <p class="disclaimer">{disclaimer}</p>
+
+  </article>
+
+  <script src="/assets/subscription-audit.js" defer></script>
+
+{footer}
+</body>
+</html>

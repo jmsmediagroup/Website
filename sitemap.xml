@@ -114,9 +114,44 @@
   </url>
   <url>
     <loc>https://jmstruijk.com/blog/</loc>
-    <lastmod>2026-10-21</lastmod>
+    <lastmod>2026-10-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://jmstruijk.com/blog/adhd-vs-autism-adults/</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image><image:loc>https://jmstruijk.com/assets/og/post-adhd-vs-autism-adults.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://jmstruijk.com/blog/adhd-vs-anxiety/</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image><image:loc>https://jmstruijk.com/assets/og/post-adhd-vs-anxiety.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://jmstruijk.com/blog/autistic-meltdown-vs-panic-attack/</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image><image:loc>https://jmstruijk.com/assets/og/post-autistic-meltdown-vs-panic-attack.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://jmstruijk.com/blog/inattentive-adhd-adults/</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image><image:loc>https://jmstruijk.com/assets/og/post-inattentive-adhd-adults.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://jmstruijk.com/blog/adhd-doom-piles/</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image><image:loc>https://jmstruijk.com/assets/og/post-adhd-doom-piles.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://jmstruijk.com/blog/adhd-tax-what-it-costs/</loc>
@@ -302,7 +337,7 @@
   </url>
   <url>
     <loc>https://jmstruijk.com/glossary/</loc>
-    <lastmod>2026-10-21</lastmod>
+    <lastmod>2026-10-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -355,8 +390,26 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://jmstruijk.com/about/</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://jmstruijk.com/tools/</loc>
+    <lastmod>2026-10-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://jmstruijk.com/tools/adhd-tax-calculator/</loc>
     <lastmod>2026-10-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://jmstruijk.com/tools/subscription-audit/</loc>
+    <lastmod>2026-10-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
