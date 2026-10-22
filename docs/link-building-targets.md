@@ -220,6 +220,129 @@ ADHD worksheets returns scraped spam on hijacked university domains.
 Lead outreach with the tools. "Here is a free calculator your readers can use"
 is a reason to link. "Here is my book" is a reason to ignore the email.
 
+## Form submissions: what actually exists
+
+Checked 22 October 2026 by fetching each page and looking for a real `<form>`
+element, then reading what the form is for and what it costs. Worth doing,
+because most pages that sound like a submission form are not one.
+
+### The one that qualifies
+
+**The Neurodiversity Directory** — https://neurodiversity.directory/add-listing/
+
+Free, not-for-profit, and curated rather than paid. Its own words: "the
+independent, not-for-profit directory of vetted neurodiversity support; free to
+use, free to list, curated not paid." Every listing is reviewed before it goes
+live, which can take up to a week.
+
+The form asks for: your name, your email, your relationship to the listing, the
+listing name, website, description, category, city, country and a consent box.
+
+One honest problem. The fourteen categories are coaching, therapy, apps,
+assessments, charity, community, consulting, education, workplace, speaker,
+training, sensory clothing, sensory solutions and sensory toys. There is no
+books, author or resources category.
+
+The only accurate fit is **Apps**, submitted as the two free web tools rather
+than as the book catalogue. Both already carry `WebApplication` structured data,
+both are free, and neither needs a sign-up, so the listing would be truthful.
+Submitting an author site under a service category would not be, and a vetted
+directory is exactly the kind that rejects it.
+
+UK-leaning, so the city and country fields matter.
+
+### Paid, so excluded
+
+**The ADDitude Directory** — https://directory.additudemag.com/
+
+This is advertising, not a listing. The rate card at `/advertise.php` shows
+$45, $75, $175, $245 and $325 tiers under "Advertise in the ADDitude
+Directory". Its categories are treatment professionals, educational resources,
+coaches and organizers, and camps, none of which fits an author anyway.
+
+Paid links have to be marked `sponsored` or `nofollow`, so this buys visibility
+rather than ranking, and it falls under the no-paid-links rule below. Skip it.
+
+### Free, but there is nothing to submit
+
+**Neurodiversity UK events** — https://neurodiversityuk.co.uk/add-your-event/
+
+A genuine free form, and it explicitly offers a link: "Free Listing: it's free
+to add your event to our directory. Website Traffic: we can link to your
+website." It only takes events. Worth remembering if there is ever a talk,
+workshop or launch to list.
+
+**National Autistic Society directory** — https://www.autism.org.uk/directory
+
+Live, but its two forms are both search boxes, one for the site and one for
+postcode lookups. It is the Autism Services Directory: a database of services
+for autistic people in the UK. An author site is not a service and would not
+qualify.
+
+### A real form, but no link: The Spectrum
+
+**https://www.autism.org.uk/advice-and-guidance/the-spectrum/submit-work-and-our-rules**
+Form: **.../submit-work-and-our-rules/form**
+
+Found while checking the NAS directory, and worth recording properly because
+the eligibility is a better fit than anything else here. The Spectrum is the
+National Autistic Society's quarterly magazine, "produced by and for autistic
+adults", open to "submissions on any topic from autistic people who are over
+18". Print and online, four issues a year, in January, April, July and October.
+The October 2026 theme is "Fear and fiction: the stories told about autistic
+people". Unthemed submissions are accepted too.
+
+The form is real, though rendered by JavaScript so it does not appear in the
+page source. It asks for a WeTransfer link to the file, a consent box, title,
+first name, last name, email and phone. Submissions go as Word, PDF or JPEG,
+and they will not accept a file emailed without the permissions form.
+
+**It is not a link opportunity, and the reason is worth stating plainly.**
+Contributors are credited by first name only, deliberately, to protect privacy.
+No full name, no byline, no URL. The National Autistic Society also holds
+copyright unless you tick the box to retain it, and content may be syndicated
+to other organisations.
+
+So this earns nothing for SEO. What it earns is a credit in a respected
+autistic-led publication and an audience of exactly the right readers. If that
+is worth an afternoon's writing, it is a good use of one. If the goal is
+strictly links, skip it. Tick the retain-copyright box either way, so the piece
+can be reused later.
+
+The same applies to every regional database found, which were Commonwealth
+Autism in Virginia, the Autism Society of North Carolina, the Minnesota Autism
+Resource Portal and the Washington Autism Alliance. All are scoped to local
+service providers.
+
+### Contact forms are not listings
+
+Several relevant sites have working contact forms: NeuroClastic, TotallyADD,
+Neurodivergent Rebel, Neurodivergent Insights. A contact form is a way to send
+the pitch described above, not a place that lists you. Use them for that, and
+expect the same roughly one-in-ten hit rate as any other outreach.
+
+**ADDitude's own contributor route is email, not a form.** Its contact page
+links to contributor guidelines which ask for a 500 to 800 word sample blog
+post sent to submissions@additudemag.com. They publish "blog posts by parents,
+adults with ADHD, educators, spouses, and experts", which is a category that
+genuinely applies here, and they say plainly that they cannot reply
+individually.
+
+This is the highest-authority realistic route in this document. It is also the
+one that needs actual writing rather than a form fill.
+
+### Why the pickings are thin
+
+Free, form-based, relevant directories barely exist in this niche. That is
+consistent with the earlier finding that seven plausible "useful links" pages
+on AADD-UK, ADDISS, ADHD UK and Autistica all returned 404.
+
+The niche is organised around service provision and clinical referral, so its
+directories list clinicians, coaches and local services. An author with free
+tools does not have an obvious slot. Which is why podcasts and contributed
+writing rank above directory submissions: those routes judge what you have to
+say rather than which category you fit.
+
 ## What not to do
 
 - No paid links, link exchanges, or directory blasts. These violate search
