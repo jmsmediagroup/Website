@@ -66,6 +66,71 @@ browser)
 
 Free author profile with a website field.
 
+## The best opportunities, ranked
+
+Researched 22 October 2026. Ranked by value multiplied by how achievable it
+actually is for a site with no history.
+
+### Why podcasts come first
+
+Show notes link to the guest's site on essentially every episode. The link is
+editorial, it sits in relevant content, the audience is exactly right, and
+podcasters need guests continuously, which inverts the usual dynamic: you are
+supplying something they need rather than asking for a favour. For a credible
+author with a distinctive angle this has the best hit rate of anything here.
+
+One episode also produces more than a link: an audio archive, show notes, a
+social post from the host, and often a newsletter mention.
+
+### The angle that makes the pitch work
+
+ADHD and money is a genuinely thin niche. A search for who covers it found one
+competing book, ADHD Money by Tina Mathams (Wiley, 2025), and no journalists
+who write the beat at all.
+
+Almost every ADHD podcast has covered focus, procrastination and productivity
+to exhaustion. Very few have done money properly, and fewer still have had a
+guest who is both ADHD and autistic talking about it from the inside. Pitch
+the money angle, not "I wrote some books".
+
+Specifics that make an episode rather than a plug: what the ADHD tax is and
+where it actually goes, why budgeting advice fails this audience, late fees as
+an executive function problem rather than a discipline one, and the shame loop
+that keeps the number unknown.
+
+### Podcast targets, all verified live
+
+| Show | Route | Notes |
+| --- | --- | --- |
+| Women & ADHD | https://womenandadhd.com/podcastguest | The only one with an explicit guest application form. The show is for neurodivergent women, so check the fit applies before spending time on it. |
+| Hacking Your ADHD | https://www.hackingyouradhd.com/contact | Established adult ADHD show. |
+| Translating ADHD | https://translatingadhd.com/contact | Adult focused, interview format. |
+| The ADHD Adults (UK) | https://theadhdadults.uk/contact | UK audience, which suits the Right to Choose material. |
+| Late To The Party | https://latetotheparty.buzzsprout.com/2049490/about | Autism, AuDHD and late diagnosis. Host was identified at 47, so the late-diagnosis angle lands. No email published; approach via their Patreon or social links. |
+| WTF is AuDHD? | @wtfisaudhdpodcast on social | Hosted by two late-diagnosed sisters. Listed as accepting guests. |
+| ADHD reWired | https://www.adhdrewired.com/ | Blocks automated checks; live in a browser. One of the longest-running adult ADHD shows. |
+
+Pitch one at a time, and listen to an episode first. Hosts can tell instantly.
+
+### Second: contributed articles
+
+Lower hit rate than podcasts but the link is contextual and in-body, which is
+worth more. NeuroClastic and NeuroSpark Health are covered below.
+
+### Third: journalist sourcing
+
+Lowest hit rate, highest authority when it lands. Qwoted, SourceBottle and
+Featured are covered below. The same money angle is the reason a journalist
+would pick you over a clinician: they can get a doctor anywhere, and almost
+nobody writes about neurodivergence and money from the inside.
+
+### What is not worth the time
+
+Book roundup posts mostly link to Amazon rather than to an author site.
+Competitor outreach, meaning the other ADHD money author, is unlikely to
+convert. Blog comment links, paid placements and directory submissions are
+covered under what not to do.
+
 ## Tier 2: contributed writing. Best link quality, most effort.
 
 A contextual link from a relevant article is worth far more than any directory
@@ -215,6 +280,36 @@ a real name.
 > Happy to send an outline first if that is easier.
 >
 > J.M. Struijk
+
+### Podcast pitch (the one to send first)
+
+Keep it to this length. Hosts read these on a phone between other things.
+
+> Subject: Guest idea: what ADHD actually costs you (the money angle)
+>
+> Hi [name],
+>
+> I listened to [specific episode] and [one genuine sentence about it].
+>
+> Most ADHD shows cover focus and procrastination. Almost nobody covers money,
+> and it is where a lot of us lose the most. I am late-diagnosed ADHD and
+> autistic, and I write about what I call the ADHD tax: late fees on bills you
+> could afford, subscriptions you meant to cancel, buying things twice because
+> you could not find the first one.
+>
+> Things I could talk about:
+>
+> - Where the money actually goes, which is rarely impulse buys
+> - Why budgeting advice fails this audience specifically
+> - The shame that keeps people from ever adding it up
+>
+> I have eleven books out and a free calculator people can use while they
+> listen: https://jmstruijk.com/tools/adhd-tax-calculator/
+>
+> Happy to send more, or leave it there if it is not for you.
+>
+> J.M. Struijk
+> https://jmstruijk.com/about/
 
 ### Journalist response
 
