@@ -1,6 +1,6 @@
 # J.M. Struijk
 
-> Independent author of practical, non-clinical books and articles for adults with ADHD, autism, and AuDHD. Late-diagnosed with both, and writes from lived experience. Published through JMS Media Group LLC (Wyoming, US). 11 books in print across three series and one standalone guide, available on Amazon, plus 31 long-form articles and a glossary of 35 terms on jmstruijk.com.
+> Independent author of practical, non-clinical books and articles for adults with ADHD, autism, and AuDHD. Late-diagnosed with both, and writes from lived experience. Published through JMS Media Group LLC (Wyoming, US). 11 books in print across three series and one standalone guide, available on Amazon, plus 35 long-form articles and a glossary of 38 terms on jmstruijk.com.
 
 Each book and article targets one specific way ADHD or autism shows up in adult life, rather than offering general productivity advice. Every book stands alone; readers can start anywhere.
 
@@ -74,6 +74,10 @@ Long-form writing on ADHD and autism, from lived experience. Not clinical guidan
 - [Autistic meltdown or panic attack? Telling them apart](https://jmstruijk.com/blog/autistic-meltdown-vs-panic-attack/): Meltdowns and panic attacks can look alike from outside and need different responses. What distinguishes them, and what helps during each. Published 2026-10-22.
 - [Inattentive ADHD in adults: the quiet presentation](https://jmstruijk.com/blog/inattentive-adhd-adults/): Inattentive ADHD has no visible hyperactivity, which is why so many adults reach their thirties without it being noticed. How it actually shows up. Published 2026-10-22.
 - [Doom piles and doom boxes: the ADHD clutter cycle](https://jmstruijk.com/blog/adhd-doom-piles/): The pile on the chair, the box of everything, the drawer you cannot open. Why ADHD produces doom piles, and how to clear one without a decluttering plan. Published 2026-10-22.
+- [NHS Right to Choose for ADHD and autism assessment](https://jmstruijk.com/blog/nhs-right-to-choose-adhd-autism/): In England you can usually choose who does your NHS ADHD or autism assessment, which can cut a long wait. How it works, and what it does not cover. Published 2026-10-22.
+- [Levels of autism, and why 'high functioning' is falling out of use](https://jmstruijk.com/blog/autism-levels-and-functioning-labels/): Autism levels 1 to 3 describe how much support someone needs. Why that differs from "high functioning", and why autistic adults reject the old labels. Published 2026-10-22.
+- [Is ADHD a disability? And is autism one?](https://jmstruijk.com/blog/is-adhd-a-disability/): Whether ADHD or autism counts as a disability depends on the law where you live and how much it affects you, not on the diagnosis itself. Published 2026-10-22.
+- [PDA: demand avoidance in autistic adults](https://jmstruijk.com/blog/pda-pathological-demand-avoidance/): PDA describes extreme avoidance of everyday demands, driven by anxiety rather than defiance. What it is, why it is contested, and what helps adults. Published 2026-10-22.
 - [The ADHD tax: what it actually costs, and why budgeting advice keeps missing it](https://jmstruijk.com/blog/adhd-tax-what-it-costs/): The ADHD tax is money lost to late fees, forgotten subscriptions and replacing things you own. Where it goes, and why budgeting advice misses it. Published 2026-10-21.
 - [Why ADHD brains overspend, and what actually helps](https://jmstruijk.com/blog/why-adhd-brains-overspend/): Impulsive spending with ADHD is rarely about wanting things. How reward, time and emotion drive it, and the fixes that actually work. Published 2026-10-21.
 - [ADHD and debt: why payoff plans keep failing, and what to do instead](https://jmstruijk.com/blog/adhd-debt-and-payoff-plans/): Debt payoff plans assume consistency, which ADHD does not reliably supply. Why the usual methods fail, and how to build one that survives a bad month. Published 2026-10-21.
@@ -119,6 +123,7 @@ Plain-language definitions, each linked to a longer article where one exists.
 - [Echolalia](https://jmstruijk.com/glossary/#echolalia): Repeating words or phrases heard elsewhere, either immediately or later.
 - [Emotional dysregulation](https://jmstruijk.com/glossary/#emotional-dysregulation): Difficulty managing the intensity and duration of emotional responses.
 - [Executive dysfunction](https://jmstruijk.com/glossary/#executive-dysfunction): Difficulty with the executive functions: the mental processes used to plan, start, organise, switch between and finish tasks, hold information in mind, and manage time.
+- [Functioning labels](https://jmstruijk.com/glossary/#functioning-labels): Informal terms describing how well an autistic person appears to be managing from the outside.
 - [Hyperfocus](https://jmstruijk.com/glossary/#hyperfocus): Intense absorption in a task that is hard to break, often with lost awareness of time, hunger or tiredness.
 - [Inattentive ADHD](https://jmstruijk.com/glossary/#inattentive-adhd): The presentation of ADHD involving attention, organisation and follow-through without prominent outward hyperactivity.
 - [Interoception](https://jmstruijk.com/glossary/#interoception): The sense of your body's internal state, including hunger, thirst, temperature, needing the toilet, and the physical side of emotions.
@@ -129,8 +134,10 @@ Plain-language definitions, each linked to a longer article where one exists.
 - [Monotropism](https://jmstruijk.com/glossary/#monotropism): A theory of autism proposing that autistic attention tends to concentrate deeply on a small number of interests at once, instead of spreading across many.
 - [Neurodiversity](https://jmstruijk.com/glossary/#neurodiversity): The idea that variation in how brains work, including autism and ADHD, is a natural part of human diversity.
 - [Panic attack](https://jmstruijk.com/glossary/#panic-attack): A sudden episode of intense fear with strong physical symptoms such as a racing heart, shortness of breath, chest tightness and dizziness, often with a sense of dread.
+- [PDA](https://jmstruijk.com/glossary/#pda): Extreme avoidance of everyday demands, understood as driven by anxiety rather than defiance, and applying to demands you set yourself as well as those from other people.
 - [Rejection sensitive dysphoria](https://jmstruijk.com/glossary/#rejection-sensitive-dysphoria): Intense emotional pain in response to real or perceived rejection, criticism or failure.
 - [Revenge bedtime procrastination](https://jmstruijk.com/glossary/#revenge-bedtime-procrastination): Staying up late, even when tired, to reclaim personal time that the day did not allow.
+- [Right to Choose](https://jmstruijk.com/glossary/#right-to-choose): In England, the right to choose which provider carries out your first NHS appointment for a new problem, rather than being referred automatically to the local service.
 - [Rumination](https://jmstruijk.com/glossary/#rumination): Repetitive, circular thinking about the same worry or event without reaching a conclusion.
 - [Sensory overload](https://jmstruijk.com/glossary/#sensory-overload): When the amount or intensity of sensory input, such as noise, light, touch or smell, exceeds what the brain can process.
 - [Shutdown](https://jmstruijk.com/glossary/#shutdown): A response to overwhelm in which a person withdraws and becomes less responsive, sometimes temporarily losing the ability to speak or move easily.
@@ -1236,6 +1243,18 @@ Compensation hides the rest. Lists, alarms, overpreparation, arriving an hour ea
 
 And girls and women were missed at far higher rates, partly because the inattentive presentation is more commonly recognised in them and partly because the diagnostic picture in use was built from observations of boys.
 
+### The three presentations
+
+ADHD is described as one condition with three presentations, according to which difficulties dominate:
+
+| Presentation | What tends to dominate |
+| --- | --- |
+| Predominantly inattentive | Attention, organisation, working memory, follow-through. Little visible hyperactivity. |
+| Predominantly hyperactive-impulsive | Restlessness, interrupting, acting before thinking. Less difficulty with attention. |
+| Combined | Enough of both to meet the threshold for each. This is the most commonly diagnosed. |
+
+The presentation is not a separate condition and is not fixed. Many adults describe visible hyperactivity in childhood that turned inward with age, which moves them from one description toward another without anything fundamental changing.
+
 ### It is the same condition
 
 Worth saying plainly, because the old name confuses people. You will still see "ADD" used for the inattentive presentation. Current diagnostic practice treats it as one condition with different presentations, so a clinician would describe it as ADHD, predominantly inattentive presentation.
@@ -1269,6 +1288,14 @@ No. Visible hyperactivity is not a measure of how much a condition affects someo
 ### Can you have inattentive ADHD and still be restless?
 
 Yes, and many people describe exactly that. Restlessness is often internal: a mind in constant motion rather than a body that cannot stay seated. That is one reason the hyperactive label never seemed to fit, even when something clearly was.
+
+### What is the difference between ADD and ADHD?
+
+ADD is the older name for what is now called ADHD, predominantly inattentive presentation. Current practice treats it as one condition with different presentations rather than two separate conditions, so a clinician today would not diagnose ADD. The word survives in everyday use because it describes the quiet presentation in a way people recognise.
+
+### What are the types of ADHD?
+
+Three presentations: predominantly inattentive, predominantly hyperactive-impulsive, and combined, which is the most commonly diagnosed. They describe which difficulties dominate rather than separate conditions, and the picture can shift over a lifetime.
 
 ### Why was my inattentive ADHD missed as a child?
 
@@ -1355,6 +1382,378 @@ Not inherently. As a short-term move it is a reasonable response to limited capa
 ### How do I stop making them?
 
 Mostly by reducing the number of objects that have no fixed home, since the same items tend to generate piles repeatedly. A deliberate landing spot emptied on a fixed day also works well. [The ADHD Decision Reset](https://jmstruijk.com/books/adhd-decision-reset/) covers removing recurring decisions, which is the mechanism underneath this.
+
+## Article: NHS Right to Choose for ADHD and autism assessment
+
+URL: https://jmstruijk.com/blog/nhs-right-to-choose-adhd-autism/
+Published: 2026-10-22
+Summary: In England you can usually choose who does your NHS ADHD or autism assessment, which can cut a long wait. How it works, and what it does not cover.
+
+If you are in England and your local wait for an ADHD or autism assessment is measured in years, there is a route most people are never told about. You can usually choose a different provider, and the wait with that provider may be far shorter.
+
+It is not a loophole or a trick. It is an ordinary part of how NHS referrals work, and the NHS says so plainly: when a GP refers you, in most cases you have the legal right to choose the hospital or service you would like to go to.
+
+Two things to be clear about before anything else. This applies in **England only**. And this is a description of a referral process, not medical or legal advice; the official sources are linked at the end.
+
+### Key takeaways
+
+- In England you can usually choose which provider does your NHS assessment, at the point of referral.
+- The provider has to hold an NHS contract for that service, and the referral has to be clinically appropriate.
+- It does not apply in Scotland, Wales or Northern Ireland, which have their own systems.
+- It does not apply to urgent or emergency care, or if you are already being seen for the same thing.
+- Ask what happens after diagnosis, because providers differ on whether they offer ongoing care.
+
+### What the right actually is
+
+When your GP refers you for a first appointment for a new problem, you can normally choose which provider you go to, rather than being sent automatically to whoever covers your postcode. The NHS describes telling your GP your preference during the appointment, after which the GP puts a shortlist of providers on your referral and you book through the NHS e-Referral service.
+
+The choice is not unlimited. The provider must hold an NHS contract to deliver that service, and the referral has to be clinically appropriate for what you need. You cannot choose a kind of service that does not suit the problem.
+
+Where this matters for ADHD and autism is simple arithmetic. Local assessment waits in many areas are extremely long. Some NHS-contracted providers operating across England have much shorter ones, and using this right costs you nothing, because it is still NHS care.
+
+### Where it applies, and where it does not
+
+| | Situation |
+| --- | --- |
+| Applies | England, GP referral, first appointment for a new problem, non-urgent, clinically appropriate, provider holds an NHS contract |
+| Does not apply | Scotland, Wales and Northern Ireland, which run their own systems |
+| Does not apply | Urgent or emergency care |
+| Does not apply | When you are already being treated for the same condition |
+| Does not apply | Armed forces personnel, and some detained or secure settings |
+| Does not apply | Services commissioned by a local authority rather than the NHS |
+
+If you live in Scotland, Wales or Northern Ireland, none of this is available to you, and I would rather say that plainly than have you spend an afternoon on it.
+
+### How to actually do it
+
+Work out which provider you want first. Look at providers that hold NHS contracts for ADHD or autism assessment, and check their current waiting time, which they usually publish. Check whether they assess adults, since not all do.
+
+Then ask your GP for a referral to that provider specifically, and say you are exercising your right to choose. Some GPs do this routinely. Others have not come across it, which is common and not a refusal. Several charities publish template letters you can bring to the appointment, which makes the conversation much easier than explaining it from memory.
+
+Expect to provide the same background a local referral would need: how the difficulties affect you now, and what you can recall of childhood. The article on [getting assessed as an adult](https://jmstruijk.com/blog/adult-adhd-autism-assessment/) covers preparing for that.
+
+### The question to ask before you commit
+
+What happens after the assessment?
+
+This is the part people most often discover too late. Some providers assess and then discharge you back to your GP. If you are diagnosed and want medication, your GP has to agree to take over prescribing, usually under a shared care agreement, and GPs are not obliged to enter one.
+
+ADHD UK's guidance suggests raising shared care with your GP before the assessment rather than after, which strikes me as the single most useful thing on this page. A short conversation beforehand can prevent a diagnosis that you then cannot act on.
+
+> A shorter wait for the assessment is worth little if nobody will prescribe afterwards. Ask first.
+
+### If your GP says no
+
+A refusal is not always the end of it. Sometimes it reflects unfamiliarity rather than policy, and bringing a template letter or the NHS guidance is enough.
+
+If you believe you were not offered a choice you were entitled to, the NHS route is to raise it with the referring practice first, then with your integrated care board, and after that with the Parliamentary and Health Service Ombudsman.
+
+It is also worth knowing that a GP can decline if the referral would not be clinically appropriate, which is a legitimate clinical judgement rather than an obstruction.
+
+### Official sources
+
+Please check these rather than relying on this page, because the detail changes and local arrangements vary.
+
+- [Your choices in the NHS](https://www.nhs.uk/using-the-nhs/about-the-nhs/your-choices-in-the-nhs/), which is the NHS's own description of the right and how to use it.
+- [ADHD UK's Right to Choose guide](https://adhduk.co.uk/right-to-choose/), which is the most detailed practical walkthrough I have found, including template letters and the shared care question.
+
+### Common questions
+
+### What is NHS Right to Choose?
+
+It is the right, in England, to choose which provider carries out your first NHS appointment for a new problem, rather than being referred automatically to your local service. For ADHD and autism it is commonly used to avoid very long local assessment waits. The provider must hold an NHS contract and the referral must be clinically appropriate.
+
+### Does Right to Choose apply in Scotland, Wales or Northern Ireland?
+
+No. It is an England arrangement. The other UK nations run their own referral systems, and this particular right does not exist there in the same form.
+
+### Is Right to Choose free?
+
+Yes. It is NHS care delivered by a provider holding an NHS contract, so there is no charge to you. That is the main difference from going private.
+
+### Can my GP refuse a Right to Choose referral?
+
+A GP can decline if the referral would not be clinically appropriate. Unfamiliarity with the process is more common than outright refusal, and bringing the NHS guidance or a template letter often resolves it. If you think you were wrongly denied a choice you were entitled to, raise it with the practice, then your integrated care board.
+
+### What should I check before choosing a provider?
+
+Their current waiting time, whether they assess adults, and above all what happens after diagnosis. If you might want medication, ask your GP about a shared care agreement before the assessment rather than after.
+
+## Article: Levels of autism, and why 'high functioning' is falling out of use
+
+URL: https://jmstruijk.com/blog/autism-levels-and-functioning-labels/
+Published: 2026-10-22
+Summary: Autism levels 1 to 3 describe how much support someone needs. Why that differs from "high functioning", and why autistic adults reject the old labels.
+
+Two things get mixed up constantly here, and untangling them is most of the work.
+
+There are the diagnostic levels, 1 to 3, which describe how much support a person needs. And there are the older functioning labels, high and low, which are not diagnostic terms at all and which most autistic adults I know actively dislike. They are not the same thing, and the difference matters more than it sounds.
+
+### Key takeaways
+
+- The levels describe support needs, not severity of autism or intelligence.
+- Support needs fluctuate, so a single permanent level describes most people badly.
+- "High functioning" describes how someone appears to others, which is a different thing entirely.
+- Appearing to cope is often the result of masking, and masking has a cost nobody else sees.
+- Most autistic adults prefer describing specific needs over any single label.
+
+### What the levels actually mean
+
+Current diagnostic practice describes autism in three levels, assigned according to how much support someone requires. In broad terms:
+
+| Level | Usual description |
+| --- | --- |
+| Level 1 | Requiring support |
+| Level 2 | Requiring substantial support |
+| Level 3 | Requiring very substantial support |
+
+The important word in all three is support. The levels are a statement about what a person needs from their environment, not a measure of how autistic they are, how intelligent they are, or how much they are capable of.
+
+They are also assigned separately for social communication and for restricted or repetitive behaviours, so someone can need very different amounts of support in each. A single number is already a simplification of a two-part judgement.
+
+### Why a fixed level describes people badly
+
+Support needs move. They move with the environment, with how much sleep you have had, with whether you are in [autistic burnout](https://jmstruijk.com/blog/autistic-burnout-vs-adhd-burnout-vs-depression/), with how much you have had to mask that week.
+
+The same person can manage a familiar office on a quiet Tuesday and be unable to order food in a loud restaurant that evening. Neither is their "real" level. Both are real.
+
+This is the main practical complaint autistic adults make about levels: they get recorded once, usually during an assessment on an unrepresentative day, and then follow you around as though they were a fixed property. A level assigned when you were coping can make it harder to get support later when you are not.
+
+> Support needs are a description of a moment, not a permanent setting. Most people's move a great deal.
+
+### The problem with "high functioning"
+
+Functioning labels are not diagnostic categories. They came into general use informally, and they describe something different from the levels: how well someone appears to be managing, as judged from outside.
+
+That difference is the whole problem.
+
+Being called high functioning usually means you look fine to other people. It frequently means you have become good at [masking](https://jmstruijk.com/blog/autistic-masking-and-what-it-costs/), which is exhausting, invisible, and strongly associated with burnout. The label then becomes a reason to withhold support, because a person who looks fine is assumed not to need any. Plenty of late-identified adults have been told some version of "but you seem to be doing well" by someone deciding what they qualify for.
+
+Low functioning is worse in the other direction. It tends to attach to people who communicate differently or do not speak, and it is routinely taken to mean an absence of ability or understanding, which is not what it describes and often not true.
+
+Both labels share the same flaw: they measure how legible someone is to non-autistic observers. That is a fact about the observer at least as much as about the autistic person.
+
+### What autistic adults tend to prefer
+
+Specifics, in my experience, over any label.
+
+Saying "I need written instructions and I cannot process speech in a noisy room" tells someone what to do. Saying "I am level 1" or "I am high functioning" tells them almost nothing useful, and in the second case may tell them something actively misleading.
+
+Where a single term is needed, support needs is the phrasing that has largely replaced functioning language: low support needs, high support needs, and the acknowledgement that these vary. It is not perfect either, but it at least points at the thing that matters.
+
+The levels still have a real administrative use. In many places they determine access to services and funding, which is exactly why they are worth understanding rather than dismissing. Knowing what a level is for, and knowing it was assigned on one day in one room, is the useful combination.
+
+### Common questions
+
+### What are the three levels of autism?
+
+Current diagnostic practice describes level 1 as requiring support, level 2 as requiring substantial support, and level 3 as requiring very substantial support. They are assigned separately for social communication and for restricted or repetitive behaviours, and they describe support needs rather than severity or intelligence.
+
+### Is "high functioning autism" a diagnosis?
+
+No. It is an informal description rather than a diagnostic category, and it is not part of current diagnostic criteria. It describes how well someone appears to be managing from the outside, which is often a measure of how effectively they mask rather than of how much support they need.
+
+### Why do autistic people dislike functioning labels?
+
+Mainly because they describe how legible someone is to others rather than what they actually need. "High functioning" is often used to deny support to people who are coping at considerable hidden cost, and "low functioning" is routinely taken to mean an absence of ability or understanding, which is not what it means.
+
+### Can your autism level change?
+
+The recorded level usually does not change without a reassessment, but the support someone needs certainly does, with environment, health, stress and burnout. This mismatch is one of the main criticisms autistic adults make of a fixed level.
+
+### What should I say instead?
+
+Describe the specific support you need: written instructions, quieter spaces, advance notice of change, more processing time. It is more useful to whoever is trying to help than any label, and it avoids being judged on how well you appear to be managing.
+
+## Article: Is ADHD a disability? And is autism one?
+
+URL: https://jmstruijk.com/blog/is-adhd-a-disability/
+Published: 2026-10-22
+Summary: Whether ADHD or autism counts as a disability depends on the law where you live and how much it affects you, not on the diagnosis itself.
+
+People usually ask this for a practical reason. They want to know whether they can ask for adjustments at work, whether they are protected if things go badly, or whether they qualify for support. Occasionally they are asking something more personal: whether calling it a disability is accurate, or an overstatement.
+
+The legal answer and the identity answer are different questions, and they deserve separating. I am not a lawyer, and the rules differ by country, so what follows is orientation rather than advice, with the official sources linked.
+
+### Key takeaways
+
+- In most legal systems it depends on how much it affects your daily life, not on the diagnosis itself.
+- The same diagnosis can be a disability for one person and not for another.
+- In the UK, autism is not a learning disability, though the two can occur together.
+- Being covered legally does not require you to identify as disabled, and identifying as disabled does not require a diagnosis.
+- Workplace adjustments are often available without any of this being settled.
+
+### The law asks about effect, not label
+
+This is the part that surprises people. In most frameworks the question is not whether you have a named condition. It is whether an impairment has a substantial and long-term effect on your ability to do normal daily activities.
+
+In the UK, that is the test set out in the Equality Act 2010. ADHD and autism are not automatically listed as disabilities; they qualify when they meet that test, which many people's do. In the United States, the Americans with Disabilities Act works on a similar principle, asking whether an impairment substantially limits a major life activity. Its employment protections apply to employers with 15 or more employees.
+
+So two people with the same diagnosis can land differently, and the same person can land differently at different points in their life. That is not a loophole; it follows directly from a test about effect.
+
+What this means practically is that the useful evidence is not the diagnosis letter on its own. It is the specific account of what is affected: that you cannot reliably track deadlines without external systems, that a noisy open-plan office makes your work unsustainable, that you lose a day after a demanding meeting.
+
+> The diagnosis opens the conversation. What decides it is the description of what is actually affected.
+
+### Autism is not a learning disability
+
+Worth stating plainly, because it is asked constantly and the terms differ between countries.
+
+In the UK, "learning disability" means a reduced intellectual ability alongside difficulty with everyday activities, which is a specific thing. Autism is a different thing. An autistic person may also have a learning disability, and many do not. Autistic people span the full range of intellectual ability.
+
+The confusion is worse because American usage differs: "learning disability" there usually means something closer to what the UK calls a specific learning difficulty, such as dyslexia. So the same phrase means different things depending on who is saying it, which is worth checking before assuming you have been understood.
+
+### What it unlocks, roughly
+
+| Where | What may follow |
+| --- | --- |
+| UK | Protection under the Equality Act 2010, and a duty on employers to make reasonable adjustments |
+| UK | Access to Work funding in England, Scotland and Wales; Northern Ireland runs a separate scheme |
+| US | ADA protections, and reasonable accommodations from employers with 15 or more employees |
+| Both | Adjustments in education, and in some cases exam arrangements |
+
+Benefits and disability payments are a separate question with their own tests, and those tests are stricter and country-specific. I would not generalise about them here.
+
+### You can usually ask without settling any of this
+
+Something that gets lost in the legal framing: most of the useful adjustments are things a reasonable employer will do if asked, without anyone deciding your legal status first.
+
+Written instructions instead of verbal ones. A quieter desk. Noise-cancelling headphones. Agendas before meetings. Flexibility about when you do focused work. None of these requires a diagnosis, a tribunal, or the word disability. They are ordinary requests, and framing them around what helps you work well goes further than framing them around entitlement.
+
+Formal protection matters when things go wrong, or when an employer refuses. For day-to-day functioning, asking plainly is usually the faster route. [ADHD at work](https://jmstruijk.com/blog/adhd-at-work/) and [autistic at work](https://jmstruijk.com/blog/autism-at-work/) go through the specifics.
+
+### The identity question
+
+Separately from any of it, people ask whether they should think of themselves as disabled.
+
+That one is yours, and reasonable people land in different places. Some find the word accurate and clarifying: it names the fact that the difficulty is real and partly structural rather than a personal failing. Others find it does not describe their experience, or carries associations they do not want.
+
+The social model of disability is worth knowing about here, because it reframes the question usefully. On that view, a person is disabled less by the condition itself than by environments built for other people. A noisy open-plan office is not a neutral setting that you happen to struggle in; it is a design choice that disables some people and not others.
+
+You can hold that view, or not, and still ask for the adjustment. Nothing practical depends on resolving it.
+
+### Official sources
+
+- [Acas on reasonable adjustments](https://www.acas.org.uk/reasonable-adjustments), for the UK employer duty under the Equality Act 2010.
+- [Access to Work](https://www.gov.uk/access-to-work), for UK funding, which covers England, Scotland and Wales.
+- [The Job Accommodation Network](https://askjan.org/), for free US guidance on workplace accommodations.
+- [EEOC disability resources](https://www.eeoc.gov/eeoc-disability-related-resources), for US employment protections.
+
+### Common questions
+
+### Is ADHD legally a disability?
+
+It can be, and in many cases it is, but it is not automatic. Most legal systems ask whether an impairment has a substantial and long-term effect on normal daily activities rather than whether you have a particular diagnosis. The UK uses that test under the Equality Act 2010, and the US asks a similar question under the ADA.
+
+### Is autism a disability?
+
+The same answer applies: it depends on effect rather than on the label, and for many autistic people it meets the legal test. Separately from the law, whether you describe yourself as disabled is a personal decision, and autistic people differ on it.
+
+### Is autism a learning disability?
+
+Not in UK terms. A learning disability there means reduced intellectual ability together with difficulty managing everyday activities. Autism is distinct, and autistic people span the full range of intellectual ability, although some also have a learning disability. American usage of the phrase differs, which causes a lot of confusion.
+
+### Do I need a diagnosis to get adjustments at work?
+
+Not to ask. Many useful adjustments are reasonable requests in any workplace. Formal legal protection usually depends on meeting the legal test where you live, and evidence helps there. Official sources such as Acas or the Job Accommodation Network explain the specifics.
+
+### Does calling it a disability mean I am not capable?
+
+No. The legal test is about whether something has a substantial effect on daily activities, not about ability or potential. Plenty of people who meet the test work at a high level, often precisely because the right adjustments are in place.
+
+## Article: PDA: demand avoidance in autistic adults
+
+URL: https://jmstruijk.com/blog/pda-pathological-demand-avoidance/
+Published: 2026-10-22
+Summary: PDA describes extreme avoidance of everyday demands, driven by anxiety rather than defiance. What it is, why it is contested, and what helps adults.
+
+There is a particular experience that ordinary descriptions of procrastination do not cover. Someone asks you to do a small thing you were about to do anyway, and something in you locks. Not reluctance. Not laziness. A physical refusal that arrives before any thought does, attached to a task you genuinely wanted to complete thirty seconds earlier.
+
+If you have tried to explain that and been told you are being difficult, the term you may be looking for is PDA.
+
+### Key takeaways
+
+- PDA describes extreme avoidance of everyday demands, understood as anxiety-driven rather than wilful.
+- It is not a formal diagnosis in the main diagnostic manuals.
+- It is usually described as a profile within autism, and the concept is used far more in the UK than elsewhere.
+- Demands include ones you set yourself, which is what distinguishes it from ordinary defiance.
+- Most of what helps involves reducing the demand quality of a request rather than enforcing it.
+
+### What it describes
+
+PDA stands for pathological demand avoidance. Many people dislike the word pathological and use pervasive drive for autonomy instead, and some clinicians prefer extreme demand avoidance. The terminology is genuinely unsettled, and which phrase someone uses often signals how they think about it.
+
+What it points at is an avoidance of demands that goes well beyond preference, is driven by anxiety, and applies to demands of every kind.
+
+That last part is the distinctive bit. The avoidance is not limited to things other people want. It attaches to things you want too. People describe being unable to start a hobby they were looking forward to, unable to eat when hungry because eating has become a demand, unable to reply to a message from someone they like. A demand you placed on yourself can trigger it as completely as an instruction from a manager.
+
+It also responds to framing more than content. The same task can be impossible phrased as an instruction and manageable phrased as a choice, a game, or an idea you arrived at yourself. From outside this looks like inconsistency or manipulation. From inside it is the difference between a demand and a non-demand.
+
+### The honest status of the idea
+
+I want to be straight about this, because a lot of writing on PDA is not.
+
+PDA is not a formal diagnosis. It does not appear as a separate category in the main diagnostic manuals, and in most places you cannot be diagnosed with it. Where clinicians use it, they generally diagnose autism and describe a PDA profile within that.
+
+It is also geographically uneven. The concept originated in the UK and is used widely there, much less in the United States and elsewhere, which means your clinician's familiarity with it depends heavily on where you are.
+
+And the evidence base is thin, particularly for adults. Most of what exists concerns children. Reviews have noted how little is available on how it presents or is managed in adulthood, which is worth knowing if you are an adult trying to find anything useful.
+
+None of that makes the experience less real. Plenty of useful descriptions precede their formal recognition, and some never get it. It does mean you should be careful of anyone selling certainty about it, and that a clinician being unfamiliar with the term is not necessarily a judgement about you.
+
+> The experience is real whether or not the label is official. Both of those things can be true, and it helps to hold them at once.
+
+### How it differs from things it gets confused with
+
+| | What is going on |
+| --- | --- |
+| PDA | The demand itself triggers anxiety, including demands you set yourself |
+| Ordinary procrastination | The task is unappealing or aversive; a different task is often chosen instead |
+| ADHD task paralysis | Wanting to start and being unable to initiate, with no particular objection to being asked |
+| Defiance | Aimed at a person or authority, and usually responsive to what they do next |
+| Burnout | Capacity has run out; most things are hard, not specifically demanded things |
+
+[ADHD task paralysis](https://jmstruijk.com/blog/adhd-task-paralysis/) is the one most often confused with it, and the two can look identical from outside. The distinguishing question is usually whether being asked makes it worse. With task paralysis, how the task arrived is mostly irrelevant. With demand avoidance, the asking is the problem.
+
+### What tends to help
+
+Almost everything useful reduces how much a thing feels like a demand.
+
+Declarative language rather than instructions. "The bins go out tonight" lands differently from "can you put the bins out". The information is identical; one is a demand and one is a statement.
+
+Choice, genuinely offered. Two acceptable options are often workable where one instruction is not, because choosing restores some autonomy.
+
+Indirectness. Writing instead of speaking, leaving a note, letting something be discovered rather than announced.
+
+Lowering the stakes out loud. Saying the thing can be half done, or abandoned, or done tomorrow, removes the pressure that is generating the avoidance.
+
+Removing yourself as the source where you can. Automating, scheduling, or letting a timer or an app make the request means it is not coming from a person, which for many people takes most of the charge out of it.
+
+And self-directed demands need the same treatment. People describe getting further by framing things as experiments, or as optional, or by deliberately not writing a list, because a list becomes a set of demands the moment it exists.
+
+If you are supporting someone, the hardest and most useful adjustment is usually accepting that pushing harder makes it worse rather than better. Escalation is the one approach reliably reported to backfire.
+
+### Common questions
+
+### Is PDA a real diagnosis?
+
+Not a formal one. PDA does not appear as a separate category in the main diagnostic manuals, and in most places it cannot be diagnosed on its own. Clinicians who use the concept generally diagnose autism and describe a PDA profile within it. The experience it describes is widely reported regardless.
+
+### What is the difference between PDA and ordinary procrastination?
+
+Procrastination usually attaches to tasks that are unappealing, and people often do something else instead. With demand avoidance the trigger is the demand itself, including demands you set yourself, and it applies to things you actively want to do. Being asked tends to make it worse rather than better.
+
+### Why do some people say "pervasive drive for autonomy"?
+
+Because many find "pathological" stigmatising, particularly when applied to a response that makes sense as anxiety about loss of control. Some clinicians use "extreme demand avoidance" for similar reasons. The terminology is genuinely unsettled.
+
+### Is PDA recognised outside the UK?
+
+Much less so. The concept originated in the UK and is used widely there, while clinicians elsewhere, including in the United States, are often unfamiliar with it. If you raise it and get a blank response, that may reflect where you are rather than anything about your experience.
+
+### What helps most?
+
+Reducing the demand quality of requests: declarative language instead of instructions, real choices, indirect delivery, lowering the stakes, and letting something other than a person make the ask. Escalating pressure is the approach most consistently reported to make things worse.
 
 ## Article: The ADHD tax: what it actually costs, and why budgeting advice keeps missing it
 
@@ -3774,6 +4173,10 @@ Difficulty managing the intensity and duration of emotional responses. It is not
 
 Difficulty with the executive functions: the mental processes used to plan, start, organise, switch between and finish tasks, hold information in mind, and manage time. It is central to ADHD and common in autism. It often feels like knowing exactly what to do and being unable to begin.
 
+### Functioning labels
+
+Informal terms describing how well an autistic person appears to be managing from the outside. They are not diagnostic categories, and most autistic adults reject them: "high functioning" is often used to deny support to people coping at hidden cost, and "low functioning" is read as an absence of ability.
+
 ### Hyperfocus
 
 Intense absorption in a task that is hard to break, often with lost awareness of time, hunger or tiredness. It is not under voluntary control: it attaches to whatever is interesting or urgent enough, which is not always the thing that needs doing.
@@ -3814,6 +4217,10 @@ The idea that variation in how brains work, including autism and ADHD, is a natu
 
 A sudden episode of intense fear with strong physical symptoms such as a racing heart, shortness of breath, chest tightness and dizziness, often with a sense of dread. It differs from an autistic meltdown mainly in being driven by fear rather than accumulated overload, and the two can occur together.
 
+### PDA
+
+Extreme avoidance of everyday demands, understood as driven by anxiety rather than defiance, and applying to demands you set yourself as well as those from other people. It is not a formal diagnosis and does not appear separately in the main diagnostic manuals; where it is used, it is usually described as a profile within autism.
+
 ### Rejection sensitive dysphoria
 
 Intense emotional pain in response to real or perceived rejection, criticism or failure. The term is widely used in ADHD communities to describe something many people with ADHD recognise immediately. It is not a formal diagnosis and does not appear in diagnostic manuals.
@@ -3821,6 +4228,10 @@ Intense emotional pain in response to real or perceived rejection, criticism or 
 ### Revenge bedtime procrastination
 
 Staying up late, even when tired, to reclaim personal time that the day did not allow. It is common among people with ADHD and anyone whose days are full of other people's demands.
+
+### Right to Choose
+
+In England, the right to choose which provider carries out your first NHS appointment for a new problem, rather than being referred automatically to the local service. Commonly used to shorten long waits for ADHD and autism assessment. It does not apply in Scotland, Wales or Northern Ireland.
 
 ### Rumination
 

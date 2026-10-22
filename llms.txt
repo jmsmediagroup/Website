@@ -1,6 +1,6 @@
 # J.M. Struijk
 
-> Independent author of practical, non-clinical books and articles for adults with ADHD, autism, and AuDHD. Late-diagnosed with both, and writes from lived experience. Published through JMS Media Group LLC (Wyoming, US). 11 books in print across three series and one standalone guide, available on Amazon, plus 31 long-form articles and a glossary of 35 terms on jmstruijk.com.
+> Independent author of practical, non-clinical books and articles for adults with ADHD, autism, and AuDHD. Late-diagnosed with both, and writes from lived experience. Published through JMS Media Group LLC (Wyoming, US). 11 books in print across three series and one standalone guide, available on Amazon, plus 35 long-form articles and a glossary of 38 terms on jmstruijk.com.
 
 Each book and article targets one specific way ADHD or autism shows up in adult life, rather than offering general productivity advice. Every book stands alone; readers can start anywhere.
 
@@ -74,6 +74,10 @@ Long-form writing on ADHD and autism, from lived experience. Not clinical guidan
 - [Autistic meltdown or panic attack? Telling them apart](https://jmstruijk.com/blog/autistic-meltdown-vs-panic-attack/): Meltdowns and panic attacks can look alike from outside and need different responses. What distinguishes them, and what helps during each. Published 2026-10-22.
 - [Inattentive ADHD in adults: the quiet presentation](https://jmstruijk.com/blog/inattentive-adhd-adults/): Inattentive ADHD has no visible hyperactivity, which is why so many adults reach their thirties without it being noticed. How it actually shows up. Published 2026-10-22.
 - [Doom piles and doom boxes: the ADHD clutter cycle](https://jmstruijk.com/blog/adhd-doom-piles/): The pile on the chair, the box of everything, the drawer you cannot open. Why ADHD produces doom piles, and how to clear one without a decluttering plan. Published 2026-10-22.
+- [NHS Right to Choose for ADHD and autism assessment](https://jmstruijk.com/blog/nhs-right-to-choose-adhd-autism/): In England you can usually choose who does your NHS ADHD or autism assessment, which can cut a long wait. How it works, and what it does not cover. Published 2026-10-22.
+- [Levels of autism, and why 'high functioning' is falling out of use](https://jmstruijk.com/blog/autism-levels-and-functioning-labels/): Autism levels 1 to 3 describe how much support someone needs. Why that differs from "high functioning", and why autistic adults reject the old labels. Published 2026-10-22.
+- [Is ADHD a disability? And is autism one?](https://jmstruijk.com/blog/is-adhd-a-disability/): Whether ADHD or autism counts as a disability depends on the law where you live and how much it affects you, not on the diagnosis itself. Published 2026-10-22.
+- [PDA: demand avoidance in autistic adults](https://jmstruijk.com/blog/pda-pathological-demand-avoidance/): PDA describes extreme avoidance of everyday demands, driven by anxiety rather than defiance. What it is, why it is contested, and what helps adults. Published 2026-10-22.
 - [The ADHD tax: what it actually costs, and why budgeting advice keeps missing it](https://jmstruijk.com/blog/adhd-tax-what-it-costs/): The ADHD tax is money lost to late fees, forgotten subscriptions and replacing things you own. Where it goes, and why budgeting advice misses it. Published 2026-10-21.
 - [Why ADHD brains overspend, and what actually helps](https://jmstruijk.com/blog/why-adhd-brains-overspend/): Impulsive spending with ADHD is rarely about wanting things. How reward, time and emotion drive it, and the fixes that actually work. Published 2026-10-21.
 - [ADHD and debt: why payoff plans keep failing, and what to do instead](https://jmstruijk.com/blog/adhd-debt-and-payoff-plans/): Debt payoff plans assume consistency, which ADHD does not reliably supply. Why the usual methods fail, and how to build one that survives a bad month. Published 2026-10-21.
@@ -119,6 +123,7 @@ Plain-language definitions, each linked to a longer article where one exists.
 - [Echolalia](https://jmstruijk.com/glossary/#echolalia): Repeating words or phrases heard elsewhere, either immediately or later.
 - [Emotional dysregulation](https://jmstruijk.com/glossary/#emotional-dysregulation): Difficulty managing the intensity and duration of emotional responses.
 - [Executive dysfunction](https://jmstruijk.com/glossary/#executive-dysfunction): Difficulty with the executive functions: the mental processes used to plan, start, organise, switch between and finish tasks, hold information in mind, and manage time.
+- [Functioning labels](https://jmstruijk.com/glossary/#functioning-labels): Informal terms describing how well an autistic person appears to be managing from the outside.
 - [Hyperfocus](https://jmstruijk.com/glossary/#hyperfocus): Intense absorption in a task that is hard to break, often with lost awareness of time, hunger or tiredness.
 - [Inattentive ADHD](https://jmstruijk.com/glossary/#inattentive-adhd): The presentation of ADHD involving attention, organisation and follow-through without prominent outward hyperactivity.
 - [Interoception](https://jmstruijk.com/glossary/#interoception): The sense of your body's internal state, including hunger, thirst, temperature, needing the toilet, and the physical side of emotions.
@@ -129,8 +134,10 @@ Plain-language definitions, each linked to a longer article where one exists.
 - [Monotropism](https://jmstruijk.com/glossary/#monotropism): A theory of autism proposing that autistic attention tends to concentrate deeply on a small number of interests at once, instead of spreading across many.
 - [Neurodiversity](https://jmstruijk.com/glossary/#neurodiversity): The idea that variation in how brains work, including autism and ADHD, is a natural part of human diversity.
 - [Panic attack](https://jmstruijk.com/glossary/#panic-attack): A sudden episode of intense fear with strong physical symptoms such as a racing heart, shortness of breath, chest tightness and dizziness, often with a sense of dread.
+- [PDA](https://jmstruijk.com/glossary/#pda): Extreme avoidance of everyday demands, understood as driven by anxiety rather than defiance, and applying to demands you set yourself as well as those from other people.
 - [Rejection sensitive dysphoria](https://jmstruijk.com/glossary/#rejection-sensitive-dysphoria): Intense emotional pain in response to real or perceived rejection, criticism or failure.
 - [Revenge bedtime procrastination](https://jmstruijk.com/glossary/#revenge-bedtime-procrastination): Staying up late, even when tired, to reclaim personal time that the day did not allow.
+- [Right to Choose](https://jmstruijk.com/glossary/#right-to-choose): In England, the right to choose which provider carries out your first NHS appointment for a new problem, rather than being referred automatically to the local service.
 - [Rumination](https://jmstruijk.com/glossary/#rumination): Repetitive, circular thinking about the same worry or event without reaching a conclusion.
 - [Sensory overload](https://jmstruijk.com/glossary/#sensory-overload): When the amount or intensity of sensory input, such as noise, light, touch or smell, exceeds what the brain can process.
 - [Shutdown](https://jmstruijk.com/glossary/#shutdown): A response to overwhelm in which a person withdraws and becomes less responsive, sometimes temporarily losing the ability to speak or move easily.

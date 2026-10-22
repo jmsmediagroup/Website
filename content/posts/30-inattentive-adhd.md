@@ -55,6 +55,18 @@ Compensation hides the rest. Lists, alarms, overpreparation, arriving an hour ea
 
 And girls and women were missed at far higher rates, partly because the inattentive presentation is more commonly recognised in them and partly because the diagnostic picture in use was built from observations of boys.
 
+## The three presentations
+
+ADHD is described as one condition with three presentations, according to which difficulties dominate:
+
+| Presentation | What tends to dominate |
+| --- | --- |
+| Predominantly inattentive | Attention, organisation, working memory, follow-through. Little visible hyperactivity. |
+| Predominantly hyperactive-impulsive | Restlessness, interrupting, acting before thinking. Less difficulty with attention. |
+| Combined | Enough of both to meet the threshold for each. This is the most commonly diagnosed. |
+
+The presentation is not a separate condition and is not fixed. Many adults describe visible hyperactivity in childhood that turned inward with age, which moves them from one description toward another without anything fundamental changing.
+
 ## It is the same condition
 
 Worth saying plainly, because the old name confuses people. You will still see "ADD" used for the inattentive presentation. Current diagnostic practice treats it as one condition with different presentations, so a clinician would describe it as ADHD, predominantly inattentive presentation.
@@ -88,6 +100,14 @@ No. Visible hyperactivity is not a measure of how much a condition affects someo
 ### Can you have inattentive ADHD and still be restless?
 
 Yes, and many people describe exactly that. Restlessness is often internal: a mind in constant motion rather than a body that cannot stay seated. That is one reason the hyperactive label never seemed to fit, even when something clearly was.
+
+### What is the difference between ADD and ADHD?
+
+ADD is the older name for what is now called ADHD, predominantly inattentive presentation. Current practice treats it as one condition with different presentations rather than two separate conditions, so a clinician today would not diagnose ADD. The word survives in everyday use because it describes the quiet presentation in a way people recognise.
+
+### What are the types of ADHD?
+
+Three presentations: predominantly inattentive, predominantly hyperactive-impulsive, and combined, which is the most commonly diagnosed. They describe which difficulties dominate rather than separate conditions, and the picture can shift over a lifetime.
 
 ### Why was my inattentive ADHD missed as a child?
 
