@@ -26,17 +26,31 @@ not passing authority.
 
 ### 1. Goodreads author profile (highest value here)
 
-**https://www.goodreads.com/author/list/60916846.J_M_Struijk**
+Profile: **https://www.goodreads.com/author/show/60916846.J_M_Struijk**
+Apply:   **https://www.goodreads.com/author/author_application/60916846.J_M_Struijk**
 
 This page already exists and already has an audience: 30 works, 179 shelvings,
 4 reviews. It is **unclaimed**. There is no Goodreads Author badge, no bio, no
 photo and, most importantly, **no link to jmstruijk.com**.
 
-Claim it through the Goodreads Author Program
-(https://www.goodreads.com/author/program), then add the website, a bio, and
-the author photo. This is the single highest-value action on this page, because
-the page exists, ranks for the author name, and currently sends nobody to the
-site.
+The claim link only appears at the bottom of the `/author/show/` page, and only
+on desktop. The mobile site hides it, and the `/author/list/` page does not
+carry it at all. The application URL above skips the hunt. Approval takes a few
+days, after which add the website, bio and photo.
+
+### A decision to make first: two author profiles
+
+There is a second unclaimed Goodreads author profile under the name Johan
+Struijk: https://www.goodreads.com/author/show/5176843.Johan_Struijk
+
+It lists Whispers in the Mist, Reprogram your mind, Prison Planet, Ghost
+Protocol and Wat het veld verbergt, so it looks like the same writer under a
+different name rather than a coincidence of surname.
+
+Claiming both under one Goodreads account publicly connects the two names. If
+J.M. Struijk is deliberately separate from the other catalogue, that may not be
+wanted, and it cannot easily be undone. Decide before applying. Only the J.M.
+Struijk profile matters for this site either way.
 
 ### 2. Amazon Author Central
 
