@@ -1,0 +1,38 @@
+# Author profiles elsewhere on the web.
+#
+# Each entry becomes a sameAs on the Person in the site's structured data, a
+# link in the "Find me elsewhere" list on /about/, and a line in llms.txt.
+# sameAs is how a search engine works out that these profiles and this site are
+# the same person, which is the main reason to bother with them: most of these
+# links are nofollow and pass no ranking signal on their own.
+#
+# To add one: uncomment the line, paste the real URL, run `python3 build.py`.
+# Leave anything you have not actually created commented out. An empty or wrong
+# profile is worse than none, and the build will refuse a URL that is not https.
+
+- name: Amazon author page
+  url: https://www.amazon.com/stores/J.M.-Struijk/author/B0G1ZFQ5HR
+
+# - name: Goodreads
+#   url: https://www.goodreads.com/author/show/60916846.J_M_Struijk
+
+# - name: BookBub
+#   url: https://www.bookbub.com/authors/j-m-struijk
+
+# - name: LibraryThing
+#   url: https://www.librarything.com/author/struijkjm
+
+# - name: Substack
+#   url: https://REPLACE.substack.com/
+
+# - name: Bluesky
+#   url: https://bsky.app/profile/REPLACE
+
+# - name: Instagram
+#   url: https://www.instagram.com/REPLACE/
+
+# - name: Threads
+#   url: https://www.threads.net/@REPLACE
+
+# - name: Reddit
+#   url: https://www.reddit.com/user/REPLACE/

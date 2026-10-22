@@ -36,6 +36,9 @@ PUBLISHER_ID = SITE + "/#publisher"
 WEBSITE_ID = SITE + "/#website"
 DEFAULT_OG = SITE + "/og-image.jpg"
 AMAZON_AUTHOR = "https://www.amazon.com/stores/J.M.-Struijk/author/B0G1ZFQ5HR"
+# Filled from content/profiles.yaml. These become sameAs on the Person, which is
+# how a search engine connects the profiles to this site.
+PROFILES = []
 
 # What an article, book or glossary term can be "about". Each is a canonical
 # Wikipedia article, checked to be a real article and not a redirect, so the
@@ -353,6 +356,20 @@ def load_glossary():
     return terms, mtime_date(path)
 
 
+def load_profiles():
+    entries, _ = load_yaml_list("profiles.yaml")
+    for e in entries:
+        require(e, ("name", "url"), "profile %r" % e.get("name"))
+        if not e["url"].startswith("https://"):
+            fail("profile '%s' must use https." % e["name"])
+        if "REPLACE" in e["url"]:
+            fail("profile '%s' still has a placeholder URL." % e["name"])
+    urls = [e["url"] for e in entries]
+    if len(set(urls)) != len(urls):
+        fail("duplicate profile URLs.")
+    return entries
+
+
 def load_yaml_list(name):
     path = os.path.join(CONTENT, name)
     return yaml.safe_load(open(path, encoding="utf-8")) or [], mtime_date(path)
@@ -560,7 +577,7 @@ def schema(graph):
 
 def person_node():
     return {"@type": "Person", "@id": PERSON_ID, "name": AUTHOR, "url": SITE + "/",
-            "sameAs": [AMAZON_AUTHOR]}
+            "sameAs": [e["url"] for e in PROFILES] or [AMAZON_AUTHOR]}
 
 
 def publisher_ref():
@@ -1226,6 +1243,10 @@ def render_about(books, posts):
     ]
     shelf = ('<section class="related"><h2>The books</h2><div class="shelf-grid shelf-grid-small">%s</div></section>'
              % "".join(book_card(b) for b in books))
+    if len(PROFILES) > 1:
+        shelf += ('<section class="related"><h2>Find me elsewhere</h2><ul class="profile-list">%s</ul></section>'
+                  % "".join('<li><a href="%s" target="_blank" rel="noopener me">%s</a></li>'
+                            % (esc(e["url"]), esc(e["name"])) for e in PROFILES))
     return render(
         "about.html",
         seo=seo_head("About J.M. Struijk, ADHD & Autistic Author", meta["description"], path,
@@ -1448,7 +1469,7 @@ def home_schema(text, books):
     graph[at:at] = book_nodes + [itemlist]
     for n in graph:
         if n.get("@type") == "Person":
-            n["sameAs"] = [AMAZON_AUTHOR]
+            n["sameAs"] = [e["url"] for e in PROFILES] or [AMAZON_AUTHOR]
         if n.get("@type") == "Organization":
             n["logo"] = {"@type": "ImageObject", "url": SITE + "/assets/images/logo.png",
                          "width": 512, "height": 512}
@@ -1558,7 +1579,9 @@ def render_llms(posts, books, terms, topics, resources):
                                 ", ".join(i["name"] for i in s["items"][:3]))
                              for s in resources)
     tpl = open(os.path.join(TEMPLATES, "llms.md"), encoding="utf-8").read()
-    return tpl.format(book_count=len(books), post_count=len(posts), term_count=len(terms),
+    profiles_md = "\n".join("- %s: %s" % (e["name"], e["url"]) for e in PROFILES)
+    return tpl.format(profiles=profiles_md,
+                      book_count=len(books), post_count=len(posts), term_count=len(terms),
                       books=books_md, articles=articles_md, glossary=glossary_md,
                       topics=topics_md, resources=resources_md,
                       resource_count=sum(len(s["items"]) for s in resources))
@@ -1764,6 +1787,7 @@ def main():
     terms_by_slug = {t["slug"]: t for t in terms}
     resources, resources_date = load_resources()
     resources_by_id = {s["id"]: s for s in resources}
+    PROFILES.extend(load_profiles())
     AUTOLINK.extend(build_autolinks(terms))
     topics = load_topics(by_book, set(terms_by_slug), set(resources_by_id))
     TOPICS.update((t["slug"], t) for t in topics)

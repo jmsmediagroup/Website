@@ -11,7 +11,7 @@ Each book and article targets one specific way ADHD or autism shows up in adult 
 - Books: https://jmstruijk.com/books/
 - Articles: https://jmstruijk.com/blog/
 - Glossary: https://jmstruijk.com/glossary/
-- Amazon author page: https://www.amazon.com/stores/J.M.-Struijk/author/B0G1ZFQ5HR
+{profiles}
 - Publisher: JMS Media Group LLC, Wyoming, US
 - Writes about: ADHD in adults, autism in adults, AuDHD, late diagnosis, executive dysfunction, autistic burnout, ADHD and money management, masking, sensory overload, rejection sensitivity, time blindness
 - Full text of every article and book page, for answer engines: https://jmstruijk.com/llms-full.txt
