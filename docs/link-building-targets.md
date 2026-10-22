@@ -343,6 +343,138 @@ tools does not have an obvious slot. Which is why podcasts and contributed
 writing rank above directory submissions: those routes judge what you have to
 say rather than which category you fit.
 
+## Verified dofollow routes, and the two list sites checked
+
+Checked 23 October 2026. Two "free backlink sites" lists were assessed, then
+the one useful technique in them was actually run. Follow status below was
+confirmed by reading the `rel` attribute in published pages, not by trusting
+any site's claim about itself.
+
+### The two lists
+
+**sites.google.com/view/free-backlink-sites-list-2026** contains no list.
+5,371 characters of generic prose, eight category headings with nothing
+underneath them, no site named anywhere except Quora, Reddit and LinkedIn in
+passing, and exactly one outbound link, to the author's own consultancy with an
+invitation to email him. There is nothing on the page to act on.
+
+**ayrank.com/blog/free-backlink-sites** is a genuine 70-entry list and more
+honest than most. Its own summary says "the highest-value free backlinks are
+not directories" and "directories help with citation consistency, not
+rankings", which is correct. It also refuses to invent Domain Rating figures,
+and refuses to reproduce the usual .edu guestbook-spam list.
+
+Almost none of it applies to this site, for reasons that are about eligibility
+rather than quality:
+
+| Category | Why it does not apply here |
+| --- | --- |
+| Local and business directories | No premises, no address, no phone. Google Business Profile needs a real location or service area, so claiming one would be false and risks suspension. All nofollow regardless. |
+| Profile links | All nofollow. Already covered by `content/profiles.yaml`, where the point is entity confirmation through sameAs, not ranking. |
+| Web 2.0 (WordPress.com, Blogger, Wix, GitHub Pages) | These are the dofollow ones, and they are the trap. See below. |
+| Review directories (G2, Capterra, Crunchbase) | B2B and SaaS vendor listings. Not eligible. |
+| Forums | Nofollow and post-count gated. Two of the named ones are marketing forums that would be a poor neighbourhood for a health-adjacent author name. |
+| Document sharing (SlideShare, Scribd, Issuu) | Nofollow, and hosting the PDF here is better than giving a copy away. |
+| Creative portfolios (Behance, Dribbble) | No visual design work to show. |
+| Stock-photo attribution | Genuinely novel, but nofollow by nature and a trickle. Needs original photography first. |
+| Journalist platforms | Already Tier 4 above, and the strongest real dofollow source, because the link inherits whatever the publication uses. |
+| Guest posts (Search Engine Journal, Smashing, freeCodeCamp) | Dofollow, wrong niche entirely. |
+
+### Why the easy dofollow ones are the trap
+
+WordPress.com, Blogger, Wix and GitHub Pages do pass dofollow links, and they
+are free and instant, which is why they head every list of this kind.
+
+Building a second blog on one of them in order to link back here is a link
+scheme, and the duplicate or thin content makes it worse rather than safer. The
+ayrank article says so itself: a thin property on these platforms "reads as a
+doorway page and gets treated as spam". There are already 35 real articles on
+this domain. A satellite copy of them helps nothing and risks the thing it is
+meant to promote.
+
+The general rule worth keeping: the follow attribute is exactly what sites
+withhold from anything that did not require editorial judgement. So "easy" and
+"dofollow" rarely co-occur, and where they do, it is usually because the
+platform has given up on policing it.
+
+### What the search operators turned up, verified
+
+Running `"write for us"` and `intitle:"contribute"` against this niche produced
+the only free dofollow routes found anywhere in this document. All are
+contributed writing.
+
+**LD Resource Foundation** — https://www.ldrfa.org/write-for-us/
+
+States in writing: "we will give you a DO follow link in the author bio section
+located at the end of each article submitted." Verified true, as far as it can
+be from outside: outbound links in their published articles carry only
+`rel="noopener"`, which is a browser security attribute and not a follow
+directive, so those links pass authority. Free, 600 words minimum, sent to
+info@ldrfa.org as a Google Doc or Word file.
+
+Scope is learning disabilities, literacy, assistive technology and ADHD. ADHD
+is explicitly listed; autism is not their centre of gravity. The site is live
+and publishing current material. Best single target here.
+
+**The Art of Autism** — https://the-art-of-autism.com/submission-guidelines/
+
+800 to 2,000 words, .docx or .txt, with a headshot and bio in a separate email,
+to submit@artautism.com. They **pay neurodivergent bloggers** for posts, and
+they explicitly refuse sponsored posts, which is the signal that their
+editorial links mean something.
+
+Verified: in-body editorial links are dofollow, and comment links are correctly
+`nofollow ugc`. Over 800 autistic contributors to date. The eligibility fits
+exactly, and unlike The Spectrum this one credits you properly.
+
+Their comment sections also contain visible link spam, all of it nofollowed.
+A useful illustration of why comment drops are worth nothing.
+
+**Autism Parenting Magazine** — https://www.autismparentingmagazine.com/writingsubmissions/
+
+Free. "Authors own all rights to their work", contributors "are encouraged to
+include links in their biography to their blog, book(s) and social media
+pages", and they offer "a free 12-month subscription to the magazine and a link
+back to your blog for all published articles". Biographies appear at the end of
+every article.
+
+Two caveats. Submissions must be original and not published anywhere else, so
+nothing already on this blog can be reused. And the follow status could not be
+verified: their article pages return 403 to automated requests, so the promised
+link is a claim rather than something confirmed here.
+
+Scope is parenting an autistic child **or** "being a person on the spectrum",
+which is the half that applies.
+
+**Special Needs USA** — https://specialneedsusa.com/write-for-us
+
+600 to 1,000 words on ADHD, dyslexia or autism in education. You may reference
+your own work but not pitch products. Smaller, lower priority, low effort.
+
+**Neurodiverging** — https://www.neurodiverging.com/guidelines-for-guest-posts-and-sponsored-posts/
+
+Worth recording for the pricing, which is unusually candid: "if you require a
+do-follow link, it is considered a sponsored post, will be marked as such, and
+comes with a $150 USD fee."
+
+So dofollow here is a paid link, which is out under the rule below. The free
+route is a guest post with a nofollow bio link, and they may pay a small amount
+for it. Neuro-affirming editorial stance, 1,000 to 1,200 words minimum. Worth
+doing on its merits, not for the link.
+
+### The honest summary
+
+Every verified free dofollow link available to this site requires writing an
+article a human editor accepted. There is no directory shortcut, and the lists
+that promise one either contain nothing, as with the first source, or say so
+themselves, as with the second.
+
+Ranked by value times achievability: LD Resource Foundation first, because the
+dofollow promise is explicit and verified. The Art of Autism second, because
+the fit is perfect and they pay. ADDitude third, highest authority and hardest.
+Autism Parenting Magazine fourth, pending a check of whether that bio link
+actually follows.
+
 ## What not to do
 
 - No paid links, link exchanges, or directory blasts. These violate search
