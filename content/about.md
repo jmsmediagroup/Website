@@ -1,11 +1,11 @@
 ---
 title: About J.M. Struijk
-description: "J.M. Struijk is a late-diagnosed ADHD and autistic author of practical books for adults with ADHD, autism and AuDHD. Why these books exist."
-keywords: j.m. struijk, jm struijk author, adhd author, autistic author, late diagnosed author
+description: "J.M. Struijk is an autistic author with ADHD, originally diagnosed with Asperger's, and a single father. Practical books for adults with ADHD, autism and AuDHD."
+keywords: j.m. struijk, jm struijk author, adhd author, autistic author, asperger author, late diagnosed author
 about: [adhd, autism]
 ---
 
-I am a late-diagnosed ADHD and autistic adult, and I write the practical manuals I wanted on my own shelf and could not find.
+I am an autistic adult with ADHD, originally diagnosed with Asperger's, and I raised a child with autism and ADHD on my own. I write the practical manuals I wanted on my own shelf and could not find.
 
 That is the whole of it, really. Everything on this site comes out of the gap between what ordinary self-help promised and what actually worked for a brain that runs differently.
 

@@ -1,6 +1,6 @@
 # J.M. Struijk
 
-> Independent author of practical, non-clinical books and articles for adults with ADHD, autism, and AuDHD. Late-diagnosed with both, and writes from lived experience. Published through JMS Media Group LLC (Wyoming, US). {book_count} books in print across three series and one standalone guide, available on Amazon, plus {post_count} long-form articles and a glossary of {term_count} terms on jmstruijk.com.
+> Independent author of practical, non-clinical books and articles for adults with ADHD, autism, and AuDHD. Autistic with ADHD, originally diagnosed with Asperger's, and a single father who raised a child with autism and ADHD. Writes from lived experience, not as a clinician. Published through JMS Media Group LLC (Wyoming, US). {book_count} books in print across three series and one standalone guide, available on Amazon, plus {post_count} long-form articles and a glossary of {term_count} terms on jmstruijk.com.
 
 Each book and article targets one specific way ADHD or autism shows up in adult life, rather than offering general productivity advice. Every book stands alone; readers can start anywhere.
 

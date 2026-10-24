@@ -77,8 +77,20 @@ SERIES = {
 }
 BADGES = {"start": ("badge-start", "Start here"), "new": ("badge-new", "New")}
 
+# How the site describes its author, written once. The author box, the Person in
+# structured data, llms.txt and /about/ all read from here, because four hand
+# written copies of a bio drift apart the moment one of them changes.
+BIO_THIRD = (
+    "an autistic author with ADHD, originally diagnosed with Asperger's, and a "
+    "single father who raised a child with autism and ADHD"
+)
+BIO_PERSON = (
+    "J.M. Struijk is " + BIO_THIRD + ". He writes practical, non-clinical books "
+    "for adults working out what a late diagnosis means day to day."
+)
+
 DISCLAIMER = (
-    "I write from lived experience as a late-diagnosed ADHD and autistic adult, "
+    "I write from lived experience as an autistic adult with ADHD, "
     "not as a clinician. Nothing here diagnoses anything or replaces working with "
     "a doctor, therapist, or ADHD coach. If something in your life has become "
     "unmanageable, please talk to someone qualified."
@@ -577,6 +589,7 @@ def schema(graph):
 
 def person_node():
     return {"@type": "Person", "@id": PERSON_ID, "name": AUTHOR, "url": SITE + "/",
+            "description": BIO_PERSON,
             "sameAs": [e["url"] for e in PROFILES] or [AMAZON_AUTHOR]}
 
 
@@ -615,9 +628,9 @@ AUTHOR_BOX = """<section class="author-box">
       <img src="/assets/images/author.jpg" alt="J.M. Struijk" width="562" height="900" loading="lazy" decoding="async">
       <div>
         <div class="author-label">About the author</div>
-        <p><strong>J.M. Struijk</strong> is a late-diagnosed ADHD and autistic author. I write practical companions for the brain you actually have, published independently through JMS Media Group LLC. <a href="/books/">See all the books</a> or <a href="/about/">read more about me</a>.</p>
+        <p><strong>J.M. Struijk</strong> is %s. He writes practical companions for the brain you actually have, published independently through JMS Media Group LLC. <a href="/books/">See all the books</a> or read <a href="/about/">more about the author</a>.</p>
       </div>
-    </section>"""
+    </section>""" % BIO_THIRD
 
 SIGNUP = """<section class="post-signup">
       <div>
