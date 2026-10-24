@@ -169,7 +169,8 @@ more reliably.
 
 **Author bio**
 
-J.M. Struijk is a late-diagnosed ADHD and autistic writer, and the author of
-practical, non-clinical books for adults working out what a late diagnosis
-means day to day. Free tools, including an ADHD Tax Calculator and a
-Subscription Audit, are at [jmstruijk.com](https://jmstruijk.com/).
+J.M. Struijk is an autistic writer with ADHD, originally diagnosed with
+Asperger's, and a single father who raised a child with autism and ADHD. His
+books are practical and non-clinical, written for adults working out what a
+late diagnosis means day to day. Free tools, including an ADHD Tax Calculator
+and a Subscription Audit, are at [jmstruijk.com](https://jmstruijk.com/).
