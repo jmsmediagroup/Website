@@ -114,9 +114,23 @@
   </url>
   <url>
     <loc>https://jmstruijk.com/blog/</loc>
-    <lastmod>2026-10-22</lastmod>
+    <lastmod>2026-10-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://jmstruijk.com/blog/hyperfocus-vs-hyperfixation-vs-special-interest/</loc>
+    <lastmod>2026-10-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image><image:loc>https://jmstruijk.com/assets/og/post-hyperfocus-vs-hyperfixation-vs-special-interest.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://jmstruijk.com/blog/recognising-yourself-when-your-child-is-diagnosed/</loc>
+    <lastmod>2026-10-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image><image:loc>https://jmstruijk.com/assets/og/post-recognising-yourself-when-your-child-is-diagnosed.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://jmstruijk.com/blog/adhd-vs-autism-adults/</loc>

@@ -1,6 +1,6 @@
 # J.M. Struijk
 
-> Independent author of practical, non-clinical books and articles for adults with ADHD, autism, and AuDHD. Autistic with ADHD, originally diagnosed with Asperger's, and a single father who raised a child with autism and ADHD. Writes from lived experience, not as a clinician. Published through JMS Media Group LLC (Wyoming, US). 11 books in print across three series and one standalone guide, available on Amazon, plus 35 long-form articles and a glossary of 38 terms on jmstruijk.com.
+> Independent author of practical, non-clinical books and articles for adults with ADHD, autism, and AuDHD. Autistic with ADHD, originally diagnosed with Asperger's, and a single father who raised a child with autism and ADHD. Writes from lived experience, not as a clinician. Published through JMS Media Group LLC (Wyoming, US). 11 books in print across three series and one standalone guide, available on Amazon, plus 37 long-form articles and a glossary of 38 terms on jmstruijk.com.
 
 Each book and article targets one specific way ADHD or autism shows up in adult life, rather than offering general productivity advice. Every book stands alone; readers can start anywhere.
 
@@ -69,6 +69,8 @@ All free, with no sign-up, and computed entirely in the reader's browser.
 
 Long-form writing on ADHD and autism, from lived experience. Not clinical guidance.
 
+- [Hyperfocus, hyperfixation and special interests: what the difference actually is](https://jmstruijk.com/blog/hyperfocus-vs-hyperfixation-vs-special-interest/): Hyperfocus, hyperfixation and special interest get used as though they mean the same thing. They describe different things, and the difference is useful. Published 2026-10-24.
+- [When your child's assessment starts describing you](https://jmstruijk.com/blog/recognising-yourself-when-your-child-is-diagnosed/): A great many adults first recognise their own ADHD or autism while sitting in their child's assessment. Why it happens, and what to do with it. Published 2026-10-24.
 - [ADHD or autism? How to tell them apart in adults](https://jmstruijk.com/blog/adhd-vs-autism-adults/): ADHD and autism overlap more than most descriptions admit. The differences that actually help adults tell which is which, and why it is often both. Published 2026-10-22.
 - [ADHD or anxiety? Which came first, and why it matters](https://jmstruijk.com/blog/adhd-vs-anxiety/): ADHD and anxiety look alike and often occur together. The questions that help separate them, and why treating anxiety alone sometimes only half works. Published 2026-10-22.
 - [Autistic meltdown or panic attack? Telling them apart](https://jmstruijk.com/blog/autistic-meltdown-vs-panic-attack/): Meltdowns and panic attacks can look alike from outside and need different responses. What distinguishes them, and what helps during each. Published 2026-10-22.
