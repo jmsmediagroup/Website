@@ -4,7 +4,7 @@ seo_title: "ADHD meal paralysis: why you forget to eat"
 slug: adhd-meal-paralysis-forgetting-to-eat
 description: "Standing in front of a full fridge, hungry, unable to pick anything. Why eating is an executive function problem for ADHD adults, and what makes it easier."
 date: 2026-10-21
-keywords: adhd meal paralysis, adhd forgetting to eat, adhd and food, adhd cooking executive dysfunction, adhd eating habits, adhd hunger cues
+keywords: food paralysis meaning, what is food paralysis, adhd meal paralysis, adhd forgetting to eat, adhd and food, adhd cooking executive dysfunction, adhd hunger cues
 book: adhd-eating-reset
 about: [adhd, interoception]
 topics: [everyday-adhd]
@@ -15,6 +15,8 @@ related:
 ---
 
 The fridge is full. You are hungry, genuinely hungry, the kind that has started to make you irritable. You open the door, look at everything in it, close the door, and eat a handful of dry cereal standing up.
+
+It has two names in common use, meal paralysis and food paralysis, and they point at the same thing: being hungry, having food in the house, and being unable to start.
 
 It is one of the stranger experiences to try explaining to someone who has not had it, because every element of the problem is apparently solved. There is food. You can cook. You want to eat. And none of that is enough.
 
@@ -77,6 +79,10 @@ Worth saying plainly: if your eating is restricted by texture, colour, smell or 
 Same if you are regularly not eating for long stretches, losing weight unintentionally, or the distress around food is significant. That is a conversation with a doctor. The strategies here are for a logistics problem, and they are the wrong tool for a clinical one.
 
 ## Common questions
+
+### What does food paralysis mean?
+
+Food paralysis, also called meal paralysis, means being hungry and having food available while being unable to decide what to eat or start preparing it. It is not fussiness, and it is not an absent appetite. The difficulty sits in deciding and starting, which is why it is better understood as an executive function problem than a problem with food.
 
 ### Why do I forget to eat all day and then binge at night?
 
