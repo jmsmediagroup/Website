@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+{seo}
+{head}
+<script type="application/ld+json">
+{schema}
+</script>
+</head>
+<body>
+{header}
+
+  <article class="calc-page">
+
+    <header class="page-header">
+      <nav class="crumbs" aria-label="Breadcrumb">
+        <a href="/">Home</a> <span>/</span> <a href="/tools/">Tools</a>
+      </nav>
+      <span class="section-tag">Free tool</span>
+      <h1>The ADHD Budget <em>Template.</em></h1>
+      <p class="page-lede">
+        A budget with fewer decisions in it. List your bills and the day each one is due, give three flexible categories a figure, and get one number to check each week: what you can spend. Use it here, or download the spreadsheet for Excel or Google Sheets.
+      </p>
+    </header>
+
+    <ol class="calc-steps">
+      <li><strong>Enter what actually arrives each month.</strong> After tax, not your salary on paper.</li>
+      <li><strong>List every bill with the day it is due.</strong> Mark which ones are already on autopay.</li>
+      <li><strong>Give the three flexible categories a figure.</strong> Plus a line for the ADHD tax, because it happens anyway.</li>
+      <li><strong>Check the weekly number once a week.</strong> Ten minutes. Missing a week breaks nothing.</li>
+    </ol>
+
+    <div class="bud-download">
+      <div>
+        <strong>Prefer a spreadsheet?</strong>
+        The same template as an Excel file, with a weekly check-in sheet and an ADHD Tax log. It opens in Excel, Numbers and Google Sheets.
+      </div>
+      <a class="bud-download-link" href="/assets/downloads/adhd-budget-planner/ADHD-Budget-Template.xlsx" download>Download the template (.xlsx)</a>
+    </div>
+
+    <p class="calc-privacy">Everything stays in your browser. Nothing you type is sent anywhere.</p>
+
+    <noscript><p class="calc-noscript">This tool needs JavaScript. The <a href="/assets/downloads/adhd-budget-planner/ADHD-Budget-Template.xlsx">spreadsheet version</a> works without it.</p></noscript>
+
+    <div class="calc-layout">
+      <form class="calc-form" id="bud-form" novalidate>
+        <div class="calc-currency">
+          <label for="bud-currency">Currency</label>
+          <select id="bud-currency" name="currency">
+            <option value="USD">$ US dollar</option>
+            <option value="GBP">£ Pound sterling</option>
+            <option value="EUR">€ Euro</option>
+            <option value="CAD">$ Canadian dollar</option>
+            <option value="AUD">$ Australian dollar</option>
+          </select>
+        </div>
+
+        <fieldset class="calc-cat">
+          <legend>Coming in</legend>
+          <div class="calc-rows">
+            <label class="calc-row"><span>Take-home income per month</span><input type="text" inputmode="decimal" id="bud-income" placeholder="0"></label>
+          </div>
+        </fieldset>
+
+        <fieldset class="calc-cat">
+          <legend>Bills</legend>
+          <p class="calc-blurb">Every bill, with the day of the month it is due. Getting these out of your head is most of the point.</p>
+          <div class="bud-head">
+            <span>Bill</span><span>Per month</span><span>Due day</span><span>Paid by</span><span class="sr-only">Remove</span>
+          </div>
+          <div id="bud-bills"></div>
+          <div class="sub-actions">
+            <button type="button" id="bud-add">+ Add a bill</button>
+            <button type="button" id="bud-common">Add common ones</button>
+          </div>
+        </fieldset>
+
+        <fieldset class="calc-cat">
+          <legend>Flexible spending</legend>
+          <p class="calc-blurb">Three categories on purpose. Every extra one is another decision to keep up with.</p>
+          <div class="calc-rows">
+            <label class="calc-row"><span>Groceries</span><input type="text" inputmode="decimal" data-flex id="bud-groceries" placeholder="0"></label>
+            <label class="calc-row"><span>Getting around</span><input type="text" inputmode="decimal" data-flex id="bud-transport" placeholder="0"></label>
+            <label class="calc-row"><span>Everything else</span><input type="text" inputmode="decimal" data-flex id="bud-other" placeholder="0"></label>
+          </div>
+        </fieldset>
+
+        <fieldset class="calc-cat">
+          <legend>Set aside</legend>
+          <p class="calc-blurb">The ADHD tax line covers late fees, forgotten subscriptions and replacement buys. The <a href="/tools/adhd-tax-calculator/">ADHD Tax Calculator</a> gives you your own figure.</p>
+          <div class="calc-rows">
+            <label class="calc-row"><span>ADHD tax buffer</span><input type="text" inputmode="decimal" id="bud-tax" placeholder="0"></label>
+            <label class="calc-row"><span>Savings</span><input type="text" inputmode="decimal" id="bud-savings" placeholder="0"></label>
+          </div>
+        </fieldset>
+      </form>
+
+      <aside class="calc-results" aria-live="polite">
+        <div class="calc-results-inner">
+          <div class="calc-label">You can spend</div>
+          <div class="calc-total"><span id="bud-week">0</span><small> a week</small></div>
+          <dl class="calc-projection">
+            <div><dt>Left over</dt><dd id="bud-left">0</dd></div>
+            <div><dt>Bills a month</dt><dd id="bud-bills-total">0</dd></div>
+          </dl>
+          <div class="calc-top" id="bud-summary">
+            <p class="calc-empty">Enter your income and a few bills to see your weekly number.</p>
+          </div>
+          <div class="calc-actions">
+            <button type="button" id="bud-csv">Save as CSV</button>
+            <button type="button" id="bud-print">Print</button>
+            <button type="button" id="bud-reset">Clear</button>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <div class="post-body calc-explainer">
+{explainer}
+    </div>
+
+    {book_cta}
+
+    {author_box}
+
+    <p class="disclaimer">{disclaimer}</p>
+
+  </article>
+
+  <script src="/assets/budget-template.js" defer></script>
+
+{footer}
+</body>
+</html>

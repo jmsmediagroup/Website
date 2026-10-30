@@ -34,6 +34,7 @@ All free, with no sign-up, and computed entirely in the reader's browser.
 
 - [ADHD Tax Calculator](https://jmstruijk.com/tools/adhd-tax-calculator/): Monthly, yearly and ten-year cost of ADHD-related late fees, forgotten subscriptions, impulse buys, lost items, convenience spending, avoidance and abandoned hyperfocus projects. Uses the seven categories from the Chapter 1 worksheet of The ADHD Tax.
 - [Subscription Audit](https://jmstruijk.com/tools/subscription-audit/): List recurring charges, mark each keep, cancel or unsure, and see what cancelling is worth over a year.
+- [ADHD Budget Template](https://jmstruijk.com/tools/adhd-budget-template/): A free budget built for ADHD, with bills listed by due day and autopay, three flexible categories, an ADHD tax line and one weekly spending figure. Online, or as an .xlsx for Excel, Numbers and Google Sheets.
 - [All tools](https://jmstruijk.com/tools/)
 
 ## About the author
@@ -188,7 +189,7 @@ Money is where ADHD tends to leave the clearest evidence. Late fees on bills you
 
 The writing collected here starts from that point. It treats money problems as patterns with causes rather than as failures of character, and it looks for systems that keep working on the weeks when you do not: autopay instead of memory, friction placed where your spending is worst, plans built to restart rather than to be followed perfectly.
 
-If you are new to this, the article on [the ADHD tax](https://jmstruijk.com/blog/adhd-tax-what-it-costs/) is the place to begin, and the [ADHD Tax Calculator](https://jmstruijk.com/tools/adhd-tax-calculator/) will show you roughly what it is costing you. If you are carrying debt, the free not-for-profit services listed below will look at your situation for nothing.
+If you are new to this, the article on [the ADHD tax](https://jmstruijk.com/blog/adhd-tax-what-it-costs/) is the place to begin, and the [ADHD Tax Calculator](https://jmstruijk.com/tools/adhd-tax-calculator/) will show you roughly what it is costing you. When you want a budget that allows for it, the free [ADHD Budget Template](https://jmstruijk.com/tools/adhd-budget-template/) works online or as a spreadsheet for Excel and Google Sheets. If you are carrying debt, the free not-for-profit services listed below will look at your situation for nothing.
 
 ## Topic: Everyday ADHD: focus, time and feelings
 
@@ -267,6 +268,73 @@ From the ADHD Tax Calculator worksheet in Chapter 1 of The ADHD Tax by J.M. Stru
 ### What should I do with my total?
 
 Pick the single largest category and fix one thing in it, usually autopay for late fees or a subscription audit for forgotten renewals. The tip shown for each of your top categories is a good first move.
+
+## Tool: ADHD Budget Template
+
+URL: https://jmstruijk.com/tools/adhd-budget-template/
+Spreadsheet: https://jmstruijk.com/assets/downloads/adhd-budget-planner/ADHD-Budget-Template.xlsx
+
+## Why budgets fail with ADHD
+
+Most budgets ask for the same thing: record every purchase, in the right category, every day, with no end date. That is a daily memory task with no deadline and nothing prompting it, which is close to the worst possible task to hand an ADHD brain. So the budget lasts a few weeks, a busy week arrives, it falls behind, and catching up starts to feel worse than giving up.
+
+The problem in that story is the design. A budget that only works while you are consistent will fail the first time you are not.
+
+### What this template does differently
+
+There are three flexible categories, and that is deliberate. Each category is a decision you have to make at the till, and decisions tend to run out before the money does.
+
+The number you check is weekly. A month is long enough to lose track of entirely, while one figure for the week is something you can carry in your head from Monday to Sunday.
+
+Bills get a due day and an autopay column in place of a daily spending log. For a lot of people with ADHD the costliest mistakes are bills paid late, so the template points your attention at the dates.
+
+It has a line for the [ADHD tax](https://jmstruijk.com/blog/adhd-tax-what-it-costs/). Late fees, forgotten subscriptions and buying something twice are going to happen, and a plan that pretends otherwise breaks the first time one does. Giving them a figure means one late fee is already accounted for.
+
+And missing a week costs nothing. The spreadsheet numbers its check-ins instead of dating them, so after a gap you carry on at the next row.
+
+### How to use it
+
+Setting it up takes one sitting, about an hour if you work from statements. Enter what arrives each month after tax, then list every bill with its due day. Use statements for this, not memory, because the bills you forget are exactly the ones you cannot recall.
+
+Then move as many bills as you can onto autopay. Each one you move is a date you no longer have to remember.
+
+After that it is ten minutes a week. Look at the weekly number, compare it with what you spent, and if it is off, change one thing and leave the rest alone. Rebuilding the whole system is usually how a budget gets abandoned.
+
+### Using it in Google Sheets or Excel
+
+Download the template and open it in Excel or Numbers directly. For Google Sheets, open Sheets, choose File, then Import, then Upload, and pick the file. Every total is a formula, so it keeps working once it is in your account.
+
+The spreadsheet has two sheets the online version does not: a weekly check-in numbered for 52 weeks, and an ADHD Tax log for writing down late fees and replacement buys as they happen. A few months of that log shows you where the money actually leaks.
+
+### Common questions
+
+### What is an ADHD-friendly budget?
+
+One designed around how ADHD affects follow-through, instead of one that assumes daily consistency. In practice that means few categories, a weekly figure in place of daily tracking, bills on autopay wherever possible, and a structure that survives a missed week without being rebuilt.
+
+### Is there a free ADHD budget template for Google Sheets?
+
+Yes. The template on this page is a free Excel file that imports into Google Sheets through File, Import, Upload, with its formulas intact. There is no sign-up and no email address needed.
+
+### Does the template work in Excel?
+
+Yes. It is a standard .xlsx file and opens directly in Excel and Numbers. The totals are formulas, so they update as you type.
+
+### Why do I keep giving up on budgets?
+
+Usually because the budget needs daily attention, and the first week that attention slips, the budget falls behind and becomes something to avoid. That is a design problem, not a personal failing. A budget built around a weekly check-in and automated bills has far less to fall behind on.
+
+### How often should I check my budget if I have ADHD?
+
+Once a week, for about ten minutes, is a rhythm a lot of people with ADHD can actually keep. Daily checking tends to collapse within a few weeks, and monthly leaves too long between looks to catch problems early.
+
+### How much should the ADHD tax buffer be?
+
+There is no standard figure, because it depends on your own pattern. The [ADHD Tax Calculator](https://jmstruijk.com/tools/adhd-tax-calculator/) adds up what late fees, forgotten subscriptions and replacements actually cost you, which gives a realistic starting number.
+
+### Is my information stored or sent anywhere?
+
+No. The online tool runs entirely in your browser and keeps your figures only on this device, if your browser allows it, so you can come back to them. The Clear button removes them. The spreadsheet lives wherever you save it.
 
 ## Resource directory
 
@@ -591,6 +659,8 @@ For the hard moments there is a Missed-Payment page that scripts the call asking
 ### Where it fits
 
 The planner is the long-term home for a system. [The ADHD Budget Workbook](https://jmstruijk.com/books/adhd-budget-workbook/) is the guided 90-day reset that builds it. [The ADHD Debt Payoff Workbook](https://jmstruijk.com/books/adhd-debt-payoff-workbook/) handles debt specifically, and [The ADHD Tax](https://jmstruijk.com/books/adhd-tax/) explains the patterns all of it is designed around.
+
+If you would like to try the approach on a screen first, the free [ADHD Budget Template](https://jmstruijk.com/tools/adhd-budget-template/) is built on the planner's bills list, money map, weekly check-in and ADHD Tax log, and downloads for Excel and Google Sheets.
 
 ### Common questions
 

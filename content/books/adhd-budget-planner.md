@@ -37,6 +37,8 @@ For the hard moments there is a Missed-Payment page that scripts the call asking
 
 The planner is the long-term home for a system. [The ADHD Budget Workbook](/books/adhd-budget-workbook/) is the guided 90-day reset that builds it. [The ADHD Debt Payoff Workbook](/books/adhd-debt-payoff-workbook/) handles debt specifically, and [The ADHD Tax](/books/adhd-tax/) explains the patterns all of it is designed around.
 
+If you would like to try the approach on a screen first, the free [ADHD Budget Template](/tools/adhd-budget-template/) is built on the planner's bills list, money map, weekly check-in and ADHD Tax log, and downloads for Excel and Google Sheets.
+
 ## Common questions
 
 ### Why is the planner undated?

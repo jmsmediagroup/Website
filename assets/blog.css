@@ -605,7 +605,7 @@ a { color: inherit; text-decoration: none; }
 
 @media print {
   .announce, .site-nav, .site-footer, .calc-actions, .book-cta, .author-box, .calc-explainer,
-  .calc-privacy, .calc-steps, .crumbs, .section-tag { display: none !important; }
+  .calc-privacy, .calc-steps, .crumbs, .section-tag, .bud-download, .sub-actions { display: none !important; }
   .calc-layout { grid-template-columns: 1fr; }
   .calc-results { position: static; }
   .calc-results-inner { box-shadow: none; border: 2px solid #000; background: #fff; color: #000; }
@@ -757,6 +757,48 @@ a { color: inherit; text-decoration: none; }
   .sub-choice { grid-area: choice; }
   .sub-remove { position: absolute; right: 0; margin-top: -6px; }
   .sub-row { position: relative; padding-right: 26px; }
+}
+
+/* ---------------- budget template ---------------- */
+/* Rows and buttons borrow the subscription audit's look; only the columns differ. */
+.bud-head, .bud-row { display: grid; grid-template-columns: 1fr 100px 64px 136px 32px; gap: 10px; align-items: center; }
+.bud-head {
+  font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em;
+  color: var(--muted-light); padding-bottom: 8px; border-bottom: 1px solid var(--rule);
+}
+.bud-row { padding: 8px 0; border-bottom: 1px solid var(--rule); }
+.bud-row input {
+  font: inherit; font-size: 15px; padding: 9px 10px; border: 1px solid var(--rule-strong);
+  border-radius: 2px; background: var(--cream); color: var(--ink); width: 100%;
+}
+.bud-row .bud-cost, .bud-row .bud-day { text-align: right; }
+.bud-row input:focus { outline: 2px solid var(--coral); outline-offset: -1px; border-color: var(--coral); }
+.bud-auto { display: grid; grid-template-columns: repeat(2, 1fr); gap: 4px; }
+.bud-auto .sub-pick[data-value="auto"][aria-pressed="true"] { background: var(--sage); border-color: var(--sage); }
+.bud-download {
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 14px 24px;
+  max-width: 760px; padding: 18px 22px; margin-bottom: 18px; background: var(--cream-deep);
+  border-left: 3px solid var(--sage); border-radius: 2px; font-size: 15px; line-height: 1.55; color: var(--ink-soft);
+}
+.bud-download > div { flex: 1 1 320px; }
+.bud-download strong { color: var(--ink); }
+.bud-download-link {
+  flex: 0 0 auto; font-size: 14px; font-weight: 600; padding: 11px 18px; border-radius: 2px;
+  background: var(--ink); color: var(--cream); text-decoration: none; white-space: nowrap;
+}
+.bud-download-link:hover { background: var(--coral); }
+@media (max-width: 620px) {
+  .bud-head { display: none; }
+  .bud-row {
+    grid-template-columns: 1fr 92px 60px; grid-template-areas: "name cost day" "auto auto auto";
+    gap: 8px; padding: 12px 26px 12px 0; position: relative;
+  }
+  .bud-row .bud-name { grid-area: name; }
+  .bud-row .bud-cost { grid-area: cost; }
+  .bud-row .bud-day { grid-area: day; }
+  .bud-auto { grid-area: auto; }
+  .bud-row .sub-remove { position: absolute; right: 0; top: 14px; }
+  .bud-download-link { width: 100%; text-align: center; }
 }
 
 /* Comparison tables. Wrapped so a wide table scrolls instead of widening the page. */

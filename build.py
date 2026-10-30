@@ -1342,7 +1342,108 @@ def render_subscription_audit(by_book):
         book_cta=book_cta(by_book["adhd-tax"]), author_box=AUTHOR_BOX, disclaimer=esc(DISCLAIMER))
 
 
+# The spreadsheet is written by make_budget_xlsx.py and follows The ADHD Budget
+# Planner's own structure, so the online tool, the file and the book agree.
+BUDGET_PATH = "/tools/adhd-budget-template/"
+BUDGET_XLSX = "/assets/downloads/adhd-budget-planner/ADHD-Budget-Template.xlsx"
+
+BUDGET_EXPLAINER = """## Why budgets fail with ADHD
+
+Most budgets ask for the same thing: record every purchase, in the right category, every day, with no end date. That is a daily memory task with no deadline and nothing prompting it, which is close to the worst possible task to hand an ADHD brain. So the budget lasts a few weeks, a busy week arrives, it falls behind, and catching up starts to feel worse than giving up.
+
+The problem in that story is the design. A budget that only works while you are consistent will fail the first time you are not.
+
+## What this template does differently
+
+There are three flexible categories, and that is deliberate. Each category is a decision you have to make at the till, and decisions tend to run out before the money does.
+
+The number you check is weekly. A month is long enough to lose track of entirely, while one figure for the week is something you can carry in your head from Monday to Sunday.
+
+Bills get a due day and an autopay column in place of a daily spending log. For a lot of people with ADHD the costliest mistakes are bills paid late, so the template points your attention at the dates.
+
+It has a line for the [ADHD tax](/blog/adhd-tax-what-it-costs/). Late fees, forgotten subscriptions and buying something twice are going to happen, and a plan that pretends otherwise breaks the first time one does. Giving them a figure means one late fee is already accounted for.
+
+And missing a week costs nothing. The spreadsheet numbers its check-ins instead of dating them, so after a gap you carry on at the next row.
+
+## How to use it
+
+Setting it up takes one sitting, about an hour if you work from statements. Enter what arrives each month after tax, then list every bill with its due day. Use statements for this, not memory, because the bills you forget are exactly the ones you cannot recall.
+
+Then move as many bills as you can onto autopay. Each one you move is a date you no longer have to remember.
+
+After that it is ten minutes a week. Look at the weekly number, compare it with what you spent, and if it is off, change one thing and leave the rest alone. Rebuilding the whole system is usually how a budget gets abandoned.
+
+## Using it in Google Sheets or Excel
+
+Download the template and open it in Excel or Numbers directly. For Google Sheets, open Sheets, choose File, then Import, then Upload, and pick the file. Every total is a formula, so it keeps working once it is in your account.
+
+The spreadsheet has two sheets the online version does not: a weekly check-in numbered for 52 weeks, and an ADHD Tax log for writing down late fees and replacement buys as they happen. A few months of that log shows you where the money actually leaks.
+
+## Common questions
+
+### What is an ADHD-friendly budget?
+
+One designed around how ADHD affects follow-through, instead of one that assumes daily consistency. In practice that means few categories, a weekly figure in place of daily tracking, bills on autopay wherever possible, and a structure that survives a missed week without being rebuilt.
+
+### Is there a free ADHD budget template for Google Sheets?
+
+Yes. The template on this page is a free Excel file that imports into Google Sheets through File, Import, Upload, with its formulas intact. There is no sign-up and no email address needed.
+
+### Does the template work in Excel?
+
+Yes. It is a standard .xlsx file and opens directly in Excel and Numbers. The totals are formulas, so they update as you type.
+
+### Why do I keep giving up on budgets?
+
+Usually because the budget needs daily attention, and the first week that attention slips, the budget falls behind and becomes something to avoid. That is a design problem, not a personal failing. A budget built around a weekly check-in and automated bills has far less to fall behind on.
+
+### How often should I check my budget if I have ADHD?
+
+Once a week, for about ten minutes, is a rhythm a lot of people with ADHD can actually keep. Daily checking tends to collapse within a few weeks, and monthly leaves too long between looks to catch problems early.
+
+### How much should the ADHD tax buffer be?
+
+There is no standard figure, because it depends on your own pattern. The [ADHD Tax Calculator](/tools/adhd-tax-calculator/) adds up what late fees, forgotten subscriptions and replacements actually cost you, which gives a realistic starting number.
+
+### Is my information stored or sent anywhere?
+
+No. The online tool runs entirely in your browser and keeps your figures only on this device, if your browser allows it, so you can come back to them. The Clear button removes them. The spreadsheet lives wherever you save it."""
+
+
+def render_budget_template(by_book):
+    url = SITE + BUDGET_PATH
+    body, _, _, faq = render_markdown(BUDGET_EXPLAINER)
+    graph = [
+        {"@type": "WebApplication", "@id": url + "#app", "name": "ADHD Budget Template", "url": url,
+         "description": "A budget built for ADHD: bills with due days and autopay, three flexible "
+                        "categories, an ADHD tax line and one weekly spending figure.",
+         "applicationCategory": "FinanceApplication", "operatingSystem": "Any",
+         "browserRequirements": "Requires JavaScript", "isAccessibleForFree": True,
+         "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"},
+         "author": {"@id": PERSON_ID}, "about": about_nodes(["adhd", "executive-dysfunction"])},
+        {"@type": "DigitalDocument", "@id": url + "#spreadsheet", "name": "ADHD Budget Template (.xlsx)",
+         "url": SITE + BUDGET_XLSX, "isAccessibleForFree": True, "author": {"@id": PERSON_ID},
+         "encodingFormat": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+         "description": "Spreadsheet version for Excel, Numbers and Google Sheets, with a bills list, "
+                        "a money map, a 52-week check-in and an ADHD Tax log."},
+        person_node(),
+        breadcrumbs((AUTHOR, "/"), ("Tools", "/tools/"), ("ADHD Budget Template", BUDGET_PATH)),
+        faq_node(url, faq),
+    ]
+    return render(
+        "budget-template.html",
+        seo=seo_head("Free ADHD Budget Template for Excel and Google Sheets",
+                     "A free ADHD-friendly budget template: bills with due dates and autopay, three flexible "
+                     "categories and one weekly number. Use it online or download the spreadsheet.",
+                     BUDGET_PATH, og_image("tool", "adhd-budget-template")),
+        schema=schema(graph), explainer=autolink_glossary(body),
+        book_cta=book_cta(by_book["adhd-budget-planner"]), author_box=AUTHOR_BOX, disclaimer=esc(DISCLAIMER))
+
+
 TOOLS = [
+    (BUDGET_PATH, "ADHD Budget Template",
+     "Bills with due days and autopay, three flexible categories and one weekly number. Use it online "
+     "or download it for Excel and Google Sheets.", "Interactive and .xlsx"),
     (CALC_PATH, "ADHD Tax Calculator",
      "Add up what late fees, forgotten subscriptions, impulse buys and lost things cost you, by category, "
      "and see it over a year and over ten.", "Interactive"),
@@ -1372,9 +1473,9 @@ def render_tools_index():
     ]
     return render(
         "tools.html",
-        seo=seo_head("Free ADHD Tools: Tax Calculator & Subscription Audit",
-                     "Free tools for adults with ADHD: work out what the ADHD tax costs you, audit forgotten "
-                     "subscriptions, and print the worksheets. No sign-up.", "/tools/"),
+        seo=seo_head("Free ADHD Tools: Budget Template, Tax Calculator and More",
+                     "Free tools for adults with ADHD: a budget template for Excel and Google Sheets, an ADHD tax "
+                     "calculator, a subscription audit and printable worksheets. No sign-up.", "/tools/"),
         schema=schema(graph), cards=cards)
 
 
@@ -1611,6 +1712,9 @@ def render_llms_full(llms, posts, books, terms, topics, resources):
                   absolute_links(t["markdown"]), ""]
     parts += ["## Tool: ADHD Tax Calculator", "", "URL: %s%s" % (SITE, CALC_PATH), "",
               absolute_links(CALC_EXPLAINER).replace("\n## ", "\n### "), ""]
+    parts += ["## Tool: ADHD Budget Template", "", "URL: %s%s" % (SITE, BUDGET_PATH),
+              "Spreadsheet: %s%s" % (SITE, BUDGET_XLSX), "",
+              absolute_links(BUDGET_EXPLAINER).replace("\n## ", "\n### "), ""]
     parts += ["## Resource directory", "", "URL: %s/resources/" % SITE, ""]
     for s in resources:
         parts += ["### %s" % s["title"], "", s["intro"], ""]
@@ -1739,6 +1843,7 @@ def render_og_images(posts, books, topics, force):
              for t in topics]
     jobs.append(("tool", "adhd-tax-calculator", "The ADHD Tax Calculator", "Free tool", "adhd-tax"))
     jobs.append(("tool", "subscription-audit", "The Subscription Audit", "Free tool", "adhd-tax"))
+    jobs.append(("tool", "adhd-budget-template", "The ADHD Budget Template", "Free tool", "adhd-budget-planner"))
     jobs.append(("page", "about", "J.M. Struijk", "About the author", "late-diagnosed-adhd-workbook"))
 
     made = 0
@@ -1817,6 +1922,7 @@ def main():
                    "/glossary/": "Glossary", "/start/": "Start here", "/resources/": "Resources directory",
                    "/about/": "About J.M. Struijk", "/tools/": "Free tools",
                    CALC_PATH: "ADHD Tax Calculator", SUB_PATH: "Subscription Audit",
+                   BUDGET_PATH: "ADHD Budget Template",
                    "/adhd-tax-worksheets/": "ADHD Tax printable worksheets"})
     TITLES.update(("/blog/%s/" % p["slug"], p["title"]) for p in posts)
     TITLES.update(("/books/%s/" % b["slug"], b["title"]) for b in books)
@@ -1840,6 +1946,7 @@ def main():
     pages["/resources/"] = render_resources(resources)
     pages[CALC_PATH] = render_calculator(calculator, by_book)
     pages[SUB_PATH] = render_subscription_audit(by_book)
+    pages[BUDGET_PATH] = render_budget_template(by_book)
     pages["/tools/"] = render_tools_index()
     pages["/about/"] = render_about(books, posts)
     home = build_homepage(posts, books)
@@ -1866,6 +1973,7 @@ def main():
         ("/tools/", calculator_date, "monthly", "0.8"),
         (CALC_PATH, calculator_date, "monthly", "0.9"),
         (SUB_PATH, mtime_date(os.path.join(ROOT, "assets", "subscription-audit.js")), "monthly", "0.9"),
+        (BUDGET_PATH, mtime_date(os.path.join(ROOT, "assets", "budget-template.js")), "monthly", "0.9"),
     ]))
     llms = render_llms(posts, books, terms, topics, resources)
     write("llms.txt", llms)
