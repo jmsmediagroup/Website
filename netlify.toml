@@ -95,3 +95,42 @@
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
     Access-Control-Allow-Origin = "*"
+
+# The repo is published whole (publish = "."), so anything that is source or
+# private working material has to be refused explicitly. docs/ holds guest
+# post drafts that publications require to be unpublished anywhere.
+[[redirects]]
+  from = "/docs/*"
+  to = "/404.html"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/content/*"
+  to = "/404.html"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/templates/*"
+  to = "/404.html"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/build.py"
+  to = "/404.html"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/make_budget_xlsx.py"
+  to = "/404.html"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/indexnow.py"
+  to = "/404.html"
+  status = 404
+  force = true
