@@ -15,6 +15,7 @@ build instead of shipping.
 import glob
 import html
 import json
+import math
 import os
 import re
 import shutil
@@ -305,7 +306,7 @@ def load_books():
         cover = os.path.join(ROOT, "assets", "covers", meta["slug"] + ".jpg")
         if not os.path.exists(cover):
             fail("%s has no cover at assets/covers/%s.jpg." % (name, meta["slug"]))
-        for n in (260, 400, 700):
+        for n in COVER_WIDTHS:
             for ext in ("avif", "webp"):
                 if not os.path.exists(os.path.join(ROOT, "assets", "covers", "%s-%d.%s" % (meta["slug"], n, ext))):
                     fail("%s is missing its %dpx %s cover; run python3 make_cover_images.py." % (name, n, ext))
@@ -670,7 +671,7 @@ SIGNUP = """<section class="post-signup">
     </section>"""
 
 
-def cover_frame(book, badge="", eager=False):
+def cover_frame(book, sizes, badge="", eager=False):
     """A cover image in a frame that hugs it, so badges sit on the artwork.
 
     Covers are not all 2:3; sizing by height keeps every one of them edge to edge.
@@ -682,15 +683,29 @@ def cover_frame(book, badge="", eager=False):
     # variants come from make_cover_images.py.
     return ('<span class="cover-frame">{picture}{badge}</span>'
             ).format(picture=cover_picture(book["slug"], esc(book["title"]) + " book cover", w, h,
-                                           COVER_SIZES, loading), badge=badge)
+                                           cover_sizes(sizes, w, h), loading), badge=badge)
 
 
-COVER_SIZES = "(max-width: 520px) 170px, (max-width: 880px) 220px, 260px"
+# Covers are sized by height, so each context is described by the CSS heights it
+# uses at each breakpoint, and the sizes attribute is worked out per cover from
+# its own aspect ratio. Keep these in step with the heights in assets/blog.css
+# and the homepage styles, or phones download larger files than they show.
+COVER_WIDTHS = (160, 260, 320, 400, 700)
+SIZES_SHELF = (("(max-width: 360px)", 172), ("(max-width: 520px)", 195), (None, 260))
+SIZES_CTA = (("(max-width: 560px)", 165), (None, 198))
+SIZES_BOOK_HERO = (("(max-width: 680px)", 270), (None, 360))
+SIZES_SITUATION = (("(max-width: 560px)", 108), (None, 210))
+SIZES_HOME = (("(max-width: 360px)", 172), ("(max-width: 520px)", 195), ("(max-width: 880px)", 300), (None, 330))
+
+
+def cover_sizes(heights, w, h):
+    return ", ".join(("%s %dpx" % (media, math.ceil(px * w / h))) if media else "%dpx" % math.ceil(px * w / h)
+                     for media, px in heights)
 
 
 def cover_picture(slug, alt, w, h, sizes, attrs):
     """<picture> for a cover: AVIF, then WebP, then the original JPEG."""
-    variants = lambda ext: ", ".join("/assets/covers/%s-%d.%s %dw" % (slug, n, ext, n) for n in (260, 400, 700))
+    variants = lambda ext: ", ".join("/assets/covers/%s-%d.%s %dw" % (slug, n, ext, n) for n in COVER_WIDTHS)
     return ('<picture>'
             '<source type="image/avif" srcset="{avif}" sizes="{sizes}">'
             '<source type="image/webp" srcset="{webp}" sizes="{sizes}">'
@@ -706,7 +721,7 @@ def book_card(book, heading="h3"):
             '<span class="shelf-cover">{frame}</span>'
             '<{hd} class="shelf-title">{title}</{hd}><span class="shelf-tagline">{tagline}</span></a>'
             ).format(slug=book["slug"], title=esc(book["title"]), tagline=esc(book["tagline"]),
-                     frame=cover_frame(book), hd=heading)
+                     frame=cover_frame(book, SIZES_SHELF), hd=heading)
 
 
 def post_cards(posts, heading):
@@ -736,7 +751,7 @@ def book_cta(book):
         </div>
       </div>
     </aside>""".format(slug=book["slug"], title=esc(book["title"]), tagline=esc(book["tagline"]),
-                       amazon=amazon(book["asin"]), frame=cover_frame(book))
+                       amazon=amazon(book["asin"]), frame=cover_frame(book, SIZES_CTA))
 
 
 def render_post(post, by_post, by_book):
@@ -912,7 +927,7 @@ def render_book(book, posts, books):
             + '\n<meta property="book:release_date" content="%s">' % book["published"]
             + '\n<meta name="keywords" content="%s">' % esc(book.get("keywords", "")),
         schema=schema(graph),
-        cover=cover_frame(book, eager=True),
+        cover=cover_frame(book, SIZES_BOOK_HERO, eager=True),
         title=esc(book["title"]),
         subtitle=esc(book["subtitle"]),
         series_label=esc(series_label(book)),
@@ -1093,7 +1108,7 @@ def render_start(situations, by_book):
             'The book on this</span><strong>%s</strong></span></a></section>'
             % (s["id"], esc(s["question"]), esc(s["answer"]),
                "".join("<li>%s</li>" % internal_link(l) for l in s["links"]),
-               book["slug"], cover_frame(book), esc(book["title"])))
+               book["slug"], cover_frame(book, SIZES_SITUATION), esc(book["title"])))
     graph = [
         {"@type": "WebPage", "@id": SITE + path, "url": SITE + path, "name": "Start here",
          "description": "A guide to where to begin, by situation.", "isPartOf": {"@id": WEBSITE_ID},
@@ -1640,7 +1655,7 @@ def home_catalogue(books):
             <div class="book-link">About the book</div>
           </div>
         </a>""".format(slug=b["slug"], title=esc(b["title"]), tagline=esc(b["tagline"]),
-                       frame=cover_frame(b, badge)))
+                       frame=cover_frame(b, SIZES_HOME, badge)))
         blocks.append("""    <div class="series-block" id="{anchor}" data-reveal>
       <div class="series-header">
         <h3 class="series-name"><span class="series-color-dot" style="background:{colour};"></span>{series}</h3>

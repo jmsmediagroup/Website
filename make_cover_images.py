@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Write AVIF and WebP versions of every book cover, at 260, 400 and 700px wide.
+"""Write AVIF and WebP versions of every book cover, at 160, 260, 320, 400 and 700px wide.
 
     python3 make_cover_images.py           only covers whose variants are missing
     python3 make_cover_images.py --all     rewrite every variant
@@ -21,7 +21,7 @@ import sys
 from PIL import Image
 
 COVERS = os.path.join(os.path.dirname(os.path.abspath(__file__)), "assets", "covers")
-WIDTHS = (260, 400, 700)
+WIDTHS = (160, 260, 320, 400, 700)
 FORMATS = (("avif", "AVIF", {"quality": 55}), ("webp", "WEBP", {"quality": 80, "method": 6}))
 
 
