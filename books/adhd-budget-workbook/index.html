@@ -58,7 +58,7 @@
       var h = document.documentElement.scrollHeight - innerHeight;
       if (h > 0) maxScroll = Math.max(maxScroll, Math.round(scrollY / h * 100));
     }, { passive: true });
-    addEventListener('load', function () { send(base()); });
+    send(base());  // at once, while the page is still loading, so a quick bounce is still recorded
     addEventListener('pagehide', function () {
       var d = base(); d.kind = 'leave'; d.seconds = (Date.now() - start) / 1000; d.scroll = maxScroll;
       send(d);
