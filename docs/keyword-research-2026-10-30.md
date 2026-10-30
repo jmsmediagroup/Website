@@ -30,8 +30,20 @@ normal results do not answer them.
 | --- | --- | --- |
 | ADHD budget template | Largest gap cluster: free, Excel, Google Sheets, app, planner, tracker, spreadsheet. Results are about 15 copies of one auto-generated spam page and a paid Fiverr listing. | /tools/adhd-budget-template/ plus a downloadable .xlsx |
 | Shutting down after work | "After work" recurred across ADHD paralysis, autistic shutdown and autistic meltdown, plus "unable to move". Results are forums, Substacks, small clinics. | /blog/why-you-shut-down-after-work/ |
+| Impulse spending checklist | "adhd impulse buying checklist", "how to stop impulse spending". Existing checklists are gated PDFs or blog lists. | /tools/impulse-spending-checklist/, plus bored and sad spending FAQs on why-adhd-brains-overspend |
+| Paying bills on time | "adhd not paying bills", "how to remember to pay bills on time". Results are forum threads, an old guest blog, a 2013 Nasdaq piece. | /blog/adhd-paying-bills-on-time/ |
+| Am I autistic or ADHD | "am i autistic or just socially awkward", "is it autism or social anxiety". | Two FAQ entries on adhd-vs-autism-adults |
 
-## Next, in order
+## Parked, with reasons
+
+- **"Do I have ADHD or am I just lazy."** Strong demand and a good fit for the
+  voice, but the results are therapy platforms, telehealth firms and rehab
+  centres with far more authority. Worth writing once the site has more links.
+- **"Is it ADHD or bipolar / BPD / dementia / perimenopause", "autism or
+  narcissism".** Clinical differential questions. They sit outside the site's
+  non-clinical stance and are not worth the risk.
+
+## Originally next, now done
 
 1. **Impulse spending checklist.** "adhd impulse buying checklist", "how to stop
    impulse spending", "why do I spend money when I'm bored / sad / so fast".

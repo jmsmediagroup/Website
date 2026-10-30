@@ -3,7 +3,8 @@ title: "ADHD or autism? How to tell them apart in adults"
 slug: adhd-vs-autism-adults
 description: "ADHD and autism overlap more than most descriptions admit. The differences that actually help adults tell which is which, and why it is often both."
 date: 2026-10-22
-keywords: adhd vs autism, adhd or autism adults, difference between adhd and autism, autism adhd overlap, am i autistic or adhd
+updated: 2026-10-30
+keywords: adhd vs autism, is it adhd or autism, am i autistic or adhd, am i autistic or just socially awkward, is it autism or social anxiety, autism adhd overlap
 book: late-diagnosed-adhd-workbook
 about: [adhd, autism, executive-dysfunction]
 topics: [late-diagnosis, autism]
@@ -103,6 +104,14 @@ In broad terms, ADHD centres on attention, impulsivity and the executive functio
 ### Can ADHD be mistaken for autism?
 
 Yes, in both directions. Someone with ADHD who built heavy routines to compensate can appear rigid, and an autistic adult who masks well can appear simply disorganised. Social difficulties, sensory sensitivity and trouble with focus occur in both, which is why assessment relies on developmental history rather than a symptom list alone.
+
+### Am I autistic or just socially awkward?
+
+Social awkwardness on its own does not point to autism. Autism is wider than social difficulty: it usually comes with differences in sensory processing, a strong need for predictability, intense focused interests, and a sense that social situations take deliberate effort that other people seem not to spend. It is also lifelong and shows up across settings, not only with strangers or in new places. If the awkwardness sits alongside several of those, it is worth looking into. If it is mostly nerves in unfamiliar company, it may simply be that.
+
+### Is it autism or social anxiety?
+
+They can look alike from outside and they often occur together. Social anxiety is mainly fear of being judged, and it tends to ease as a setting becomes familiar. Autistic social difficulty is more about processing social information differently, so it often persists even with people you know well, and the anxiety that comes with it is frequently a result of years of getting things wrong. Telling them apart is a job for an assessment rather than a checklist.
 
 ### Which should I get assessed for first?
 
