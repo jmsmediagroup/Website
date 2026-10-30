@@ -532,11 +532,33 @@ def topic_tags(slugs):
             % "".join('<a href="/topics/%s/">%s</a>' % (s, esc(TOPICS[s]["title"])) for s in slugs))
 
 
+def inline_css(path):
+    """A stylesheet as an inline <style>, with comments and runs of whitespace removed.
+
+    Pages are served from the edge in one round trip; a linked stylesheet adds a
+    second before anything can paint, and on a phone that second trip was the
+    largest part of first paint. Both stylesheets together are under 10 KB
+    gzipped, so carrying them in every page costs less than waiting for them.
+    """
+    css = open(os.path.join(ROOT, path), encoding="utf-8").read()
+    css = re.sub(r"/\*.*?\*/", "", css, flags=re.S)
+    css = re.sub(r"\s+", " ", css).strip()
+    # Spaces around these never change meaning. Colons are left alone, because
+    # "a :hover" and "a:hover" select different things.
+    css = re.sub(r"\s*([{};,>])\s*", r"\1", css)
+    return "<style>%s</style>" % css
+
+
 def render(template, **values):
     if not PARTIALS:
         for name in ("head", "header", "footer"):
             PARTIALS[name] = open(os.path.join(TEMPLATES, "partials", name + ".html"),
                                   encoding="utf-8").read().rstrip()
+        for href in ("/assets/fonts/fonts.css", "/assets/blog.css"):
+            link = '<link rel="stylesheet" href="%s">' % href
+            if link not in PARTIALS["head"]:
+                fail("templates/partials/head.html no longer links %s." % href)
+            PARTIALS["head"] = PARTIALS["head"].replace(link, inline_css(href.lstrip("/")))
     for name, markup in PARTIALS.items():
         values.setdefault(name, markup)
     return open(os.path.join(TEMPLATES, template), encoding="utf-8").read().format(**values)
@@ -1703,6 +1725,7 @@ def home_schema(text, books):
 
 def build_homepage(posts, books):
     text = open(os.path.join(ROOT, "index.html"), encoding="utf-8").read()
+    text = replace_block(text, "FONTS", inline_css("assets/fonts/fonts.css"))
     text = replace_block(text, "CATALOGUE", home_catalogue(books))
     text = replace_block(text, "POSTS", home_posts(posts))
     return home_schema(text, books)
