@@ -31,6 +31,7 @@ All free, with no sign-up, and computed entirely in the reader's browser.
 - [ADHD Tax Calculator](https://jmstruijk.com/tools/adhd-tax-calculator/): Monthly, yearly and ten-year cost of ADHD-related late fees, forgotten subscriptions, impulse buys, lost items, convenience spending, avoidance and abandoned hyperfocus projects. Uses the seven categories from the Chapter 1 worksheet of The ADHD Tax.
 - [Subscription Audit](https://jmstruijk.com/tools/subscription-audit/): List recurring charges, mark each keep, cancel or unsure, and see what cancelling is worth over a year.
 - [ADHD Budget Template](https://jmstruijk.com/tools/adhd-budget-template/): A free budget built for ADHD, with bills listed by due day and autopay, three flexible categories, an ADHD tax line and one weekly spending figure. Online, or as an .xlsx for Excel, Numbers and Google Sheets.
+- [Impulse Spending Checklist](https://jmstruijk.com/tools/impulse-spending-checklist/): A quick check of the usual triggers before buying, and a dated waiting list for anything over a set limit, showing what waiting saved and which situations spending clusters in.
 - [All tools](https://jmstruijk.com/tools/)
 
 ## About the author

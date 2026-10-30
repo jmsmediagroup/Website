@@ -44,7 +44,7 @@ There is no shaming in it and no neurotypical budgeting template with ADHD stick
 
 ## Where it fits
 
-The ADHD Tax diagnoses where the money goes. [The ADHD Budget Workbook](/books/adhd-budget-workbook/) is the guided 12-week version of putting a system in place, and [The ADHD Debt Payoff Workbook](/books/adhd-debt-payoff-workbook/) goes deeper on clearing debt. If you want the short version first, the article on [what the ADHD tax actually costs](/blog/adhd-tax-what-it-costs/) covers the core idea, and the free [ADHD Tax Calculator](/tools/adhd-tax-calculator/) uses the same categories as the book's Chapter 1 worksheet.
+The ADHD Tax diagnoses where the money goes. [The ADHD Budget Workbook](/books/adhd-budget-workbook/) is the guided 12-week version of putting a system in place, and [The ADHD Debt Payoff Workbook](/books/adhd-debt-payoff-workbook/) goes deeper on clearing debt. If you want the short version first, the article on [what the ADHD tax actually costs](/blog/adhd-tax-what-it-costs/) covers the core idea, and the free [ADHD Tax Calculator](/tools/adhd-tax-calculator/) uses the same categories as the book's Chapter 1 worksheet. The [Impulse Spending Checklist](/tools/impulse-spending-checklist/) is a free way to start interrupting impulse purchases before you read further.
 
 ## Common questions
 

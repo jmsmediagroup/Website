@@ -35,6 +35,7 @@ All free, with no sign-up, and computed entirely in the reader's browser.
 - [ADHD Tax Calculator](https://jmstruijk.com/tools/adhd-tax-calculator/): Monthly, yearly and ten-year cost of ADHD-related late fees, forgotten subscriptions, impulse buys, lost items, convenience spending, avoidance and abandoned hyperfocus projects. Uses the seven categories from the Chapter 1 worksheet of The ADHD Tax.
 - [Subscription Audit](https://jmstruijk.com/tools/subscription-audit/): List recurring charges, mark each keep, cancel or unsure, and see what cancelling is worth over a year.
 - [ADHD Budget Template](https://jmstruijk.com/tools/adhd-budget-template/): A free budget built for ADHD, with bills listed by due day and autopay, three flexible categories, an ADHD tax line and one weekly spending figure. Online, or as an .xlsx for Excel, Numbers and Google Sheets.
+- [Impulse Spending Checklist](https://jmstruijk.com/tools/impulse-spending-checklist/): A quick check of the usual triggers before buying, and a dated waiting list for anything over a set limit, showing what waiting saved and which situations spending clusters in.
 - [All tools](https://jmstruijk.com/tools/)
 
 ## About the author
@@ -190,7 +191,7 @@ Money is where ADHD tends to leave the clearest evidence. Late fees on bills you
 
 The writing collected here starts from that point. It treats money problems as patterns with causes rather than as failures of character, and it looks for systems that keep working on the weeks when you do not: autopay instead of memory, friction placed where your spending is worst, plans built to restart rather than to be followed perfectly.
 
-If you are new to this, the article on [the ADHD tax](https://jmstruijk.com/blog/adhd-tax-what-it-costs/) is the place to begin, and the [ADHD Tax Calculator](https://jmstruijk.com/tools/adhd-tax-calculator/) will show you roughly what it is costing you. When you want a budget that allows for it, the free [ADHD Budget Template](https://jmstruijk.com/tools/adhd-budget-template/) works online or as a spreadsheet for Excel and Google Sheets. If you are carrying debt, the free not-for-profit services listed below will look at your situation for nothing.
+If you are new to this, the article on [the ADHD tax](https://jmstruijk.com/blog/adhd-tax-what-it-costs/) is the place to begin, and the [ADHD Tax Calculator](https://jmstruijk.com/tools/adhd-tax-calculator/) will show you roughly what it is costing you. When you want a budget that allows for it, the free [ADHD Budget Template](https://jmstruijk.com/tools/adhd-budget-template/) works online or as a spreadsheet for Excel and Google Sheets. For spending you regret, the [Impulse Spending Checklist](https://jmstruijk.com/tools/impulse-spending-checklist/) puts a dated wait between wanting and buying. If you are carrying debt, the free not-for-profit services listed below will look at your situation for nothing.
 
 ## Topic: Everyday ADHD: focus, time and feelings
 
@@ -337,6 +338,68 @@ There is no standard figure, because it depends on your own pattern. The [ADHD T
 
 No. The online tool runs entirely in your browser and keeps your figures only on this device, if your browser allows it, so you can come back to them. The Clear button removes them. The spreadsheet lives wherever you save it.
 
+## Tool: Impulse Spending Checklist
+
+URL: https://jmstruijk.com/tools/impulse-spending-checklist/
+
+## Why a waiting list beats willpower
+
+An impulse buy is decided in seconds, in a state where the reflective part of you has not been consulted. Advice that asks you to pause and think assumes that part is present, which in that moment it usually is not. The [article on why ADHD brains overspend](https://jmstruijk.com/blog/why-adhd-brains-overspend/) goes into what is driving it.
+
+A waiting list does not need you to win the argument in the moment. It only needs you to write the thing down, which is far easier than not buying it. The decision then gets made days later by a version of you who is not bored, tired or recovering from a bad afternoon.
+
+Nothing is banned. If you still want it when the wait is up, you buy it. That matters, because a rule that feels like punishment gets abandoned.
+
+### Choosing your limit and your wait
+
+Look back at the last few months of purchases you regret and set the limit a little below the typical one. Too low and you end up logging every coffee, which nobody keeps up. Too high and the list never catches anything.
+
+For the wait, pick the longest one you will actually keep to. A day is enough to get past a late-night mood. A week gets past a bad week. A rule you drop after a fortnight protects nothing, so err towards one you can live with.
+
+The wait is fixed for each item when you add it. Shortening it later only affects things added afterwards, so the moment of wanting cannot quietly rewrite the rule.
+
+### The situations matter more than the items
+
+Most regretted spending clusters in a handful of repeating situations rather than spreading evenly across the month: late evenings, payday, the hours after something went badly at work. Tagging each item with its situation turns the list into a record of where your money actually goes.
+
+Once you can see those four or five situations, each can be designed around directly. A different route home, the phone charging in another room after ten, no browsing on payday. That is a much smaller and more solvable problem than being bad with money.
+
+### When the wait is up
+
+Buy what you still want, without guilt. The rule did its job by giving you the choice back.
+
+For everything you let go, the running total is real money. It is worth moving some of it into savings straight away, on the same day, because money that is merely not spent tends to be spent on something else.
+
+### Common questions
+
+### What is an impulse spending checklist?
+
+A short check you run before buying, which names the state you are in, combined with a rule for what happens next. This one pairs a quick check of the usual triggers with a dated waiting list, so anything over your limit waits a fixed time before you decide.
+
+### How do I stop impulse buying with ADHD?
+
+Adding distance between the impulse and the purchase works better than trying to want things less. Put anything over a set limit on a dated list and decide after a fixed wait, and take saved card details off the two or three sites where most of your spending happens.
+
+### How long should I wait before buying something?
+
+Long enough for the state you were in to pass, and short enough that you keep the rule. A day catches late-night impulses; a week also catches spending that follows a bad day or a bad week. The longest wait you will reliably keep to is the right one.
+
+### What limit should I set?
+
+Slightly below the typical price of the purchases you regret. Looking back over a few months of statements and noticing which buys you wish you had not made usually makes the right figure obvious.
+
+### Does this work for online shopping?
+
+Yes, and that is where it helps most, because online buying has removed almost every natural delay. Pair the list with removing saved card details from the sites you overspend on, so there are a few extra seconds before any purchase.
+
+### What if I still want it after the wait?
+
+Then buy it. The list is not a ban. Things you still want after a proper wait are usually things you genuinely want, and buying them is fine.
+
+### Is my list stored or sent anywhere?
+
+No. Everything runs in your browser and the list is kept only on this device, if your browser allows it, so it is there when the wait is up. Clearing your browser data, or the Clear button, removes it. Saving it as a CSV gives you a copy.
+
 ## Resource directory
 
 URL: https://jmstruijk.com/resources/
@@ -466,7 +529,7 @@ There is no shaming in it and no neurotypical budgeting template with ADHD stick
 
 ### Where it fits
 
-The ADHD Tax diagnoses where the money goes. [The ADHD Budget Workbook](https://jmstruijk.com/books/adhd-budget-workbook/) is the guided 12-week version of putting a system in place, and [The ADHD Debt Payoff Workbook](https://jmstruijk.com/books/adhd-debt-payoff-workbook/) goes deeper on clearing debt. If you want the short version first, the article on [what the ADHD tax actually costs](https://jmstruijk.com/blog/adhd-tax-what-it-costs/) covers the core idea, and the free [ADHD Tax Calculator](https://jmstruijk.com/tools/adhd-tax-calculator/) uses the same categories as the book's Chapter 1 worksheet.
+The ADHD Tax diagnoses where the money goes. [The ADHD Budget Workbook](https://jmstruijk.com/books/adhd-budget-workbook/) is the guided 12-week version of putting a system in place, and [The ADHD Debt Payoff Workbook](https://jmstruijk.com/books/adhd-debt-payoff-workbook/) goes deeper on clearing debt. If you want the short version first, the article on [what the ADHD tax actually costs](https://jmstruijk.com/blog/adhd-tax-what-it-costs/) covers the core idea, and the free [ADHD Tax Calculator](https://jmstruijk.com/tools/adhd-tax-calculator/) uses the same categories as the book's Chapter 1 worksheet. The [Impulse Spending Checklist](https://jmstruijk.com/tools/impulse-spending-checklist/) is a free way to start interrupting impulse purchases before you read further.
 
 ### Common questions
 
@@ -2312,7 +2375,7 @@ Everything that has worked for me rebuilds some of that lost friction, or works 
 
 Start by taking your card details off the devices and sites where your spending is worst. Not all of them, because an unusable system gets abandoned. Just the two or three places where the damage actually happens. Having to find your wallet and type sixteen digits restores a few seconds of delay, and a surprising number of impulses do not survive it.
 
-A waiting rule helps more than it sounds like it should, provided it is written down rather than held in your head. Anything above a threshold you set goes on a list with the date, and you are allowed to buy it after a fixed wait. You are not banning anything. You are only moving the decision to a moment when more of you is present. A good proportion of the list will look absurd by the time the wait is up, and the things that still look right are usually genuinely right.
+A waiting rule helps more than it sounds like it should, provided it is written down rather than held in your head. Anything above a threshold you set goes on a list with the date, and you are allowed to buy it after a fixed wait. You are not banning anything. You are only moving the decision to a moment when more of you is present. A good proportion of the list will look absurd by the time the wait is up, and the things that still look right are usually genuinely right. The free [Impulse Spending Checklist](https://jmstruijk.com/tools/impulse-spending-checklist/) keeps the list for you, dates each item and adds up what waiting saved.
 
 It helps to keep spending money separate from money that has a job. One account that bills come out of, one account you are allowed to spend from. When the spending account is empty, that fact is visible without you having to do arithmetic you were never going to do.
 
@@ -2339,6 +2402,14 @@ The sequence runs the same way each time. You spend money you should not have. Y
 Breaking that loop is the single most useful thing I have done in this area, and it was not achieved by being kinder to myself in any vague sense. It came from treating each purchase as information about a situation rather than as evidence about my character. The situation can be changed. Character is harder to argue with, which is exactly why framing it that way keeps you stuck.
 
 ### Common questions
+
+### Why do I spend money when I'm bored?
+
+Because buying something gives a small, reliable hit of stimulation, and an under-stimulated ADHD brain will go looking for one. The purchase is doing a job for your state rather than meeting a need, which is why the item can feel pointless an hour later. Making the alternatives easier to reach than your phone, and putting a written wait in front of anything over a set limit, both help.
+
+### Why do I spend money when I'm sad or stressed?
+
+Spending is a fast, socially acceptable way to change how you feel, and it works for about an hour. With ADHD, where emotional regulation is often harder, that shortcut gets used more. Bad spending weeks tend to line up with bad weeks generally. Replacing what the spending does for you matters more than restricting it, because removing it alone leaves the bad day and no tools.
 
 ### Is impulsive spending an official ADHD symptom?
 

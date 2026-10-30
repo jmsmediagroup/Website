@@ -1440,6 +1440,94 @@ def render_budget_template(by_book):
         book_cta=book_cta(by_book["adhd-budget-planner"]), author_box=AUTHOR_BOX, disclaimer=esc(DISCLAIMER))
 
 
+# The waiting rule from the overspending article, made into a list that
+# remembers. The why lives in the article; this page is the how.
+IMPULSE_PATH = "/tools/impulse-spending-checklist/"
+
+IMPULSE_EXPLAINER = """## Why a waiting list beats willpower
+
+An impulse buy is decided in seconds, in a state where the reflective part of you has not been consulted. Advice that asks you to pause and think assumes that part is present, which in that moment it usually is not. The [article on why ADHD brains overspend](/blog/why-adhd-brains-overspend/) goes into what is driving it.
+
+A waiting list does not need you to win the argument in the moment. It only needs you to write the thing down, which is far easier than not buying it. The decision then gets made days later by a version of you who is not bored, tired or recovering from a bad afternoon.
+
+Nothing is banned. If you still want it when the wait is up, you buy it. That matters, because a rule that feels like punishment gets abandoned.
+
+## Choosing your limit and your wait
+
+Look back at the last few months of purchases you regret and set the limit a little below the typical one. Too low and you end up logging every coffee, which nobody keeps up. Too high and the list never catches anything.
+
+For the wait, pick the longest one you will actually keep to. A day is enough to get past a late-night mood. A week gets past a bad week. A rule you drop after a fortnight protects nothing, so err towards one you can live with.
+
+The wait is fixed for each item when you add it. Shortening it later only affects things added afterwards, so the moment of wanting cannot quietly rewrite the rule.
+
+## The situations matter more than the items
+
+Most regretted spending clusters in a handful of repeating situations rather than spreading evenly across the month: late evenings, payday, the hours after something went badly at work. Tagging each item with its situation turns the list into a record of where your money actually goes.
+
+Once you can see those four or five situations, each can be designed around directly. A different route home, the phone charging in another room after ten, no browsing on payday. That is a much smaller and more solvable problem than being bad with money.
+
+## When the wait is up
+
+Buy what you still want, without guilt. The rule did its job by giving you the choice back.
+
+For everything you let go, the running total is real money. It is worth moving some of it into savings straight away, on the same day, because money that is merely not spent tends to be spent on something else.
+
+## Common questions
+
+### What is an impulse spending checklist?
+
+A short check you run before buying, which names the state you are in, combined with a rule for what happens next. This one pairs a quick check of the usual triggers with a dated waiting list, so anything over your limit waits a fixed time before you decide.
+
+### How do I stop impulse buying with ADHD?
+
+Adding distance between the impulse and the purchase works better than trying to want things less. Put anything over a set limit on a dated list and decide after a fixed wait, and take saved card details off the two or three sites where most of your spending happens.
+
+### How long should I wait before buying something?
+
+Long enough for the state you were in to pass, and short enough that you keep the rule. A day catches late-night impulses; a week also catches spending that follows a bad day or a bad week. The longest wait you will reliably keep to is the right one.
+
+### What limit should I set?
+
+Slightly below the typical price of the purchases you regret. Looking back over a few months of statements and noticing which buys you wish you had not made usually makes the right figure obvious.
+
+### Does this work for online shopping?
+
+Yes, and that is where it helps most, because online buying has removed almost every natural delay. Pair the list with removing saved card details from the sites you overspend on, so there are a few extra seconds before any purchase.
+
+### What if I still want it after the wait?
+
+Then buy it. The list is not a ban. Things you still want after a proper wait are usually things you genuinely want, and buying them is fine.
+
+### Is my list stored or sent anywhere?
+
+No. Everything runs in your browser and the list is kept only on this device, if your browser allows it, so it is there when the wait is up. Clearing your browser data, or the Clear button, removes it. Saving it as a CSV gives you a copy."""
+
+
+def render_impulse_checklist(by_book):
+    url = SITE + IMPULSE_PATH
+    body, _, _, faq = render_markdown(IMPULSE_EXPLAINER)
+    graph = [
+        {"@type": "WebApplication", "@id": url + "#app", "name": "Impulse Spending Checklist", "url": url,
+         "description": "A quick check of the usual impulse-buying triggers and a dated waiting list: anything "
+                        "over your limit waits a fixed time before you decide.",
+         "applicationCategory": "FinanceApplication", "operatingSystem": "Any",
+         "browserRequirements": "Requires JavaScript", "isAccessibleForFree": True,
+         "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"},
+         "author": {"@id": PERSON_ID}, "about": about_nodes(["adhd", "emotional-dysregulation"])},
+        person_node(),
+        breadcrumbs((AUTHOR, "/"), ("Tools", "/tools/"), ("Impulse Spending Checklist", IMPULSE_PATH)),
+        faq_node(url, faq),
+    ]
+    return render(
+        "impulse-checklist.html",
+        seo=seo_head("Free ADHD Impulse Spending Checklist and Waiting List",
+                     "A free impulse buying checklist for ADHD: check your state before you buy, put the item on a "
+                     "dated waiting list, and see what waiting saved you. No sign-up.",
+                     IMPULSE_PATH, og_image("tool", "impulse-spending-checklist")),
+        schema=schema(graph), explainer=autolink_glossary(body),
+        book_cta=book_cta(by_book["adhd-tax"]), author_box=AUTHOR_BOX, disclaimer=esc(DISCLAIMER))
+
+
 TOOLS = [
     (BUDGET_PATH, "ADHD Budget Template",
      "Bills with due days and autopay, three flexible categories and one weekly number. Use it online "
@@ -1447,6 +1535,9 @@ TOOLS = [
     (CALC_PATH, "ADHD Tax Calculator",
      "Add up what late fees, forgotten subscriptions, impulse buys and lost things cost you, by category, "
      "and see it over a year and over ten.", "Interactive"),
+    (IMPULSE_PATH, "Impulse Spending Checklist",
+     "A ten-second check before you buy, and a dated waiting list for anything over your limit. Shows what "
+     "waiting saved you and which situations your spending clusters in.", "Interactive"),
     (SUB_PATH, "Subscription Audit",
      "List every recurring charge, mark what goes, and see what cancelling is worth over a year.",
      "Interactive"),
@@ -1474,8 +1565,8 @@ def render_tools_index():
     return render(
         "tools.html",
         seo=seo_head("Free ADHD Tools: Budget Template, Tax Calculator and More",
-                     "Free tools for adults with ADHD: a budget template for Excel and Google Sheets, an ADHD tax "
-                     "calculator, a subscription audit and printable worksheets. No sign-up.", "/tools/"),
+                     "Free tools for adults with ADHD: a budget template for Excel and Google Sheets, an impulse "
+                     "spending checklist, an ADHD tax calculator and a subscription audit. No sign-up.", "/tools/"),
         schema=schema(graph), cards=cards)
 
 
@@ -1715,6 +1806,8 @@ def render_llms_full(llms, posts, books, terms, topics, resources):
     parts += ["## Tool: ADHD Budget Template", "", "URL: %s%s" % (SITE, BUDGET_PATH),
               "Spreadsheet: %s%s" % (SITE, BUDGET_XLSX), "",
               absolute_links(BUDGET_EXPLAINER).replace("\n## ", "\n### "), ""]
+    parts += ["## Tool: Impulse Spending Checklist", "", "URL: %s%s" % (SITE, IMPULSE_PATH), "",
+              absolute_links(IMPULSE_EXPLAINER).replace("\n## ", "\n### "), ""]
     parts += ["## Resource directory", "", "URL: %s/resources/" % SITE, ""]
     for s in resources:
         parts += ["### %s" % s["title"], "", s["intro"], ""]
@@ -1844,6 +1937,7 @@ def render_og_images(posts, books, topics, force):
     jobs.append(("tool", "adhd-tax-calculator", "The ADHD Tax Calculator", "Free tool", "adhd-tax"))
     jobs.append(("tool", "subscription-audit", "The Subscription Audit", "Free tool", "adhd-tax"))
     jobs.append(("tool", "adhd-budget-template", "The ADHD Budget Template", "Free tool", "adhd-budget-planner"))
+    jobs.append(("tool", "impulse-spending-checklist", "The Impulse Spending Checklist", "Free tool", "adhd-tax"))
     jobs.append(("page", "about", "J.M. Struijk", "About the author", "late-diagnosed-adhd-workbook"))
 
     made = 0
@@ -1922,7 +2016,7 @@ def main():
                    "/glossary/": "Glossary", "/start/": "Start here", "/resources/": "Resources directory",
                    "/about/": "About J.M. Struijk", "/tools/": "Free tools",
                    CALC_PATH: "ADHD Tax Calculator", SUB_PATH: "Subscription Audit",
-                   BUDGET_PATH: "ADHD Budget Template",
+                   BUDGET_PATH: "ADHD Budget Template", IMPULSE_PATH: "Impulse Spending Checklist",
                    "/adhd-tax-worksheets/": "ADHD Tax printable worksheets"})
     TITLES.update(("/blog/%s/" % p["slug"], p["title"]) for p in posts)
     TITLES.update(("/books/%s/" % b["slug"], b["title"]) for b in books)
@@ -1947,6 +2041,7 @@ def main():
     pages[CALC_PATH] = render_calculator(calculator, by_book)
     pages[SUB_PATH] = render_subscription_audit(by_book)
     pages[BUDGET_PATH] = render_budget_template(by_book)
+    pages[IMPULSE_PATH] = render_impulse_checklist(by_book)
     pages["/tools/"] = render_tools_index()
     pages["/about/"] = render_about(books, posts)
     home = build_homepage(posts, books)
@@ -1974,6 +2069,7 @@ def main():
         (CALC_PATH, calculator_date, "monthly", "0.9"),
         (SUB_PATH, mtime_date(os.path.join(ROOT, "assets", "subscription-audit.js")), "monthly", "0.9"),
         (BUDGET_PATH, mtime_date(os.path.join(ROOT, "assets", "budget-template.js")), "monthly", "0.9"),
+        (IMPULSE_PATH, mtime_date(os.path.join(ROOT, "assets", "impulse-checklist.js")), "monthly", "0.9"),
     ]))
     llms = render_llms(posts, books, terms, topics, resources)
     write("llms.txt", llms)

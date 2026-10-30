@@ -3,7 +3,8 @@ title: "Why ADHD brains overspend, and what actually helps"
 slug: why-adhd-brains-overspend
 description: "Impulsive spending with ADHD is rarely about wanting things. How reward, time and emotion drive it, and the fixes that actually work."
 date: 2026-10-21
-keywords: adhd impulsive spending, adhd overspending, adhd shopping, adhd dopamine spending, adhd budgeting, adhd and money
+updated: 2026-10-30
+keywords: adhd impulsive spending, adhd overspending, why do i spend money when i'm bored, why do i spend money when i'm sad, adhd shopping, adhd and money
 book: adhd-budget-workbook
 about: [adhd]
 topics: [adhd-and-money]
@@ -54,7 +55,7 @@ Everything that has worked for me rebuilds some of that lost friction, or works 
 
 Start by taking your card details off the devices and sites where your spending is worst. Not all of them, because an unusable system gets abandoned. Just the two or three places where the damage actually happens. Having to find your wallet and type sixteen digits restores a few seconds of delay, and a surprising number of impulses do not survive it.
 
-A waiting rule helps more than it sounds like it should, provided it is written down rather than held in your head. Anything above a threshold you set goes on a list with the date, and you are allowed to buy it after a fixed wait. You are not banning anything. You are only moving the decision to a moment when more of you is present. A good proportion of the list will look absurd by the time the wait is up, and the things that still look right are usually genuinely right.
+A waiting rule helps more than it sounds like it should, provided it is written down rather than held in your head. Anything above a threshold you set goes on a list with the date, and you are allowed to buy it after a fixed wait. You are not banning anything. You are only moving the decision to a moment when more of you is present. A good proportion of the list will look absurd by the time the wait is up, and the things that still look right are usually genuinely right. The free [Impulse Spending Checklist](/tools/impulse-spending-checklist/) keeps the list for you, dates each item and adds up what waiting saved.
 
 It helps to keep spending money separate from money that has a job. One account that bills come out of, one account you are allowed to spend from. When the spending account is empty, that fact is visible without you having to do arithmetic you were never going to do.
 
@@ -81,6 +82,14 @@ The sequence runs the same way each time. You spend money you should not have. Y
 Breaking that loop is the single most useful thing I have done in this area, and it was not achieved by being kinder to myself in any vague sense. It came from treating each purchase as information about a situation rather than as evidence about my character. The situation can be changed. Character is harder to argue with, which is exactly why framing it that way keeps you stuck.
 
 ## Common questions
+
+### Why do I spend money when I'm bored?
+
+Because buying something gives a small, reliable hit of stimulation, and an under-stimulated ADHD brain will go looking for one. The purchase is doing a job for your state rather than meeting a need, which is why the item can feel pointless an hour later. Making the alternatives easier to reach than your phone, and putting a written wait in front of anything over a set limit, both help.
+
+### Why do I spend money when I'm sad or stressed?
+
+Spending is a fast, socially acceptable way to change how you feel, and it works for about an hour. With ADHD, where emotional regulation is often harder, that shortcut gets used more. Bad spending weeks tend to line up with bad weeks generally. Replacing what the spending does for you matters more than restricting it, because removing it alone leaves the bad day and no tools.
 
 ### Is impulsive spending an official ADHD symptom?
 

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+{seo}
+{head}
+<script type="application/ld+json">
+{schema}
+</script>
+</head>
+<body>
+{header}
+
+  <article class="calc-page">
+
+    <header class="page-header">
+      <nav class="crumbs" aria-label="Breadcrumb">
+        <a href="/">Home</a> <span>/</span> <a href="/tools/">Tools</a>
+      </nav>
+      <span class="section-tag">Free tool</span>
+      <h1>The Impulse Spending <em>Checklist.</em></h1>
+      <p class="page-lede">
+        Impulse buys happen in about four seconds, in a state where the part of you that weighs things up is not taking part. This does not ask you to want things less. It puts a written, dated wait between the impulse and the purchase, and keeps track of what waiting saved you.
+      </p>
+    </header>
+
+    <ol class="calc-steps">
+      <li><strong>Set your rule once.</strong> A price above which anything waits, and how long it waits.</li>
+      <li><strong>Before you buy, run the quick check.</strong> It takes ten seconds and names the state you are in.</li>
+      <li><strong>Put the item on the list instead.</strong> Note where you were and what had just happened.</li>
+      <li><strong>Decide when the wait is up.</strong> Buy what you still want. A good share of the rest will look odd by then.</li>
+    </ol>
+
+    <p class="calc-privacy">Everything stays in your browser. Nothing you type is sent anywhere.</p>
+
+    <noscript><p class="calc-noscript">This tool needs JavaScript. The same waiting rule works on paper: write the item, the price and today's date, and do not buy it until the wait is up.</p></noscript>
+
+    <div class="calc-layout">
+      <form class="calc-form" id="imp-form" novalidate>
+        <div class="calc-currency">
+          <label for="imp-currency">Currency</label>
+          <select id="imp-currency" name="currency">
+            <option value="USD">$ US dollar</option>
+            <option value="GBP">£ Pound sterling</option>
+            <option value="EUR">€ Euro</option>
+            <option value="CAD">$ Canadian dollar</option>
+            <option value="AUD">$ Australian dollar</option>
+          </select>
+        </div>
+
+        <fieldset class="calc-cat">
+          <legend>Your rule</legend>
+          <p class="calc-blurb">Set this once, on a calm day. Changing the wait later only applies to things you add afterwards, so the rule cannot be bent in the moment.</p>
+          <div class="calc-rows">
+            <label class="calc-row"><span>Anything over this waits</span><input type="text" inputmode="decimal" id="imp-threshold" placeholder="0"></label>
+            <label class="calc-row"><span>How long it waits</span>
+              <select id="imp-wait" class="imp-select">
+                <option value="1">24 hours</option>
+                <option value="2">48 hours</option>
+                <option value="7" selected>A week</option>
+                <option value="30">A month</option>
+              </select>
+            </label>
+          </div>
+        </fieldset>
+
+        <fieldset class="calc-cat">
+          <legend>Before you buy</legend>
+          <p class="calc-blurb">Tick anything that is true right now.</p>
+          <div class="imp-checks" id="imp-checks">
+            <label><input type="checkbox" value="bored"> I am bored, or this is filling time</label>
+            <label><input type="checkbox" value="hard-day"> Today has been hard, or I want to feel better</label>
+            <label><input type="checkbox" value="tired"> It is late, and I am tired</label>
+            <label><input type="checkbox" value="for-someone"> It is for someone else, or to be liked</label>
+            <label><input type="checkbox" value="pressure"> There is a sale, a countdown, or "only 2 left"</label>
+          </div>
+          <p class="imp-verdict" id="imp-verdict" aria-live="polite">Nothing ticked yet.</p>
+        </fieldset>
+
+        <fieldset class="calc-cat">
+          <legend>Add it to the waiting list</legend>
+          <div class="imp-add">
+            <input type="text" id="imp-name" placeholder="What is it?" aria-label="What you want to buy">
+            <input type="text" inputmode="decimal" id="imp-price" placeholder="Price" aria-label="Price">
+            <select id="imp-situation" class="imp-select" aria-label="Situation">
+              <option value="">Situation (optional)</option>
+              <option>Late evening</option>
+              <option>Bored</option>
+              <option>After a hard day</option>
+              <option>Payday</option>
+              <option>Sale or countdown</option>
+              <option>For someone else</option>
+              <option>Other</option>
+            </select>
+            <button type="button" id="imp-add">Add to the list</button>
+          </div>
+          <p class="imp-note" id="imp-note"></p>
+        </fieldset>
+
+        <fieldset class="calc-cat">
+          <legend>The list</legend>
+          <div id="imp-list"><p class="calc-blurb">Nothing waiting. Add the next thing you are about to buy.</p></div>
+        </fieldset>
+      </form>
+
+      <aside class="calc-results" aria-live="polite">
+        <div class="calc-results-inner">
+          <div class="calc-label">Not bought after waiting</div>
+          <div class="calc-total"><span id="imp-saved">0</span><small> so far</small></div>
+          <dl class="calc-projection">
+            <div><dt>Waiting now</dt><dd id="imp-waiting">0</dd></div>
+            <div><dt>Bought after the wait</dt><dd id="imp-bought">0</dd></div>
+          </dl>
+          <div class="calc-top" id="imp-summary">
+            <p class="calc-empty">Your situations will show here as the list grows. Most people find four or five that account for most of it.</p>
+          </div>
+          <div class="calc-actions">
+            <button type="button" id="imp-csv">Save as CSV</button>
+            <button type="button" id="imp-print">Print</button>
+            <button type="button" id="imp-reset">Clear</button>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <div class="post-body calc-explainer">
+{explainer}
+    </div>
+
+    {book_cta}
+
+    {author_box}
+
+    <p class="disclaimer">{disclaimer}</p>
+
+  </article>
+
+  <script src="/assets/impulse-checklist.js" defer></script>
+
+{footer}
+</body>
+</html>

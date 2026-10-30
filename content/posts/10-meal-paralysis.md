@@ -4,6 +4,7 @@ seo_title: "ADHD meal paralysis: why you forget to eat"
 slug: adhd-meal-paralysis-forgetting-to-eat
 description: "Standing in front of a full fridge, hungry, unable to pick anything. Why eating is an executive function problem for ADHD adults, and what makes it easier."
 date: 2026-10-21
+updated: 2026-10-24
 keywords: food paralysis meaning, what is food paralysis, adhd meal paralysis, adhd forgetting to eat, adhd and food, adhd cooking executive dysfunction, adhd hunger cues
 book: adhd-eating-reset
 about: [adhd, interoception]
