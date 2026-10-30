@@ -12,6 +12,7 @@ topics: [adhd-and-money]
 related:
   - why-adhd-brains-overspend
   - adhd-debt-and-payoff-plans
+  - adhd-paying-bills-on-time
 ---
 
 The phrase sounds like a joke until you sit down and add it up.

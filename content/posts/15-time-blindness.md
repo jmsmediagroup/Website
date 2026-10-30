@@ -10,6 +10,7 @@ topics: [everyday-adhd]
 related:
   - adhd-task-paralysis
   - adhd-body-doubling
+  - adhd-paying-bills-on-time
 ---
 
 You know the meeting is at ten. You know it takes twenty minutes to get there. At 9:52 you are still in the shower, and you could not tell anyone how it got to be 9:52.

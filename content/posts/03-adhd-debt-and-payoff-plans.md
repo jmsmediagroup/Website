@@ -11,6 +11,7 @@ topics: [adhd-and-money]
 related:
   - adhd-tax-what-it-costs
   - why-adhd-brains-overspend
+  - adhd-paying-bills-on-time
 ---
 
 Most debt advice is arithmetic, and the arithmetic is not wrong. List your debts, attack them in a sensible order, pay more than the minimum, repeat until finished.

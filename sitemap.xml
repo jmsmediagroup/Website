@@ -126,6 +126,13 @@
     <image:image><image:loc>https://jmstruijk.com/assets/og/post-why-you-shut-down-after-work.jpg</image:loc></image:image>
   </url>
   <url>
+    <loc>https://jmstruijk.com/blog/adhd-paying-bills-on-time/</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image><image:loc>https://jmstruijk.com/assets/og/post-adhd-paying-bills-on-time.jpg</image:loc></image:image>
+  </url>
+  <url>
     <loc>https://jmstruijk.com/blog/hyperfocus-vs-hyperfixation-vs-special-interest/</loc>
     <lastmod>2026-10-24</lastmod>
     <changefreq>monthly</changefreq>
