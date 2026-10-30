@@ -35,13 +35,23 @@
 <link rel="stylesheet" href="/assets/fonts/fonts.css">
 <link rel="stylesheet" href="/assets/blog.css">
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-ME9LJ3ENQH"></script>
+<!-- Google tag (gtag.js). The config queues straight away; the 178 KB library
+     loads once the page has finished and the browser is idle, so it never
+     competes with the content for bandwidth. -->
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', 'G-ME9LJ3ENQH');
+  addEventListener('load', function () {
+    var go = function () {
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-ME9LJ3ENQH';
+      document.head.appendChild(s);
+    };
+    'requestIdleCallback' in window ? requestIdleCallback(go, { timeout: 3000 }) : setTimeout(go, 1);
+  });
 </script>
 <script type="application/ld+json">
 {
@@ -203,7 +213,7 @@
     </nav>
 
     <header class="book-hero">
-      <div class="book-hero-cover"><span class="cover-frame"><img src="/assets/covers/adhd-burnout-recovery.jpg" srcset="/assets/covers/adhd-burnout-recovery-400.jpg 400w, /assets/covers/adhd-burnout-recovery.jpg 700w" sizes="(max-width: 520px) 170px, (max-width: 880px) 220px, 260px" alt="The ADHD Burnout Recovery Guide book cover" width="466" height="700" fetchpriority="high" decoding="async"></span></div>
+      <div class="book-hero-cover"><span class="cover-frame"><picture><source type="image/avif" srcset="/assets/covers/adhd-burnout-recovery-260.avif 260w, /assets/covers/adhd-burnout-recovery-400.avif 400w, /assets/covers/adhd-burnout-recovery-700.avif 700w" sizes="(max-width: 520px) 170px, (max-width: 880px) 220px, 260px"><source type="image/webp" srcset="/assets/covers/adhd-burnout-recovery-260.webp 260w, /assets/covers/adhd-burnout-recovery-400.webp 400w, /assets/covers/adhd-burnout-recovery-700.webp 700w" sizes="(max-width: 520px) 170px, (max-width: 880px) 220px, 260px"><img src="/assets/covers/adhd-burnout-recovery.jpg" srcset="/assets/covers/adhd-burnout-recovery-400.jpg 400w, /assets/covers/adhd-burnout-recovery.jpg 700w" sizes="(max-width: 520px) 170px, (max-width: 880px) 220px, 260px" alt="The ADHD Burnout Recovery Guide book cover" width="466" height="700" fetchpriority="high" decoding="async"></picture></span></div>
       <div class="book-hero-info">
         <div class="book-series-label">Standalone guide</div>
         <h1>The ADHD Burnout Recovery Guide</h1>

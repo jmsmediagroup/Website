@@ -10,11 +10,21 @@
 <link rel="stylesheet" href="/assets/fonts/fonts.css">
 <link rel="stylesheet" href="/assets/blog.css">
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-ME9LJ3ENQH"></script>
+<!-- Google tag (gtag.js). The config queues straight away; the 178 KB library
+     loads once the page has finished and the browser is idle, so it never
+     competes with the content for bandwidth. -->
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', 'G-ME9LJ3ENQH');
+  addEventListener('load', function () {
+    var go = function () {
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-ME9LJ3ENQH';
+      document.head.appendChild(s);
+    };
+    'requestIdleCallback' in window ? requestIdleCallback(go, { timeout: 3000 }) : setTimeout(go, 1);
+  });
 </script>

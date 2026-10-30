@@ -4,14 +4,23 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-ME9LJ3ENQH"></script>
+<!-- Google tag (gtag.js). The config queues straight away; the 178 KB library
+     loads once the page has finished and the browser is idle, so it never
+     competes with the content for bandwidth. -->
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-ME9LJ3ENQH');
+  addEventListener('load', function () {
+    var go = function () {
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-ME9LJ3ENQH';
+      document.head.appendChild(s);
+    };
+    'requestIdleCallback' in window ? requestIdleCallback(go, { timeout: 3000 }) : setTimeout(go, 1);
+  });
 </script>
 
 <title>J.M. Struijk · Books for ADHD, Autism &amp; AuDHD Adults</title>
@@ -607,7 +616,7 @@
   --muted-light: #8d8478;
   --rule: #d3c8b3;
   --rule-strong: #b8ab90;
-  --coral: #c54632;
+  --coral: #bd4330;
   --coral-deep: #9c3424;
   --coral-soft: #e8a89c;
   --coral-bright: #e85a4f;
@@ -1432,6 +1441,9 @@ h1 { animation: fadeUp 0.7s ease 0.2s both; }
 .hero-book-3 { animation: fadeUp 0.8s ease 0.7s both; }
 [data-reveal] { opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease, transform 0.6s ease; }
 [data-reveal].is-visible { opacity: 1; transform: translateY(0); }
+
+/* <picture> wraps covers for AVIF and WebP; it must not add a box. */
+picture { display: contents; }
 </style>
 </head>
 <body>
@@ -1494,13 +1506,13 @@ h1 { animation: fadeUp 0.7s ease 0.2s both; }
 
       <div class="hero-visual">
         <a href="/books/adhd-tax/" class="hero-book hero-book-1" aria-label="The ADHD Tax">
-          <img src="assets/covers/adhd-tax.jpg" srcset="assets/covers/adhd-tax-400.jpg 400w, assets/covers/adhd-tax.jpg 700w" sizes="(max-width: 880px) 130px, 190px" alt="The ADHD Tax book cover" width="700" height="1050" fetchpriority="high" decoding="async">
+          <picture><source type="image/avif" srcset="/assets/covers/adhd-tax-260.avif 260w, /assets/covers/adhd-tax-400.avif 400w, /assets/covers/adhd-tax-700.avif 700w" sizes="(max-width: 880px) 130px, 190px"><source type="image/webp" srcset="/assets/covers/adhd-tax-260.webp 260w, /assets/covers/adhd-tax-400.webp 400w, /assets/covers/adhd-tax-700.webp 700w" sizes="(max-width: 880px) 130px, 190px"><img src="/assets/covers/adhd-tax.jpg" srcset="/assets/covers/adhd-tax-400.jpg 400w, /assets/covers/adhd-tax.jpg 700w" sizes="(max-width: 880px) 130px, 190px" alt="The ADHD Tax book cover" width="700" height="1050" decoding="async"></picture>
         </a>
         <a href="/books/adhd-side-hustle/" class="hero-book hero-book-2" aria-label="The ADHD Side Hustle">
-          <img src="assets/covers/adhd-side-hustle.jpg" srcset="assets/covers/adhd-side-hustle-400.jpg 400w, assets/covers/adhd-side-hustle.jpg 700w" sizes="(max-width: 880px) 130px, 190px" alt="The ADHD Side Hustle book cover" width="700" height="1050" decoding="async">
+          <picture><source type="image/avif" srcset="/assets/covers/adhd-side-hustle-260.avif 260w, /assets/covers/adhd-side-hustle-400.avif 400w, /assets/covers/adhd-side-hustle-700.avif 700w" sizes="(max-width: 880px) 130px, 190px"><source type="image/webp" srcset="/assets/covers/adhd-side-hustle-260.webp 260w, /assets/covers/adhd-side-hustle-400.webp 400w, /assets/covers/adhd-side-hustle-700.webp 700w" sizes="(max-width: 880px) 130px, 190px"><img src="/assets/covers/adhd-side-hustle.jpg" srcset="/assets/covers/adhd-side-hustle-400.jpg 400w, /assets/covers/adhd-side-hustle.jpg 700w" sizes="(max-width: 880px) 130px, 190px" alt="The ADHD Side Hustle book cover" width="700" height="1050" decoding="async"></picture>
         </a>
         <a href="/books/adhd-overthinking-reset/" class="hero-book hero-book-3" aria-label="The ADHD Overthinking Reset">
-          <img src="assets/covers/adhd-overthinking-reset.jpg" srcset="assets/covers/adhd-overthinking-reset-400.jpg 400w, assets/covers/adhd-overthinking-reset.jpg 700w" sizes="(max-width: 880px) 130px, 190px" alt="The ADHD Overthinking Reset book cover" width="700" height="1050" decoding="async">
+          <picture><source type="image/avif" srcset="/assets/covers/adhd-overthinking-reset-260.avif 260w, /assets/covers/adhd-overthinking-reset-400.avif 400w, /assets/covers/adhd-overthinking-reset-700.avif 700w" sizes="(max-width: 880px) 130px, 190px"><source type="image/webp" srcset="/assets/covers/adhd-overthinking-reset-260.webp 260w, /assets/covers/adhd-overthinking-reset-400.webp 400w, /assets/covers/adhd-overthinking-reset-700.webp 700w" sizes="(max-width: 880px) 130px, 190px"><img src="/assets/covers/adhd-overthinking-reset.jpg" srcset="/assets/covers/adhd-overthinking-reset-400.jpg 400w, /assets/covers/adhd-overthinking-reset.jpg 700w" sizes="(max-width: 880px) 130px, 190px" alt="The ADHD Overthinking Reset book cover" width="700" height="1050" decoding="async"></picture>
         </a>
       </div>
     </div>
@@ -1548,7 +1560,7 @@ h1 { animation: fadeUp 0.7s ease 0.2s both; }
       <div class="book-grid">
 
         <a href="/books/adhd-tax/" class="book" aria-label="The ADHD Tax">
-          <div class="book-cover"><span class="cover-frame"><img src="/assets/covers/adhd-tax.jpg" srcset="/assets/covers/adhd-tax-400.jpg 400w, /assets/covers/adhd-tax.jpg 700w" sizes="(max-width: 520px) 170px, (max-width: 880px) 220px, 260px" alt="The ADHD Tax book cover" width="466" height="700" loading="lazy" decoding="async">
+          <div class="book-cover"><span class="cover-frame"><picture><source type="image/avif" srcset="/assets/covers/adhd-tax-260.avif 260w, /assets/covers/adhd-tax-400.avif 400w, /assets/covers/adhd-tax-700.avif 700w" sizes="(max-width: 520px) 170px, (max-width: 880px) 220px, 260px"><source type="image/webp" srcset="/assets/covers/adhd-tax-260.webp 260w, /assets/covers/adhd-tax-400.webp 400w, /assets/covers/adhd-tax-700.webp 700w" sizes="(max-width: 520px) 170px, (max-width: 880px) 220px, 260px"><img src="/assets/covers/adhd-tax.jpg" srcset="/assets/covers/adhd-tax-400.jpg 400w, /assets/covers/adhd-tax.jpg 700w" sizes="(max-width: 520px) 170px, (max-width: 880px) 220px, 260px" alt="The ADHD Tax book cover" width="466" height="700" loading="lazy" decoding="async"></picture>
             <div class="badge badge-start">Start here</div></span></div>
           <div class="book-meta">
             <div class="book-title">The ADHD Tax</div>
@@ -1558,7 +1570,7 @@ h1 { animation: fadeUp 0.7s ease 0.2s both; }
         </a>
 
         <a href="/books/adhd-budget-workbook/" class="book" aria-label="The ADHD Budget Workbook">
-          <div class="book-cover"><span class="cover-frame"><img src="/assets/covers/adhd-budget-workbook.jpg" srcset="/assets/covers/adhd-budget-workbook-400.jpg 400w, /assets/covers/adhd-budget-workbook.jpg 700w" sizes="(max-width: 520px) 170px, (max-width: 880px) 220px, 260px" alt="The ADHD Budget Workbook book cover" width="467" height="700" loading="lazy" decoding="async"></span></div>
+          <div class="book-cover"><span class="cover-frame"><picture><source type="image/avif" srcset="/assets/covers/adhd-budget-workbook-260.avif 260w, /assets/covers/adhd-budget-workbook-400.avif 400w, /assets/covers/adhd-budget-workbook-700.avif 700w" sizes="(max-width: 520px) 170px, (max-width: 880px) 220px, 260px"><source type="image/webp" srcset="/assets/covers/adhd-budget-workbook-260.webp 260w, /assets/covers/adhd-budget-workbook-400.webp 400w, /assets/covers/adhd-budget-workbook-700.webp 700w" sizes="(max-width: 520px) 170px, (max-width: 880px) 220px, 260px"><img src="/assets/covers/adhd-budget-workbook.jpg" srcset="/assets/covers/adhd-budget-workbook-400.jpg 400w, /assets/covers/adhd-budget-workbook.jpg 700w" sizes="(max-width: 520px) 170px, (max-width: 880px) 220px, 260px" alt="The ADHD Budget Workbook book cover" width="467" height="700" loading="lazy" decoding="async"></picture></span></div>
           <div class="book-meta">
             <div class="book-title">The ADHD Budget Workbook</div>
             <div class="book-subtitle">90-day financial reset for adults with ADHD</div>
@@ -1567,7 +1579,7 @@ h1 { animation: fadeUp 0.7s ease 0.2s both; }
         </a>
 
         <a href="/books/adhd-side-hustle/" class="book" aria-label="The ADHD Side Hustle">
-          <div class="book-cover"><span class="cover-frame"><img src="/assets/covers/adhd-side-hustle.jpg" srcset="/assets/covers/adhd-side-hustle-400.jpg 400w, /assets/covers/adhd-side-hustle.jpg 700w" sizes="(max-width: 520px) 170px, (max-width: 880px) 220px, 260px" alt="The ADHD Side Hustle book cover" width="466" height="700" loading="lazy" decoding="async"></span></div>
+          <div class="book-cover"><span class="cover-frame"><picture><source type="image/avif" srcset="/assets/covers/adhd-side-hustle-260.avif 260w, /assets/covers/adhd-side-hustle-400.avif 400w, /assets/covers/adhd-side-hustle-700.avif 700w" sizes="(max-width: 520px) 170px, (max-width: 880px) 220px, 260px"><source type="image/webp" srcset="/assets/covers/adhd-side-hustle-260.webp 260w, /assets/covers/adhd-side-hustle-400.webp 400w, /assets/covers/adhd-side-hustle-700.webp 700w" sizes="(max-width: 520px) 170px, (max-width: 880px) 220px, 260px"><img src="/assets/covers/adhd-side-hustle.jpg" srcset="/assets/covers/adhd-side-hustle-400.jpg 400w, /assets/covers/adhd-side-hustle.jpg 700w" sizes="(max-width: 520px) 170px, (max-width: 880px) 220px, 260px" alt="The ADHD Side Hustle book cover" width="466" height="700" loading="lazy" decoding="async"></picture></span></div>
           <div class="book-meta">
             <div class="book-title">The ADHD Side Hustle</div>
             <div class="book-subtitle">Turn your hyperfocus into extra income without burning out</div>
@@ -1576,7 +1588,7 @@ h1 { animation: fadeUp 0.7s ease 0.2s both; }
         </a>
 
         <a href="/books/adhd-debt-payoff-workbook/" class="book" aria-label="The ADHD Debt Payoff Workbook">
-          <div class="book-cover"><span class="cover-frame"><img src="/assets/covers/adhd-debt-payoff-workbook.jpg" srcset="/assets/covers/adhd-debt-payoff-workbook-400.jpg 400w, /assets/covers/adhd-debt-payoff-workbook.jpg 700w" sizes="(max-width: 520px) 170px, (max-width: 880px) 220px, 260px" alt="The ADHD Debt Payoff Workbook book cover" width="541" height="700" loading="lazy" decoding="async">
+          <div class="book-cover"><span class="cover-frame"><picture><source type="image/avif" srcset="/assets/covers/adhd-debt-payoff-workbook-260.avif 260w, /assets/covers/adhd-debt-payoff-workbook-400.avif 400w, /assets/covers/adhd-debt-payoff-workbook-700.avif 700w" sizes="(max-width: 520px) 170px, (max-width: 880px) 220px, 260px"><source type="image/webp" srcset="/assets/covers/adhd-debt-payoff-workbook-260.webp 260w, /assets/covers/adhd-debt-payoff-workbook-400.webp 400w, /assets/covers/adhd-debt-payoff-workbook-700.webp 700w" sizes="(max-width: 520px) 170px, (max-width: 880px) 220px, 260px"><img src="/assets/covers/adhd-debt-payoff-workbook.jpg" srcset="/assets/covers/adhd-debt-payoff-workbook-400.jpg 400w, /assets/covers/adhd-debt-payoff-workbook.jpg 700w" sizes="(max-width: 520px) 170px, (max-width: 880px) 220px, 260px" alt="The ADHD Debt Payoff Workbook book cover" width="541" height="700" loading="lazy" decoding="async"></picture>
             <div class="badge badge-new">New</div></span></div>
           <div class="book-meta">
             <div class="book-title">The ADHD Debt Payoff Workbook</div>
@@ -1586,7 +1598,7 @@ h1 { animation: fadeUp 0.7s ease 0.2s both; }
         </a>
 
         <a href="/books/adhd-budget-planner/" class="book" aria-label="The ADHD Budget Planner">
-          <div class="book-cover"><span class="cover-frame"><img src="/assets/covers/adhd-budget-planner.jpg" srcset="/assets/covers/adhd-budget-planner-400.jpg 400w, /assets/covers/adhd-budget-planner.jpg 700w" sizes="(max-width: 520px) 170px, (max-width: 880px) 220px, 260px" alt="The ADHD Budget Planner book cover" width="568" height="700" loading="lazy" decoding="async">
+          <div class="book-cover"><span class="cover-frame"><picture><source type="image/avif" srcset="/assets/covers/adhd-budget-planner-260.avif 260w, /assets/covers/adhd-budget-planner-400.avif 400w, /assets/covers/adhd-budget-planner-700.avif 700w" sizes="(max-width: 520px) 170px, (max-width: 880px) 220px, 260px"><source type="image/webp" srcset="/assets/covers/adhd-budget-planner-260.webp 260w, /assets/covers/adhd-budget-planner-400.webp 400w, /assets/covers/adhd-budget-planner-700.webp 700w" sizes="(max-width: 520px) 170px, (max-width: 880px) 220px, 260px"><img src="/assets/covers/adhd-budget-planner.jpg" srcset="/assets/covers/adhd-budget-planner-400.jpg 400w, /assets/covers/adhd-budget-planner.jpg 700w" sizes="(max-width: 520px) 170px, (max-width: 880px) 220px, 260px" alt="The ADHD Budget Planner book cover" width="568" height="700" loading="lazy" decoding="async"></picture>
             <div class="badge badge-new">New</div></span></div>
           <div class="book-meta">
             <div class="book-title">The ADHD Budget Planner</div>
@@ -1606,7 +1618,7 @@ h1 { animation: fadeUp 0.7s ease 0.2s both; }
       <div class="book-grid">
 
         <a href="/books/adhd-overthinking-reset/" class="book" aria-label="The ADHD Overthinking Reset">
-          <div class="book-cover"><span class="cover-frame"><img src="/assets/covers/adhd-overthinking-reset.jpg" srcset="/assets/covers/adhd-overthinking-reset-400.jpg 400w, /assets/covers/adhd-overthinking-reset.jpg 700w" sizes="(max-width: 520px) 170px, (max-width: 880px) 220px, 260px" alt="The ADHD Overthinking Reset book cover" width="466" height="700" loading="lazy" decoding="async"></span></div>
+          <div class="book-cover"><span class="cover-frame"><picture><source type="image/avif" srcset="/assets/covers/adhd-overthinking-reset-260.avif 260w, /assets/covers/adhd-overthinking-reset-400.avif 400w, /assets/covers/adhd-overthinking-reset-700.avif 700w" sizes="(max-width: 520px) 170px, (max-width: 880px) 220px, 260px"><source type="image/webp" srcset="/assets/covers/adhd-overthinking-reset-260.webp 260w, /assets/covers/adhd-overthinking-reset-400.webp 400w, /assets/covers/adhd-overthinking-reset-700.webp 700w" sizes="(max-width: 520px) 170px, (max-width: 880px) 220px, 260px"><img src="/assets/covers/adhd-overthinking-reset.jpg" srcset="/assets/covers/adhd-overthinking-reset-400.jpg 400w, /assets/covers/adhd-overthinking-reset.jpg 700w" sizes="(max-width: 520px) 170px, (max-width: 880px) 220px, 260px" alt="The ADHD Overthinking Reset book cover" width="466" height="700" loading="lazy" decoding="async"></picture></span></div>
           <div class="book-meta">
             <div class="book-title">The ADHD Overthinking Reset</div>
             <div class="book-subtitle">Break mental loops, quiet intrusive thoughts, stop spiraling</div>
@@ -1615,7 +1627,7 @@ h1 { animation: fadeUp 0.7s ease 0.2s both; }
         </a>
 
         <a href="/books/adhd-eating-reset/" class="book" aria-label="The ADHD Eating Reset">
-          <div class="book-cover"><span class="cover-frame"><img src="/assets/covers/adhd-eating-reset.jpg" srcset="/assets/covers/adhd-eating-reset-400.jpg 400w, /assets/covers/adhd-eating-reset.jpg 700w" sizes="(max-width: 520px) 170px, (max-width: 880px) 220px, 260px" alt="The ADHD Eating Reset book cover" width="466" height="700" loading="lazy" decoding="async"></span></div>
+          <div class="book-cover"><span class="cover-frame"><picture><source type="image/avif" srcset="/assets/covers/adhd-eating-reset-260.avif 260w, /assets/covers/adhd-eating-reset-400.avif 400w, /assets/covers/adhd-eating-reset-700.avif 700w" sizes="(max-width: 520px) 170px, (max-width: 880px) 220px, 260px"><source type="image/webp" srcset="/assets/covers/adhd-eating-reset-260.webp 260w, /assets/covers/adhd-eating-reset-400.webp 400w, /assets/covers/adhd-eating-reset-700.webp 700w" sizes="(max-width: 520px) 170px, (max-width: 880px) 220px, 260px"><img src="/assets/covers/adhd-eating-reset.jpg" srcset="/assets/covers/adhd-eating-reset-400.jpg 400w, /assets/covers/adhd-eating-reset.jpg 700w" sizes="(max-width: 520px) 170px, (max-width: 880px) 220px, 260px" alt="The ADHD Eating Reset book cover" width="466" height="700" loading="lazy" decoding="async"></picture></span></div>
           <div class="book-meta">
             <div class="book-title">The ADHD Eating Reset</div>
             <div class="book-subtitle">End meal paralysis, stop forgetting to eat, build food habits that stick</div>
@@ -1624,7 +1636,7 @@ h1 { animation: fadeUp 0.7s ease 0.2s both; }
         </a>
 
         <a href="/books/adhd-decision-reset/" class="book" aria-label="The ADHD Decision Reset">
-          <div class="book-cover"><span class="cover-frame"><img src="/assets/covers/adhd-decision-reset.jpg" srcset="/assets/covers/adhd-decision-reset-400.jpg 400w, /assets/covers/adhd-decision-reset.jpg 700w" sizes="(max-width: 520px) 170px, (max-width: 880px) 220px, 260px" alt="The ADHD Decision Reset book cover" width="466" height="700" loading="lazy" decoding="async"></span></div>
+          <div class="book-cover"><span class="cover-frame"><picture><source type="image/avif" srcset="/assets/covers/adhd-decision-reset-260.avif 260w, /assets/covers/adhd-decision-reset-400.avif 400w, /assets/covers/adhd-decision-reset-700.avif 700w" sizes="(max-width: 520px) 170px, (max-width: 880px) 220px, 260px"><source type="image/webp" srcset="/assets/covers/adhd-decision-reset-260.webp 260w, /assets/covers/adhd-decision-reset-400.webp 400w, /assets/covers/adhd-decision-reset-700.webp 700w" sizes="(max-width: 520px) 170px, (max-width: 880px) 220px, 260px"><img src="/assets/covers/adhd-decision-reset.jpg" srcset="/assets/covers/adhd-decision-reset-400.jpg 400w, /assets/covers/adhd-decision-reset.jpg 700w" sizes="(max-width: 520px) 170px, (max-width: 880px) 220px, 260px" alt="The ADHD Decision Reset book cover" width="466" height="700" loading="lazy" decoding="async"></picture></span></div>
           <div class="book-meta">
             <div class="book-title">The ADHD Decision Reset</div>
             <div class="book-subtitle">Break analysis paralysis, make choices faster, stop overthinking</div>
@@ -1643,7 +1655,7 @@ h1 { animation: fadeUp 0.7s ease 0.2s both; }
       <div class="book-grid">
 
         <a href="/books/late-diagnosed-adhd-workbook/" class="book" aria-label="The Late-Diagnosed ADHD Workbook">
-          <div class="book-cover"><span class="cover-frame"><img src="/assets/covers/late-diagnosed-adhd-workbook.jpg" srcset="/assets/covers/late-diagnosed-adhd-workbook-400.jpg 400w, /assets/covers/late-diagnosed-adhd-workbook.jpg 700w" sizes="(max-width: 520px) 170px, (max-width: 880px) 220px, 260px" alt="The Late-Diagnosed ADHD Workbook book cover" width="467" height="700" loading="lazy" decoding="async">
+          <div class="book-cover"><span class="cover-frame"><picture><source type="image/avif" srcset="/assets/covers/late-diagnosed-adhd-workbook-260.avif 260w, /assets/covers/late-diagnosed-adhd-workbook-400.avif 400w, /assets/covers/late-diagnosed-adhd-workbook-700.avif 700w" sizes="(max-width: 520px) 170px, (max-width: 880px) 220px, 260px"><source type="image/webp" srcset="/assets/covers/late-diagnosed-adhd-workbook-260.webp 260w, /assets/covers/late-diagnosed-adhd-workbook-400.webp 400w, /assets/covers/late-diagnosed-adhd-workbook-700.webp 700w" sizes="(max-width: 520px) 170px, (max-width: 880px) 220px, 260px"><img src="/assets/covers/late-diagnosed-adhd-workbook.jpg" srcset="/assets/covers/late-diagnosed-adhd-workbook-400.jpg 400w, /assets/covers/late-diagnosed-adhd-workbook.jpg 700w" sizes="(max-width: 520px) 170px, (max-width: 880px) 220px, 260px" alt="The Late-Diagnosed ADHD Workbook book cover" width="467" height="700" loading="lazy" decoding="async"></picture>
             <div class="badge badge-new">New</div></span></div>
           <div class="book-meta">
             <div class="book-title">The Late-Diagnosed ADHD Workbook</div>
@@ -1653,7 +1665,7 @@ h1 { animation: fadeUp 0.7s ease 0.2s both; }
         </a>
 
         <a href="/books/late-diagnosed-autistic-workbook/" class="book" aria-label="The Late-Diagnosed Autistic Workbook">
-          <div class="book-cover"><span class="cover-frame"><img src="/assets/covers/late-diagnosed-autistic-workbook.jpg" srcset="/assets/covers/late-diagnosed-autistic-workbook-400.jpg 400w, /assets/covers/late-diagnosed-autistic-workbook.jpg 700w" sizes="(max-width: 520px) 170px, (max-width: 880px) 220px, 260px" alt="The Late-Diagnosed Autistic Workbook book cover" width="467" height="700" loading="lazy" decoding="async">
+          <div class="book-cover"><span class="cover-frame"><picture><source type="image/avif" srcset="/assets/covers/late-diagnosed-autistic-workbook-260.avif 260w, /assets/covers/late-diagnosed-autistic-workbook-400.avif 400w, /assets/covers/late-diagnosed-autistic-workbook-700.avif 700w" sizes="(max-width: 520px) 170px, (max-width: 880px) 220px, 260px"><source type="image/webp" srcset="/assets/covers/late-diagnosed-autistic-workbook-260.webp 260w, /assets/covers/late-diagnosed-autistic-workbook-400.webp 400w, /assets/covers/late-diagnosed-autistic-workbook-700.webp 700w" sizes="(max-width: 520px) 170px, (max-width: 880px) 220px, 260px"><img src="/assets/covers/late-diagnosed-autistic-workbook.jpg" srcset="/assets/covers/late-diagnosed-autistic-workbook-400.jpg 400w, /assets/covers/late-diagnosed-autistic-workbook.jpg 700w" sizes="(max-width: 520px) 170px, (max-width: 880px) 220px, 260px" alt="The Late-Diagnosed Autistic Workbook book cover" width="467" height="700" loading="lazy" decoding="async"></picture>
             <div class="badge badge-new">New</div></span></div>
           <div class="book-meta">
             <div class="book-title">The Late-Diagnosed Autistic Workbook</div>
@@ -1673,7 +1685,7 @@ h1 { animation: fadeUp 0.7s ease 0.2s both; }
       <div class="book-grid">
 
         <a href="/books/adhd-burnout-recovery/" class="book" aria-label="The ADHD Burnout Recovery Guide">
-          <div class="book-cover"><span class="cover-frame"><img src="/assets/covers/adhd-burnout-recovery.jpg" srcset="/assets/covers/adhd-burnout-recovery-400.jpg 400w, /assets/covers/adhd-burnout-recovery.jpg 700w" sizes="(max-width: 520px) 170px, (max-width: 880px) 220px, 260px" alt="The ADHD Burnout Recovery Guide book cover" width="466" height="700" loading="lazy" decoding="async"></span></div>
+          <div class="book-cover"><span class="cover-frame"><picture><source type="image/avif" srcset="/assets/covers/adhd-burnout-recovery-260.avif 260w, /assets/covers/adhd-burnout-recovery-400.avif 400w, /assets/covers/adhd-burnout-recovery-700.avif 700w" sizes="(max-width: 520px) 170px, (max-width: 880px) 220px, 260px"><source type="image/webp" srcset="/assets/covers/adhd-burnout-recovery-260.webp 260w, /assets/covers/adhd-burnout-recovery-400.webp 400w, /assets/covers/adhd-burnout-recovery-700.webp 700w" sizes="(max-width: 520px) 170px, (max-width: 880px) 220px, 260px"><img src="/assets/covers/adhd-burnout-recovery.jpg" srcset="/assets/covers/adhd-burnout-recovery-400.jpg 400w, /assets/covers/adhd-burnout-recovery.jpg 700w" sizes="(max-width: 520px) 170px, (max-width: 880px) 220px, 260px" alt="The ADHD Burnout Recovery Guide book cover" width="466" height="700" loading="lazy" decoding="async"></picture></span></div>
           <div class="book-meta">
             <div class="book-title">The ADHD Burnout Recovery Guide</div>
             <div class="book-subtitle">Triage, recovery, and prevention for the brain you actually have</div>

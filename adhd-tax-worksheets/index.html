@@ -4,14 +4,24 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-ME9LJ3ENQH"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-ME9LJ3ENQH');
-  </script>
+  <!-- Google tag (gtag.js). The config queues straight away; the 178 KB library
+     loads once the page has finished and the browser is idle, so it never
+     competes with the content for bandwidth. -->
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-ME9LJ3ENQH');
+  addEventListener('load', function () {
+    var go = function () {
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-ME9LJ3ENQH';
+      document.head.appendChild(s);
+    };
+    'requestIdleCallback' in window ? requestIdleCallback(go, { timeout: 3000 }) : setTimeout(go, 1);
+  });
+</script>
 
   <link rel="preload" href="/assets/fonts/inter-tight-latin-83d548cd.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/assets/fonts/fonts.css">

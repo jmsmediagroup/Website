@@ -42,13 +42,23 @@
 <link rel="stylesheet" href="/assets/fonts/fonts.css">
 <link rel="stylesheet" href="/assets/blog.css">
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-ME9LJ3ENQH"></script>
+<!-- Google tag (gtag.js). The config queues straight away; the 178 KB library
+     loads once the page has finished and the browser is idle, so it never
+     competes with the content for bandwidth. -->
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', 'G-ME9LJ3ENQH');
+  addEventListener('load', function () {
+    var go = function () {
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-ME9LJ3ENQH';
+      document.head.appendChild(s);
+    };
+    'requestIdleCallback' in window ? requestIdleCallback(go, { timeout: 3000 }) : setTimeout(go, 1);
+  });
 </script>
 <script type="application/ld+json">
 {
@@ -289,7 +299,7 @@
     </div>
 
     <aside class="book-cta">
-      <a class="book-cta-cover" href="/books/late-diagnosed-autistic-workbook/"><span class="cover-frame"><img src="/assets/covers/late-diagnosed-autistic-workbook.jpg" srcset="/assets/covers/late-diagnosed-autistic-workbook-400.jpg 400w, /assets/covers/late-diagnosed-autistic-workbook.jpg 700w" sizes="(max-width: 520px) 170px, (max-width: 880px) 220px, 260px" alt="The Late-Diagnosed Autistic Workbook book cover" width="467" height="700" loading="lazy" decoding="async"></span></a>
+      <a class="book-cta-cover" href="/books/late-diagnosed-autistic-workbook/"><span class="cover-frame"><picture><source type="image/avif" srcset="/assets/covers/late-diagnosed-autistic-workbook-260.avif 260w, /assets/covers/late-diagnosed-autistic-workbook-400.avif 400w, /assets/covers/late-diagnosed-autistic-workbook-700.avif 700w" sizes="(max-width: 520px) 170px, (max-width: 880px) 220px, 260px"><source type="image/webp" srcset="/assets/covers/late-diagnosed-autistic-workbook-260.webp 260w, /assets/covers/late-diagnosed-autistic-workbook-400.webp 400w, /assets/covers/late-diagnosed-autistic-workbook-700.webp 700w" sizes="(max-width: 520px) 170px, (max-width: 880px) 220px, 260px"><img src="/assets/covers/late-diagnosed-autistic-workbook.jpg" srcset="/assets/covers/late-diagnosed-autistic-workbook-400.jpg 400w, /assets/covers/late-diagnosed-autistic-workbook.jpg 700w" sizes="(max-width: 520px) 170px, (max-width: 880px) 220px, 260px" alt="The Late-Diagnosed Autistic Workbook book cover" width="467" height="700" loading="lazy" decoding="async"></picture></span></a>
       <div class="book-cta-body">
         <div class="book-cta-label">The book on this</div>
         <h2 class="book-cta-title"><a href="/books/late-diagnosed-autistic-workbook/">The Late-Diagnosed Autistic Workbook</a></h2>

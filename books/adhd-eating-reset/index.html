@@ -35,13 +35,23 @@
 <link rel="stylesheet" href="/assets/fonts/fonts.css">
 <link rel="stylesheet" href="/assets/blog.css">
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-ME9LJ3ENQH"></script>
+<!-- Google tag (gtag.js). The config queues straight away; the 178 KB library
+     loads once the page has finished and the browser is idle, so it never
+     competes with the content for bandwidth. -->
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', 'G-ME9LJ3ENQH');
+  addEventListener('load', function () {
+    var go = function () {
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-ME9LJ3ENQH';
+      document.head.appendChild(s);
+    };
+    'requestIdleCallback' in window ? requestIdleCallback(go, { timeout: 3000 }) : setTimeout(go, 1);
+  });
 </script>
 <script type="application/ld+json">
 {
@@ -208,7 +218,7 @@
     </nav>
 
     <header class="book-hero">
-      <div class="book-hero-cover"><span class="cover-frame"><img src="/assets/covers/adhd-eating-reset.jpg" srcset="/assets/covers/adhd-eating-reset-400.jpg 400w, /assets/covers/adhd-eating-reset.jpg 700w" sizes="(max-width: 520px) 170px, (max-width: 880px) 220px, 260px" alt="The ADHD Eating Reset book cover" width="466" height="700" fetchpriority="high" decoding="async"></span></div>
+      <div class="book-hero-cover"><span class="cover-frame"><picture><source type="image/avif" srcset="/assets/covers/adhd-eating-reset-260.avif 260w, /assets/covers/adhd-eating-reset-400.avif 400w, /assets/covers/adhd-eating-reset-700.avif 700w" sizes="(max-width: 520px) 170px, (max-width: 880px) 220px, 260px"><source type="image/webp" srcset="/assets/covers/adhd-eating-reset-260.webp 260w, /assets/covers/adhd-eating-reset-400.webp 400w, /assets/covers/adhd-eating-reset-700.webp 700w" sizes="(max-width: 520px) 170px, (max-width: 880px) 220px, 260px"><img src="/assets/covers/adhd-eating-reset.jpg" srcset="/assets/covers/adhd-eating-reset-400.jpg 400w, /assets/covers/adhd-eating-reset.jpg 700w" sizes="(max-width: 520px) 170px, (max-width: 880px) 220px, 260px" alt="The ADHD Eating Reset book cover" width="466" height="700" fetchpriority="high" decoding="async"></picture></span></div>
       <div class="book-hero-info">
         <div class="book-series-label">Book 2 of The ADHD Reset Series</div>
         <h1>The ADHD Eating Reset</h1>
@@ -241,7 +251,7 @@
 
     <section class="related"><h2>Articles on this subject</h2><div class="related-grid"><a class="related-card" href="/blog/adhd-meal-paralysis-forgetting-to-eat/"><span class="related-kicker">Article</span><span class="related-title">Meal paralysis: why you forget to eat, then cannot decide what to eat</span><span class="related-desc">Standing in front of a full fridge, hungry, unable to pick anything. Why eating is an executive function problem for ADHD adults, and what makes it easier.</span></a></div></section>
 
-    <section class="related"><h2>Also in this series</h2><div class="shelf-grid shelf-grid-small"><a class="shelf-book" href="/books/adhd-overthinking-reset/"><span class="shelf-cover"><span class="cover-frame"><img src="/assets/covers/adhd-overthinking-reset.jpg" srcset="/assets/covers/adhd-overthinking-reset-400.jpg 400w, /assets/covers/adhd-overthinking-reset.jpg 700w" sizes="(max-width: 520px) 170px, (max-width: 880px) 220px, 260px" alt="The ADHD Overthinking Reset book cover" width="466" height="700" loading="lazy" decoding="async"></span></span><h3 class="shelf-title">The ADHD Overthinking Reset</h3><span class="shelf-tagline">Break mental loops, quiet intrusive thoughts, stop spiraling</span></a><a class="shelf-book" href="/books/adhd-decision-reset/"><span class="shelf-cover"><span class="cover-frame"><img src="/assets/covers/adhd-decision-reset.jpg" srcset="/assets/covers/adhd-decision-reset-400.jpg 400w, /assets/covers/adhd-decision-reset.jpg 700w" sizes="(max-width: 520px) 170px, (max-width: 880px) 220px, 260px" alt="The ADHD Decision Reset book cover" width="466" height="700" loading="lazy" decoding="async"></span></span><h3 class="shelf-title">The ADHD Decision Reset</h3><span class="shelf-tagline">Break analysis paralysis, make choices faster, stop overthinking</span></a></div></section>
+    <section class="related"><h2>Also in this series</h2><div class="shelf-grid shelf-grid-small"><a class="shelf-book" href="/books/adhd-overthinking-reset/"><span class="shelf-cover"><span class="cover-frame"><picture><source type="image/avif" srcset="/assets/covers/adhd-overthinking-reset-260.avif 260w, /assets/covers/adhd-overthinking-reset-400.avif 400w, /assets/covers/adhd-overthinking-reset-700.avif 700w" sizes="(max-width: 520px) 170px, (max-width: 880px) 220px, 260px"><source type="image/webp" srcset="/assets/covers/adhd-overthinking-reset-260.webp 260w, /assets/covers/adhd-overthinking-reset-400.webp 400w, /assets/covers/adhd-overthinking-reset-700.webp 700w" sizes="(max-width: 520px) 170px, (max-width: 880px) 220px, 260px"><img src="/assets/covers/adhd-overthinking-reset.jpg" srcset="/assets/covers/adhd-overthinking-reset-400.jpg 400w, /assets/covers/adhd-overthinking-reset.jpg 700w" sizes="(max-width: 520px) 170px, (max-width: 880px) 220px, 260px" alt="The ADHD Overthinking Reset book cover" width="466" height="700" loading="lazy" decoding="async"></picture></span></span><h3 class="shelf-title">The ADHD Overthinking Reset</h3><span class="shelf-tagline">Break mental loops, quiet intrusive thoughts, stop spiraling</span></a><a class="shelf-book" href="/books/adhd-decision-reset/"><span class="shelf-cover"><span class="cover-frame"><picture><source type="image/avif" srcset="/assets/covers/adhd-decision-reset-260.avif 260w, /assets/covers/adhd-decision-reset-400.avif 400w, /assets/covers/adhd-decision-reset-700.avif 700w" sizes="(max-width: 520px) 170px, (max-width: 880px) 220px, 260px"><source type="image/webp" srcset="/assets/covers/adhd-decision-reset-260.webp 260w, /assets/covers/adhd-decision-reset-400.webp 400w, /assets/covers/adhd-decision-reset-700.webp 700w" sizes="(max-width: 520px) 170px, (max-width: 880px) 220px, 260px"><img src="/assets/covers/adhd-decision-reset.jpg" srcset="/assets/covers/adhd-decision-reset-400.jpg 400w, /assets/covers/adhd-decision-reset.jpg 700w" sizes="(max-width: 520px) 170px, (max-width: 880px) 220px, 260px" alt="The ADHD Decision Reset book cover" width="466" height="700" loading="lazy" decoding="async"></picture></span></span><h3 class="shelf-title">The ADHD Decision Reset</h3><span class="shelf-tagline">Break analysis paralysis, make choices faster, stop overthinking</span></a></div></section>
 
     <section class="author-box">
       <img src="/assets/images/author.jpg" alt="J.M. Struijk" width="562" height="900" loading="lazy" decoding="async">

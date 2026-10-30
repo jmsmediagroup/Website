@@ -8,7 +8,7 @@
   --muted-light: #8d8478;
   --rule: #d3c8b3;
   --rule-strong: #b8ab90;
-  --coral: #c54632;
+  --coral: #bd4330;
   --coral-deep: #9c3424;
   --coral-soft: #e8a89c;
   --sage: #5d6b4a;
@@ -388,6 +388,8 @@ a { color: inherit; text-decoration: none; }
 /* Covers are sized by image height, so each keeps its own width and fills its
    own edges. A percentage height inside a flex item computed to zero width. */
 .cover-frame { position: relative; display: inline-block; }
+/* <picture> wraps covers for AVIF and WebP; it must not add a box. */
+picture { display: contents; }
 .cover-frame img {
   display: block; width: auto; max-width: 100%; object-fit: contain; border-radius: 2px;
   box-shadow: 0 10px 24px -8px rgba(60,30,20,0.24), 0 22px 50px -16px rgba(60,30,20,0.18);

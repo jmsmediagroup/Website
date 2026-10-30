@@ -305,6 +305,10 @@ def load_books():
         cover = os.path.join(ROOT, "assets", "covers", meta["slug"] + ".jpg")
         if not os.path.exists(cover):
             fail("%s has no cover at assets/covers/%s.jpg." % (name, meta["slug"]))
+        for n in (260, 400, 700):
+            for ext in ("avif", "webp"):
+                if not os.path.exists(os.path.join(ROOT, "assets", "covers", "%s-%d.%s" % (meta["slug"], n, ext))):
+                    fail("%s is missing its %dpx %s cover; run python3 make_cover_images.py." % (name, n, ext))
         check_about(meta.get("about"), name)
         body_html, _, _, faq = render_markdown(body)
         meta.update(body=body_html, faq=faq, markdown=body, source=name,
@@ -652,13 +656,27 @@ def cover_frame(book, badge="", eager=False):
     w, h = book["cover_size"]
     loading = 'fetchpriority="high"' if eager else 'loading="lazy"'
     # Covers render between about 130px and 250px wide, so a phone should not
-    # download the 700px file.
-    return ('<span class="cover-frame"><img src="/assets/covers/{slug}.jpg" '
-            'srcset="/assets/covers/{slug}-400.jpg 400w, /assets/covers/{slug}.jpg 700w" '
-            'sizes="(max-width: 520px) 170px, (max-width: 880px) 220px, 260px" '
-            'alt="{title} book cover" width="{w}" height="{h}" {loading} decoding="async">{badge}</span>'
-            ).format(slug=book["slug"], title=esc(book["title"]), w=w, h=h,
-                     loading=loading, badge=badge)
+    # download the 700px file. AVIF first, WebP next, the JPEG last; the
+    # variants come from make_cover_images.py.
+    return ('<span class="cover-frame">{picture}{badge}</span>'
+            ).format(picture=cover_picture(book["slug"], esc(book["title"]) + " book cover", w, h,
+                                           COVER_SIZES, loading), badge=badge)
+
+
+COVER_SIZES = "(max-width: 520px) 170px, (max-width: 880px) 220px, 260px"
+
+
+def cover_picture(slug, alt, w, h, sizes, attrs):
+    """<picture> for a cover: AVIF, then WebP, then the original JPEG."""
+    variants = lambda ext: ", ".join("/assets/covers/%s-%d.%s %dw" % (slug, n, ext, n) for n in (260, 400, 700))
+    return ('<picture>'
+            '<source type="image/avif" srcset="{avif}" sizes="{sizes}">'
+            '<source type="image/webp" srcset="{webp}" sizes="{sizes}">'
+            '<img src="/assets/covers/{slug}.jpg" '
+            'srcset="/assets/covers/{slug}-400.jpg 400w, /assets/covers/{slug}.jpg 700w" sizes="{sizes}" '
+            'alt="{alt}" width="{w}" height="{h}" {attrs} decoding="async"></picture>'
+            ).format(avif=variants("avif"), webp=variants("webp"), slug=slug, sizes=sizes,
+                     alt=alt, w=w, h=h, attrs=attrs)
 
 
 def book_card(book, heading="h3"):
