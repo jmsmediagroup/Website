@@ -562,7 +562,20 @@ def render(template, **values):
             PARTIALS["head"] = PARTIALS["head"].replace(link, inline_css(href.lstrip("/")))
     for name, markup in PARTIALS.items():
         values.setdefault(name, markup)
-    return open(os.path.join(TEMPLATES, template), encoding="utf-8").read().format(**values)
+    page = open(os.path.join(TEMPLATES, template), encoding="utf-8").read().format(**values)
+    # The italic serif is only needed above the fold when the headline has an <em>.
+    # Left to be discovered at layout it chains behind the HTML; preloaded on every
+    # page it would be 80 KB wasted on the articles, which do not use it.
+    h1 = re.search(r"<h1[^>]*>([\s\S]*?)</h1>", page)
+    if h1 and "<em" in h1.group(1):
+        page = page.replace(FONT_PRELOAD_ANCHOR, FONT_PRELOAD_ANCHOR + "\n" + ITALIC_PRELOAD, 1)
+    return page
+
+
+FONT_PRELOAD_ANCHOR = ('<link rel="preload" href="/assets/fonts/fraunces-latin-48282a41.woff2" '
+                       'as="font" type="font/woff2" crossorigin>')
+ITALIC_PRELOAD = ('<link rel="preload" href="/assets/fonts/fraunces-latin-4af9c759.woff2" '
+                  'as="font" type="font/woff2" crossorigin>')
 
 
 def seo_head(title, description, path, image=None, og_type="website"):
