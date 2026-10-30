@@ -114,9 +114,16 @@
   </url>
   <url>
     <loc>https://jmstruijk.com/blog/</loc>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-10-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://jmstruijk.com/blog/why-you-shut-down-after-work/</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image><image:loc>https://jmstruijk.com/assets/og/post-why-you-shut-down-after-work.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://jmstruijk.com/blog/hyperfocus-vs-hyperfixation-vs-special-interest/</loc>

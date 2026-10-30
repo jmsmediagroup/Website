@@ -11,6 +11,7 @@ topics: [autism, burnout-and-energy]
 related:
   - stimming-and-sensory-overload
   - autistic-burnout-vs-adhd-burnout-vs-depression
+  - why-you-shut-down-after-work
 ---
 
 Adults are not supposed to have meltdowns. That is the message most autistic adults absorbed early, which is why a meltdown at forty tends to arrive with a second wave of shame on top of the first.
