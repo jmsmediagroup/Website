@@ -610,6 +610,13 @@ def og_image(kind, slug):
     return DEFAULT_OG
 
 
+def post_summary(p):
+    """A BlogPosting for listing pages, complete enough for Google's Article checks."""
+    return {"@type": "BlogPosting", "headline": p["title"], "url": SITE + "/blog/%s/" % p["slug"],
+            "datePublished": str(p["date"]), "dateModified": str(p.get("updated") or p["date"]),
+            "image": og_image("post", p["slug"]), "author": {"@id": PERSON_ID}}
+
+
 def human_date(value):
     return datetime.strptime(str(value), "%Y-%m-%d").strftime("%d %B %Y").lstrip("0")
 
@@ -861,9 +868,7 @@ def render_blog_index(posts, by_book):
          "name": "J.M. Struijk on ADHD and autism",
          "description": "Practical writing on ADHD, autism and AuDHD from a late-diagnosed author.",
          "inLanguage": "en-US", "author": {"@id": PERSON_ID}, "publisher": publisher_ref(),
-         "blogPost": [{"@type": "BlogPosting", "headline": p["title"],
-                       "url": SITE + "/blog/%s/" % p["slug"], "datePublished": str(p["date"])}
-                      for p in posts]},
+         "blogPost": [post_summary(p) for p in posts]},
         person_node(),
         breadcrumbs((AUTHOR, "/"), ("Blog", "/blog/")),
     ]
@@ -1176,8 +1181,7 @@ def render_topic(topic, posts, books, by_book, terms_by_slug, resources_by_id):
         {"@type": "CollectionPage", "@id": url, "url": url, "name": topic["title"],
          "description": topic["description"], "isPartOf": {"@id": WEBSITE_ID}, "inLanguage": "en-US",
          "about": about_nodes(topic.get("about")),
-         "hasPart": [{"@type": "BlogPosting", "headline": p["title"], "url": SITE + "/blog/%s/" % p["slug"]}
-                     for p in articles]},
+         "hasPart": [post_summary(p) for p in articles]},
         person_node(),
         breadcrumbs((AUTHOR, "/"), ("Topics", "/topics/"), (topic["title"], path)),
     ]
