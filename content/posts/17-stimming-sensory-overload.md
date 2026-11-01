@@ -1,9 +1,11 @@
 ---
 title: "Stimming and sensory overload in autistic adults"
+seo_title: "Stimming in adults: why it helps, and how sensory overload builds"
 slug: stimming-and-sensory-overload
-description: "How stimming helps autistic adults regulate, how sensory overload builds through the day, and the small changes that stop it tipping over."
+description: "Stimming in adults is normal and it does a job. How it helps you regulate, how sensory overload builds through the day, and the small changes that help."
 date: 2026-10-21
-keywords: stimming adults, autistic stimming, sensory overload adults, autism sensory overload, sensory processing autism, stimming adhd
+updated: 2026-11-01
+keywords: stimming in adults, stimming adults, is stimming normal in adults, adult stimming examples, autistic stimming, sensory overload adults, autism sensory overload, sensory processing autism, stimming adhd
 book: late-diagnosed-autistic-workbook
 about: [autism, stimming, sensory-overload]
 topics: [autism]
@@ -28,7 +30,7 @@ That job is regulation, and understanding it changes how the rest of sensory lif
 
 ## What stimming is for
 
-Stimming covers repetitive movements or sounds: rocking, hand-flapping, finger movements, tapping, humming, pacing, spinning objects, rubbing a texture. Everyone does a little of it. Autistic people tend to do more, and to rely on it more.
+Stimming in adults looks much the same as in children, only quieter. It covers repetitive movements or sounds: rocking, hand-flapping, finger movements, tapping, humming, pacing, spinning objects, rubbing a texture. Everyone does a little of it. Autistic people tend to do more, and to rely on it more.
 
 People describe it doing several things. It helps manage incoming sensory input, by providing a predictable sensation that competes with the unpredictable ones. It helps regulate emotion, whether that is calming down or expressing excitement. And it helps with focus, giving the body something to do so the mind can settle.
 
@@ -86,13 +88,17 @@ And plan around big days honestly. A wedding, a conference, an office party will
 
 ## Common questions
 
-### Do adults stim?
+### Is stimming normal in adults?
 
 Yes. Stimming does not stop in adulthood, although many adults, particularly those identified late, have learned to make it less visible. Common adult stims include tapping, leg bouncing, fidgeting with objects, humming, and rubbing fingers or fabric.
 
-### Is stimming only an autistic thing?
+### Do people with ADHD stim?
 
-No. Everyone stims to some degree, and people with ADHD often stim noticeably, particularly through fidgeting and movement. Autistic people tend to stim more and to rely on it more heavily for regulation.
+Yes. Stimming is not only an autistic thing. Everyone stims to some degree, and people with ADHD often stim noticeably, particularly through fidgeting and movement. Autistic people tend to stim more and to rely on it more heavily for regulation.
+
+### What are examples of stimming in adults?
+
+Leg bouncing, foot tapping, clicking a pen, twisting a ring, rubbing a fingertip or a piece of fabric, humming, pacing during phone calls, rocking slightly while standing, chewing the inside of the cheek, and replaying a song or phrase. Adult stims are often small and easy to miss, because many were made less visible over the years.
 
 ### Is it bad to stim in public?
 

@@ -4,8 +4,9 @@ seo_title: "ADHD task paralysis: why you cannot start, and what helps"
 slug: adhd-task-paralysis
 description: "ADHD paralysis is knowing exactly what to do and being unable to begin. Why it happens, why it is not laziness, and how to get over the wall."
 date: 2026-10-21
+updated: 2026-11-01
 featured: 4
-keywords: adhd paralysis, adhd task paralysis, cant start tasks adhd, executive dysfunction, adhd procrastination, adhd freeze
+keywords: adhd paralysis, adhd task paralysis, task paralysis adhd, task paralysis depression, adhd task paralysis help, cant start tasks adhd, executive dysfunction, adhd procrastination, adhd freeze
 book: adhd-decision-reset
 about: [adhd, executive-dysfunction]
 topics: [everyday-adhd]
@@ -84,6 +85,10 @@ Persistent inability to start anything at all, especially alongside low mood, lo
 ### What is ADHD paralysis?
 
 It is the experience of being unable to start a task despite wanting and intending to, often with a feeling of being frozen. It is linked to executive dysfunction, particularly difficulty with task initiation. The term is informal and widely used by people with ADHD.
+
+### Is it task paralysis or depression?
+
+Task paralysis is usually specific. Some tasks feel impossible while interesting or urgent ones still get done, and the rest of life feels roughly normal. With depression the difficulty tends to spread to almost everything, including things you used to enjoy, and usually comes with low mood, loss of interest or exhaustion. The two can happen together. If the paralysis has spread to everything or has lasted weeks, talk to a doctor.
 
 ### Is task paralysis the same as procrastination?
 

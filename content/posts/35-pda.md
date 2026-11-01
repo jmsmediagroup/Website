@@ -1,9 +1,11 @@
 ---
-title: "PDA: demand avoidance in autistic adults"
+title: "Pathological demand avoidance (PDA) in adults"
+seo_title: "Pathological demand avoidance (PDA) in adults: what it is, what helps"
 slug: pda-pathological-demand-avoidance
-description: "PDA describes extreme avoidance of everyday demands, driven by anxiety rather than defiance. What it is, why it is contested, and what helps adults."
+description: "Pathological demand avoidance (PDA) in adults: anxiety-driven avoidance of everyday demands. What it is, why it is contested, and what helps."
 date: 2026-10-22
-keywords: pda autism, pathological demand avoidance, pda adults, demand avoidance autism, pervasive drive for autonomy, pda profile
+updated: 2026-11-01
+keywords: pda in adults, pathological demand avoidance in adults, pda autistic adults, pda autism, pathological demand avoidance, pda adults, demand avoidance autism, pervasive drive for autonomy, pda profile
 book: late-diagnosed-autistic-workbook
 about: [autism, emotional-dysregulation]
 topics: [autism]
@@ -80,6 +82,10 @@ And self-directed demands need the same treatment. People describe getting furth
 If you are supporting someone, the hardest and most useful adjustment is usually accepting that pushing harder makes it worse rather than better. Escalation is the one approach reliably reported to backfire.
 
 ## Common questions
+
+### What does PDA look like in adults?
+
+Mostly like being unable to do things you want to do, once they have become a demand. Adults describe freezing when asked to do something they were about to do anyway, being unable to start a hobby they were looking forward to, putting off eating when hungry, and leaving messages from people they like unanswered. It applies to demands you set yourself as well as other people's, and the same task can feel impossible as an instruction and fine as a choice.
 
 ### Is PDA a real diagnosis?
 

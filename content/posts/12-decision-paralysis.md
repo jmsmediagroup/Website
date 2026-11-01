@@ -1,9 +1,11 @@
 ---
 title: "Decision paralysis: why small choices cost the most"
+seo_title: "ADHD decision paralysis: what it is, and why small choices are hardest"
 slug: adhd-decision-paralysis
 description: "Why an ADHD brain can make a big decision quickly, then lose forty minutes choosing a bin bag. How analysis paralysis works and what gets you unstuck."
 date: 2026-10-21
-keywords: adhd decision paralysis, adhd analysis paralysis, adhd cant make decisions, adhd indecision, adhd overwhelm choices, decision fatigue adhd
+updated: 2026-11-01
+keywords: what is decision paralysis, decision paralysis, adhd decision paralysis, adhd analysis paralysis, adhd cant make decisions, adhd indecision, adhd overwhelm choices, decision fatigue adhd
 book: adhd-decision-reset
 about: [adhd, analysis-paralysis]
 topics: [everyday-adhd]
@@ -16,6 +18,8 @@ related:
 I have changed career on a fortnight's reflection and lost most of an evening to choosing between two almost identical kettles.
 
 That ratio is the thing worth explaining, because it looks like inconsistency and it is not. The small decisions are harder, and there is a reason for it.
+
+Decision paralysis, also called analysis paralysis, is getting stuck on a choice because comparing the options never reaches an end. You keep weighing, the weighing changes nothing, and the decision gets made by a deadline, by someone else, or not at all.
 
 ## Key takeaways
 
@@ -70,6 +74,10 @@ That instinct is usually as good as anything that follows, and in my experience 
 If you genuinely have no instinct, the options are close enough that it does not matter. Take either. The symmetry that makes the choice hard is the same symmetry that makes it low stakes.
 
 ## Common questions
+
+### What is decision paralysis?
+
+Decision paralysis is being unable to make a choice because comparing the options never reaches a natural end. It is also called analysis paralysis. It tends to hit small, low-stakes decisions hardest, where nothing forces a conclusion, and it is commonly reported by people with ADHD and by people with anxiety.
 
 ### Why can I make big decisions easily but not small ones?
 

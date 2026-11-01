@@ -1,9 +1,11 @@
 ---
 title: "Inattentive ADHD in adults: the quiet presentation"
+seo_title: "Inattentive ADHD in adults (predominantly inattentive presentation)"
 slug: inattentive-adhd-adults
 description: "Inattentive ADHD has no visible hyperactivity, which is why so many adults reach their thirties without it being noticed. How it actually shows up."
 date: 2026-10-22
-keywords: inattentive adhd adults, adhd inattentive type symptoms, add in adults, quiet adhd, inattentive adhd women, adhd without hyperactivity
+updated: 2026-11-01
+keywords: adhd predominantly inattentive presentation in adults, inattentive adhd presentation, inattentive adhd adults, adhd inattentive type symptoms, add in adults, quiet adhd, inattentive adhd women, adhd without hyperactivity
 book: late-diagnosed-adhd-workbook
 about: [adhd, executive-dysfunction]
 topics: [everyday-adhd, late-diagnosis]
@@ -17,7 +19,7 @@ The hyperactivity is there. It just went inward.
 
 That is the sentence that landed hardest for me when I was working out what had been going on. The picture of ADHD most of us grew up with was a boy who could not stay in his seat. If you were the quiet one staring out of the window, finishing the work eventually, well-behaved and slightly absent, nobody looked any further.
 
-Inattentive ADHD is the presentation without visible hyperactivity. It is extremely easy to miss, and a large share of adults identified late fall into it.
+Inattentive ADHD, formally called ADHD predominantly inattentive presentation, is the presentation without visible hyperactivity. It is extremely easy to miss, and a large share of adults identified late fall into it.
 
 ## Key takeaways
 
@@ -89,9 +91,9 @@ And lower the volume of self-criticism where you can. The inattentive presentati
 
 ## Common questions
 
-### What is inattentive ADHD?
+### What is ADHD predominantly inattentive presentation?
 
-It is the presentation of ADHD characterised by difficulties with attention, organisation, working memory and follow-through, without prominent outward hyperactivity. It is sometimes still called ADD, though current practice treats it as one of the presentations of ADHD rather than a separate condition.
+It is the formal name for what most people call inattentive ADHD: the presentation of ADHD characterised by difficulties with attention, organisation, working memory and follow-through, without prominent outward hyperactivity. It is sometimes still called ADD, though current practice treats it as one of the presentations of ADHD rather than a separate condition.
 
 ### Is inattentive ADHD less severe?
 

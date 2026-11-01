@@ -22,7 +22,7 @@ Each book and article targets one specific way ADHD or autism shows up in adult 
 
 ## Topics
 
-- [ADHD and money](https://jmstruijk.com/topics/adhd-and-money/): Writing, books and tools on ADHD and money: the ADHD tax, impulsive spending, debt, budgeting that survives a bad month, and earning around your energy.
+- [ADHD and money](https://jmstruijk.com/topics/adhd-and-money/): ADHD and money problems explained: the ADHD tax, impulse spending, debt and budgeting that survives a bad month, with free tools and books.
 - [Everyday ADHD: focus, time and feelings](https://jmstruijk.com/topics/everyday-adhd/): Articles on how ADHD shows up day to day: task paralysis, time blindness, overthinking, rejection sensitivity, decisions, food, work and relationships.
 - [Late diagnosis: ADHD and autism in adulthood](https://jmstruijk.com/topics/late-diagnosis/): For adults who suspect or have just found out they are ADHD or autistic: assessment, online tests, the first year, AuDHD, and why women are often missed.
 - [Autism in adults](https://jmstruijk.com/topics/autism/): Writing on autistic adult life from the inside: masking, stimming and sensory overload, meltdowns and shutdowns, burnout, work, and late identification.
@@ -83,7 +83,7 @@ Long-form writing on ADHD and autism, from lived experience. Not clinical guidan
 - [NHS Right to Choose for ADHD and autism assessment](https://jmstruijk.com/blog/nhs-right-to-choose-adhd-autism/): In England you can usually choose who does your NHS ADHD or autism assessment, which can cut a long wait. How it works, and what it does not cover. Published 2026-10-22.
 - [Levels of autism, and why 'high functioning' is falling out of use](https://jmstruijk.com/blog/autism-levels-and-functioning-labels/): Autism levels 1 to 3 describe how much support someone needs. Why that differs from "high functioning", and why autistic adults reject the old labels. Published 2026-10-22.
 - [Is ADHD a disability? And is autism one?](https://jmstruijk.com/blog/is-adhd-a-disability/): Whether ADHD or autism counts as a disability depends on the law where you live and how much it affects you, not on the diagnosis itself. Published 2026-10-22.
-- [PDA: demand avoidance in autistic adults](https://jmstruijk.com/blog/pda-pathological-demand-avoidance/): PDA describes extreme avoidance of everyday demands, driven by anxiety rather than defiance. What it is, why it is contested, and what helps adults. Published 2026-10-22.
+- [Pathological demand avoidance (PDA) in adults](https://jmstruijk.com/blog/pda-pathological-demand-avoidance/): Pathological demand avoidance (PDA) in adults: anxiety-driven avoidance of everyday demands. What it is, why it is contested, and what helps. Published 2026-10-22.
 - [The ADHD tax: what it actually costs, and why budgeting advice keeps missing it](https://jmstruijk.com/blog/adhd-tax-what-it-costs/): The ADHD tax is money lost to late fees, forgotten subscriptions and replacing things you own. Where it goes, and why budgeting advice misses it. Published 2026-10-21.
 - [Why ADHD brains overspend, and what actually helps](https://jmstruijk.com/blog/why-adhd-brains-overspend/): Impulsive spending with ADHD is rarely about wanting things. How reward, time and emotion drive it, and the fixes that actually work. Published 2026-10-21.
 - [ADHD and debt: why payoff plans keep failing, and what to do instead](https://jmstruijk.com/blog/adhd-debt-and-payoff-plans/): Debt payoff plans assume consistency, which ADHD does not reliably supply. Why the usual methods fail, and how to build one that survives a bad month. Published 2026-10-21.
@@ -100,7 +100,7 @@ Long-form writing on ADHD and autism, from lived experience. Not clinical guidan
 - [Body doubling: why ADHD tasks get easier when someone else is in the room](https://jmstruijk.com/blog/adhd-body-doubling/): Body doubling means working with someone present who is not helping. Why it helps ADHD adults start tasks, and how to set it up. Published 2026-10-21.
 - [Time blindness: why ADHD makes you late, and what actually helps](https://jmstruijk.com/blog/adhd-time-blindness/): Time blindness makes ADHD adults late despite caring. Why time splits into now and not now, and how to move time out of your head. Published 2026-10-21.
 - [ADHD task paralysis: when you cannot start, even though you want to](https://jmstruijk.com/blog/adhd-task-paralysis/): ADHD paralysis is knowing exactly what to do and being unable to begin. Why it happens, why it is not laziness, and how to get over the wall. Published 2026-10-21.
-- [Stimming and sensory overload in autistic adults](https://jmstruijk.com/blog/stimming-and-sensory-overload/): How stimming helps autistic adults regulate, how sensory overload builds through the day, and the small changes that stop it tipping over. Published 2026-10-21.
+- [Stimming and sensory overload in autistic adults](https://jmstruijk.com/blog/stimming-and-sensory-overload/): Stimming in adults is normal and it does a job. How it helps you regulate, how sensory overload builds through the day, and the small changes that help. Published 2026-10-21.
 - [Autistic meltdown vs shutdown: what is happening, and what helps](https://jmstruijk.com/blog/autistic-meltdown-vs-shutdown/): Meltdowns and shutdowns are involuntary responses to overload, one outward and one inward. What each feels like, and what helps during one. Published 2026-10-21.
 - [ADHD at work: what goes wrong, what helps, and asking for adjustments](https://jmstruijk.com/blog/adhd-at-work/): Why work is where ADHD often costs the most, the adjustments that make a real difference, and how to decide whether to tell your employer. Published 2026-10-21.
 - [Autistic at work: the hidden costs, and the adjustments that help](https://jmstruijk.com/blog/autism-at-work/): Why autistic adults often find work exhausting even when they are good at it, what the real costs are, and the adjustments and conversations that help. Published 2026-10-21.
@@ -188,7 +188,7 @@ A checked directory of 43 external organisations and services for ADHD and autis
 
 URL: https://jmstruijk.com/topics/adhd-and-money/
 
-Money is where ADHD tends to leave the clearest evidence. Late fees on bills you could afford, subscriptions you meant to cancel, impulse purchases you cannot remember wanting, and debt plans abandoned in month three. None of it comes from not caring about money. It comes from the same executive function that ADHD affects everywhere else, applied to a part of life with a running total.
+ADHD and money problems tend to go together, and money is where ADHD leaves the clearest evidence. Late fees on bills you could afford, subscriptions you meant to cancel, impulse purchases you cannot remember wanting, and debt plans abandoned in month three. None of it comes from not caring about money. It comes from the same executive function that ADHD affects everywhere else, applied to a part of life with a running total.
 
 The writing collected here starts from that point. It treats money problems as patterns with causes rather than as failures of character, and it looks for systems that keep working on the weeks when you do not: autopay instead of memory, friction placed where your spending is worst, plans built to restart rather than to be followed perfectly.
 
@@ -1784,7 +1784,7 @@ The hyperactivity is there. It just went inward.
 
 That is the sentence that landed hardest for me when I was working out what had been going on. The picture of ADHD most of us grew up with was a boy who could not stay in his seat. If you were the quiet one staring out of the window, finishing the work eventually, well-behaved and slightly absent, nobody looked any further.
 
-Inattentive ADHD is the presentation without visible hyperactivity. It is extremely easy to miss, and a large share of adults identified late fall into it.
+Inattentive ADHD, formally called ADHD predominantly inattentive presentation, is the presentation without visible hyperactivity. It is extremely easy to miss, and a large share of adults identified late fall into it.
 
 ### Key takeaways
 
@@ -1856,9 +1856,9 @@ And lower the volume of self-criticism where you can. The inattentive presentati
 
 ### Common questions
 
-### What is inattentive ADHD?
+### What is ADHD predominantly inattentive presentation?
 
-It is the presentation of ADHD characterised by difficulties with attention, organisation, working memory and follow-through, without prominent outward hyperactivity. It is sometimes still called ADD, though current practice treats it as one of the presentations of ADHD rather than a separate condition.
+It is the formal name for what most people call inattentive ADHD: the presentation of ADHD characterised by difficulties with attention, organisation, working memory and follow-through, without prominent outward hyperactivity. It is sometimes still called ADD, though current practice treats it as one of the presentations of ADHD rather than a separate condition.
 
 ### Is inattentive ADHD less severe?
 
@@ -2240,11 +2240,11 @@ Not to ask. Many useful adjustments are reasonable requests in any workplace. Fo
 
 No. The legal test is about whether something has a substantial effect on daily activities, not about ability or potential. Plenty of people who meet the test work at a high level, often precisely because the right adjustments are in place.
 
-## Article: PDA: demand avoidance in autistic adults
+## Article: Pathological demand avoidance (PDA) in adults
 
 URL: https://jmstruijk.com/blog/pda-pathological-demand-avoidance/
 Published: 2026-10-22
-Summary: PDA describes extreme avoidance of everyday demands, driven by anxiety rather than defiance. What it is, why it is contested, and what helps adults.
+Summary: Pathological demand avoidance (PDA) in adults: anxiety-driven avoidance of everyday demands. What it is, why it is contested, and what helps.
 
 There is a particular experience that ordinary descriptions of procrastination do not cover. Someone asks you to do a small thing you were about to do anyway, and something in you locks. Not reluctance. Not laziness. A physical refusal that arrives before any thought does, attached to a task you genuinely wanted to complete thirty seconds earlier.
 
@@ -2313,6 +2313,10 @@ And self-directed demands need the same treatment. People describe getting furth
 If you are supporting someone, the hardest and most useful adjustment is usually accepting that pushing harder makes it worse rather than better. Escalation is the one approach reliably reported to backfire.
 
 ### Common questions
+
+### What does PDA look like in adults?
+
+Mostly like being unable to do things you want to do, once they have become a demand. Adults describe freezing when asked to do something they were about to do anyway, being unable to start a hobby they were looking forward to, putting off eating when hungry, and leaving messages from people they like unanswered. It applies to demands you set yourself as well as other people's, and the same task can feel impossible as an instruction and fine as a choice.
 
 ### Is PDA a real diagnosis?
 
@@ -3406,6 +3410,8 @@ I have changed career on a fortnight's reflection and lost most of an evening to
 
 That ratio is the thing worth explaining, because it looks like inconsistency and it is not. The small decisions are harder, and there is a reason for it.
 
+Decision paralysis, also called analysis paralysis, is getting stuck on a choice because comparing the options never reaches an end. You keep weighing, the weighing changes nothing, and the decision gets made by a deadline, by someone else, or not at all.
+
 ### Key takeaways
 
 - Small decisions are often harder than large ones, because nothing forces them to close.
@@ -3459,6 +3465,10 @@ That instinct is usually as good as anything that follows, and in my experience 
 If you genuinely have no instinct, the options are close enough that it does not matter. Take either. The symmetry that makes the choice hard is the same symmetry that makes it low stakes.
 
 ### Common questions
+
+### What is decision paralysis?
+
+Decision paralysis is being unable to make a choice because comparing the options never reaches a natural end. It is also called analysis paralysis. It tends to hit small, low-stakes decisions hardest, where nothing forces a conclusion, and it is commonly reported by people with ADHD and by people with anxiety.
 
 ### Why can I make big decisions easily but not small ones?
 
@@ -3838,6 +3848,10 @@ Persistent inability to start anything at all, especially alongside low mood, lo
 
 It is the experience of being unable to start a task despite wanting and intending to, often with a feeling of being frozen. It is linked to executive dysfunction, particularly difficulty with task initiation. The term is informal and widely used by people with ADHD.
 
+### Is it task paralysis or depression?
+
+Task paralysis is usually specific. Some tasks feel impossible while interesting or urgent ones still get done, and the rest of life feels roughly normal. With depression the difficulty tends to spread to almost everything, including things you used to enjoy, and usually comes with low mood, loss of interest or exhaustion. The two can happen together. If the paralysis has spread to everything or has lasted weeks, talk to a doctor.
+
 ### Is task paralysis the same as procrastination?
 
 They overlap, but people usually mean something different. Procrastination often involves choosing something more appealing instead. Task paralysis frequently involves doing nothing at all, without enjoyment, while wanting to start. The experience is closer to being stuck than to avoiding.
@@ -3858,7 +3872,7 @@ The underlying difficulty with initiation tends to persist, but your toolkit imp
 
 URL: https://jmstruijk.com/blog/stimming-and-sensory-overload/
 Published: 2026-10-21
-Summary: How stimming helps autistic adults regulate, how sensory overload builds through the day, and the small changes that stop it tipping over.
+Summary: Stimming in adults is normal and it does a job. How it helps you regulate, how sensory overload builds through the day, and the small changes that help.
 
 If you are a late-identified autistic adult, there is a good chance someone told you to stop doing something as a child. Stop rocking. Sit still. Stop humming. Stop playing with your hands.
 
@@ -3876,7 +3890,7 @@ That job is regulation, and understanding it changes how the rest of sensory lif
 
 ### What stimming is for
 
-Stimming covers repetitive movements or sounds: rocking, hand-flapping, finger movements, tapping, humming, pacing, spinning objects, rubbing a texture. Everyone does a little of it. Autistic people tend to do more, and to rely on it more.
+Stimming in adults looks much the same as in children, only quieter. It covers repetitive movements or sounds: rocking, hand-flapping, finger movements, tapping, humming, pacing, spinning objects, rubbing a texture. Everyone does a little of it. Autistic people tend to do more, and to rely on it more.
 
 People describe it doing several things. It helps manage incoming sensory input, by providing a predictable sensation that competes with the unpredictable ones. It helps regulate emotion, whether that is calming down or expressing excitement. And it helps with focus, giving the body something to do so the mind can settle.
 
@@ -3934,13 +3948,17 @@ And plan around big days honestly. A wedding, a conference, an office party will
 
 ### Common questions
 
-### Do adults stim?
+### Is stimming normal in adults?
 
 Yes. Stimming does not stop in adulthood, although many adults, particularly those identified late, have learned to make it less visible. Common adult stims include tapping, leg bouncing, fidgeting with objects, humming, and rubbing fingers or fabric.
 
-### Is stimming only an autistic thing?
+### Do people with ADHD stim?
 
-No. Everyone stims to some degree, and people with ADHD often stim noticeably, particularly through fidgeting and movement. Autistic people tend to stim more and to rely on it more heavily for regulation.
+Yes. Stimming is not only an autistic thing. Everyone stims to some degree, and people with ADHD often stim noticeably, particularly through fidgeting and movement. Autistic people tend to stim more and to rely on it more heavily for regulation.
+
+### What are examples of stimming in adults?
+
+Leg bouncing, foot tapping, clicking a pen, twisting a ring, rubbing a fingertip or a piece of fabric, humming, pacing during phone calls, rocking slightly while standing, chewing the inside of the cheek, and replaying a song or phrase. Adult stims are often small and easy to miss, because many were made less visible over the years.
 
 ### Is it bad to stim in public?
 

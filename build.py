@@ -1183,7 +1183,7 @@ def render_topic(topic, posts, books, by_book, terms_by_slug, resources_by_id):
     ]
     return render(
         "topic.html",
-        seo=seo_head("%s — J.M. Struijk" % topic["title"], topic["description"], path,
+        seo=seo_head(topic.get("seo_title") or "%s — J.M. Struijk" % topic["title"], topic["description"], path,
                      og_image("topic", topic["slug"])),
         schema=schema(graph), title=esc(topic["title"]), description=esc(topic["description"]),
         body=autolink_glossary(topic["body"]), tool=tool, articles=post_cards(articles, "Articles"), books=shelf,

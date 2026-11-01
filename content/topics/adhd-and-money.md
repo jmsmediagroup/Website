@@ -1,8 +1,9 @@
 ---
 slug: adhd-and-money
 title: ADHD and money
+seo_title: "ADHD and money problems: articles, tools and books"
 order: 1
-description: "Writing, books and tools on ADHD and money: the ADHD tax, impulsive spending, debt, budgeting that survives a bad month, and earning around your energy."
+description: "ADHD and money problems explained: the ADHD tax, impulse spending, debt and budgeting that survives a bad month, with free tools and books."
 books: [adhd-tax, adhd-budget-workbook, adhd-debt-payoff-workbook, adhd-budget-planner, adhd-side-hustle]
 terms: [adhd-tax, executive-dysfunction, hyperfocus]
 resources: [money]
@@ -10,7 +11,7 @@ tool: /tools/adhd-tax-calculator/
 about: [adhd]
 ---
 
-Money is where ADHD tends to leave the clearest evidence. Late fees on bills you could afford, subscriptions you meant to cancel, impulse purchases you cannot remember wanting, and debt plans abandoned in month three. None of it comes from not caring about money. It comes from the same executive function that ADHD affects everywhere else, applied to a part of life with a running total.
+ADHD and money problems tend to go together, and money is where ADHD leaves the clearest evidence. Late fees on bills you could afford, subscriptions you meant to cancel, impulse purchases you cannot remember wanting, and debt plans abandoned in month three. None of it comes from not caring about money. It comes from the same executive function that ADHD affects everywhere else, applied to a part of life with a running total.
 
 The writing collected here starts from that point. It treats money problems as patterns with causes rather than as failures of character, and it looks for systems that keep working on the weeks when you do not: autopay instead of memory, friction placed where your spending is worst, plans built to restart rather than to be followed perfectly.
 
