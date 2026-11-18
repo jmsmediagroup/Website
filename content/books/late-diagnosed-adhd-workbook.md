@@ -1,16 +1,14 @@
 ---
 slug: late-diagnosed-adhd-workbook
-title: The Late-Diagnosed ADHD Workbook
-subtitle: Practical Tools for Focus, Time, Big Feelings, and Burnout, for Adults Who Found Out Later
-asin: B0HBLVP38R
-series: The Late-Diagnosed Workbooks
-order: 10
 published: 2026-07-25
 badge: new
 tagline: Practical tools for focus, time, big feelings, and burnout
 description: "The Late-Diagnosed ADHD Workbook by J.M. Struijk: prompts and tools for adults diagnosed later, on time blindness, rejection sensitivity and burnout."
 keywords: late diagnosed adhd workbook, adult adhd workbook, adhd diagnosed as an adult, adhd workbook for adults, newly diagnosed adhd adult
 about: [adhd, executive-dysfunction]
+# The library.yaml pitch describes the 2026 revision; this one describes the edition on sale now.
+# Delete it when the revised edition is live.
+pitch: "Helps you make sense of a late ADHD diagnosis, with write-in tools for focus, time, strong emotions and burnout."
 ---
 
 Finding out you have ADHD as an adult explains a lot at once: the unfinished projects, the missed deadlines, the emotional tidal waves, the boom-and-bust years. Right behind the relief comes a harder question, which is what to do now.
@@ -37,7 +35,9 @@ Every part ends with one small thing to carry forward. You can start anywhere, s
 
 ## Where it fits
 
-It pairs with [The Late-Diagnosed Autistic Workbook](/books/late-diagnosed-autistic-workbook/), and the two are designed to be used together by AuDHD readers. The article on [the first year after an adult ADHD diagnosis](/blog/adhd-diagnosis-as-an-adult-first-year/) covers what that period tends to feel like, and [time blindness](/blog/adhd-time-blindness/) goes deeper on one of its core subjects.
+It sits beside [The Late-Diagnosed Autistic Workbook](/books/late-diagnosed-autistic-workbook/). If you think you are both ADHD and autistic, [The Late-Diagnosed AuDHD Workbook](/books/late-diagnosed-audhd-workbook/) is written for that combination. It reuses much of this book's wording, including most of the parts on your wiring, executive function, self-advocacy and routines, so choose one of the two rather than buying both.
+
+This workbook does not cover treatment. If you are starting or adjusting ADHD medication, [The ADHD Medication Companion](/books/adhd-medication-companion/) has daily logs for focus, mood, sleep and appetite, an observation log for anything you notice, and pages to prepare for appointments. The article on [the first year after an adult ADHD diagnosis](/blog/adhd-diagnosis-as-an-adult-first-year/) covers what that period tends to feel like, and [time blindness](/blog/adhd-time-blindness/) goes deeper on one of its core subjects.
 
 ## Common questions
 
@@ -51,4 +51,4 @@ Yes. Rejection sensitivity is part of The Big Feelings section, along with emoti
 
 ### Can I use it alongside therapy or medication?
 
-Yes. It is a practical companion, not a treatment, and it can sit alongside whatever professional support you have.
+Yes. It is a practical companion, not a treatment, and it can sit alongside whatever professional support you have. It does not discuss medication or therapy options, so take those questions to your clinician.

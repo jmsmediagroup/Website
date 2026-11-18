@@ -1,15 +1,9 @@
 ---
 slug: adhd-side-hustle
-title: The ADHD Side Hustle
-subtitle: Turn Your Hyperfocus Into Extra Income Without Burning Out
-asin: B0G2HRQTWJ
-series: The ADHD Money Mastery Series
-position: 3
-order: 3
 published: 2025-11-15
 pages: 214
 tagline: Turn your hyperfocus into extra income without burning out
-description: "The ADHD Side Hustle by J.M. Struijk: extra income with ADHD, including 25 side hustles rated for ADHD compatibility and a 48-hour launch plan."
+description: "The ADHD Side Hustle by J.M. Struijk: extra income with ADHD, including side hustles rated for ADHD fit, which ones to avoid, and a 48-hour launch plan."
 keywords: adhd side hustle, adhd entrepreneur, side hustles for adhd, adhd freelancing, adhd hyperfocus income, adhd business book
 about: [adhd, hyperfocus]
 ---
@@ -26,17 +20,17 @@ Adults with ADHD who are tired of jobs that do not fit how they work. People who
 
 The book treats hyperfocus, pattern recognition and tolerance for risk as advantages, then deals honestly with the costs that come with them. It covers:
 
-- 25 side hustles rated for how well they suit an ADHD brain, including which ones to avoid.
-- The 48-Hour Business Launch Challenge, for starting without overthinking.
+- What still works in 2026 and what AI has squeezed out: local services, reselling, services for small businesses, digital products and AI-assisted work, with notes on how well each suits an ADHD brain, plus a chapter on which hustles to avoid.
+- The 48-Hour Launch, for starting without overthinking.
 - Getting your first client without feeling like a salesperson.
 - The 3-Bucket Business Money System.
 - Time management for variable energy levels.
 - Using AI to cover the tasks ADHD makes hardest.
 - The 90-Day Focus Rule, for breaking the cycle of starting and quitting.
 - How to tell when to quit and when to pivot.
-- Simplified legal and tax basics.
+- An overview of US legal and tax basics. Tax rules changed for 2026, so check estimated payments and how much to set aside with the IRS or a tax professional before you rely on the book's figures, especially if you also have a day job.
 
-It includes templates: a launch checklist, a service pricing calculator, email and proposal templates, a monthly business review, and a tax deduction tracking sheet. The roadmap runs from a first $100 through $500 and $1,000.
+The appendices hold a 7-day fast-cash plan, the ADHD Business Scorecard, email and message templates, a pricing calculator, a client onboarding checklist, a monthly business review, and a tax deduction tracking sheet. The last chapter maps the stages from a first paying client to a steady part-time income and what tends to go wrong at each one. It does not promise any particular income, and side income often starts small.
 
 ## Where it fits
 
@@ -46,7 +40,7 @@ It includes templates: a launch checklist, a service pricing calculator, email a
 
 ### Do I need a business idea before reading it?
 
-No. The book rates 25 side hustles for ADHD compatibility specifically so you can choose one that suits how you work, rather than starting from an idea and hoping it fits.
+No. The book walks through the main kinds of side hustle that still work, with notes on ADHD fit and a strengths inventory, so you can choose one that suits how you work, rather than starting from an idea and hoping it fits.
 
 ### How does it deal with shiny object syndrome?
 

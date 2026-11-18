@@ -1,15 +1,9 @@
 ---
 slug: adhd-tax
-title: The ADHD Tax
-subtitle: Stop Impulsive Spending, Forgotten Bills & Subscription Chaos
-asin: B0FX3M9838
-series: The ADHD Money Mastery Series
-position: 1
-order: 1
 published: 2025-10-21
 pages: 236
 badge: start
-tagline: Stop impulsive spending, forgotten bills & subscription chaos
+tagline: Recovering from impulsive spending and financial chaos
 description: "The ADHD Tax by J.M. Struijk: a practical book on late fees, forgotten subscriptions and impulse spending, with systems that do not rely on willpower."
 keywords: the adhd tax book, adhd money book, adhd finances book, adhd late fees, adhd budgeting book
 about: [adhd]
@@ -34,7 +28,7 @@ It is written for people diagnosed last month and for people who have managed ex
 The book works through the main places the ADHD tax comes from, and gives each one a system that does not depend on remembering or on willpower:
 
 - Finding and cancelling the subscriptions that drain your account every month.
-- Setting up autopay so late fees stop for good.
+- Setting up autopay with a buffer, so paying on time stops depending on memory.
 - Interrupting impulse purchases without trying to want things less.
 - Paying off debt with an approach built around ADHD rather than around consistency.
 - Building an emergency fund that grows without constant attention.
@@ -44,17 +38,17 @@ There is no shaming in it and no neurotypical budgeting template with ADHD stick
 
 ## Where it fits
 
-The ADHD Tax diagnoses where the money goes. [The ADHD Budget Workbook](/books/adhd-budget-workbook/) is the guided 12-week version of putting a system in place, and [The ADHD Debt Payoff Workbook](/books/adhd-debt-payoff-workbook/) goes deeper on clearing debt. If you want the short version first, the article on [what the ADHD tax actually costs](/blog/adhd-tax-what-it-costs/) covers the core idea, and the free [ADHD Tax Calculator](/tools/adhd-tax-calculator/) uses the same categories as the book's Chapter 1 worksheet. The [Impulse Spending Checklist](/tools/impulse-spending-checklist/) is a free way to start interrupting impulse purchases before you read further.
+The ADHD Tax diagnoses where the money goes. [The ADHD Budget Workbook](/books/adhd-budget-workbook/) is the guided version of putting a system in place, with one short task a day for 12 weeks, and [The ADHD Debt Payoff Workbook](/books/adhd-debt-payoff-workbook/) goes deeper on clearing debt. If you want the short version first, the article on [what the ADHD tax actually costs](/blog/adhd-tax-what-it-costs/) covers the core idea, and the free [ADHD Tax Calculator](/tools/adhd-tax-calculator/) uses the same categories as the book's Chapter 1 worksheet. The [Impulse Spending Checklist](/tools/impulse-spending-checklist/) is a free way to start interrupting impulse purchases before you read further.
 
 ## Common questions
 
 ### Is The ADHD Tax a workbook or a regular book?
 
-It is a regular book, around 236 pages in print length on Amazon, with practical strategies throughout. If you want fill-in worksheets and a day-by-day structure, The ADHD Budget Workbook is the companion built for that.
+It is a regular book, around 236 pages in print length on Amazon, with practical strategies throughout. The worksheets it refers to are free to print from the [ADHD Tax worksheets](/adhd-tax-worksheets/) page. If you want fill-in worksheets and a day-by-day structure, The ADHD Budget Workbook is the companion built for that.
 
 ### Do I need to be diagnosed with ADHD to use it?
 
-No. The strategies are built around how ADHD affects money, and they work the same whether you have a formal diagnosis, suspect you have ADHD, or simply recognise yourself in the patterns.
+No. The strategies are built around how ADHD affects money, and they apply whether you have a formal diagnosis, suspect you have ADHD, or simply recognise yourself in the patterns.
 
 ### Should I read this before the other money books?
 

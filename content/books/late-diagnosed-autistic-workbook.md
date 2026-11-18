@@ -1,10 +1,5 @@
 ---
 slug: late-diagnosed-autistic-workbook
-title: The Late-Diagnosed Autistic Workbook
-subtitle: Practical Tools for Sensory Overload, Masking, and Burnout, for Adults Who Found Out Later
-asin: B0HBNKNWZC
-series: The Late-Diagnosed Workbooks
-order: 11
 published: 2026-07-26
 badge: new
 tagline: Practical tools for sensory overload, masking, and burnout
@@ -37,7 +32,7 @@ Each part ends with one small thing to carry forward. Start with whichever part 
 
 ## Where it fits
 
-It pairs with [The Late-Diagnosed ADHD Workbook](/books/late-diagnosed-adhd-workbook/) for AuDHD readers. Related articles: [finding out you are autistic in adulthood](/blog/autistic-in-adulthood-late-diagnosis/), [masking and what it costs](/blog/autistic-masking-and-what-it-costs/), and [stimming and sensory overload](/blog/stimming-and-sensory-overload/).
+It sits beside [The Late-Diagnosed ADHD Workbook](/books/late-diagnosed-adhd-workbook/). If you are also ADHD, [The Late-Diagnosed AuDHD Workbook](/books/late-diagnosed-audhd-workbook/) is written for having both. About two thirds of this book's wording also appears in that one, so pick the one that fits you; buying both means paying twice for much of the same text. For more on masking than one part of a workbook can hold, [The Autism Masking Reset](/books/autism-masking-reset/) goes through taking stock of your masks, what they cost in energy, and a framework for choosing where to unmask and where to keep the mask on for now. Related articles: [finding out you are autistic in adulthood](/blog/autistic-in-adulthood-late-diagnosis/), [masking and what it costs](/blog/autistic-masking-and-what-it-costs/), and [stimming and sensory overload](/blog/stimming-and-sensory-overload/).
 
 ## Common questions
 

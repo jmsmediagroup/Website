@@ -1,20 +1,18 @@
 ---
 slug: adhd-budget-workbook
-title: The ADHD Budget Workbook
-subtitle: 90-Day Financial Reset for Adults with ADHD
-asin: B0G1HH2M25
-series: The ADHD Money Mastery Series
-order: 2
 published: 2025-11-08
 tagline: 90-day financial reset for adults with ADHD
-description: "The ADHD Budget Workbook by J.M. Struijk: a guided 12-week financial reset with daily 15 to 30 minute tasks and a plan for restarting."
+description: "The ADHD Budget Workbook by J.M. Struijk: a guided 12-week financial reset with one short task a day, most of them 15 to 30 minutes, and a plan for restarting."
 keywords: adhd budget workbook, adhd budgeting workbook, adhd financial reset, budgeting for adhd adults, adhd money workbook
 about: [adhd]
+# The library.yaml pitch describes the 2026 revision; this one describes the edition on sale now.
+# Delete it when the revised edition is live.
+pitch: "Walks you through 12 weeks of short daily tasks to set up a first budget, put your bills on autopay and start an emergency fund."
 ---
 
 Most people with ADHD have tried budgeting and lasted about three weeks. This workbook is designed around that fact instead of pretending it will not happen again.
 
-It is a guided 12-week program. Each day has one task that takes 15 to 30 minutes, so you are never deciding what to do next, and the structure expects you to miss days.
+It is a guided 12-week program of 84 daily pages. Each day has one task, so you are never deciding what to do next. Most tasks take 15 to 30 minutes, each page shows its own estimate, and the structure expects you to miss days.
 
 ## Who it's for
 
@@ -32,23 +30,23 @@ The program runs in four phases:
 3. Weeks 7 to 9 build an emergency fund and start attacking debt.
 4. Weeks 10 to 12 make the systems maintainable and begin building wealth.
 
-Every strategy comes with a fill-in worksheet. There are visual progress trackers, checkpoints to mark progress, and flexibility built into the schedule for when life gets in the way. Week 10 is specifically about how to restart, because a plan that cannot survive a gap is not much use to an ADHD brain.
+Every day comes with a fill-in worksheet. There are trackers for subscriptions, cancellations and autopay, a reflection page at the end of each week, and flexibility built into the schedule for when life gets in the way. Week 10 includes a restart protocol and a plan for when things slip, because a plan that cannot survive a gap is not much use to an ADHD brain.
 
 By the end, the aim is automated bill payments, a money system that does not lean on willpower, and an emergency fund that grows on its own.
 
 ## Where it fits
 
-[The ADHD Tax](/books/adhd-tax/) explains where the money goes and why. This workbook is the hands-on reset. Once the system exists, [The ADHD Budget Planner](/books/adhd-budget-planner/) is the undated planner for keeping it running month after month. The article on [why ADHD brains overspend](/blog/why-adhd-brains-overspend/) covers the spending side in more depth.
+[The ADHD Tax](/books/adhd-tax/) explains where the money goes and why. This workbook is the hands-on reset. Once the system exists, [The ADHD Budget Planner](/books/adhd-budget-planner/) is the undated planner for keeping it running month after month. The planner has its own weekly check-in and bill tracker and does not include this workbook's 3-Bucket System, so expect to adapt a little when you move over. The article on [why ADHD brains overspend](/blog/why-adhd-brains-overspend/) covers the spending side in more depth.
 
 ## Common questions
 
 ### What happens if I miss a day or a week?
 
-You pick up where you left off. The workbook is built on the assumption that you will miss days, and week 10 is devoted to restarting after you have fallen off.
+You pick up where you left off. The workbook is built on the assumption that you will miss days, and the restart protocol on Day 68 (Week 10) is there for coming back after you have fallen off.
 
 ### How much time does it take each day?
 
-Each daily task is designed to take 15 to 30 minutes. On a bad day the guidance is to do a single task and stop.
+Most daily tasks are designed to take 15 to 30 minutes. A few are shorter, two run longer (up to an hour), and the time is printed on each page. If you are stuck on a page for more than 20 minutes, the workbook tells you to skip it and come back later.
 
 ### Do I need spreadsheets or budgeting software?
 

@@ -1,16 +1,14 @@
 ---
 slug: adhd-budget-planner
-title: The ADHD Budget Planner
-subtitle: The Undated 12-Month Money Management System for Adults with ADHD
-asin: B0HDK4TZGF
-series: The ADHD Money Mastery Series
-order: 5
 published: 2026-08-08
 badge: new
 tagline: The undated 12-month money management system
 description: "The ADHD Budget Planner by J.M. Struijk: an undated 12-month money planner with a one-hour setup, 10-minute weekly check-ins and restart pages."
 keywords: adhd budget planner, undated budget planner, adhd money planner, adhd finance planner, budget planner for adhd adults
 about: [adhd]
+# The library.yaml pitch describes the 2026 revision; this one describes the edition on sale now.
+# Delete it when the revised edition is live.
+pitch: "Gives you twelve undated monthly plans, a bill due-date tracker and weekly money check-ins, to keep a budget going after setup."
 ---
 
 Dated planners have a built-in failure point: the first skipped week. For an ADHD brain that week always arrives, and then the planner goes in a drawer with the guilt attached.
@@ -29,13 +27,15 @@ It opens with a one-hour Setup section, which does most of the heavy lifting:
 - The Subscription Hunt, for finding charges you forgot about and reclaiming that money.
 - The Autopilot Checklist, covering autopay, moved due dates and payment confirmations.
 
-Then there are twelve identical undated months. Each has a one-page Money Map of the month's budget, a bill due-date tracker, four 10-minute weekly check-ins, an ADHD Tax log that records late fees, impulse buys and forgotten subscriptions, and a month review. Quarterly pit stops use a one-change rule to stop you rebuilding the whole system instead of using it.
+Then there are twelve identical undated months. Each has a one-page Money Map of the month's budget, a bill due-date tracker, four 10-minute weekly check-ins, an ADHD Tax log that records late fees, impulse buys and forgotten subscriptions, and a month review. Quarterly pit stops use a one-change rule to stop you rebuilding the whole system instead of using it. The Money Map is for the plan: there is no separate log for day-to-day spending and no page for annual or irregular bills, so keep those somewhere else if you track them.
 
 For the hard moments there is a Missed-Payment page that scripts the call asking for a fee to be waived, a Restart page for when you find the planner after weeks away, and colourable progress trackers.
 
 ## Where it fits
 
-The planner is the long-term home for a system. [The ADHD Budget Workbook](/books/adhd-budget-workbook/) is the guided 90-day reset that builds it. [The ADHD Debt Payoff Workbook](/books/adhd-debt-payoff-workbook/) handles debt specifically, and [The ADHD Tax](/books/adhd-tax/) explains the patterns all of it is designed around.
+The planner is the long-term home for a system. [The ADHD Budget Workbook](/books/adhd-budget-workbook/) is the guided 12-week reset that builds it. [The ADHD Debt Payoff Workbook](/books/adhd-debt-payoff-workbook/) handles debt specifically, and [The ADHD Tax](/books/adhd-tax/) explains the patterns all of it is designed around.
+
+The planner and the Debt Payoff Workbook share many page designs, including the weekly check-in, the month review and the restart pages. About 45 of the workbook's 71 pages are versions of pages in this planner. If you want to track all your money for a year, choose the planner. If paying off debt is the job, choose the workbook. Buying both gets you two versions of the same weekly check-in.
 
 If you would like to try the approach on a screen first, the free [ADHD Budget Template](/tools/adhd-budget-template/) is built on the planner's bills list, money map, weekly check-in and ADHD Tax log, and downloads for Excel and Google Sheets.
 

@@ -1,13 +1,8 @@
 ---
 slug: adhd-burnout-recovery
-title: The ADHD Burnout Recovery Guide
-subtitle: Triage, Recovery, and Prevention for the Brain You Actually Have
-asin: B0GDLRFXQ3
-series: Standalone
-order: 9
 published: 2026-01-01
 pages: 178
-tagline: Triage, recovery, and prevention for the brain you actually have
+tagline: Recognize the signs, stop the crash, and rebuild your energy
 description: "The ADHD Burnout Recovery Guide by J.M. Struijk: a five-minute triage, burnout warning zones, and recovery and prevention protocols built for ADHD brains."
 keywords: adhd burnout book, adhd burnout recovery, adhd exhaustion, adhd burnout signs, neurodivergent burnout recovery
 about: [adhd, executive-dysfunction]
@@ -28,7 +23,7 @@ This book treats ADHD burnout as a high-cost system that broke from running too 
 
 - A five-minute triage you can do in bed when you are already crashing.
 - Yellow, orange and red burnout zones, and what to do at each level.
-- Recovery protocols for the three things that fail in every ADHD burnout: motivation, executive function and masking.
+- Recovery protocols for the three things the book sees failing in ADHD burnout: motivation, executive function and masking.
 - The four patterns that produce ADHD burnout: overcommitment, perfectionism, understimulation and hyperfocus crashes, with ways to interrupt each.
 - Energy management in place of time management.
 - Prevention systems that keep working once willpower runs out.
@@ -37,7 +32,7 @@ The book is laid out for how you will actually arrive at it. If you are crashing
 
 ## Where it fits
 
-This is a standalone book. If you are AuDHD, [The Late-Diagnosed Autistic Workbook](/books/late-diagnosed-autistic-workbook/) covers autistic burnout alongside masking. The article on [autistic burnout, ADHD burnout and depression](/blog/autistic-burnout-vs-adhd-burnout-vs-depression/) explains how to tell them apart, and [hyperfocus without the crash](/blog/adhd-hyperfocus-without-burnout/) covers one of the four patterns.
+This is a standalone book. If you are autistic, [The Late-Diagnosed Autistic Workbook](/books/late-diagnosed-autistic-workbook/) covers autistic burnout alongside masking, and if you are both ADHD and autistic, [The Late-Diagnosed AuDHD Workbook](/books/late-diagnosed-audhd-workbook/) has a part on energy and burnout when you have both. The book warns against going off ADHD medication during burnout. If your medication seems to have stopped working, [The ADHD Medication Companion](/books/adhd-medication-companion/) helps you log what you notice and take it to your prescriber. The article on [autistic burnout, ADHD burnout and depression](/blog/autistic-burnout-vs-adhd-burnout-vs-depression/) explains how to tell them apart, and [hyperfocus without the crash](/blog/adhd-hyperfocus-without-burnout/) covers one of the four patterns.
 
 ## Common questions
 
@@ -47,7 +42,7 @@ Chapter 4, which is a five-minute triage designed to be done in bed. The rest ca
 
 ### Is ADHD burnout the same as depression?
 
-No, although they can overlap and occur together. If you have persistent low mood, have lost interest in things you used to enjoy, or are having thoughts of harming yourself, please speak to a doctor. This book is not a substitute for that.
+No, although they can overlap and occur together. If you have persistent low mood, have lost interest in things you used to enjoy, or are having thoughts of harming yourself, please speak to a doctor. If you are thinking about suicide, call or text 988 in the US, or find a [crisis line](/resources/#crisis) where you live. This book is not a substitute for that.
 
 ### Does it cover masking?
 
