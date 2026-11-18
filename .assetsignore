@@ -6,8 +6,6 @@
 .assetsignore
 wrangler.jsonc
 worker.js
-netlify
-netlify.toml
 docs
 content
 templates

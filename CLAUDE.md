@@ -4,9 +4,8 @@ A hand-built static site about ADHD and autism: `build.py` renders `content/` in
 committed HTML at the repo root, and the repo root is what gets served.
 
 - Host: Cloudflare Workers (`worker.js`, `wrangler.jsonc`), since 2026-11-18. Deploy with
-  `npx wrangler deploy` from this directory. Before that it was Netlify, and `netlify.toml`
-  plus `netlify/functions/` are still here only as a fallback while the Netlify site exists;
-  delete them once it is gone.
+  `npx wrangler deploy` from this directory. Netlify hosted it until 2026-11-18; that project is
+  deleted and its config is out of the repo.
 - DNS: Cloudflare (zone `jmstruijk.com`, account Jstruijk@me.com). Namecheap is registrar only,
   and the nameservers are `macy.ns.cloudflare.com` and `nico.ns.cloudflare.com`. Do not remove the
   `google-site-verification` TXT record: the Search Console property is verified through it.
