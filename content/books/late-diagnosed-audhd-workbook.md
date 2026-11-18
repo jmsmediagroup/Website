@@ -5,6 +5,9 @@ tagline: Write-in tools for adults who found out they are autistic and ADHD
 description: "The Late-Diagnosed AuDHD Workbook by J.M. Struijk: write-in pages on executive function, sensory overload, energy, masking, self-advocacy and routines."
 keywords: audhd workbook, autistic and adhd adults, late diagnosed autism and adhd, audhd burnout, autism and adhd workbook for adults
 about: [autism, adhd, executive-dysfunction, sensory-overload, masking, stimming]
+# The library.yaml pitch describes the 2026 revision; this one describes the edition on sale now.
+# Delete it when the revised edition is live.
+pitch: "Write-in pages for adults who are autistic and ADHD, on executive function, sensory overload, energy, masking and routines. Much of it also appears in the ADHD and autistic workbooks."
 ---
 
 Finding out as an adult that you are both autistic and ADHD (often shortened to AuDHD) can explain a lot at once. It can also leave you with two sets of advice that pull against each other. A strict routine can settle the autistic side of you and feel suffocating to the ADHD side, and the reverse happens too.

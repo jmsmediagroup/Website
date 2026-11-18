@@ -1,5 +1,6 @@
 {
   "source": "../../03_Books/01_ADHD_and_Autism/00_Build/library.yaml",
+  "cover_front": "paperback",
   "groups": [
     {
       "id": "money",

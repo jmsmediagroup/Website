@@ -158,6 +158,7 @@ h3 { font-family: var(--sans); font-weight: 700; font-size: 20px; line-height: 1
 .section { padding: 72px 0 0; }
 .section-head { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 12px 30px; margin-bottom: 30px; }
 .section-head p { color: var(--muted); max-width: 560px; margin-top: 10px; }
+.section > h2 + .lede { margin-top: 14px; }
 @media (max-width: 620px) { .section { padding-top: 52px; } }
 
 /* --------------------------------------------------------------- home */

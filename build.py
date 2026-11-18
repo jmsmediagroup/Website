@@ -2071,7 +2071,7 @@ def render_llms(posts, books, terms, topics, resources):
             b = next(x for x in books if x["slug"] == step["book"])
             sub = ": " + b["subtitle"] if b["subtitle"] else ""
             lines.append("- [%s%s](%s/books/%s/) (%s; %s): %s Formats: %s."
-                         % (b["title"], sub, SITE, b["slug"], series_label(b), step["step"].lower(), b["pitch"],
+                         % (b["title"], sub, SITE, b["slug"], series_label(b), step["step"][0].lower() + step["step"][1:], b["pitch"],
                             ", ".join("%s%s" % (FORMAT_LABEL[f["kind"]], " ISBN " + f["isbn"] if f.get("isbn") else "")
                                       for f in b["formats"])))
         groups.append("\n".join(lines))
@@ -2193,8 +2193,12 @@ def check_external(resources):
                     unverifiable.append(item["url"])
                 else:
                     broken.append("%s returned HTTP %d" % (item["url"], e.code))
-            except Exception as e:  # DNS failure, timeout, TLS error
-                broken.append("%s could not be reached (%s)" % (item["url"], e.__class__.__name__))
+            except Exception as e:  # DNS failure, timeout, TLS error, dropped connection
+                # Sites marked blocked also refuse bots by hanging up instead of answering 403.
+                if item.get("blocked") and e.__class__.__name__ in ("RemoteDisconnected", "ConnectionResetError", "TimeoutError", "URLError"):
+                    unverifiable.append(item["url"])
+                else:
+                    broken.append("%s could not be reached (%s)" % (item["url"], e.__class__.__name__))
 
     print("external links: %d ok, %d unverifiable (bot protection), %d need attention"
           % (ok, len(unverifiable), len(broken)))

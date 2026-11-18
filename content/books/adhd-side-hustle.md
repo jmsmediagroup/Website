@@ -6,6 +6,9 @@ tagline: Turn your hyperfocus into extra income without burning out
 description: "The ADHD Side Hustle by J.M. Struijk: extra income with ADHD, including side hustles rated for ADHD fit, which ones to avoid, and a 48-hour launch plan."
 keywords: adhd side hustle, adhd entrepreneur, side hustles for adhd, adhd freelancing, adhd hyperfocus income, adhd business book
 about: [adhd, hyperfocus]
+# The library.yaml pitch describes the 2026 revision; this one describes the edition on sale now.
+# Delete it when the revised edition is live.
+pitch: "Helps you choose, price and run a side income that fits how you work, with limits on your workload to help prevent burnout."
 ---
 
 At some point, cutting costs stops being enough and the only remaining lever is earning more. Most side hustle advice then tells you to stay focused and be consistent, which is the advice least likely to work for an ADHD brain.

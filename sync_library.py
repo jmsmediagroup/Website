@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 """Bring the site in line with the book library.
 
-    python3 sync_library.py            copy what changed
-    python3 sync_library.py --all      redo every cover and motif
+    python3 sync_library.py                  copy what changed
+    python3 sync_library.py --all            redo every cover and motif
+    python3 sync_library.py --front kindle   use the Kindle fronts instead of the paperback fronts
 
 The books and the site share one source of truth: library.yaml in the ADHD and
 autism build folder (titles, locked subtitles, series, groups, roles, pitches,
@@ -21,6 +22,7 @@ so the site and the books cannot drift apart unnoticed.
 
 import glob
 import json
+import tempfile
 import os
 import re
 import subprocess
@@ -56,21 +58,37 @@ def theme_for(book, covers):
     return theme
 
 
-def find_cover(book):
+def find_cover(book, name="kindle-front.jpg"):
     title = re.sub(r"[^A-Za-z0-9]+", "_", book["title"]).strip("_").lower()
-    for path in glob.glob(os.path.join(LIBRARY, "*", "*", "03_Cover", "new-2026-11", "kindle-front.jpg")):
+    for path in glob.glob(os.path.join(LIBRARY, "*", "*", "03_Cover", "new-2026-11", name)):
         folder = os.path.basename(os.path.dirname(os.path.dirname(os.path.dirname(path))))
         if re.sub(r"^\d+_", "", folder).lower() == title:
             return path
     return None
 
 
-def write_cover(src, slug, force):
+def paperback_front(wrap_pdf, trim, bleed):
+    """The front panel of a paperback wrap (right-hand side), cut to the trim, as an RGB image."""
+    dpi = 300
+    with tempfile.TemporaryDirectory() as tmp:
+        subprocess.run(["pdftoppm", "-r", str(dpi), "-png", "-singlefile", wrap_pdf, os.path.join(tmp, "wrap")],
+                       check=True, capture_output=True)
+        im = Image.open(os.path.join(tmp, "wrap.png")).convert("RGB")
+    w, h = im.size
+    tw, th = trim
+    b = round(bleed * dpi)
+    front = im.crop((w - b - round(tw * dpi), b, w - b, b + round(th * dpi)))
+    if abs(front.size[1] - (h - 2 * b)) > 3:
+        fail("unexpected wrap size for %s" % wrap_pdf)
+    return front
+
+
+def write_cover(src, slug, force, trim=None, bleed=0.125):
     """700 px master and 400 px JPEG; the AVIF/WebP sizes come from make_cover_images.py."""
     master = os.path.join(COVERS, slug + ".jpg")
     if not force and os.path.exists(master) and os.path.getmtime(master) >= os.path.getmtime(src):
         return False
-    image = Image.open(src).convert("RGB")
+    image = paperback_front(src, trim, bleed) if src.endswith(".pdf") else Image.open(src).convert("RGB")
     for width, out in ((MASTER_W, master), (400, os.path.join(COVERS, slug + "-400.jpg"))):
         height = round(image.height * width / image.width)
         image.resize((width, height), Image.LANCZOS).save(out, "JPEG", quality=86, optimize=True, progressive=True)
@@ -105,7 +123,9 @@ def write_motif(book, theme, force):
 
 
 def main():
-    force = "--all" in sys.argv[1:]
+    args = sys.argv[1:]
+    force = "--all" in args
+    kindle = "--front" in args and args[args.index("--front") + 1:args.index("--front") + 2] == ["kindle"]
     lib = yaml.safe_load(open(os.path.join(BUILD, "library.yaml"), encoding="utf-8"))
     covers = yaml.safe_load(open(os.path.join(BUILD, "covers.yaml"), encoding="utf-8"))
     os.makedirs(COVERS, exist_ok=True)
@@ -117,10 +137,11 @@ def main():
             if not b.get(key):
                 fail("library.yaml book %s has no %s." % (b.get("slug"), key))
         theme = theme_for(b, covers)
-        src = find_cover(b)
+        src = find_cover(b, "kindle-front.jpg" if kindle else "paperback-wrap.pdf")
         if not src:
-            fail("no new-2026-11/kindle-front.jpg found for %s." % b["title"])
-        new_covers += write_cover(src, b["site_slug"], force)
+            fail("no new-2026-11 %s found for %s." % ("kindle-front.jpg" if kindle else "paperback-wrap.pdf", b["title"]))
+        trim = tuple(float(x) for x in (covers["books"].get(b["slug"], {}).get("trim") or "6x9").split("x"))
+        new_covers += write_cover(src, b["site_slug"], force, trim, covers["kdp"]["bleed_in"])
         new_motifs += write_motif(b, theme, force)
         fmt = b["formats"]
         formats = []
@@ -140,6 +161,7 @@ def main():
 
     data = {
         "source": os.path.relpath(os.path.join(BUILD, "library.yaml"), ROOT),
+        "cover_front": "kindle" if kindle else "paperback",
         "groups": lib["groups"],
         "toolkit": {"title": lib["toolkit"]["title"], "text": lib["toolkit"]["text"].strip()},
         "books": books,

@@ -6,6 +6,9 @@ tagline: Break analysis paralysis, make choices faster, stop overthinking
 description: "The ADHD Decision Reset by J.M. Struijk: 2, 5 and 10-minute protocols for ADHD analysis paralysis, from what to eat to what to buy."
 keywords: adhd decision paralysis book, adhd analysis paralysis, adhd indecision, adhd decision making, adhd overthinking decisions
 about: [adhd, analysis-paralysis]
+# The library.yaml pitch describes the 2026 revision; this one describes the edition on sale now.
+# Delete it when the revised edition is live.
+pitch: "Gives you 2, 5 and 10-minute methods matched to the size of a choice, so everyday decisions stop taking up the day."
 ---
 
 Everyone else at the table has ordered. You have been looking at the menu for ten minutes and still cannot decide. It is rarely about the food.
