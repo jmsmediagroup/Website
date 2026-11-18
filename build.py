@@ -6,7 +6,7 @@
     python3 build.py --og-all   re-render every share image
     python3 build.py --check-links   also open every directory link and report breakage
 
-Content lives in content/. Output is committed, because Netlify serves this repo
+Content lives in content/. Output is committed, because the Worker serves this repo
 as static files with no build step. Everything is rendered in memory and every
 internal link is checked before anything is written, so a broken link fails the
 build instead of shipping.

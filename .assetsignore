@@ -1,0 +1,17 @@
+# What must never be uploaded to the Worker's asset store. The repo is published whole, so source
+# and private working material is kept out here rather than merely refused at request time
+# (worker.js refuses it as well, in case something new slips past this list).
+.git
+.github
+.assetsignore
+wrangler.jsonc
+worker.js
+netlify
+netlify.toml
+docs
+content
+templates
+*.py
+node_modules
+.DS_Store
+.venv

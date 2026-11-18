@@ -1,0 +1,27 @@
+// jmstruijk.com on Cloudflare Workers: the repo's static files plus the two endpoints that used to
+// be Netlify functions (worker.js). Deploy with `npx wrangler deploy`.
+//
+// The one secret, the MailerLite key, is not in this file and not in the repo:
+//   npx wrangler secret put MAILERLITE_API_KEY
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "jmstruijk",
+  "main": "worker.js",
+  "compatibility_date": "2026-11-01",
+  "assets": {
+    // The site is the repo root; .assetsignore says what is held back.
+    "directory": ".",
+    "binding": "ASSETS",
+    "not_found_handling": "404-page",
+    // The Worker sees every request first, so it can redirect, refuse private paths and set headers.
+    "run_worker_first": true
+  },
+  "routes": [
+    { "pattern": "jmstruijk.com", "custom_domain": true },
+    // www exists only to redirect to the bare domain (worker.js).
+    { "pattern": "www.jmstruijk.com", "custom_domain": true }
+  ],
+  // Off: the site would otherwise be a second, indexable copy at jmstruijk.jstruijk.workers.dev.
+  "workers_dev": false,
+  "observability": { "enabled": true }
+}
