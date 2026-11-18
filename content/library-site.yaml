@@ -1,0 +1,170 @@
+# How the website presents the library. Titles, subtitles, groups, roles, pitches and formats
+# come from library.yaml through sync_library.py (content/library.json); this file only holds the
+# site's own words: what each group is for, the reading path through it, and why one book leads
+# to another. Every slug here is a site_slug and is checked by build.py. Humanized 18 Nov 2026.
+
+roles:
+  entry: Start here
+  companion: Companion
+  add-on: Add-on
+  guide: Guide
+
+groups:
+  money:
+    title: Money
+    blurb: For late fees, forgotten subscriptions, impulse buys, debt, and budgets that never last past week three.
+    intro: >-
+      Five books about money and ADHD. The ADHD Tax explains where the money goes and sets up the basic
+      systems. The two workbooks and the planner are for doing the work on paper, and the Side Hustle is
+      about earning more.
+    path:
+      - book: adhd-tax
+        step: Start here
+        why: The background and the basic systems for bills, subscriptions and impulse spending.
+      - book: adhd-budget-workbook
+        step: Then set it up
+        why: One short task a day until a first budget is in place.
+      - book: adhd-budget-planner
+        step: Then keep it going
+        why: Monthly plans and weekly check-ins for the year after setup.
+      - book: adhd-debt-payoff-workbook
+        step: If you are in debt
+        why: Every debt on one page and a six-month payoff tracker. It shares many page designs with the planner, so most people need one or the other.
+      - book: adhd-side-hustle
+        step: If you want to earn more
+        why: Choosing, pricing and running side work without letting it take every evening.
+  mind:
+    title: Mind and body
+    blurb: For thoughts that loop, decisions that stall, and meals that get skipped or never decided.
+    intro: >-
+      The ADHD Reset Series. Each book takes one pattern that keeps you stuck and gives you short tools
+      for it. They can be read in any order.
+    path:
+      - book: adhd-overthinking-reset
+        step: Start here
+        why: Short tools for stepping out of mental loops.
+      - book: adhd-decision-reset
+        step: Companion
+        why: When the loop is about a choice you can't make.
+      - book: adhd-eating-reset
+        step: Companion
+        why: When forgetting to eat or not knowing what to eat is the problem.
+  late:
+    title: Late-diagnosed
+    blurb: For adults who found out later that they are ADHD, autistic, or both.
+    intro: >-
+      Workbooks for the months after an adult diagnosis, or after recognizing yourself without one.
+      Start with the workbook for your diagnosis. The AuDHD workbook is for people who are both, and
+      The Autism Masking Reset goes further into masking.
+    path:
+      - book: late-diagnosed-adhd-workbook
+        step: Start here if ADHD
+        why: Making sense of the diagnosis, with write-in tools for focus, time and strong emotions.
+      - book: late-diagnosed-autistic-workbook
+        step: Start here if autistic
+        why: Sensory needs, masking, autistic burnout and accommodations, in write-in form.
+      - book: late-diagnosed-audhd-workbook
+        step: If you are both
+        why: What changes when you have both. Much of it also appears in the other two workbooks, so it is meant as a choice between them, not a third book on top.
+      - book: autism-masking-reset
+        step: Go deeper on masking
+        why: What masking costs you, and where it may be safe to drop some of it.
+  energy:
+    title: Energy and treatment
+    blurb: For burnout that rest doesn't fix, and for keeping track when you start or change ADHD medication.
+    intro: >-
+      The burnout guide links the other groups, because burnout often grows out of money stress,
+      overthinking or years of masking. The Medication Companion is a write-in book for the weeks when you
+      start or adjust treatment.
+    path:
+      - book: adhd-burnout-recovery
+        step: Start here
+        why: Spotting burnout early, getting through the crash and rebuilding your energy.
+      - book: adhd-medication-companion
+        step: Companion
+        why: Logs and appointment pages for starting or changing ADHD medication.
+
+map_note: >-
+  Every book stands on its own. A book page suggests another book only when there is a reason to
+  read it next.
+
+# Two or three per book, each with the reason a reader of this book might want it.
+related:
+  adhd-tax:
+    - book: adhd-budget-workbook
+      reason: The guided version, with one short task a day until a first budget is in place.
+    - book: adhd-debt-payoff-workbook
+      reason: If debt is the biggest part of the problem, it puts every debt on one page and tracks each payment.
+    - book: adhd-burnout-recovery
+      reason: If money stress has become part of a wider crash in energy.
+  adhd-budget-workbook:
+    - book: adhd-tax
+      reason: Explains why ADHD makes everyday life cost more, which is the background to the daily tasks.
+    - book: adhd-budget-planner
+      reason: For the year after setup, with monthly plans and weekly check-ins.
+  adhd-side-hustle:
+    - book: adhd-tax
+      reason: Extra income goes further once late fees and forgotten subscriptions stop.
+    - book: adhd-burnout-recovery
+      reason: If extra work starts taking your evenings and your energy.
+  adhd-debt-payoff-workbook:
+    - book: adhd-tax
+      reason: Covers the everyday leaks, such as late fees and subscriptions, that often add to debt.
+    - book: adhd-budget-planner
+      reason: Tracks a whole budget for twelve months. Many of its pages share designs with this workbook, so most readers need one or the other.
+  adhd-budget-planner:
+    - book: adhd-budget-workbook
+      reason: If you have never set up a budget, the workbook walks you through the setup first.
+    - book: adhd-debt-payoff-workbook
+      reason: If paying off debt matters more than tracking the whole budget. It reuses many of this planner's page designs.
+  adhd-overthinking-reset:
+    - book: adhd-decision-reset
+      reason: When the loop is about a choice you can't make.
+    - book: adhd-burnout-recovery
+      reason: If the spiraling comes with an exhaustion that rest doesn't fix.
+  adhd-eating-reset:
+    - book: adhd-decision-reset
+      reason: Meal paralysis is partly a decision problem, and this book covers everyday choices in general.
+    - book: adhd-medication-companion
+      reason: Its daily log has an appetite column, which helps if you want to raise appetite changes with your prescriber.
+  adhd-decision-reset:
+    - book: adhd-overthinking-reset
+      reason: When thinking about a choice turns into a loop that won't stop.
+    - book: adhd-eating-reset
+      reason: For the daily question of what to eat.
+  late-diagnosed-adhd-workbook:
+    - book: adhd-medication-companion
+      reason: If you are starting or adjusting medication, it gives you daily logs and pages to prepare for appointments.
+    - book: late-diagnosed-audhd-workbook
+      reason: If you are autistic as well. It repeats much of this workbook, so choose one of the two.
+    - book: adhd-burnout-recovery
+      reason: If you found out after years of running on empty.
+  late-diagnosed-autistic-workbook:
+    - book: autism-masking-reset
+      reason: Goes further into masking, what it costs and where you might drop some of it.
+    - book: late-diagnosed-audhd-workbook
+      reason: If you have ADHD as well. About two thirds of this workbook's wording is also in that one, so choose one of the two.
+  late-diagnosed-audhd-workbook:
+    - book: late-diagnosed-adhd-workbook
+      reason: Goes further on attention, hyperfocus and big feelings, if the ADHD side matters most to you.
+    - book: late-diagnosed-autistic-workbook
+      reason: Has whole parts on connection and on change and transitions, if the autistic side matters most.
+    - book: autism-masking-reset
+      reason: The full guide to masking.
+  autism-masking-reset:
+    - book: late-diagnosed-autistic-workbook
+      reason: For the wider picture after finding out you are autistic, including sensory needs, burnout and accommodations.
+    - book: late-diagnosed-audhd-workbook
+      reason: If you are autistic and ADHD.
+  adhd-burnout-recovery:
+    - book: adhd-overthinking-reset
+      reason: If spiraling thoughts keep you from resting.
+    - book: adhd-tax
+      reason: If money stress is feeding the burnout.
+    - book: adhd-medication-companion
+      reason: If you are adjusting medication while you recover, it helps you log what you notice for your prescriber.
+  adhd-medication-companion:
+    - book: late-diagnosed-adhd-workbook
+      reason: For making sense of the diagnosis itself, with tools for focus, time and strong emotions.
+    - book: adhd-eating-reset
+      reason: If eating has become harder, for example forgetting meals or not knowing what to make.
