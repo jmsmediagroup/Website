@@ -69,33 +69,39 @@ ENTITIES = {
     "echolalia": ("Echolalia", "Echolalia"),
 }
 
-# Display order, homepage anchor, accent colour, and a short name for share images.
-SERIES = {
-    "The ADHD Money Mastery Series": ("money", "var(--coral)", "ADHD Money Mastery"),
-    "The ADHD Reset Series": ("reset", "var(--sage)", "ADHD Reset Series"),
-    "The Late-Diagnosed Workbooks": ("late-diagnosed", "var(--gold)", "Late-Diagnosed Workbooks"),
-    "Standalone": ("standalone", "var(--ink)", "Standalone guide"),
-}
-BADGES = {"start": ("badge-start", "Start here"), "new": ("badge-new", "New")}
+# The library: titles, subtitles, series, groups, roles, pitches and live formats come from
+# library.yaml in the book build folder, copied to content/library.json by sync_library.py.
+# content/library-site.yaml holds the site's own words about the groups and the reading paths.
+LIBRARY = {}
+SITE_LIB = {}
+FORMAT_LABEL = {"paperback": "Paperback", "hardcover": "Hardcover", "kindle": "Kindle eBook", "audiobook": "Audiobook"}
+FORMAT_SCHEMA = {"paperback": "https://schema.org/Paperback", "hardcover": "https://schema.org/Hardcover",
+                 "kindle": "https://schema.org/EBook", "audiobook": "https://schema.org/AudiobookFormat"}
+# Series the site does not show as a series: Wired Different has one book, and its old back
+# matter announced sequels that do not exist, so the site presents it as a guide in its group.
+HIDDEN_SERIES = {"Wired Different"}
 
-# How the site describes its author, written once. The author box, the Person in
-# structured data, llms.txt and /about/ all read from here, because four hand
-# written copies of a bio drift apart the moment one of them changes.
-BIO_THIRD = (
-    "an autistic author with ADHD, originally diagnosed with Asperger's, and a "
-    "single father who raised a child with autism and ADHD"
-)
+# How the site describes its author, written once. The author box, the Person in structured
+# data, llms.txt and /about/ all read from here. Confirmed by the author on 18 Nov 2026
+# (00_Channel_Docs/shared-text/about-the-author.md). Publish nothing more about the son.
 BIO_PERSON = (
-    "J.M. Struijk is " + BIO_THIRD + ". He writes practical, non-clinical books "
-    "for adults working out what a late diagnosis means day to day."
+    "J.M. Struijk writes practical books for adults with ADHD, autism, or both. J.M. was diagnosed "
+    "as an adult with Asperger's (now part of the autism spectrum) and ADHD, and has raised a son "
+    "alone since the boy was about three. The books come from that experience and from published "
+    "research. J.M. is not a clinician."
 )
+BIO_SHORT = ("an author diagnosed as an adult with Asperger's (now part of the autism spectrum) "
+             "and ADHD, who writes practical books for adults with ADHD, autism, or both")
 
 DISCLAIMER = (
-    "I write from lived experience as an autistic adult with ADHD, "
-    "not as a clinician. Nothing here diagnoses anything or replaces working with "
-    "a doctor, therapist, or ADHD coach. If something in your life has become "
-    "unmanageable, please talk to someone qualified."
+    "General information from lived experience and published sources, not medical, psychological "
+    "or financial advice. J.M. Struijk is not a clinician, and nothing here diagnoses anything or "
+    "replaces a doctor, therapist or other qualified professional. No product, app or service named "
+    "on this site pays the author or the publisher. If you are in danger or thinking about ending "
+    "your life, call or text 988 in the US, or see the crisis lines for other countries."
 )
+DISCLAIMER_HTML = html.escape(DISCLAIMER).replace(
+    "see the crisis lines for other countries", '<a href="/resources/#crisis">see the crisis lines for other countries</a>')
 
 
 def fail(message):
@@ -292,34 +298,77 @@ def jpeg_size(path):
     return 700, 1050
 
 
+def load_library():
+    """content/library.json (from library.yaml, via sync_library.py) and content/library-site.yaml."""
+    path = os.path.join(CONTENT, "library.json")
+    if not os.path.exists(path):
+        fail("content/library.json is missing; run python3 sync_library.py.")
+    LIBRARY.update(json.load(open(path, encoding="utf-8")))
+    SITE_LIB.update(yaml.safe_load(open(os.path.join(CONTENT, "library-site.yaml"), encoding="utf-8")))
+    group_ids = [g["id"] for g in LIBRARY["groups"]]
+    if sorted(SITE_LIB["groups"]) != sorted(group_ids):
+        fail("content/library-site.yaml groups %s do not match library.yaml groups %s."
+             % (sorted(SITE_LIB["groups"]), sorted(group_ids)))
+    return LIBRARY
+
+
 def load_books():
+    """One book per library entry. The library gives the facts; content/books/<site_slug>.md
+    gives the page's own copy (who it is for, what is inside, FAQ) and search metadata."""
+    lib = load_library()
+    by_site = {b["site_slug"]: b for b in lib["books"]}
+    sources = {os.path.basename(p)[:-3]: p for p in glob.glob(os.path.join(CONTENT, "books", "*.md"))}
+    for slug in sorted(set(sources) - set(by_site)):
+        fail("content/books/%s.md has no entry in library.yaml (site_slug)." % slug)
+    for slug in sorted(set(by_site) - set(sources)):
+        fail("library.yaml book %s has no page copy at content/books/%s.md." % (by_site[slug]["title"], slug))
+
+    group_order = [g["id"] for g in lib["groups"]]
+    role_order = ["entry", "guide", "companion", "add-on"]
     books = []
-    for path in sorted(glob.glob(os.path.join(CONTENT, "books", "*.md"))):
-        name = os.path.relpath(path, ROOT)
-        meta, body = read_source(path)
-        require(meta, ("slug", "title", "subtitle", "asin", "series", "order",
-                       "published", "tagline", "description"), name)
-        if meta["series"] not in SERIES:
-            fail("%s has unknown series '%s'." % (name, meta["series"]))
-        if meta.get("badge") and meta["badge"] not in BADGES:
-            fail("%s has unknown badge '%s'." % (name, meta["badge"]))
-        cover = os.path.join(ROOT, "assets", "covers", meta["slug"] + ".jpg")
+    for order, entry in enumerate(lib["books"]):
+        slug = entry["site_slug"]
+        name = os.path.relpath(sources[slug], ROOT)
+        meta, body = read_source(sources[slug])
+        require(meta, ("slug", "tagline", "description"), name)
+        if meta["slug"] != slug:
+            fail("%s has slug '%s'; the library says '%s'." % (name, meta["slug"], slug))
+        for key in ("title", "subtitle", "asin", "series", "position"):
+            if key in meta:
+                fail("%s sets '%s'; that comes from library.yaml now." % (name, key))
+        cover = os.path.join(ROOT, "assets", "covers", slug + ".jpg")
         if not os.path.exists(cover):
-            fail("%s has no cover at assets/covers/%s.jpg." % (name, meta["slug"]))
+            fail("%s has no cover at assets/covers/%s.jpg; run python3 sync_library.py." % (name, slug))
         for n in COVER_WIDTHS:
             for ext in ("avif", "webp"):
-                if not os.path.exists(os.path.join(ROOT, "assets", "covers", "%s-%d.%s" % (meta["slug"], n, ext))):
+                if not os.path.exists(os.path.join(ROOT, "assets", "covers", "%s-%d.%s" % (slug, n, ext))):
                     fail("%s is missing its %dpx %s cover; run python3 make_cover_images.py." % (name, n, ext))
         check_about(meta.get("about"), name)
         body_html, _, _, faq = render_markdown(body)
-        meta.update(body=body_html, faq=faq, markdown=body, source=name,
-                    cover_size=jpeg_size(cover), modified=mtime_date(path))
+        series = entry["series"] if entry["series"] not in HIDDEN_SERIES else ""
+        meta.update(
+            title=entry["title"], subtitle=entry["subtitle"], kindle_subtitle=entry["kindle_subtitle"],
+            series=series, position=entry["number"] if series else None,
+            group=entry["group"], role=entry["role"], formats=entry["formats"], theme=entry["theme"],
+            # a pitch in the page source describes the edition on sale while library.yaml's
+            # describes the revision; the page must describe what a buyer gets today
+            pitch=meta.get("pitch") or entry["pitch"], library_pitch=entry["pitch"],
+            order=order, body=body_html, faq=faq, markdown=body, source=name,
+            cover_size=jpeg_size(cover), modified=mtime_date(sources[slug]))
+        primary = next((f for f in entry["formats"] if f["kind"] == "paperback"), entry["formats"][0])
+        meta["asin"] = primary["asin"]
         books.append(meta)
+    books.sort(key=lambda b: (group_order.index(b["group"]), role_order.index(b["role"]), b["order"]))
 
-    slugs = [b["slug"] for b in books]
-    if len(set(slugs)) != len(slugs):
-        fail("duplicate book slugs.")
-    books.sort(key=lambda b: b["order"])
+    known = {b["slug"] for b in books}
+    for gid, g in SITE_LIB["groups"].items():
+        for step in g["path"]:
+            if step["book"] not in known:
+                fail("library-site.yaml path in %s names unknown book %s." % (gid, step["book"]))
+    for slug, items in SITE_LIB["related"].items():
+        for item in [{"book": slug}] + items:
+            if item["book"] not in known:
+                fail("library-site.yaml related names unknown book %s." % item["book"])
     return books
 
 
@@ -435,6 +484,7 @@ PARTIALS = {}
 # page link to any other by path and get the right label.
 TITLES = {}
 TOPICS = {}
+SITUATION_CHIPS = []
 
 
 AUTOLINK = []  # (compiled pattern, glossary slug), longest term first.
@@ -555,7 +605,7 @@ def render(template, **values):
         for name in ("head", "header", "footer"):
             PARTIALS[name] = open(os.path.join(TEMPLATES, "partials", name + ".html"),
                                   encoding="utf-8").read().rstrip()
-        for href in ("/assets/fonts/fonts.css", "/assets/blog.css"):
+        for href in ("/assets/fonts/fonts.css", "/assets/site.css"):
             link = '<link rel="stylesheet" href="%s">' % href
             if link not in PARTIALS["head"]:
                 fail("templates/partials/head.html no longer links %s." % href)
@@ -563,19 +613,13 @@ def render(template, **values):
     for name, markup in PARTIALS.items():
         values.setdefault(name, markup)
     page = open(os.path.join(TEMPLATES, template), encoding="utf-8").read().format(**values)
-    # The italic serif is only needed above the fold when the headline has an <em>.
-    # Left to be discovered at layout it chains behind the HTML; preloaded on every
-    # page it would be 80 KB wasted on the articles, which do not use it.
-    h1 = re.search(r"<h1[^>]*>([\s\S]*?)</h1>", page)
-    if h1 and "<em" in h1.group(1):
-        page = page.replace(FONT_PRELOAD_ANCHOR, FONT_PRELOAD_ANCHOR + "\n" + ITALIC_PRELOAD, 1)
+    # Pages sit in the centred column unless their template asks for full width (book pages).
+    page = page.replace('<main id="main">', '<main id="main" class="container">', 1)
+    # Mark the current section in the main navigation.
+    nav = values.get("nav")
+    if nav:
+        page = page.replace('<a href="%s">' % nav, '<a href="%s" aria-current="page">' % nav, 1)
     return page
-
-
-FONT_PRELOAD_ANCHOR = ('<link rel="preload" href="/assets/fonts/fraunces-latin-48282a41.woff2" '
-                       'as="font" type="font/woff2" crossorigin>')
-ITALIC_PRELOAD = ('<link rel="preload" href="/assets/fonts/fraunces-latin-4af9c759.woff2" '
-                  'as="font" type="font/woff2" crossorigin>')
 
 
 def seo_head(title, description, path, image=None, og_type="website"):
@@ -617,8 +661,13 @@ def post_summary(p):
             "image": og_image("post", p["slug"]), "author": {"@id": PERSON_ID}}
 
 
+def us_date(value):
+    d = datetime.strptime(str(value), "%Y-%m-%d")
+    return "%s %d, %d" % (d.strftime("%B"), d.day, d.year)
+
+
 def human_date(value):
-    return datetime.strptime(str(value), "%Y-%m-%d").strftime("%d %B %Y").lstrip("0")
+    return us_date(value)
 
 
 def minutes(words):
@@ -664,67 +713,93 @@ def faq_node(url, faq):
 
 
 def series_label(book):
-    if book["series"] == "Standalone":
-        return "Standalone guide"
-    if book.get("position"):
-        return "Book %d of %s" % (book["position"], book["series"])
-    return "Part of " + book["series"]
+    """The cover's series line: 'ADHD Money Mastery Series · Book 1', or the book's group."""
+    if book["series"]:
+        if book.get("position"):
+            return "%s · Book %d" % (book["series"], book["position"])
+        return book["series"]
+    return "%s · %s" % (group_title(book["group"]), role_label(book["role"]))
+
+
+def group_title(gid):
+    return SITE_LIB["groups"][gid]["title"]
+
+
+def role_label(role):
+    return SITE_LIB["roles"].get(role, role.title())
+
+
+def theme_style(book_or_theme):
+    """CSS custom properties for a book's series colours (from covers.yaml via the library)."""
+    th = book_or_theme.get("theme", book_or_theme)
+    return "--bg:%s;--accent:%s;--soft:%s;" % (th["bg"], th["accent"], th["soft"])
+
+
+def group_theme(gid, books):
+    """A group borrows the colours of its first book's series."""
+    first = next(b for b in books if b["group"] == gid)
+    return first["theme"]
+
+
+def amazon_url(fmt):
+    return amazon(fmt["asin"])
+
+
+def isbn_digits(isbn):
+    return re.sub(r"[^0-9X]", "", isbn or "")
 
 
 AUTHOR_BOX = """<section class="author-box">
-      <img src="/assets/images/author.jpg" alt="J.M. Struijk" width="562" height="900" loading="lazy" decoding="async">
+      <img src="/assets/images/author.jpg" alt="" width="562" height="900" loading="lazy" decoding="async">
       <div>
         <div class="author-label">About the author</div>
-        <p><strong>J.M. Struijk</strong> is %s. He writes practical companions for the brain you actually have, published independently through JMS Media Group LLC. <a href="/books/">See all the books</a> or read <a href="/about/">more about the author</a>.</p>
+        <p><strong>J.M. Struijk</strong> is %s. The books are published by JMS Media Group LLC. <a href="/books/">See the library</a> or read <a href="/about/">more about the author</a>.</p>
       </div>
-    </section>""" % BIO_THIRD
+    </section>""" % BIO_SHORT
 
-SIGNUP = """<section class="post-signup">
+
+def signup_box(heading="The free toolkit", form_id="signup"):
+    return """<section class="signup-box" aria-labelledby="{id}-h">
       <div>
-        <h2>The ADHD Survival Kit</h2>
-        <p>Six printable tools I keep coming back to myself. Free PDF, sent to your inbox.</p>
+        <h2 id="{id}-h">{heading}</h2>
+        <p>Printable one-page tools for the weeks when things are hard: a daily check-in, early warning signs of burnout, a weekly energy budget and more. Free, as a PDF by email.</p>
+        <p class="fine">Signing up adds you to the J.M. Struijk email list. Every email has a one-click unsubscribe link. <a href="/toolkit/" style="color:#fff;text-decoration:underline">What is in the toolkit</a></p>
       </div>
-      <form class="signup-form" action="#" method="post" novalidate>
-        <input type="email" name="email" placeholder="your@email.com" required aria-label="Email address">
-        <button type="submit">Send me the kit</button>
-      </form>
-    </section>"""
+      <div>
+        <form class="signup-form" action="/toolkit/" method="get" novalidate>
+          <label for="{id}-email">Email address</label>
+          <input type="email" id="{id}-email" name="email" autocomplete="email" placeholder="you@example.com" required>
+          <button type="submit">Send me the toolkit</button>
+        </form>
+        <p class="form-status" role="status" aria-live="polite"></p>
+      </div>
+    </section>""".format(heading=esc(heading), id=form_id)
 
 
-def cover_frame(book, sizes, badge="", eager=False):
-    """A cover image in a frame that hugs it, so badges sit on the artwork.
+# Covers are 1600 x 2560 (1:1.6). Each context gives the widths it shows them at, so a phone
+# never downloads more than it needs. AVIF first, then WebP, then JPEG; the variants come
+# from make_cover_images.py (run by sync_library.py). Keep these in step with assets/site.css.
+COVER_WIDTHS = (160, 260, 320, 400, 700)
+SIZES_SHELF = "(max-width: 520px) 44vw, 157px"
+SIZES_SMALL = "(max-width: 520px) 44vw, 132px"
+SIZES_HERO = "(max-width: 820px) 190px, 300px"
+SIZES_PATH = "(max-width: 420px) 84px, 112px"
+SIZES_REL = "84px"
+SIZES_CTA = "(max-width: 560px) 104px, 124px"
+SIZES_TINY = "64px"
+SIZES_HOME = "(max-width: 900px) 30vw, 263px"
 
-    Covers are not all 2:3; sizing by height keeps every one of them edge to edge.
-    """
+
+def cover_frame(book, sizes, alt="", eager=False, badge=""):
+    """A cover in a frame that hugs it. alt is empty where the title is already in the link."""
     w, h = book["cover_size"]
     loading = 'fetchpriority="high"' if eager else 'loading="lazy"'
-    # Covers render between about 130px and 250px wide, so a phone should not
-    # download the 700px file. AVIF first, WebP next, the JPEG last; the
-    # variants come from make_cover_images.py.
-    return ('<span class="cover-frame">{picture}{badge}</span>'
-            ).format(picture=cover_picture(book["slug"], esc(book["title"]) + " book cover", w, h,
-                                           cover_sizes(sizes, w, h), loading), badge=badge)
-
-
-# Covers are sized by height, so each context is described by the CSS heights it
-# uses at each breakpoint, and the sizes attribute is worked out per cover from
-# its own aspect ratio. Keep these in step with the heights in assets/blog.css
-# and the homepage styles, or phones download larger files than they show.
-COVER_WIDTHS = (160, 260, 320, 400, 700)
-SIZES_SHELF = (("(max-width: 360px)", 172), ("(max-width: 520px)", 195), (None, 260))
-SIZES_CTA = (("(max-width: 560px)", 165), (None, 198))
-SIZES_BOOK_HERO = (("(max-width: 680px)", 270), (None, 360))
-SIZES_SITUATION = (("(max-width: 560px)", 108), (None, 210))
-SIZES_HOME = (("(max-width: 360px)", 172), ("(max-width: 520px)", 195), ("(max-width: 880px)", 300), (None, 330))
-
-
-def cover_sizes(heights, w, h):
-    return ", ".join(("%s %dpx" % (media, math.ceil(px * w / h))) if media else "%dpx" % math.ceil(px * w / h)
-                     for media, px in heights)
+    return '<span class="cover-frame">%s%s</span>' % (
+        cover_picture(book["slug"], esc(alt), w, h, sizes, loading), badge)
 
 
 def cover_picture(slug, alt, w, h, sizes, attrs):
-    """<picture> for a cover: AVIF, then WebP, then the original JPEG."""
+    """<picture> for a cover: AVIF, then WebP, then the JPEG."""
     variants = lambda ext: ", ".join("/assets/covers/%s-%d.%s %dw" % (slug, n, ext, n) for n in COVER_WIDTHS)
     return ('<picture>'
             '<source type="image/avif" srcset="{avif}" sizes="{sizes}">'
@@ -736,12 +811,13 @@ def cover_picture(slug, alt, w, h, sizes, attrs):
                      alt=alt, w=w, h=h, attrs=attrs)
 
 
-def book_card(book, heading="h3"):
+def book_card(book, heading="h3", small=False, role=True):
+    role_line = '<span class="shelf-role">%s</span>' % esc(role_label(book["role"])) if role else ""
     return ('<a class="shelf-book" href="/books/{slug}/">'
-            '<span class="shelf-cover">{frame}</span>'
+            '<span class="shelf-cover">{frame}</span>{role}'
             '<{hd} class="shelf-title">{title}</{hd}><span class="shelf-tagline">{tagline}</span></a>'
-            ).format(slug=book["slug"], title=esc(book["title"]), tagline=esc(book["tagline"]),
-                     frame=cover_frame(book, SIZES_SHELF), hd=heading)
+            ).format(slug=book["slug"], title=esc(book["title"]), tagline=esc(book["tagline"]), role=role_line,
+                     frame=cover_frame(book, SIZES_SMALL if small else SIZES_SHELF), hd=heading)
 
 
 def post_cards(posts, heading):
@@ -754,24 +830,28 @@ def post_cards(posts, heading):
     return '<section class="related"><h2>%s</h2><div class="related-grid">%s</div></section>' % (heading, cards)
 
 
+def formats_line(book):
+    return ", ".join(FORMAT_LABEL[f["kind"]].replace(" eBook", "") for f in book["formats"])
+
+
 # ---------------------------------------------------------------- articles
 
-def book_cta(book):
+def book_cta(book, label="The book on this"):
     if not book:
         return ""
-    return """<aside class="book-cta">
-      <a class="book-cta-cover" href="/books/{slug}/">{frame}</a>
+    return """<aside class="book-cta" style="{style}">
+      <a class="book-cta-cover" href="/books/{slug}/" tabindex="-1" aria-hidden="true">{frame}</a>
       <div class="book-cta-body">
-        <div class="book-cta-label">The book on this</div>
+        <div class="book-cta-label">{label}</div>
         <h2 class="book-cta-title"><a href="/books/{slug}/">{title}</a></h2>
-        <p>{tagline}.</p>
+        <p>{pitch}</p>
         <div class="book-cta-actions">
-          <a class="book-cta-link" href="{amazon}" target="_blank" rel="noopener">View on Amazon &rarr;</a>
-          <a class="book-cta-more" href="/books/{slug}/">About the book</a>
+          <a class="btn btn-light" href="/books/{slug}/">About the book</a>
+          <a class="btn btn-outline" style="background:transparent;border-color:rgba(255,255,255,.7)" href="/books/{slug}/#get-the-book">{formats}</a>
         </div>
       </div>
-    </aside>""".format(slug=book["slug"], title=esc(book["title"]), tagline=esc(book["tagline"]),
-                       amazon=amazon(book["asin"]), frame=cover_frame(book, SIZES_CTA))
+    </aside>""".format(slug=book["slug"], title=esc(book["title"]), pitch=esc(book["pitch"]), label=esc(label),
+                       style=theme_style(book), formats=esc(formats_line(book)), frame=cover_frame(book, SIZES_CTA))
 
 
 def render_post(post, by_post, by_book):
@@ -812,7 +892,7 @@ def render_post(post, by_post, by_book):
     if book:
         article["mentions"] = {"@type": "Book", "@id": SITE + "/books/%s/#book" % book["slug"],
                                "name": book["title"], "url": SITE + "/books/%s/" % book["slug"],
-                               "sameAs": amazon(book["asin"]), "author": {"@id": PERSON_ID}}
+                               "author": {"@id": PERSON_ID}}
     graph = [article, person_node(),
              breadcrumbs((AUTHOR, "/"), ("Blog", "/blog/"), (post["title"], path))]
     if post["faq"]:
@@ -820,6 +900,7 @@ def render_post(post, by_post, by_book):
 
     return render(
         "post.html",
+        nav="/blog/",
         # seo_title is an optional shorter <title> for search results; the page keeps the full headline.
         seo=seo_head(post.get("seo_title") or post["title"], post["description"], path, image, "article")
             + '\n<meta property="article:published_time" content="%s">' % post["date"]
@@ -842,9 +923,9 @@ def render_post(post, by_post, by_book):
         body=autolink_glossary(post["body"]),
         book_cta=book_cta(book),
         author_box=AUTHOR_BOX,
-        disclaimer=esc(DISCLAIMER),
+        disclaimer=DISCLAIMER_HTML,
         related=post_cards([by_post[s] for s in post.get("related") or []], "Keep reading"),
-        signup=SIGNUP,
+        signup=signup_box(),
     )
 
 
@@ -874,6 +955,7 @@ def render_blog_index(posts, by_book):
     ]
     return render(
         "blog.html",
+        nav="/blog/",
         seo=seo_head("Blog: Writing on ADHD, Autism & AuDHD — J.M. Struijk",
                      "Practical articles on ADHD, autism and AuDHD by a late-diagnosed author: "
                      "the ADHD tax, rejection sensitivity, masking, burnout and task paralysis.", "/blog/"),
@@ -885,92 +967,194 @@ def render_blog_index(posts, by_book):
 
 # ---------------------------------------------------------------- books
 
-def render_book(book, posts, books):
-    path = "/books/%s/" % book["slug"]
-    url = SITE + path
-    image = og_image("book", book["slug"])
-    title = "%s — Book by J.M. Struijk" % book["title"]
-
-    facts = ['<span>Published %s</span>' % human_date(book["published"])]
-    if book.get("pages"):
-        facts.append("<span>%d pages</span>" % book["pages"])
-    facts.append('<span>By <a href="/about/">J.M. Struijk</a></span>')
-
-    node = {
-        "@type": "Book",
-        "@id": url + "#book",
-        "name": book["title"],
-        "alternateName": "%s: %s" % (book["title"], book["subtitle"]),
-        "description": book["description"],
-        "author": {"@id": PERSON_ID},
-        "publisher": publisher_ref(),
-        "datePublished": str(book["published"]),
-        "inLanguage": "en",
-        "url": url,
-        "sameAs": [amazon(book["asin"])],
-        "image": "%s/assets/covers/%s.jpg" % (SITE, book["slug"]),
-        "identifier": {"@type": "PropertyValue", "propertyID": "ASIN", "value": book["asin"]},
-    }
-    if book.get("pages"):
-        node["numberOfPages"] = book["pages"]
-    if book["series"] != "Standalone":
+def book_node(book, full=True):
+    """schema.org Book for a title, with one workExample per live format (ISBN where it has one)."""
+    url = SITE + "/books/%s/" % book["slug"]
+    examples = []
+    for f in book["formats"]:
+        ex = {"@type": "Audiobook" if f["kind"] == "audiobook" else "Book",
+              "@id": url + "#" + f["kind"], "name": book["title"],
+              "bookFormat": FORMAT_SCHEMA[f["kind"]], "url": amazon_url(f),
+              "identifier": {"@type": "PropertyValue", "propertyID": "ASIN", "value": f["asin"]},
+              "author": {"@id": PERSON_ID}, "publisher": {"@id": PUBLISHER_ID}, "inLanguage": "en"}
+        if f.get("isbn"):
+            ex["isbn"] = isbn_digits(f["isbn"])
+        if f["kind"] in ("paperback", "hardcover") and book.get("pages"):
+            ex["numberOfPages"] = book["pages"]
+        examples.append(ex)
+    node = {"@type": "Book", "@id": url + "#book", "name": book["title"], "url": url,
+            "author": {"@id": PERSON_ID}, "publisher": {"@id": PUBLISHER_ID}, "inLanguage": "en",
+            "image": "%s/assets/covers/%s.jpg" % (SITE, book["slug"]),
+            "sameAs": [amazon_url(f) for f in book["formats"]], "workExample": examples}
+    if book["subtitle"]:
+        node["alternateName"] = "%s: %s" % (book["title"], book["subtitle"])
+    if full:
+        node["description"] = book["description"]
+        node["abstract"] = book["pitch"]
+    if book.get("published"):
+        node["datePublished"] = str(book["published"])
+    if book["series"]:
         node["isPartOf"] = {"@type": "BookSeries", "name": book["series"]}
         if book.get("position"):
             node["position"] = book["position"]
-    if book.get("about"):
+    if full and book.get("about"):
         node["about"] = about_nodes(book["about"])
+    return node
+
+
+def get_the_book(book):
+    rows = []
+    for f in book["formats"]:
+        label = FORMAT_LABEL[f["kind"]]
+        meta = "ISBN %s" % f["isbn"] if f.get("isbn") else "ASIN %s" % f["asin"]
+        rows.append('<li class="format"><span class="format-name">%s</span><span class="format-meta">%s</span>'
+                    '<a class="btn" href="%s" rel="noopener" target="_blank" aria-label="%s of %s on Amazon">Amazon</a></li>'
+                    % (label, esc(meta), amazon_url(f), label, esc(book["title"])))
+    notes = []
+    if book.get("kindle_subtitle") and any(f["kind"] == "kindle" for f in book["formats"]) \
+            and book["kindle_subtitle"].strip() != book["subtitle"].strip():
+        notes.append("The Kindle edition is listed with an earlier subtitle: <em>%s</em>." % esc(book["kindle_subtitle"]))
+    notes.append("Each button opens the book's Amazon page in a new tab. This site sells nothing and earns "
+                 "nothing from these links.")
+    n = len(book["formats"])
+    return ('<section class="get-book" id="get-the-book" aria-labelledby="get-h"><h2 id="get-h">Get the book</h2>'
+            '<p>Available in %s format%s.</p><ul class="formats">%s</ul>%s</section>'
+            % (["", "one", "two", "three", "four"][n], "" if n == 1 else "s", "".join(rows),
+               "".join('<p class="note">%s</p>' % x for x in notes)))
+
+
+def series_box(book, books):
+    if book["series"]:
+        mates = sorted((b for b in books if b["series"] == book["series"]), key=lambda b: b.get("position") or 0)
+        heading, num = book["series"], lambda b: str(b.get("position") or "")
+    else:
+        mates = [b for b in books if b["group"] == book["group"]]
+        heading, num = "%s books" % group_title(book["group"]), lambda b: str(mates.index(b) + 1)
+    items = []
+    for b in mates:
+        inner = '<span class="num">%s</span><span>%s</span>' % (num(b), esc(b["title"]))
+        if b["slug"] == book["slug"]:
+            items.append('<li class="is-current"><span aria-current="page">%s</span></li>' % inner)
+        else:
+            items.append('<li><a href="/books/%s/">%s</a></li>' % (b["slug"], inner))
+    place = SITE_LIB["groups"][book["group"]]
+    step = next((s for s in place["path"] if s["book"] == book["slug"]), None)
+    where = ("In the library: %s, %s." % (place["title"].lower(), step["step"].lower())) if step else ""
+    return ('<section class="series-box" aria-labelledby="series-h"><h2 id="series-h">%s</h2><ol>%s</ol>'
+            '<p>%s <a href="/books/#%s">See the reading path</a>.</p></section>'
+            % (esc(heading), "".join(items), esc(where), book["group"]))
+
+
+def related_books(book, by_book):
+    items = SITE_LIB["related"].get(book["slug"]) or []
+    if not items:
+        return ""
+    cards = []
+    for it in items:
+        b = by_book[it["book"]]
+        cards.append('<article class="related-book"><a href="/books/%s/" tabindex="-1" aria-hidden="true">%s</a><div>'
+                     '<span class="shelf-role">%s</span><h3><a href="/books/%s/">%s</a></h3><p>%s</p></div></article>'
+                     % (b["slug"], cover_frame(b, SIZES_REL), esc(group_title(b["group"])), b["slug"],
+                        esc(b["title"]), esc(it["reason"])))
+    return ('<section class="related" aria-labelledby="related-h"><h2 id="related-h">If you read this, you might want</h2>'
+            '<div class="related-books">%s</div></section>' % "".join(cards))
+
+
+def render_book(book, posts, books, by_book):
+    path = "/books/%s/" % book["slug"]
+    url = SITE + path
+    image = og_image("book", book["slug"])
+    title = "%s: Book by J.M. Struijk" % book["title"]
+
+    facts = []
+    if book.get("pages"):
+        facts.append("<span>%d pages in print</span>" % book["pages"])
+    if book.get("published"):
+        facts.append("<span>Published %s</span>" % us_date(book["published"]))
+    facts.append("<span>%s</span>" % esc(formats_line(book)))
+    facts.append('<span>By <a href="/about/">J.M. Struijk</a></span>')
 
     graph = [
-        {"@type": "WebPage", "@id": url, "url": url, "name": title,
-         "description": book["description"], "isPartOf": {"@id": WEBSITE_ID},
-         "mainEntity": {"@id": url + "#book"}, "inLanguage": "en-US"},
-        node, person_node(),
+        {"@type": "WebPage", "@id": url, "url": url, "name": title, "description": book["description"],
+         "isPartOf": {"@id": WEBSITE_ID}, "mainEntity": {"@id": url + "#book"}, "inLanguage": "en-US",
+         "primaryImageOfPage": "%s/assets/covers/%s.jpg" % (SITE, book["slug"])},
+        book_node(book), person_node(), publisher_ref(),
         breadcrumbs((AUTHOR, "/"), ("Books", "/books/"), (book["title"], path)),
     ]
     if book["faq"]:
         graph.append(faq_node(url, book["faq"]))
 
     on_topic = [p for p in posts if p.get("book") == book["slug"]]
-    siblings = [b for b in books if b["series"] == book["series"] and b["slug"] != book["slug"]]
-    series_more = ""
-    if siblings:
-        heading = "Also in this series" if book["series"] != "Standalone" else "Other books"
-        series_more = ('<section class="related"><h2>%s</h2><div class="shelf-grid shelf-grid-small">%s</div></section>'
-                       % (heading, "".join(book_card(b) for b in siblings)))
-
+    motif = "/assets/motifs/%s.svg" % book["slug"]
     return render(
         "book.html",
+        nav="/books/",
         seo=seo_head(title, book["description"], path, image, "book")
             + '\n<meta property="book:author" content="J.M. Struijk">'
-            + '\n<meta property="book:release_date" content="%s">' % book["published"]
+            + ('\n<meta property="book:release_date" content="%s">' % book["published"] if book.get("published") else "")
+            + "".join('\n<meta property="book:isbn" content="%s">' % isbn_digits(f["isbn"])
+                      for f in book["formats"] if f.get("isbn"))
             + '\n<meta name="keywords" content="%s">' % esc(book.get("keywords", "")),
         schema=schema(graph),
-        cover=cover_frame(book, SIZES_BOOK_HERO, eager=True),
+        style=theme_style(book) + "--motif:url(%s);" % motif,
+        cover=cover_frame(book, SIZES_HERO, alt="Cover of %s by J.M. Struijk" % book["title"], eager=True),
         title=esc(book["title"]),
-        subtitle=esc(book["subtitle"]),
+        subtitle=('<p class="book-subtitle">%s</p>' % esc(book["subtitle"])) if book["subtitle"] else "",
+        pitch=esc(book["pitch"]),
         series_label=esc(series_label(book)),
-        facts='<span class="book-facts-sep">·</span>'.join(facts),
-        asin=book["asin"],
+        group=book["group"], group_title=esc(group_title(book["group"])),
+        facts="".join(facts),
         body=autolink_glossary(book["body"]),
+        get_book=get_the_book(book),
+        series_box=series_box(book, books),
+        related=related_books(book, by_book),
         articles=post_cards(on_topic, "Articles on this subject"),
-        series_more=series_more,
         author_box=AUTHOR_BOX,
-        disclaimer=esc(DISCLAIMER),
+        disclaimer=DISCLAIMER_HTML,
     )
 
 
-def render_books_index(books):
-    shelves = []
-    for series, (anchor, colour, _) in SERIES.items():
-        group = [b for b in books if b["series"] == series]
-        if not group:
-            continue
-        shelves.append(
-            '<section class="shelf" id="%s"><div class="series-header"><h2 class="series-name">'
-            '<span class="series-color-dot" style="background:%s;"></span>%s</h2>'
-            '<span class="series-meta">%d book%s</span></div><div class="shelf-grid">%s</div></section>'
-            % (anchor, colour, esc(series), len(group), "" if len(group) == 1 else "s",
-               "".join(book_card(b) for b in group)))
+def library_map(books):
+    cols = []
+    for g in LIBRARY["groups"]:
+        gid = g["id"]
+        th = group_theme(gid, books)
+        items = []
+        for step in SITE_LIB["groups"][gid]["path"]:
+            b = next(x for x in books if x["slug"] == step["book"])
+            items.append('<li><a href="/books/%s/"><span class="map-role">%s</span><span>%s</span></a></li>'
+                         % (b["slug"], esc(role_label(b["role"])), esc(b["title"].replace("The ", "", 1))))
+        cols.append('<div class="map-col" style="%s"><h3><a href="#%s">%s</a></h3><ol>%s</ol></div>'
+                    % (theme_style(th), gid, esc(SITE_LIB["groups"][gid]["title"]), "".join(items)))
+    return '<div class="library-map">%s</div>' % "".join(cols)
+
+
+def render_books_index(books, by_book):
+    sections = []
+    for g in LIBRARY["groups"]:
+        gid = g["id"]
+        site = SITE_LIB["groups"][gid]
+        th = group_theme(gid, books)
+        entry = by_book[site["path"][0]["book"]]
+        steps = []
+        for step in site["path"]:
+            b = by_book[step["book"]]
+            steps.append(
+                '<li class="path-step%s" style="%s"><a href="/books/%s/" tabindex="-1" aria-hidden="true">%s</a><div>'
+                '<span class="step-label">%s</span><h3><a href="/books/%s/">%s</a></h3><p>%s</p>'
+                '%s<p class="formats-mini">%s</p></div></li>'
+                % (" is-entry" if step["step"].lower().startswith("start") else "", theme_style(b),
+                   b["slug"], cover_frame(b, SIZES_PATH), esc(step["step"]), b["slug"], esc(b["title"]),
+                   esc(b["pitch"]),
+                   "" if step["step"].lower().startswith("start") else '<p class="why">%s</p>' % esc(step["why"]),
+                   esc(formats_line(b))))
+        sections.append(
+            '<section class="group" id="%s" style="%s" aria-labelledby="g-%s">'
+            '<div class="group-band"><div class="group-band-text"><span class="eyebrow">%d books</span>'
+            '<h2 id="g-%s">%s</h2><p>%s</p></div><img src="/assets/motifs/%s.svg" alt="" width="450" height="300" loading="lazy"></div>'
+            '<ol class="path">%s</ol></section>'
+            % (gid, theme_style(th), gid, len(site["path"]), gid, esc(site["title"]), esc(site["intro"]),
+               entry["slug"], "".join(steps)))
 
     graph = [
         {"@type": "CollectionPage", "@id": SITE + "/books/", "url": SITE + "/books/",
@@ -984,11 +1168,13 @@ def render_books_index(books):
     ]
     return render(
         "books.html",
+        nav="/books/",
         seo=seo_head("Books by J.M. Struijk: ADHD, Autism & AuDHD",
-                     "All %d books by J.M. Struijk for adults with ADHD, autism and AuDHD: the ADHD "
-                     "Money Mastery Series, the ADHD Reset Series and the Late-Diagnosed Workbooks."
-                     % len(books), "/books/"),
-        schema=schema(graph), count=len(books), shelves="\n".join(shelves))
+                     "All %d books by J.M. Struijk for adults with ADHD, autism or both, in four groups: money, "
+                     "mind and body, late diagnosis, and energy and treatment. Where to start in each." % len(books),
+                     "/books/"),
+        schema=schema(graph), count=len(books), library_map=library_map(books),
+        map_note=esc(SITE_LIB["map_note"]), groups="\n".join(sections))
 
 
 # ---------------------------------------------------------------- glossary
@@ -1042,6 +1228,7 @@ def render_glossary(terms, by_post, by_book):
     ]
     return render(
         "glossary.html",
+        nav="/blog/",
         seo=seo_head("ADHD & Autism Glossary: %d Terms in Plain Words — J.M. Struijk" % len(terms),
                      "Plain definitions of %d ADHD and autism terms: masking, stimming, AuDHD, rejection "
                      "sensitive dysphoria, time blindness, the ADHD tax and more." % len(terms), path),
@@ -1049,14 +1236,15 @@ def render_glossary(terms, by_post, by_book):
         count=len(terms),
         az="".join('<a href="#letter-%s">%s</a>' % (l.lower(), l) for l in letters),
         terms="\n".join(blocks),
-        disclaimer=esc(DISCLAIMER),
+        disclaimer=DISCLAIMER_HTML,
     )
 
 
 def render_404(posts, books):
     recent = "\n".join('      <li><a href="/blog/%s/">%s</a></li>' % (p["slug"], esc(p["title"]))
                        for p in posts[:6])
-    return render("404.html", book_count=len(books), post_count=len(posts), recent=recent)
+    return render("404.html", book_count=len(books), post_count=len(posts), recent=recent,
+                  seo="<title>Page not found · J.M. Struijk</title>\n<meta name=\"robots\" content=\"noindex\">")
 
 
 # ---------------------------------------------------------------- directory
@@ -1108,38 +1296,50 @@ def render_resources(sections):
         schema=schema(graph), count=count, checked=checked,
         jump="".join('<a href="#%s">%s</a>' % (s["id"], esc(s["title"])) for s in sections),
         sections="\n".join(resource_section(s) for s in sections),
-        disclaimer=esc(DISCLAIMER))
+        disclaimer=DISCLAIMER_HTML)
 
 
 # ---------------------------------------------------------------- start here
 
-def render_start(situations, by_book):
+def render_start(situations, by_book, books):
     path = "/start/"
     chips = "\n".join('      <a href="#%s">%s</a>' % (s["id"], esc(s["chip"])) for s in situations)
     blocks = []
-    for s in situations:
-        book = by_book[s["book"]]
-        blocks.append(
-            '    <section class="situation" id="%s"><div class="situation-text"><h2>%s</h2><p>%s</p>'
-            '<ul class="situation-links">%s</ul></div>'
-            '<a class="situation-book" href="/books/%s/">%s<span><span class="situation-book-label">'
-            'The book on this</span><strong>%s</strong></span></a></section>'
-            % (s["id"], esc(s["question"]), esc(s["answer"]),
-               "".join("<li>%s</li>" % internal_link(l) for l in s["links"]),
-               book["slug"], cover_frame(book, SIZES_SITUATION), esc(book["title"])))
+    for g in LIBRARY["groups"]:
+        gid = g["id"]
+        here = [s for s in situations if s["group"] == gid]
+        if not here:
+            continue
+        blocks.append('    <h2 class="start-group" style="%s">%s</h2>'
+                      % (theme_style(group_theme(gid, books)), esc(SITE_LIB["groups"][gid]["title"])))
+        for s in here:
+            picks = []
+            for i, slug in enumerate(s["books"]):
+                b = by_book[slug]
+                picks.append('<a class="situation-book" href="/books/%s/">%s<span><span class="situation-book-label">'
+                             '%s</span><strong>%s</strong></span></a>'
+                             % (b["slug"], cover_frame(b, SIZES_TINY), "The book for this" if i == 0 else "Also useful",
+                                esc(b["title"])))
+            blocks.append(
+                '    <section class="situation" id="%s" aria-labelledby="s-%s"><div class="situation-text"><h3 id="s-%s">%s</h3><p>%s</p>'
+                '<ul class="situation-links">%s</ul></div><div class="situation-books">%s</div></section>'
+                % (s["id"], s["id"], s["id"], esc(s["question"]), esc(s["answer"]),
+                   "".join("<li>%s</li>" % internal_link(l) for l in s["links"]), "".join(picks)))
     graph = [
         {"@type": "WebPage", "@id": SITE + path, "url": SITE + path, "name": "Start here",
-         "description": "A guide to where to begin, by situation.", "isPartOf": {"@id": WEBSITE_ID},
+         "description": "Where to begin with ADHD, autism or AuDHD, by situation: the article, free tool and book "
+                        "for each.", "isPartOf": {"@id": WEBSITE_ID},
          "inLanguage": "en-US", "about": about_nodes(["adhd", "autism"])},
         person_node(),
         breadcrumbs((AUTHOR, "/"), ("Start here", path)),
     ]
     return render(
         "start.html",
+        nav="/start/",
         seo=seo_head("Start Here: Where to Begin With ADHD, Autism or AuDHD",
                      "Not sure where to start? Pick what is costing you most, from money and burnout to "
-                     "overthinking and work, and find the right article and book.", path),
-        schema=schema(graph), chips=chips, situations="\n".join(blocks), disclaimer=esc(DISCLAIMER))
+                     "overthinking, masking and work, and find the right article, free tool and book.", path),
+        schema=schema(graph), chips=chips, situations="\n".join(blocks), disclaimer=DISCLAIMER_HTML)
 
 
 # ---------------------------------------------------------------- topics
@@ -1187,11 +1387,12 @@ def render_topic(topic, posts, books, by_book, terms_by_slug, resources_by_id):
     ]
     return render(
         "topic.html",
+        nav="/blog/",
         seo=seo_head(topic.get("seo_title") or "%s — J.M. Struijk" % topic["title"], topic["description"], path,
                      og_image("topic", topic["slug"])),
         schema=schema(graph), title=esc(topic["title"]), description=esc(topic["description"]),
         body=autolink_glossary(topic["body"]), tool=tool, articles=post_cards(articles, "Articles"), books=shelf,
-        terms=terms, resources=help_, other_topics=others, disclaimer=esc(DISCLAIMER))
+        terms=terms, resources=help_, other_topics=others, disclaimer=DISCLAIMER_HTML)
 
 
 def render_topics_index(topics, posts):
@@ -1212,6 +1413,7 @@ def render_topics_index(topics, posts):
     ]
     return render(
         "topics.html",
+        nav="/blog/",
         seo=seo_head("Topics: ADHD, Autism, Money and Burnout — J.M. Struijk",
                      "Browse articles, books and tools on ADHD and autism by subject: money, everyday ADHD, "
                      "late diagnosis, autism in adults, and burnout.", "/topics/"),
@@ -1291,11 +1493,12 @@ def render_calculator(categories, by_book):
     ]
     return render(
         "calculator.html",
+        nav="/tools/",
         seo=seo_head("ADHD Tax Calculator: What Is ADHD Costing You?",
                      "Free ADHD Tax Calculator: add up late fees, forgotten subscriptions, impulse buys and lost "
                      "items to see your monthly, yearly and ten-year cost.", CALC_PATH, og_image("tool", "adhd-tax-calculator")),
         schema=schema(graph), fieldsets="\n".join(fieldsets), explainer=body, data=data,
-        book_cta=book_cta(by_book["adhd-tax"]), author_box=AUTHOR_BOX, disclaimer=esc(DISCLAIMER))
+        book_cta=book_cta(by_book["adhd-tax"]), author_box=AUTHOR_BOX, disclaimer=DISCLAIMER_HTML)
 
 
 # ---------------------------------------------------------------- about
@@ -1310,7 +1513,6 @@ def render_about(books, posts):
 
     person = person_node()
     person.update({
-        "description": meta["description"],
         "jobTitle": "Author",
         "image": SITE + "/assets/images/author.jpg",
         "mainEntityOfPage": {"@id": url},
@@ -1327,19 +1529,20 @@ def render_about(books, posts):
         breadcrumbs((AUTHOR, "/"), ("About", path)),
     ]
     shelf = ('<section class="related"><h2>The books</h2><div class="shelf-grid shelf-grid-small">%s</div></section>'
-             % "".join(book_card(b) for b in books))
+             % "".join(book_card(b, small=True, role=False) for b in books))
     if len(PROFILES) > 1:
         shelf += ('<section class="related"><h2>Find me elsewhere</h2><ul class="profile-list">%s</ul></section>'
                   % "".join('<li><a href="%s" target="_blank" rel="noopener me">%s</a></li>'
                             % (esc(e["url"]), esc(e["name"])) for e in PROFILES))
     return render(
         "about.html",
+        nav="/about/",
         seo=seo_head("About J.M. Struijk, ADHD & Autistic Author", meta["description"], path,
                      og_image("page", "about"), "profile")
             + '\n<meta name="keywords" content="%s">' % esc(meta.get("keywords", "")),
         schema=schema(graph), description=esc(meta["description"]),
         body=autolink_glossary(rendered), shelf=shelf,
-        book_count=len(books), post_count=len(posts), disclaimer=esc(DISCLAIMER))
+        book_count=len(books), post_count=len(posts), disclaimer=DISCLAIMER_HTML)
 
 
 # ---------------------------------------------------------------- tools
@@ -1406,12 +1609,13 @@ def render_subscription_audit(by_book):
     ]
     return render(
         "subscription-audit.html",
+        nav="/tools/",
         seo=seo_head("Subscription Audit: Find What You Forgot You Pay For",
                      "Free subscription audit tool. List recurring charges, mark what to cancel, and see "
                      "the yearly saving. Nothing leaves your browser.", SUB_PATH,
                      og_image("tool", "subscription-audit")),
         schema=schema(graph), explainer=autolink_glossary(body),
-        book_cta=book_cta(by_book["adhd-tax"]), author_box=AUTHOR_BOX, disclaimer=esc(DISCLAIMER))
+        book_cta=book_cta(by_book["adhd-tax"]), author_box=AUTHOR_BOX, disclaimer=DISCLAIMER_HTML)
 
 
 # The spreadsheet is written by make_budget_xlsx.py and follows The ADHD Budget
@@ -1504,12 +1708,13 @@ def render_budget_template(by_book):
     ]
     return render(
         "budget-template.html",
+        nav="/tools/",
         seo=seo_head("Free ADHD Budget Template for Excel and Google Sheets",
                      "A free ADHD-friendly budget template: bills with due dates and autopay, three flexible "
                      "categories and one weekly number. Use it online or download the spreadsheet.",
                      BUDGET_PATH, og_image("tool", "adhd-budget-template")),
         schema=schema(graph), explainer=autolink_glossary(body),
-        book_cta=book_cta(by_book["adhd-budget-planner"]), author_box=AUTHOR_BOX, disclaimer=esc(DISCLAIMER))
+        book_cta=book_cta(by_book["adhd-budget-planner"]), author_box=AUTHOR_BOX, disclaimer=DISCLAIMER_HTML)
 
 
 # The waiting rule from the overspending article, made into a list that
@@ -1592,12 +1797,13 @@ def render_impulse_checklist(by_book):
     ]
     return render(
         "impulse-checklist.html",
+        nav="/tools/",
         seo=seo_head("Free ADHD Impulse Spending Checklist and Waiting List",
                      "A free impulse buying checklist for ADHD: check your state before you buy, put the item on a "
                      "dated waiting list, and see what waiting saved you. No sign-up.",
                      IMPULSE_PATH, og_image("tool", "impulse-spending-checklist")),
         schema=schema(graph), explainer=autolink_glossary(body),
-        book_cta=book_cta(by_book["adhd-tax"]), author_box=AUTHOR_BOX, disclaimer=esc(DISCLAIMER))
+        book_cta=book_cta(by_book["adhd-tax"]), author_box=AUTHOR_BOX, disclaimer=DISCLAIMER_HTML)
 
 
 TOOLS = [
@@ -1636,6 +1842,7 @@ def render_tools_index():
     ]
     return render(
         "tools.html",
+        nav="/tools/",
         seo=seo_head("Free ADHD Tools: Budget Template, Tax Calculator and More",
                      "Free tools for adults with ADHD: a budget template for Excel and Google Sheets, an impulse "
                      "spending checklist, an ADHD tax calculator and a subscription audit. No sign-up.", "/tools/"),
@@ -1644,123 +1851,147 @@ def render_tools_index():
 
 # ---------------------------------------------------------------- homepage
 
-def replace_block(text, name, inner):
-    start, end = "<!-- BUILD:%s:START -->" % name, "<!-- BUILD:%s:END -->" % name
-    if start not in text or end not in text:
-        fail("index.html is missing the %s markers." % name)
-    pattern = re.escape(start) + r".*?" + re.escape(end)
-    return re.sub(pattern, lambda m: start + "\n" + inner + "\n    " + end, text, count=1, flags=re.S)
+# ---------------------------------------------------------------- toolkit
+
+TOOLKIT_PATH = "/toolkit/"
+KIT_PDF = "/assets/files/ADHD-Survival-Kit.pdf"
+KIT_ITEMS = ["A daily check-in", "Early warning signs of burnout", "A weekly energy budget",
+             "A card for interrupting overthinking", "A spending-spiral tracker", "A Sunday reset routine"]
+# Printable worksheets from the books. Drop a PDF at assets/downloads/worksheets/<site_slug>.pdf
+# and the book appears on /toolkit/ (listed openly, linked after sign-up). Nothing is promised
+# for a book until its PDF exists.
+WORKSHEETS_DIR = os.path.join(ROOT, "assets", "downloads", "worksheets")
 
 
-def home_catalogue(books):
-    blocks = []
-    for series, (anchor, colour, _) in SERIES.items():
-        group = [b for b in books if b["series"] == series]
-        if not group:
-            continue
-        cards = []
-        for b in group:
-            badge = ""
-            if b.get("badge"):
-                cls, label = BADGES[b["badge"]]
-                badge = '\n            <div class="badge %s">%s</div>' % (cls, label)
-            cards.append("""        <a href="/books/{slug}/" class="book" aria-label="{title}">
-          <div class="book-cover">{frame}</div>
-          <div class="book-meta">
-            <div class="book-title">{title}</div>
-            <div class="book-subtitle">{tagline}</div>
-            <div class="book-link">About the book</div>
-          </div>
-        </a>""".format(slug=b["slug"], title=esc(b["title"]), tagline=esc(b["tagline"]),
-                       frame=cover_frame(b, SIZES_HOME, badge)))
-        blocks.append("""    <div class="series-block" id="{anchor}" data-reveal>
-      <div class="series-header">
-        <h3 class="series-name"><span class="series-color-dot" style="background:{colour};"></span>{series}</h3>
-        <span class="series-meta">{n} book{s}</span>
-      </div>
-      <div class="book-grid">
-
-{cards}
-
-      </div>
-    </div>""".format(anchor=anchor, colour=colour, series=esc(series), n=len(group),
-                     s="" if len(group) == 1 else "s", cards="\n\n".join(cards)))
-    return "\n\n".join(blocks)
-
-
-def home_posts(posts):
-    # Hand-picked articles first (featured: 1, 2, ...), then the newest.
-    featured = sorted((p for p in posts if p.get("featured")), key=lambda p: p["featured"])
-    rest = [p for p in posts if not p.get("featured")]
-    chosen = (featured + rest)[:6]
-    cards = "\n".join(
-        """      <a class="home-post" href="/blog/{slug}/">
-        <span class="home-post-meta">{mins} min read</span>
-        <span class="home-post-title">{title}</span>
-        <span class="home-post-desc">{desc}</span>
-      </a>""".format(slug=p["slug"], mins=minutes(p["words"]), title=esc(p["title"]),
-                     desc=esc(p["description"])) for p in chosen)
-    return """  <section class="home-posts" id="articles">
-    <div class="section-intro" data-reveal>
-      <span class="section-tag">From the blog</span>
-      <h2>Writing on ADHD and autism, <em>from the inside.</em></h2>
-      <p>
-        Long-form articles on the things nobody explained to me plainly: the ADHD tax, rejection sensitivity, masking, burnout, and why starting is the hardest part.
-      </p>
-    </div>
-    <div class="home-posts-grid" data-reveal>
-{cards}
-    </div>
-    <div class="home-posts-more"><a href="/blog/">All {n} articles &rarr;</a> <a href="/glossary/">The glossary &rarr;</a></div>
-  </section>""".format(cards=cards, n=len(posts))
-
-
-def home_schema(text, books):
-    m = re.search(r'(<script type="application/ld\+json">\n)(.*?)(\n</script>)', text, re.S)
-    if not m:
-        fail("index.html has no JSON-LD block.")
-    data = json.loads(m.group(2))
-    graph = [n for n in data["@graph"] if n.get("@type") not in ("Book", "ItemList")]
-
-    book_nodes = []
+def worksheet_books(books):
+    out = []
     for b in books:
-        node = {"@type": "Book", "@id": SITE + "/books/%s/#book" % b["slug"], "name": b["title"],
-                "alternateName": "%s: %s" % (b["title"], b["subtitle"]),
-                "author": {"@id": PERSON_ID}, "publisher": {"@id": PUBLISHER_ID},
-                "url": SITE + "/books/%s/" % b["slug"], "sameAs": [amazon(b["asin"])],
-                "image": "%s/assets/covers/%s.jpg" % (SITE, b["slug"]),
-                "datePublished": str(b["published"]), "inLanguage": "en",
-                "identifier": {"@type": "PropertyValue", "propertyID": "ASIN", "value": b["asin"]}}
-        if b["series"] != "Standalone":
-            node["isPartOf"] = {"@type": "BookSeries", "name": b["series"]}
-            if b.get("position"):
-                node["position"] = b["position"]
-        book_nodes.append(node)
-    itemlist = {"@type": "ItemList", "@id": SITE + "/#books", "name": "Books by J.M. Struijk",
-                "numberOfItems": len(books),
-                "itemListElement": [{"@type": "ListItem", "position": i + 1,
-                                     "url": SITE + "/books/%s/" % b["slug"], "name": b["title"]}
-                                    for i, b in enumerate(books)]}
-
-    at = next((i + 1 for i, n in enumerate(graph) if n.get("@type") == "WebPage"), len(graph))
-    graph[at:at] = book_nodes + [itemlist]
-    for n in graph:
-        if n.get("@type") == "Person":
-            n["sameAs"] = [e["url"] for e in PROFILES] or [AMAZON_AUTHOR]
-        if n.get("@type") == "Organization":
-            n["logo"] = {"@type": "ImageObject", "url": SITE + "/assets/images/logo.png",
-                         "width": 512, "height": 512}
-    data["@graph"] = graph
-    block = json.dumps(data, indent=2, ensure_ascii=False).replace("</", "<\\/")
-    return text[:m.start(2)] + block + text[m.end(2):]
+        pdf = os.path.join(WORKSHEETS_DIR, b["slug"] + ".pdf")
+        if os.path.exists(pdf):
+            out.append((b, "/assets/downloads/worksheets/%s.pdf" % b["slug"], os.path.getsize(pdf)))
+    return out
 
 
-def build_homepage(posts, books):
-    text = open(os.path.join(ROOT, "index.html"), encoding="utf-8").read()
-    text = replace_block(text, "FONTS", inline_css("assets/fonts/fonts.css"))
-    text = replace_block(text, "CATALOGUE", home_catalogue(books))
-    text = replace_block(text, "POSTS", home_posts(posts))
-    return home_schema(text, books)
+def toolkit_intro():
+    """The toolkit text from library.yaml, minus the sentence that only makes sense inside a book."""
+    first = LIBRARY["toolkit"]["text"].split("\n\n")[0].strip()
+    return re.sub(r"\s*It also has printable copies of the worksheets in this book[^.]*\.", "", first)
+
+
+def render_toolkit(books):
+    sheets = worksheet_books(books)
+    items = "".join("<li>%s</li>" % esc(i) for i in KIT_ITEMS)
+    sheet_section, sheet_links = "", ""
+    if sheets:
+        rows = "".join('<li>%s<div><strong>%s</strong><span>Printable worksheets, PDF, %d KB</span></div></li>'
+                       % (cover_frame(b, SIZES_TINY), esc(b["title"]), round(size / 1024)) for b, _, size in sheets)
+        sheet_section = ('<section class="section" aria-labelledby="ws-h"><h2 id="ws-h">Printable worksheets from the books</h2>'
+                         '<p class="lede">Copies of the worksheets in these books, so you can print them and fill them in '
+                         'more than once. They are part of the toolkit: the download links appear on this page after you sign up.</p>'
+                         '<ul class="worksheet-list">%s</ul></section>' % rows)
+        sheet_links = "".join('<li><a href="%s" download>%s: printable worksheets (PDF)</a></li>' % (href, esc(b["title"]))
+                              for b, href, _ in sheets)
+    graph = [
+        {"@type": "WebPage", "@id": SITE + TOOLKIT_PATH, "url": SITE + TOOLKIT_PATH, "name": "The free toolkit",
+         "description": toolkit_intro(), "isPartOf": {"@id": WEBSITE_ID}, "inLanguage": "en-US"},
+        {"@type": "DigitalDocument", "@id": SITE + TOOLKIT_PATH + "#kit", "name": "The ADHD Survival Kit",
+         "encodingFormat": "application/pdf", "isAccessibleForFree": True, "author": {"@id": PERSON_ID},
+         "description": "Six printable one-page tools: " + ", ".join(i.lower() for i in KIT_ITEMS) + "."},
+        person_node(),
+        breadcrumbs((AUTHOR, "/"), ("The free toolkit", TOOLKIT_PATH)),
+    ]
+    return render(
+        "toolkit.html",
+        nav="/toolkit/",
+        seo=seo_head("Free ADHD Toolkit: Printable One-Page Tools · J.M. Struijk",
+                     "A free set of printable one-page tools for hard weeks: a daily check-in, burnout warning signs, "
+                     "a weekly energy budget, an overthinking card and more. PDF by email.", TOOLKIT_PATH,
+                     og_image("page", "toolkit")),
+        schema=schema(graph), intro=esc(toolkit_intro()), items=items, kit_pdf=KIT_PDF,
+        sheet_section=sheet_section, sheet_links=sheet_links, disclaimer=DISCLAIMER_HTML)
+
+
+# ---------------------------------------------------------------- printable worksheets (The ADHD Tax)
+
+def render_tax_worksheets(by_book):
+    path = "/adhd-tax-worksheets/"
+    graph = [
+        {"@type": "WebPage", "@id": SITE + path, "url": SITE + path, "name": "The ADHD Tax printable worksheets",
+         "isPartOf": {"@id": WEBSITE_ID}, "inLanguage": "en-US",
+         "isBasedOn": {"@id": SITE + "/books/adhd-tax/#book"}},
+        person_node(),
+        breadcrumbs((AUTHOR, "/"), ("Free tools", "/tools/"), ("The ADHD Tax worksheets", path)),
+    ]
+    return render(
+        "worksheets.html",
+        nav="/tools/",
+        seo=seo_head("The ADHD Tax Printable Worksheets (Free PDF, A4 and US Letter)",
+                     "Free printable worksheets from The ADHD Tax by J.M. Struijk: the ADHD Tax Calculator, a money "
+                     "personality quiz, a trigger map, a 48-hour action plan and a monthly check-in.", path),
+        schema=schema(graph), book_cta=book_cta(by_book["adhd-tax"], "The book these come from"),
+        disclaimer=DISCLAIMER_HTML)
+
+
+# ---------------------------------------------------------------- homepage
+
+HOME_SITUATIONS = ["money", "head", "exhausted", "just-diagnosed", "autistic", "audhd", "masking", "debt"]
+HOME_COVERS = ["adhd-tax", "late-diagnosed-autistic-workbook", "adhd-overthinking-reset"]
+
+
+def render_home(posts, books, by_book, situations):
+    home = yaml.safe_load(open(os.path.join(CONTENT, "home.yaml"), encoding="utf-8"))
+    groups = []
+    for g in LIBRARY["groups"]:
+        gid = g["id"]
+        site = SITE_LIB["groups"][gid]
+        entry = by_book[site["path"][0]["book"]]
+        groups.append(
+            '<a class="group-card" href="/books/#%s" style="%s"><img class="motif" src="/assets/motifs/%s.svg" alt="" '
+            'width="450" height="300" loading="lazy"><div class="group-card-body"><span class="eyebrow">%d books</span>'
+            '<h3>%s</h3><p>%s</p><span class="start-with"><span>Start with</span>%s</span></div></a>'
+            % (gid, theme_style(group_theme(gid, books)), entry["slug"], len(site["path"]), esc(site["title"]),
+               esc(site["blurb"]), esc(entry["title"])))
+    by_sit = {s["id"]: s for s in situations}
+    sits = "".join('<a class="situation-link" href="/start/#%s">%s</a>' % (i, esc(by_sit[i]["question"]))
+                   for i in HOME_SITUATIONS)
+    covers = "".join('<a href="/books/%s/">%s</a>' % (s, cover_picture(
+        s, "Cover of " + esc(by_book[s]["title"]), *by_book[s]["cover_size"], SIZES_HOME,
+        'fetchpriority="high"' if i == 2 else 'loading="eager"')) for i, s in enumerate(HOME_COVERS))
+    tools = "".join('<li><a href="%s">%s<span>%s</span></a></li>' % (p, esc(n), esc(k)) for p, n, _, k in TOOLS)
+    featured = sorted((p for p in posts if p.get("featured")), key=lambda p: p["featured"])
+    chosen = (featured + [p for p in posts if not p.get("featured")])[:6]
+    post_list = "".join('<a href="/blog/%s/"><span class="meta">%d min read</span><strong>%s</strong>'
+                        '<span class="desc">%s</span></a>' % (p["slug"], minutes(p["words"]), esc(p["title"]),
+                                                             esc(p["description"])) for p in chosen)
+    faq = [(f["q"], f["a"].strip()) for f in home["faq"]]
+    faq_html = "".join('<details class="faq-item"%s><summary><h3>%s</h3></summary><div class="faq-answer"><p>%s</p></div></details>'
+                       % (" open" if i == 0 else "", esc(q), inline(a)) for i, (q, a) in enumerate(faq))
+
+    person = person_node()
+    person.update({"jobTitle": "Author", "worksFor": {"@id": PUBLISHER_ID}, "image": SITE + "/assets/images/author.jpg",
+                   "knowsAbout": ["ADHD in adults", "Autism in adults", "AuDHD", "Late diagnosis of ADHD",
+                                  "Late diagnosis of autism", "Executive dysfunction", "ADHD burnout", "Autistic burnout",
+                                  "ADHD and personal finance", "Masking", "Sensory overload", "Analysis paralysis"]})
+    graph = [
+        {"@type": "WebSite", "@id": WEBSITE_ID, "url": SITE + "/", "name": "J.M. Struijk", "inLanguage": "en-US",
+         "publisher": {"@id": PUBLISHER_ID}, "author": {"@id": PERSON_ID}},
+        {"@type": "WebPage", "@id": SITE + "/#webpage", "url": SITE + "/", "name": home["title"],
+         "description": home["description"], "isPartOf": {"@id": WEBSITE_ID}, "about": {"@id": PERSON_ID},
+         "primaryImageOfPage": DEFAULT_OG, "inLanguage": "en-US"},
+        person, publisher_ref(),
+    ] + [book_node(b, full=False) for b in books] + [
+        {"@type": "ItemList", "@id": SITE + "/#books", "name": "Books by J.M. Struijk", "numberOfItems": len(books),
+         "itemListElement": [{"@type": "ListItem", "position": i + 1, "url": SITE + "/books/%s/" % b["slug"],
+                              "name": b["title"]} for i, b in enumerate(books)]},
+        {"@type": "FAQPage", "@id": SITE + "/#faq", "mainEntity": [
+            {"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": plain(a)}} for q, a in faq]},
+    ]
+    return render(
+        "home.html",
+        seo=seo_head(home["title"], home["description"], "/"),
+        schema=schema(graph), covers=covers, groups="".join(groups), situations=sits, tools=tools,
+        kit_items="".join("<li>%s</li>" % esc(i) for i in KIT_ITEMS), posts=post_list, post_count=len(posts),
+        book_count=len(books), faq=faq_html, bio=esc(BIO_PERSON))
 
 
 # ------------------------------------------------- feeds, sitemap, llms
@@ -1798,7 +2029,7 @@ def render_feed(posts):
 
 def render_sitemap(posts, books, glossary_date, extra):
     """extra: (path, lastmod, changefreq, priority) for pages outside posts and books."""
-    home_date = mtime_date(os.path.join(ROOT, "index.html"))
+    home_date = mtime_date(os.path.join(TEMPLATES, "home.html"))
     newest_post = max(str(p.get("updated") or p["date"]) for p in posts)
     newest_book = max(b["modified"] for b in books)
 
@@ -1818,8 +2049,7 @@ def render_sitemap(posts, books, glossary_date, extra):
              for p in posts]
     urls.append(entry("/glossary/", glossary_date, "monthly", "0.8"))
     urls += [entry(path, lastmod, freq, priority) for path, lastmod, freq, priority in extra]
-    urls.append(entry("/adhd-tax-worksheets/",
-                      mtime_date(os.path.join(ROOT, "adhd-tax-worksheets", "index.html")), "yearly", "0.5"))
+    urls.append(entry("/adhd-tax-worksheets/", mtime_date(os.path.join(TEMPLATES, "worksheets.html")), "yearly", "0.5"))
     return ('<?xml version="1.0" encoding="UTF-8"?>\n'
             '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"\n'
             '        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">\n'
@@ -1834,15 +2064,16 @@ def first_sentence(text):
 
 def render_llms(posts, books, terms, topics, resources):
     groups = []
-    for series in SERIES:
-        group = [b for b in books if b["series"] == series]
-        if not group:
-            continue
-        lines = ["### " + series, ""]
-        for b in group:
-            extra = " Book %d." % b["position"] if b.get("position") else ""
-            lines.append("- [%s](%s/books/%s/): %s.%s Published %s. Amazon: %s"
-                         % (b["title"], SITE, b["slug"], b["tagline"], extra, b["published"], amazon(b["asin"])))
+    for g in LIBRARY["groups"]:
+        site = SITE_LIB["groups"][g["id"]]
+        lines = ["### " + site["title"], "", site["intro"], ""]
+        for step in site["path"]:
+            b = next(x for x in books if x["slug"] == step["book"])
+            sub = ": " + b["subtitle"] if b["subtitle"] else ""
+            lines.append("- [%s%s](%s/books/%s/) (%s; %s): %s Formats: %s."
+                         % (b["title"], sub, SITE, b["slug"], series_label(b), step["step"].lower(), b["pitch"],
+                            ", ".join("%s%s" % (FORMAT_LABEL[f["kind"]], " ISBN " + f["isbn"] if f.get("isbn") else "")
+                                      for f in b["formats"])))
         groups.append("\n".join(lines))
     books_md = "## Books\n\n" + "\n\n".join(groups)
     articles_md = "\n".join("- [%s](%s/blog/%s/): %s. Published %s."
@@ -1857,8 +2088,10 @@ def render_llms(posts, books, terms, topics, resources):
                                 ", ".join(i["name"] for i in s["items"][:3]))
                              for s in resources)
     tpl = open(os.path.join(TEMPLATES, "llms.md"), encoding="utf-8").read()
+    situations_md = ", ".join(SITUATION_CHIPS)
     profiles_md = "\n".join("- %s: %s" % (e["name"], e["url"]) for e in PROFILES)
-    return tpl.format(profiles=profiles_md,
+    return tpl.format(profiles=profiles_md, bio=BIO_PERSON, situations=situations_md,
+                      toolkit=toolkit_intro(),
                       book_count=len(books), post_count=len(posts), term_count=len(terms),
                       books=books_md, articles=articles_md, glossary=glossary_md,
                       topics=topics_md, resources=resources_md,
@@ -1894,8 +2127,10 @@ def render_llms_full(llms, posts, books, terms, topics, resources):
                   "URL: %s/books/%s/" % (SITE, b["slug"]),
                   "Subtitle: %s" % b["subtitle"],
                   "Series: %s" % series_label(b),
-                  "Published: %s" % b["published"],
-                  "Amazon: %s" % amazon(b["asin"]), "",
+                  "In one line: %s" % b["pitch"],
+                  "Formats: %s" % "; ".join("%s %s" % (FORMAT_LABEL[f["kind"]], amazon_url(f)) for f in b["formats"]),
+                  ""] + (["Published: %s" % b["published"], ""] if b.get("published") else []) + [
+                  
                   absolute_links(b["markdown"]).replace("\n## ", "\n### "), ""]
     for p in posts:
         parts += ["## Article: %s" % p["title"], "",
@@ -2004,7 +2239,7 @@ def render_og_images(posts, books, topics, force):
 
     jobs = [("post", p["slug"], p["title"], "Article · " + topic_label(p.get("about")), p.get("book"))
             for p in posts]
-    jobs += [("book", b["slug"], b["title"], "Book · " + SERIES[b["series"]][2], b["slug"]) for b in books]
+    jobs += [("book", b["slug"], b["title"], series_label(b), b["slug"]) for b in books]
     jobs += [("topic", t["slug"], t["title"], "Topic · " + topic_label(t.get("about")), (t.get("books") or [None])[0])
              for t in topics]
     jobs.append(("tool", "adhd-tax-calculator", "The ADHD Tax Calculator", "Free tool", "adhd-tax"))
@@ -2012,16 +2247,21 @@ def render_og_images(posts, books, topics, force):
     jobs.append(("tool", "adhd-budget-template", "The ADHD Budget Template", "Free tool", "adhd-budget-planner"))
     jobs.append(("tool", "impulse-spending-checklist", "The Impulse Spending Checklist", "Free tool", "adhd-tax"))
     jobs.append(("page", "about", "J.M. Struijk", "About the author", "late-diagnosed-adhd-workbook"))
+    jobs.append(("page", "toolkit", "The free toolkit", "Free printable tools", "adhd-burnout-recovery"))
+    jobs.append(("page", "home", "Practical books for the brain you actually have", "Books for adults with ADHD, autism, or both", "adhd-overthinking-reset"))
 
+    by_slug = {b["slug"]: b for b in books}
     made = 0
     for kind, slug, title, kicker, cover_slug in jobs:
         out = os.path.join(out_dir, "%s-%s.jpg" % (kind, slug))
         if os.path.exists(out) and not force:
             continue
-        cover = os.path.join(ROOT, "assets", "covers", "%s.jpg" % cover_slug) if cover_slug \
-            else os.path.join(ROOT, "og-image.jpg")
-        size = 66 if len(title) < 40 else 58 if len(title) < 60 else 50 if len(title) < 80 else 44
-        doc = tpl.format(css=css, kicker=esc(kicker), title=esc(title), size=size, cover="file://" + cover)
+        b = by_slug.get(cover_slug) or by_slug["adhd-overthinking-reset"]
+        cover = os.path.join(ROOT, "assets", "covers", "%s.jpg" % b["slug"])
+        motif = os.path.join(ROOT, "assets", "motifs", "%s.svg" % b["slug"])
+        size = 72 if len(title) < 30 else 62 if len(title) < 48 else 54 if len(title) < 70 else 46 if len(title) < 95 else 40
+        doc = tpl.format(css=css, kicker=esc(kicker), title=esc(title), size=size, cover="file://" + cover,
+                         motif="file://" + motif, style=theme_style(b))
         with tempfile.TemporaryDirectory() as tmp:
             src, png = os.path.join(tmp, "og.html"), os.path.join(tmp, "og.png")
             open(src, "w", encoding="utf-8").write(doc)
@@ -2032,6 +2272,9 @@ def render_og_images(posts, books, topics, force):
             if not os.path.exists(png):
                 print("share image failed: %s-%s" % (kind, slug))
                 continue
+            if kind == "page" and slug == "home":
+                subprocess.run(["sips", "-s", "format", "jpeg", "-s", "formatOptions", "84",
+                                png, "--out", os.path.join(ROOT, "og-image.jpg")], capture_output=True)
             if shutil.which("sips"):
                 subprocess.run(["sips", "-s", "format", "jpeg", "-s", "formatOptions", "82",
                                 png, "--out", out], capture_output=True)
@@ -2080,9 +2323,13 @@ def main():
     by_post = {p["slug"]: p for p in posts}
     situations, start_date = load_yaml_list("start.yaml")
     for s in situations:
-        require(s, ("id", "chip", "question", "answer", "links", "book"), "start situation %r" % s.get("id"))
-        if s["book"] not in by_book:
-            fail("start situation '%s' names unknown book '%s'." % (s["id"], s["book"]))
+        require(s, ("id", "group", "chip", "question", "answer", "links", "books"), "start situation %r" % s.get("id"))
+        if s["group"] not in SITE_LIB["groups"]:
+            fail("start situation '%s' has unknown group '%s'." % (s["id"], s["group"]))
+        for slug in s["books"]:
+            if slug not in by_book:
+                fail("start situation '%s' names unknown book '%s'." % (s["id"], slug))
+    SITUATION_CHIPS.extend(s["chip"].lower() for s in situations)
     calculator, calculator_date = load_yaml_list("calculator.yaml")
 
     TITLES.update({"/": "Home", "/blog/": "All articles", "/books/": "All books", "/topics/": "Topics",
@@ -2090,7 +2337,7 @@ def main():
                    "/about/": "About J.M. Struijk", "/tools/": "Free tools",
                    CALC_PATH: "ADHD Tax Calculator", SUB_PATH: "Subscription Audit",
                    BUDGET_PATH: "ADHD Budget Template", IMPULSE_PATH: "Impulse Spending Checklist",
-                   "/adhd-tax-worksheets/": "ADHD Tax printable worksheets"})
+                   "/adhd-tax-worksheets/": "ADHD Tax printable worksheets", TOOLKIT_PATH: "The free toolkit"})
     TITLES.update(("/blog/%s/" % p["slug"], p["title"]) for p in posts)
     TITLES.update(("/books/%s/" % b["slug"], b["title"]) for b in books)
     TITLES.update(("/topics/%s/" % t["slug"], t["title"]) for t in topics)
@@ -2103,13 +2350,15 @@ def main():
 
     pages = {"/blog/%s/" % p["slug"]: render_post(p, by_post, by_book) for p in posts}
     pages["/blog/"] = render_blog_index(posts, by_book)
-    pages.update({"/books/%s/" % b["slug"]: render_book(b, posts, books) for b in books})
-    pages["/books/"] = render_books_index(books)
+    pages.update({"/books/%s/" % b["slug"]: render_book(b, posts, books, by_book) for b in books})
+    pages["/books/"] = render_books_index(books, by_book)
     pages["/glossary/"] = render_glossary(terms, by_post, by_book)
     pages.update({"/topics/%s/" % t["slug"]: render_topic(t, posts, books, by_book, terms_by_slug, resources_by_id)
                   for t in topics})
     pages["/topics/"] = render_topics_index(topics, posts)
-    pages["/start/"] = render_start(situations, by_book)
+    pages["/start/"] = render_start(situations, by_book, books)
+    pages[TOOLKIT_PATH] = render_toolkit(books)
+    pages["/adhd-tax-worksheets/"] = render_tax_worksheets(by_book)
     pages["/resources/"] = render_resources(resources)
     pages[CALC_PATH] = render_calculator(calculator, by_book)
     pages[SUB_PATH] = render_subscription_audit(by_book)
@@ -2117,13 +2366,14 @@ def main():
     pages[IMPULSE_PATH] = render_impulse_checklist(by_book)
     pages["/tools/"] = render_tools_index()
     pages["/about/"] = render_about(books, posts)
-    home = build_homepage(posts, books)
+    home = render_home(posts, books, by_book, situations)
     not_found = render_404(posts, books)
 
-    known = set(pages) | {"/", "/adhd-tax-worksheets/", "/blog/feed.xml", "/llms.txt", "/llms-full.txt"}
+    known = set(pages) | {"/", "/blog/feed.xml", "/llms.txt", "/llms-full.txt"}
     anchors = {"/glossary/": set(terms_by_slug) | {"letter-" + c for c in "abcdefghijklmnopqrstuvwxyz"},
                "/resources/": set(resources_by_id),
-               "/start/": {s["id"] for s in situations}}
+               "/start/": {s["id"] for s in situations},
+               "/books/": {g["id"] for g in LIBRARY["groups"]}}
     check_links(dict(pages, **{"/": home, "/404.html": not_found}), known, anchors)
 
     for path, page in pages.items():
@@ -2134,6 +2384,7 @@ def main():
     newest_topic = max(t["modified"] for t in topics)
     write("sitemap.xml", render_sitemap(posts, books, glossary_date, [
         ("/start/", start_date, "monthly", "0.9"),
+        (TOOLKIT_PATH, mtime_date(os.path.join(TEMPLATES, "toolkit.html")), "monthly", "0.8"),
         ("/topics/", newest_topic, "monthly", "0.8"),
     ] + [("/topics/%s/" % t["slug"], t["modified"], "monthly", "0.8") for t in topics] + [
         ("/resources/", resources_date, "monthly", "0.8"),

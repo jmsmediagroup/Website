@@ -3,114 +3,141 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://jmstruijk.com/</loc>
-    <lastmod>2026-11-01</lastmod>
+    <lastmod>2026-11-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image><image:loc>https://jmstruijk.com/assets/covers/adhd-tax.jpg</image:loc></image:image>
     <image:image><image:loc>https://jmstruijk.com/assets/covers/adhd-budget-workbook.jpg</image:loc></image:image>
+    <image:image><image:loc>https://jmstruijk.com/assets/covers/adhd-budget-planner.jpg</image:loc></image:image>
     <image:image><image:loc>https://jmstruijk.com/assets/covers/adhd-side-hustle.jpg</image:loc></image:image>
     <image:image><image:loc>https://jmstruijk.com/assets/covers/adhd-debt-payoff-workbook.jpg</image:loc></image:image>
-    <image:image><image:loc>https://jmstruijk.com/assets/covers/adhd-budget-planner.jpg</image:loc></image:image>
     <image:image><image:loc>https://jmstruijk.com/assets/covers/adhd-overthinking-reset.jpg</image:loc></image:image>
     <image:image><image:loc>https://jmstruijk.com/assets/covers/adhd-eating-reset.jpg</image:loc></image:image>
     <image:image><image:loc>https://jmstruijk.com/assets/covers/adhd-decision-reset.jpg</image:loc></image:image>
-    <image:image><image:loc>https://jmstruijk.com/assets/covers/adhd-burnout-recovery.jpg</image:loc></image:image>
     <image:image><image:loc>https://jmstruijk.com/assets/covers/late-diagnosed-adhd-workbook.jpg</image:loc></image:image>
     <image:image><image:loc>https://jmstruijk.com/assets/covers/late-diagnosed-autistic-workbook.jpg</image:loc></image:image>
+    <image:image><image:loc>https://jmstruijk.com/assets/covers/autism-masking-reset.jpg</image:loc></image:image>
+    <image:image><image:loc>https://jmstruijk.com/assets/covers/late-diagnosed-audhd-workbook.jpg</image:loc></image:image>
+    <image:image><image:loc>https://jmstruijk.com/assets/covers/adhd-burnout-recovery.jpg</image:loc></image:image>
+    <image:image><image:loc>https://jmstruijk.com/assets/covers/adhd-medication-companion.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://jmstruijk.com/books/</loc>
-    <lastmod>2026-10-30</lastmod>
+    <lastmod>2026-11-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <image:image><image:loc>https://jmstruijk.com/assets/covers/adhd-tax.jpg</image:loc></image:image>
     <image:image><image:loc>https://jmstruijk.com/assets/covers/adhd-budget-workbook.jpg</image:loc></image:image>
+    <image:image><image:loc>https://jmstruijk.com/assets/covers/adhd-budget-planner.jpg</image:loc></image:image>
     <image:image><image:loc>https://jmstruijk.com/assets/covers/adhd-side-hustle.jpg</image:loc></image:image>
     <image:image><image:loc>https://jmstruijk.com/assets/covers/adhd-debt-payoff-workbook.jpg</image:loc></image:image>
-    <image:image><image:loc>https://jmstruijk.com/assets/covers/adhd-budget-planner.jpg</image:loc></image:image>
     <image:image><image:loc>https://jmstruijk.com/assets/covers/adhd-overthinking-reset.jpg</image:loc></image:image>
     <image:image><image:loc>https://jmstruijk.com/assets/covers/adhd-eating-reset.jpg</image:loc></image:image>
     <image:image><image:loc>https://jmstruijk.com/assets/covers/adhd-decision-reset.jpg</image:loc></image:image>
-    <image:image><image:loc>https://jmstruijk.com/assets/covers/adhd-burnout-recovery.jpg</image:loc></image:image>
     <image:image><image:loc>https://jmstruijk.com/assets/covers/late-diagnosed-adhd-workbook.jpg</image:loc></image:image>
     <image:image><image:loc>https://jmstruijk.com/assets/covers/late-diagnosed-autistic-workbook.jpg</image:loc></image:image>
+    <image:image><image:loc>https://jmstruijk.com/assets/covers/autism-masking-reset.jpg</image:loc></image:image>
+    <image:image><image:loc>https://jmstruijk.com/assets/covers/late-diagnosed-audhd-workbook.jpg</image:loc></image:image>
+    <image:image><image:loc>https://jmstruijk.com/assets/covers/adhd-burnout-recovery.jpg</image:loc></image:image>
+    <image:image><image:loc>https://jmstruijk.com/assets/covers/adhd-medication-companion.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://jmstruijk.com/books/adhd-tax/</loc>
-    <lastmod>2026-10-30</lastmod>
+    <lastmod>2026-11-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <image:image><image:loc>https://jmstruijk.com/assets/covers/adhd-tax.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://jmstruijk.com/books/adhd-budget-workbook/</loc>
-    <lastmod>2026-10-21</lastmod>
+    <lastmod>2026-11-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <image:image><image:loc>https://jmstruijk.com/assets/covers/adhd-budget-workbook.jpg</image:loc></image:image>
   </url>
   <url>
+    <loc>https://jmstruijk.com/books/adhd-budget-planner/</loc>
+    <lastmod>2026-11-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image><image:loc>https://jmstruijk.com/assets/covers/adhd-budget-planner.jpg</image:loc></image:image>
+  </url>
+  <url>
     <loc>https://jmstruijk.com/books/adhd-side-hustle/</loc>
-    <lastmod>2026-10-21</lastmod>
+    <lastmod>2026-11-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <image:image><image:loc>https://jmstruijk.com/assets/covers/adhd-side-hustle.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://jmstruijk.com/books/adhd-debt-payoff-workbook/</loc>
-    <lastmod>2026-10-21</lastmod>
+    <lastmod>2026-11-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <image:image><image:loc>https://jmstruijk.com/assets/covers/adhd-debt-payoff-workbook.jpg</image:loc></image:image>
   </url>
   <url>
-    <loc>https://jmstruijk.com/books/adhd-budget-planner/</loc>
-    <lastmod>2026-10-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <image:image><image:loc>https://jmstruijk.com/assets/covers/adhd-budget-planner.jpg</image:loc></image:image>
-  </url>
-  <url>
     <loc>https://jmstruijk.com/books/adhd-overthinking-reset/</loc>
-    <lastmod>2026-10-21</lastmod>
+    <lastmod>2026-11-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <image:image><image:loc>https://jmstruijk.com/assets/covers/adhd-overthinking-reset.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://jmstruijk.com/books/adhd-eating-reset/</loc>
-    <lastmod>2026-10-21</lastmod>
+    <lastmod>2026-11-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <image:image><image:loc>https://jmstruijk.com/assets/covers/adhd-eating-reset.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://jmstruijk.com/books/adhd-decision-reset/</loc>
-    <lastmod>2026-10-21</lastmod>
+    <lastmod>2026-11-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <image:image><image:loc>https://jmstruijk.com/assets/covers/adhd-decision-reset.jpg</image:loc></image:image>
   </url>
   <url>
-    <loc>https://jmstruijk.com/books/adhd-burnout-recovery/</loc>
-    <lastmod>2026-10-21</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <image:image><image:loc>https://jmstruijk.com/assets/covers/adhd-burnout-recovery.jpg</image:loc></image:image>
-  </url>
-  <url>
     <loc>https://jmstruijk.com/books/late-diagnosed-adhd-workbook/</loc>
-    <lastmod>2026-10-21</lastmod>
+    <lastmod>2026-11-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <image:image><image:loc>https://jmstruijk.com/assets/covers/late-diagnosed-adhd-workbook.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://jmstruijk.com/books/late-diagnosed-autistic-workbook/</loc>
-    <lastmod>2026-10-21</lastmod>
+    <lastmod>2026-11-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <image:image><image:loc>https://jmstruijk.com/assets/covers/late-diagnosed-autistic-workbook.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://jmstruijk.com/books/autism-masking-reset/</loc>
+    <lastmod>2026-11-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image><image:loc>https://jmstruijk.com/assets/covers/autism-masking-reset.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://jmstruijk.com/books/late-diagnosed-audhd-workbook/</loc>
+    <lastmod>2026-11-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image><image:loc>https://jmstruijk.com/assets/covers/late-diagnosed-audhd-workbook.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://jmstruijk.com/books/adhd-burnout-recovery/</loc>
+    <lastmod>2026-11-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image><image:loc>https://jmstruijk.com/assets/covers/adhd-burnout-recovery.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://jmstruijk.com/books/adhd-medication-companion/</loc>
+    <lastmod>2026-11-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image><image:loc>https://jmstruijk.com/assets/covers/adhd-medication-companion.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://jmstruijk.com/blog/</loc>
@@ -399,13 +426,19 @@
   </url>
   <url>
     <loc>https://jmstruijk.com/start/</loc>
-    <lastmod>2026-10-30</lastmod>
+    <lastmod>2026-11-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://jmstruijk.com/toolkit/</loc>
+    <lastmod>2026-11-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://jmstruijk.com/topics/</loc>
-    <lastmod>2026-11-01</lastmod>
+    <lastmod>2026-11-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -423,13 +456,13 @@
   </url>
   <url>
     <loc>https://jmstruijk.com/topics/late-diagnosis/</loc>
-    <lastmod>2026-10-21</lastmod>
+    <lastmod>2026-11-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://jmstruijk.com/topics/autism/</loc>
-    <lastmod>2026-10-21</lastmod>
+    <lastmod>2026-11-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -447,7 +480,7 @@
   </url>
   <url>
     <loc>https://jmstruijk.com/about/</loc>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-11-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -483,7 +516,7 @@
   </url>
   <url>
     <loc>https://jmstruijk.com/adhd-tax-worksheets/</loc>
-    <lastmod>2026-10-30</lastmod>
+    <lastmod>2026-11-18</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+{seo}
+{head}
+<script type="application/ld+json">
+{schema}
+</script>
+</head>
+<body>
+{header}
+<main id="main">
+
+  <section class="hero" aria-labelledby="hero-h">
+    <div class="hero-text">
+      <span class="eyebrow">Books for adults with ADHD, autism, or both</span>
+      <h1 id="hero-h">Practical books for the brain you <em>actually have</em></h1>
+      <p class="lede">{book_count} books, free tools and plain articles about money, overthinking, burnout and finding out late. Written by an author who was diagnosed with Asperger's and ADHD as an adult.</p>
+      <div class="btn-row">
+        <a class="btn" href="/start/">Find where to start</a>
+        <a class="btn btn-ghost" href="/books/">Browse the library</a>
+      </div>
+      <p class="hero-note">New here? <a class="textlink" href="/toolkit/">The free toolkit</a> has six printable one-page tools for hard weeks.</p>
+    </div>
+    <div class="hero-shelf" aria-label="Three of the books">{covers}</div>
+  </section>
+
+  <section class="section" aria-labelledby="groups-h">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">The library</span>
+        <h2 id="groups-h">Four groups, one book to start each</h2>
+      </div>
+      <a class="textlink arrow" href="/books/">See all {book_count} books and how they fit</a>
+    </div>
+    <div class="groups">{groups}</div>
+  </section>
+
+  <section class="section" aria-labelledby="sit-h">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">Start here</span>
+        <h2 id="sit-h">What is costing you the most right now?</h2>
+        <p>Pick the closest. Each one leads to what to read first, any free tool that helps, and the book that goes further.</p>
+      </div>
+      <a class="textlink arrow" href="/start/">All situations</a>
+    </div>
+    <div class="situations">{situations}</div>
+  </section>
+
+  <section class="section split" aria-label="Free things">
+    <div class="panel">
+      <span class="eyebrow">Free, no sign-up</span>
+      <h2>Tools that do the boring part</h2>
+      <p>Each one runs in your browser, and nothing you type is sent anywhere.</p>
+      <ul class="tool-list">{tools}</ul>
+    </div>
+    <div class="panel panel-dark" id="toolkit">
+      <span class="eyebrow">Free by email</span>
+      <h2 style="color:#fff">The free toolkit</h2>
+      <p>Printable one-page tools for the weeks when things are hard:</p>
+      <ul class="check-list">{kit_items}</ul>
+      <div style="margin-top:24px">
+        <form class="signup-form" action="/toolkit/" method="get" novalidate>
+          <label for="home-email">Email address</label>
+          <input type="email" id="home-email" name="email" autocomplete="email" placeholder="you@example.com" required>
+          <button type="submit">Send me the toolkit</button>
+        </form>
+        <p class="form-status" role="status" aria-live="polite"></p>
+        <p style="font-size:14.5px;margin-top:8px">Signing up adds you to the J.M. Struijk email list. Every email has a one-click unsubscribe link. <a href="/toolkit/" style="color:#fff;text-decoration:underline">More about the toolkit</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="posts-h">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">Articles</span>
+        <h2 id="posts-h">Plain writing on ADHD and autism</h2>
+        <p>On the things that are rarely explained plainly: the ADHD tax, rejection sensitivity, masking, burnout, and why starting is often the hardest part.</p>
+      </div>
+      <a class="textlink arrow" href="/blog/">All {post_count} articles</a>
+    </div>
+    <div class="post-list">{posts}</div>
+  </section>
+
+  <section class="section author-strip" aria-labelledby="author-h">
+    <img src="/assets/images/author.jpg" alt="J.M. Struijk" width="562" height="900" loading="lazy" decoding="async">
+    <div>
+      <span class="eyebrow">About the author</span>
+      <h2 id="author-h">J.M. Struijk</h2>
+      <p>{bio}</p>
+      <p><a class="textlink arrow" href="/about/">How the books are written</a></p>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="faq-h">
+    <div class="section-head"><div><span class="eyebrow">Common questions</span><h2 id="faq-h">Where to start, and what these books are</h2></div></div>
+    <div class="faq-list">{faq}</div>
+  </section>
+
+</main>
+
+{footer}
+</body>
+</html>

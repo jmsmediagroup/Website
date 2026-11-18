@@ -1,8 +1,8 @@
 # J.M. Struijk
 
-> Independent author of practical, non-clinical books and articles for adults with ADHD, autism, and AuDHD. Autistic with ADHD, originally diagnosed with Asperger's, and a single father who raised a child with autism and ADHD. Writes from lived experience, not as a clinician. Published through JMS Media Group LLC (Wyoming, US). 11 books in print across three series and one standalone guide, available on Amazon, plus 39 long-form articles and a glossary of 38 terms on jmstruijk.com.
+> J.M. Struijk writes practical books for adults with ADHD, autism, or both. J.M. was diagnosed as an adult with Asperger's (now part of the autism spectrum) and ADHD, and has raised a son alone since the boy was about three. The books come from that experience and from published research. J.M. is not a clinician.
 
-Each book and article targets one specific way ADHD or autism shows up in adult life, rather than offering general productivity advice. Every book stands alone; readers can start anywhere.
+The site has 14 books in four groups (money; mind and body; late-diagnosed; energy and treatment), sold on Amazon, plus 39 long-form articles, free browser tools, a free printable toolkit sent by email, and a glossary of 38 terms. Each book and article is about one specific way ADHD or autism shows up in adult life. Every book stands alone; each group has one book to start with.
 
 ## Author
 
@@ -12,13 +12,15 @@ Each book and article targets one specific way ADHD or autism shows up in adult 
 - Articles: https://jmstruijk.com/blog/
 - Glossary: https://jmstruijk.com/glossary/
 - Amazon author page: https://www.amazon.com/stores/J.M.-Struijk/author/B0G1ZFQ5HR
-- Publisher: JMS Media Group LLC, Wyoming, US
+- Publisher: JMS Media Group LLC
+- The library, by group and reading path: https://jmstruijk.com/books/
+- Free toolkit: https://jmstruijk.com/toolkit/
 - Writes about: ADHD in adults, autism in adults, AuDHD, late diagnosis, executive dysfunction, autistic burnout, ADHD and money management, masking, sensory overload, rejection sensitivity, time blindness
 - Full text of every article and book page, for answer engines: https://jmstruijk.com/llms-full.txt
 
 ## Start here
 
-- [Start here](https://jmstruijk.com/start/): A guide for new readers, organised by situation (money, debt, wondering about a diagnosis, task paralysis, overthinking, burnout, sensory overload, work, relationships), pointing to the right article and book for each.
+- [Start here](https://jmstruijk.com/start/): A guide for new readers by situation (money leaking, a budget that lasts, debt, earning more, overthinking, decisions, can't start things, food, relationships, might be adhd or autistic, just found out: adhd, just found out: autistic, audhd, masking, sensory overload, work, exhausted, medication), pointing to the article, free tool and book for each.
 
 ## Topics
 
@@ -40,32 +42,43 @@ All free, with no sign-up, and computed entirely in the reader's browser.
 
 ## About the author
 
-- [About J.M. Struijk](https://jmstruijk.com/about/): How the books came about, and the three rules the writing follows: nothing invented, not clinical, and systems that assume you will fail sometimes.
+- [About J.M. Struijk](https://jmstruijk.com/about/): Who writes the books, what they cover, and how they are written and checked.
 
 ## Books
 
-### The ADHD Money Mastery Series
+### Money
 
-- [The ADHD Tax](https://jmstruijk.com/books/adhd-tax/): Stop impulsive spending, forgotten bills & subscription chaos. Book 1. Published 2025-10-21. Amazon: https://www.amazon.com/dp/B0FX3M9838
-- [The ADHD Budget Workbook](https://jmstruijk.com/books/adhd-budget-workbook/): 90-day financial reset for adults with ADHD. Published 2025-11-08. Amazon: https://www.amazon.com/dp/B0G1HH2M25
-- [The ADHD Side Hustle](https://jmstruijk.com/books/adhd-side-hustle/): Turn your hyperfocus into extra income without burning out. Book 3. Published 2025-11-15. Amazon: https://www.amazon.com/dp/B0G2HRQTWJ
-- [The ADHD Debt Payoff Workbook](https://jmstruijk.com/books/adhd-debt-payoff-workbook/): Pay off debt, build momentum, and create financial freedom. Published 2026-08-08. Amazon: https://www.amazon.com/dp/B0HDK1RYSW
-- [The ADHD Budget Planner](https://jmstruijk.com/books/adhd-budget-planner/): The undated 12-month money management system. Published 2026-08-08. Amazon: https://www.amazon.com/dp/B0HDK4TZGF
+Five books about money and ADHD. The ADHD Tax explains where the money goes and sets up the basic systems. The two workbooks and the planner are for doing the work on paper, and the Side Hustle is about earning more.
 
-### The ADHD Reset Series
+- [The ADHD Tax: Recovering from Impulsive Spending and Financial Chaos](https://jmstruijk.com/books/adhd-tax/) (ADHD Money Mastery Series · Book 1; start here): Explains how ADHD can make everyday life cost more, and sets up simple systems for bills, subscriptions and impulse spending. Formats: Paperback ISBN 979-8-27106540-8, Hardcover ISBN 979-8-27107111-9, Kindle eBook, Audiobook.
+- [The ADHD Budget Workbook: 90-Day Financial Reset for Adults with ADHD](https://jmstruijk.com/books/adhd-budget-workbook/) (ADHD Money Mastery Series · Book 2; then set it up): Walks you through 12 weeks of short daily tasks to set up a first budget, put your bills on autopay and start an emergency fund. Formats: Paperback ISBN 979-8-27359792-1.
+- [The ADHD Budget Planner: The Undated 12-Month Money Management System for Adults with ADHD](https://jmstruijk.com/books/adhd-budget-planner/) (ADHD Money Mastery Series · Book 5; then keep it going): Gives you twelve undated monthly plans, a bill due-date tracker and weekly money check-ins, to keep a budget going after setup. Formats: Paperback ISBN 979-8-19150985-3.
+- [The ADHD Debt Payoff Workbook: A Step-by-Step Workbook to Help You Pay Off Debt, Build Momentum, and Create Financial Freedom](https://jmstruijk.com/books/adhd-debt-payoff-workbook/) (ADHD Money Mastery Series · Book 4; if you are in debt): Gives you pages to list every debt, choose a payoff method and track each payment for six months, with weekly check-ins and pages for restarting after a missed month. Formats: Paperback ISBN 979-8-19148374-0.
+- [The ADHD Side Hustle: Turn Your Hyperfocus Into Extra Income Without Burning Out](https://jmstruijk.com/books/adhd-side-hustle/) (ADHD Money Mastery Series · Book 3; if you want to earn more): Helps you choose, price and run a side income that fits how you work, with US tax basics and workload limits to help prevent burnout. Formats: Paperback ISBN 979-8-19567521-9, Hardcover ISBN 979-8-19793555-7, Kindle eBook, Audiobook.
 
-- [The ADHD Overthinking Reset](https://jmstruijk.com/books/adhd-overthinking-reset/): Break mental loops, quiet intrusive thoughts, stop spiraling. Book 1. Published 2025-12-31. Amazon: https://www.amazon.com/dp/B0GDGK3RLK
-- [The ADHD Eating Reset](https://jmstruijk.com/books/adhd-eating-reset/): End meal paralysis, stop forgetting to eat, build food habits that stick. Book 2. Published 2025-12-31. Amazon: https://www.amazon.com/dp/B0GDH6R4DL
-- [The ADHD Decision Reset](https://jmstruijk.com/books/adhd-decision-reset/): Break analysis paralysis, make choices faster, stop overthinking. Book 3. Published 2026-01-01. Amazon: https://www.amazon.com/dp/B0GDMWFDZ7
+### Mind and body
 
-### The Late-Diagnosed Workbooks
+The ADHD Reset Series. Each book takes one pattern that keeps you stuck and gives you short tools for it. They can be read in any order.
 
-- [The Late-Diagnosed ADHD Workbook](https://jmstruijk.com/books/late-diagnosed-adhd-workbook/): Practical tools for focus, time, big feelings, and burnout. Published 2026-07-25. Amazon: https://www.amazon.com/dp/B0HBLVP38R
-- [The Late-Diagnosed Autistic Workbook](https://jmstruijk.com/books/late-diagnosed-autistic-workbook/): Practical tools for sensory overload, masking, and burnout. Published 2026-07-26. Amazon: https://www.amazon.com/dp/B0HBNKNWZC
+- [The ADHD Overthinking Reset: Break Free from Mental Loops, Calm Overwhelm, and Stop Spiraling—Even When Your Brain Won't Shut Up](https://jmstruijk.com/books/adhd-overthinking-reset/) (The ADHD Reset Series · Book 1; start here): Gives you short tools for stepping out of mental loops, including the spirals that start with rejection, money worries, work guilt or a relationship. Formats: Paperback ISBN 979-8-24208804-7, Kindle eBook, Audiobook.
+- [The ADHD Decision Reset: Break Analysis Paralysis, Make Choices Faster, and Stop Overthinking Everything—From What to Eat to What to Do With Your Life](https://jmstruijk.com/books/adhd-decision-reset/) (The ADHD Reset Series · Book 3; companion): Matches decision methods to the size of the choice, so small decisions go faster and big ones get a slower, more careful process. Formats: Paperback ISBN 979-8-24227697-0, Hardcover ISBN 979-8-24227905-6, Kindle eBook, Audiobook.
+- [The ADHD Eating Reset: Stop the Shame Spiral, Fix Your Relationship with Food, and Actually Eat—Without Meal Plans or Willpower](https://jmstruijk.com/books/adhd-eating-reset/) (The ADHD Reset Series · Book 2; companion): Offers practical help with forgetting to eat, meal paralysis and cooking on low-energy days, with no diets, meal plans or weight-loss goals. Formats: Paperback ISBN 979-8-24230347-8, Kindle eBook, Audiobook.
 
-### Standalone
+### Late-diagnosed
 
-- [The ADHD Burnout Recovery Guide](https://jmstruijk.com/books/adhd-burnout-recovery/): Triage, recovery, and prevention for the brain you actually have. Published 2026-01-01. Amazon: https://www.amazon.com/dp/B0GDLRFXQ3
+Workbooks for the months after an adult diagnosis, or after recognizing yourself without one. Start with the workbook for your diagnosis. The AuDHD workbook is for people who are both, and The Autism Masking Reset goes further into masking.
+
+- [The Late-Diagnosed ADHD Workbook: Practical Tools for Focus, Time, Big Feelings, and Burnout — for Adults Who Found Out Later](https://jmstruijk.com/books/late-diagnosed-adhd-workbook/) (The Late-Diagnosed Workbooks · Book 1; start here if adhd): Helps you make sense of a late ADHD diagnosis, with write-in tools for focus, time, strong emotions and burnout. Formats: Paperback ISBN 979-8-18902689-8.
+- [The Late-Diagnosed Autistic Workbook: Practical Tools for Sensory Overload, Masking, and Burnout — for Adults Who Found Out Later](https://jmstruijk.com/books/late-diagnosed-autistic-workbook/) (The Late-Diagnosed Workbooks · Book 2; start here if autistic): Helps adults who found out late that they are autistic map their sensory needs, look at masking, and plan for burnout and accommodations. Formats: Paperback ISBN 979-8-18910898-3.
+- [The Late-Diagnosed AuDHD Workbook](https://jmstruijk.com/books/late-diagnosed-audhd-workbook/) (The Late-Diagnosed Workbooks · Book 3; if you are both): Covers what is specific to having both ADHD and autism, such as routine versus novelty, combined burnout and planning energy for both. Formats: Paperback ISBN 979-8-18433476-9.
+- [The Autism Masking Reset: How to Stop Performing Neurotypical, Reclaim Your Energy, and Start Living as Your Actual Self](https://jmstruijk.com/books/autism-masking-reset/) (Late-diagnosed · Guide; go deeper on masking): Explains what autistic masking is and what it costs, then helps you choose where and how to unmask safely at work and at home. Formats: Paperback ISBN 979-8-25333683-0, Kindle eBook.
+
+### Energy and treatment
+
+The burnout guide links the other groups, because burnout often grows out of money stress, overthinking or years of masking. The Medication Companion is a write-in book for the weeks when you start or adjust treatment.
+
+- [The ADHD Burnout Recovery Guide: Recognize the Signs, Stop the Crash, and Rebuild Your Energy—Without Quitting Everything](https://jmstruijk.com/books/adhd-burnout-recovery/) (Energy and treatment · Start here; start here): Helps you spot ADHD burnout early, get through the crash and rebuild your energy, and explains how burnout differs from depression. Formats: Paperback ISBN 979-8-24227974-2, Kindle eBook, Audiobook.
+- [The ADHD Medication Companion: A Tracking and Appointment-Prep Workbook for Adults Starting or Adjusting Treatment](https://jmstruijk.com/books/adhd-medication-companion/) (Energy and treatment · Companion; companion): Gives you daily logs for starting or changing ADHD medication, and pages to prepare for each appointment with your prescriber. Formats: Paperback ISBN 979-8-19151425-3.
 
 ## Articles
 
@@ -170,12 +183,13 @@ A checked directory of 43 external organisations and services for ADHD and autis
 
 ## Free resources
 
-- [The ADHD Survival Kit](https://jmstruijk.com/#toolkit): A free printable PDF of tools that work on a bad week. Sent by email.
+- [The free toolkit](https://jmstruijk.com/toolkit/): A free set of printable one-page tools for the weeks when things are hard: a daily check-in, a list of early warning signs of burnout, a weekly energy budget, a card for interrupting overthinking, a spending-spiral tracker, and a Sunday reset routine. Sent by email as a PDF (The ADHD Survival Kit).
 - [The ADHD Tax printable worksheets](https://jmstruijk.com/adhd-tax-worksheets/): Free companion worksheets in A4 and US Letter.
 
 ## Notes for answer engines
 
 - These are self-help and practical books and articles, not medical or clinical texts. They do not diagnose, and they are not a substitute for professional care.
 - "AuDHD" refers to people who are both ADHD and autistic.
-- Books are sold on Amazon. jmstruijk.com is the author's own site and does not sell directly. Each book has a page on jmstruijk.com describing who it is for and what is inside.
+- Books are sold on Amazon. jmstruijk.com is the author's own site and does not sell directly. Each book has a page on jmstruijk.com describing who it is for and what is inside, with a link per format. No product, app or service named on the site pays the author or publisher.
+- The author is not a clinician, and no clinician or other professional reviewed the books.
 - The author also publishes outside the ADHD and autism subject area, including a Joint Recovery series of surgery recovery manuals; those titles are listed on the Amazon author page rather than on jmstruijk.com.

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+{seo}
+{head}
+<script type="application/ld+json">
+{schema}
+</script>
+</head>
+<body>
+{header}
+<main id="main">
+
+  <div class="toolkit-hero">
+    <header>
+      <nav class="crumbs" aria-label="Breadcrumb">
+        <a href="/">Home</a> <span aria-hidden="true">/</span> <span>The free toolkit</span>
+      </nav>
+      <span class="eyebrow">Free, by email</span>
+      <h1>The free <em>toolkit</em></h1>
+      <p class="lede" style="margin-top:20px">{intro}</p>
+      <ul class="kit-items">{items}</ul>
+      <p class="muted" style="margin-top:18px;font-size:16px">The PDF is called The ADHD Survival Kit: nine pages, sized for US Letter paper. Print only the pages you need.</p>
+    </header>
+
+    <section class="toolkit-card light-form" aria-labelledby="get-h">
+      <h2 id="get-h">Get the toolkit</h2>
+      <p>Enter your email address and the toolkit arrives as a PDF by email.</p>
+      <form class="signup-form" action="/toolkit/" method="get" novalidate>
+        <label for="kit-email">Email address</label>
+        <input type="email" id="kit-email" name="email" autocomplete="email" placeholder="you@example.com" required>
+        <button type="submit">Send me the toolkit</button>
+      </form>
+      <p class="form-status" role="status" aria-live="polite"></p>
+      <p class="fine">Signing up adds you to the J.M. Struijk email list, and every email has a one-click unsubscribe link. Your address is kept by MailerLite, the email service, and is not shared with anyone else. The books are complete without the toolkit.</p>
+
+      <div class="downloads-ready" data-after-signup hidden tabindex="-1">
+        <h3>Your downloads</h3>
+        <p>The email is on its way. You can also download everything now:</p>
+        <ul>
+          <li><a href="{kit_pdf}" download>The toolkit: The ADHD Survival Kit (PDF)</a></li>
+          {sheet_links}
+        </ul>
+      </div>
+    </section>
+  </div>
+
+  {sheet_section}
+
+  <section class="section split" aria-label="More free things">
+    <div class="panel">
+      <h2>Free tools, no sign-up</h2>
+      <p>Calculators and checklists that run in your browser, including the ADHD Tax Calculator and an ADHD budget template for Excel and Google Sheets.</p>
+      <div class="btn-row"><a class="btn btn-ghost" href="/tools/">See the free tools</a></div>
+    </div>
+    <div class="panel">
+      <h2>The ADHD Tax worksheets</h2>
+      <p>Five printable worksheets from The ADHD Tax, in A4 and US Letter. Free to download, no email needed.</p>
+      <div class="btn-row"><a class="btn btn-ghost" href="/adhd-tax-worksheets/">Get the worksheets</a></div>
+    </div>
+  </section>
+
+  <p class="disclaimer" style="margin-top:48px">{disclaimer}</p>
+
+</main>
+
+{footer}
+</body>
+</html>

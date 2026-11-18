@@ -1,130 +1,192 @@
-# "Start here" guide, rendered to /start/. Each situation points to the
-# articles, tools and directory sections that help most, plus one book.
-# Every link is checked by the build.
+# "Start here" router, rendered to /start/. Each situation belongs to one of the library's four
+# groups and points to the articles, free tools and help pages worth opening first, then to the
+# book that fits (the first in `books`) and, where it helps, one more. Every link and book is
+# checked by the build. Keep the ids: they are anchors that other pages and old links use.
+# Humanized 18 Nov 2026.
 
 - id: money
+  group: money
   chip: "Money leaking"
   question: Money keeps disappearing on fees, subscriptions and impulse buys
   answer: >-
-    That is the ADHD tax, and it is usually far more fixable than it feels. Start by finding out roughly what it
-    costs you, then remove the need to remember with autopay.
-  links: [/blog/adhd-tax-what-it-costs/, /tools/adhd-tax-calculator/, /tools/adhd-budget-template/,
+    That is the ADHD tax, and it is usually more fixable than it feels. Find out roughly what it costs
+    you, then put bills on autopay so paying them stops depending on memory.
+  links: [/tools/adhd-tax-calculator/, /blog/adhd-tax-what-it-costs/, /tools/subscription-audit/,
           /blog/why-adhd-brains-overspend/]
-  book: adhd-tax
+  books: [adhd-tax]
+
+- id: budget
+  group: money
+  chip: "A budget that lasts"
+  question: I've tried budgets and none of them last
+  answer: >-
+    Most budgets need daily attention, and they fall apart the first week that attention slips. Use one
+    with few categories and a weekly check-in, and set it up in short steps.
+  links: [/tools/adhd-budget-template/, /blog/adhd-paying-bills-on-time/]
+  books: [adhd-budget-workbook, adhd-budget-planner]
 
 - id: debt
+  group: money
   chip: "Debt"
   question: I'm in debt and every plan falls apart
   answer: >-
-    Most payoff plans assume a consistency ADHD does not supply. Build one that survives a bad month, and talk to a
-    free debt advice service.
+    Most payoff plans assume a consistency ADHD doesn't supply. Build one that survives a bad month, and
+    talk to a free nonprofit debt advice service, especially if you are behind or a collector is calling.
   links: [/blog/adhd-debt-and-payoff-plans/, /resources/#money]
-  book: adhd-debt-payoff-workbook
+  books: [adhd-debt-payoff-workbook]
 
-- id: wondering
-  chip: "Might be ADHD or autistic"
-  question: I think I might be ADHD or autistic
+- id: income
+  group: money
+  chip: "Earning more"
+  question: I want to earn more on the side without burning out
   answer: >-
-    Online tests can tell you whether an assessment is worth pursuing, but they cannot diagnose you. Here is how to
-    read them, and how adult assessment works.
-  links: [/blog/online-adhd-autism-tests/, /blog/adult-adhd-autism-assessment/, /resources/#assessment]
-  book: late-diagnosed-autistic-workbook
-
-- id: just-diagnosed
-  chip: "Just found out: ADHD"
-  question: I've just found out I have ADHD
-  answer: >-
-    Relief usually comes first and grief often follows. Go slower than the relief suggests, and let the rereading of
-    your own history happen.
-  links: [/blog/adhd-diagnosis-as-an-adult-first-year/, /blog/adhd-in-women/, /topics/late-diagnosis/]
-  book: late-diagnosed-adhd-workbook
-
-- id: autistic
-  chip: "Just found out: autistic"
-  question: I've just found out I'm autistic
-  answer: >-
-    The first months are mostly reinterpretation. Sensory changes give the fastest relief, and autistic-led
-    organisations are the best next step.
-  links: [/blog/autistic-in-adulthood-late-diagnosis/, /blog/autism-in-women/, /resources/#autism-organisations]
-  book: late-diagnosed-autistic-workbook
-
-- id: audhd
-  chip: "AuDHD"
-  question: I'm both, or I think I might be
-  answer: >-
-    AuDHD means needing routine and craving novelty at the same time. Advice written for one side usually makes the
-    other worse, so design for the conflict.
-  links: [/blog/audhd-autistic-and-adhd/, /topics/autism/]
-  book: late-diagnosed-adhd-workbook
-
-- id: cant-start
-  chip: "Can't start things"
-  question: I can't start things, even easy ones
-  answer: >-
-    Task paralysis is a starting problem, not a laziness problem. Shrink the first step until it is almost silly, or
-    borrow someone else's presence.
-  links: [/blog/adhd-task-paralysis/, /blog/adhd-body-doubling/, /blog/adhd-time-blindness/]
-  book: adhd-decision-reset
+    Hyperfocus can carry a new project for a few weeks, then it fades or takes over every evening. Choose
+    work that fits how you work, and decide your limits before you start.
+  links: [/blog/adhd-hyperfocus-without-burnout/]
+  books: [adhd-side-hustle]
 
 - id: head
+  group: mind
   chip: "Overthinking"
   question: My head won't stop, especially at night
   answer: >-
-    Overthinking and rejection sensitivity feel like problem-solving and rarely are. The answer is interrupting the
-    loop, not thinking harder.
-  links: [/blog/adhd-overthinking-2am-spiral/, /blog/rejection-sensitive-dysphoria/, /blog/adhd-and-sleep/]
-  book: adhd-overthinking-reset
+    Overthinking and rejection sensitivity feel like problem-solving, and they rarely solve anything.
+    Interrupting the loop helps more than thinking harder. If unwanted thoughts frighten you or come with
+    urges to check or confess, talk to a clinician, because that can be OCD, which needs different help.
+  links: [/blog/adhd-overthinking-2am-spiral/, /blog/rejection-sensitive-dysphoria/, /blog/adhd-vs-anxiety/]
+  books: [adhd-overthinking-reset]
 
 - id: decisions
+  group: mind
   chip: "Decisions"
   question: Small decisions take me forever
   answer: >-
-    Small choices are often harder than big ones because nothing forces them to close. Decide how you will decide
-    before you start.
-  links: [/blog/adhd-decision-paralysis/, /blog/adhd-meal-paralysis-forgetting-to-eat/]
-  book: adhd-decision-reset
+    Small choices can be harder than big ones because nothing forces them to close. Decide how you will
+    decide before you start.
+  links: [/blog/adhd-decision-paralysis/]
+  books: [adhd-decision-reset, adhd-overthinking-reset]
+
+- id: cant-start
+  group: mind
+  chip: "Can't start things"
+  question: I can't start things, even easy ones
+  answer: >-
+    Task paralysis is a problem with starting, and laziness has nothing to do with it. Shrink the first
+    step until it is almost silly, or work with someone else in the room.
+  links: [/blog/adhd-task-paralysis/, /blog/adhd-body-doubling/, /blog/adhd-time-blindness/, /blog/adhd-doom-piles/]
+  books: [adhd-decision-reset]
 
 - id: food
+  group: mind
   chip: "Food"
   question: I forget to eat, then can't choose what to eat
   answer: >-
-    Eating is a nine-step executive task, and the decision is the expensive part. Fewer decisions help more than
-    better ones.
+    Eating takes a surprising number of steps, and choosing what to eat is often the hardest one. Fewer
+    decisions help more than better ones. If you are worried about how little or how much you eat, talk
+    to a doctor.
   links: [/blog/adhd-meal-paralysis-forgetting-to-eat/]
-  book: adhd-eating-reset
-
-- id: exhausted
-  chip: "Exhausted"
-  question: I'm exhausted and it isn't lifting
-  answer: >-
-    Autistic burnout, ADHD burnout and depression look alike and need different responses. If low mood is
-    persistent, please talk to a doctor.
-  links: [/blog/autistic-burnout-vs-adhd-burnout-vs-depression/, /topics/burnout-and-energy/, /resources/#crisis]
-  book: adhd-burnout-recovery
-
-- id: sensory
-  chip: "Sensory overload"
-  question: Noise, light and people are too much
-  answer: >-
-    Sensory overload builds all day and tips over on something small. Stimming helps you regulate, and cheap
-    environmental changes help fastest.
-  links: [/blog/stimming-and-sensory-overload/, /blog/autistic-meltdown-vs-shutdown/]
-  book: late-diagnosed-autistic-workbook
-
-- id: work
-  chip: "Work"
-  question: Work is wearing me down
-  answer: >-
-    The cost of work is often the environment and the unwritten rules, not the tasks. Small adjustments help, and you
-    can ask for them without disclosing.
-  links: [/blog/adhd-at-work/, /blog/autism-at-work/, /resources/#work]
-  book: late-diagnosed-adhd-workbook
+  books: [adhd-eating-reset]
 
 - id: relationships
+  group: mind
   chip: "Relationships"
   question: ADHD is straining my relationship
   answer: >-
-    Forgetting looks like not caring, and one partner ends up managing the other. Shared systems help far more than
-    promises to try harder.
-  links: [/blog/adhd-and-relationships/, /blog/rejection-sensitive-dysphoria/]
-  book: adhd-overthinking-reset
+    Forgetting can look like not caring, and one partner can end up managing the other. Shared systems
+    help more than promises to try harder. If you feel unsafe at home, start with the help page.
+  links: [/blog/adhd-and-relationships/, /blog/rejection-sensitive-dysphoria/, /resources/#crisis]
+  books: [adhd-overthinking-reset]
+
+- id: wondering
+  group: late
+  chip: "Might be ADHD or autistic"
+  question: I think I might be ADHD or autistic
+  answer: >-
+    Online tests can tell you whether an assessment is worth pursuing, but they cannot diagnose you. Here
+    is how to read them, and how adult assessment works.
+  links: [/blog/online-adhd-autism-tests/, /blog/adult-adhd-autism-assessment/, /blog/adhd-vs-autism-adults/,
+          /resources/#assessment]
+  books: [late-diagnosed-adhd-workbook, late-diagnosed-autistic-workbook]
+
+- id: just-diagnosed
+  group: late
+  chip: "Just found out: ADHD"
+  question: I've just found out I have ADHD
+  answer: >-
+    Relief usually comes first and grief often follows. Go slower than the relief suggests, and give
+    yourself time to look back at your own history.
+  links: [/blog/adhd-diagnosis-as-an-adult-first-year/, /blog/adhd-in-women/, /topics/late-diagnosis/]
+  books: [late-diagnosed-adhd-workbook]
+
+- id: autistic
+  group: late
+  chip: "Just found out: autistic"
+  question: I've just found out I'm autistic
+  answer: >-
+    The first months are mostly about seeing your past in a new light. Changes to your sensory
+    surroundings often bring the quickest relief, and autistic-led organizations are a good next step.
+  links: [/blog/autistic-in-adulthood-late-diagnosis/, /blog/autism-in-women/, /resources/#autism-organisations]
+  books: [late-diagnosed-autistic-workbook]
+
+- id: audhd
+  group: late
+  chip: "AuDHD"
+  question: I'm both, or I think I might be
+  answer: >-
+    AuDHD means being autistic and ADHD, which can mean needing routine and craving novelty at the same
+    time. Advice written for one side can make the other worse, so plan for both.
+  links: [/blog/audhd-autistic-and-adhd/, /topics/autism/]
+  books: [late-diagnosed-audhd-workbook]
+
+- id: masking
+  group: late
+  chip: "Masking"
+  question: I'm worn out from acting "normal" all day
+  answer: >-
+    Many autistic adults copy expressions, script conversations and hide what they need for years,
+    often without noticing until they are exhausted. It helps to see where you mask and what it costs
+    before you decide where to drop some of it.
+  links: [/blog/autistic-masking-and-what-it-costs/, /blog/why-you-shut-down-after-work/]
+  books: [autism-masking-reset, late-diagnosed-autistic-workbook]
+
+- id: sensory
+  group: late
+  chip: "Sensory overload"
+  question: Noise, light and people are too much
+  answer: >-
+    Sensory overload builds all day and tips over on something small. Stimming helps you regulate, and
+    small changes to your surroundings often help fastest.
+  links: [/blog/stimming-and-sensory-overload/, /blog/autistic-meltdown-vs-shutdown/]
+  books: [late-diagnosed-autistic-workbook]
+
+- id: work
+  group: late
+  chip: "Work"
+  question: Work is wearing me down
+  answer: >-
+    What wears you down at work is often the environment and the unwritten rules more than the tasks.
+    Small adjustments help, and you can ask for some of them without disclosing a diagnosis.
+  links: [/blog/adhd-at-work/, /blog/autism-at-work/, /resources/#work]
+  books: [late-diagnosed-adhd-workbook, autism-masking-reset]
+
+- id: exhausted
+  group: energy
+  chip: "Exhausted"
+  question: I'm exhausted and it isn't lifting
+  answer: >-
+    Autistic burnout, ADHD burnout and depression can look alike and need different responses. If low
+    mood has lasted for weeks, please talk to a doctor. If you are thinking about ending your life, call
+    or text 988 in the US now.
+  links: [/blog/autistic-burnout-vs-adhd-burnout-vs-depression/, /topics/burnout-and-energy/, /resources/#crisis]
+  books: [adhd-burnout-recovery]
+
+- id: medication
+  group: energy
+  chip: "Medication"
+  question: I'm starting or changing ADHD medication
+  answer: >-
+    The weeks after a start or a change are easier to discuss when you have written down what you
+    noticed. Your prescriber decides on the medication and the dose, and your notes help that
+    conversation.
+  links: [/blog/adhd-diagnosis-as-an-adult-first-year/]
+  books: [adhd-medication-companion]

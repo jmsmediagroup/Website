@@ -3,7 +3,7 @@ slug: late-diagnosis
 title: "Late diagnosis: ADHD and autism in adulthood"
 order: 3
 description: "For adults who suspect or have just found out they are ADHD or autistic: assessment, online tests, the first year, AuDHD, and why women are often missed."
-books: [late-diagnosed-adhd-workbook, late-diagnosed-autistic-workbook]
+books: [late-diagnosed-adhd-workbook, late-diagnosed-autistic-workbook, late-diagnosed-audhd-workbook, adhd-medication-companion]
 terms: [late-diagnosis, audhd, masking, adhd, autism]
 resources: [assessment, screeners, adhd-organisations, autism-organisations]
 about: [adhd, autism]

@@ -1,49 +1,40 @@
 ---
 title: About J.M. Struijk
-description: "J.M. Struijk is an autistic author with ADHD, originally diagnosed with Asperger's, and a single father. Practical books for adults with ADHD, autism and AuDHD."
+description: "J.M. Struijk writes practical books for adults with ADHD, autism, or both, and was diagnosed as an adult with Asperger's (now part of the autism spectrum) and ADHD."
 keywords: j.m. struijk, jm struijk author, adhd author, autistic author, asperger author, late diagnosed author
 about: [adhd, autism]
 ---
 
-I am an autistic adult with ADHD, originally diagnosed with Asperger's, and I raised a child with autism and ADHD on my own. I write the practical manuals I wanted on my own shelf and could not find.
+J.M. Struijk writes practical books for adults with ADHD, autism, or both. J.M. was diagnosed as an adult with Asperger's (now part of the autism spectrum) and ADHD, and has raised a son alone since the boy was about three. The books come from that experience and from published research. J.M. is not a clinician.
 
-That is the whole of it, really. Everything on this site comes out of the gap between what ordinary self-help promised and what actually worked for a brain that runs differently.
+## What the books cover
 
-## What I write about
+There are fourteen books, in four groups. The money books start with [The ADHD Tax](/books/adhd-tax/), which looks at why ADHD can make everyday life cost more, and go on to workbooks for budgeting and paying off debt. The ADHD Reset Series takes one stuck pattern per book: overthinking, decisions and eating. The Late-Diagnosed Workbooks and [The Autism Masking Reset](/books/autism-masking-reset/) are for adults who found out later that they are ADHD, autistic, or both. [The ADHD Burnout Recovery Guide](/books/adhd-burnout-recovery/) and [The ADHD Medication Companion](/books/adhd-medication-companion/) deal with energy and treatment.
 
-Eleven books so far, across three series and one standalone guide, plus the articles on this site.
+Each book is about one specific way ADHD or autism shows up in adult life. The [library page](/books/) shows how they fit together and which one to start with.
 
-The [ADHD Money Mastery Series](/topics/adhd-and-money/) came first, because money is where ADHD leaves the clearest evidence: late fees on bills you could afford, subscriptions you meant to cancel, the slow drain of things bought twice. The [ADHD Reset Series](/topics/everyday-adhd/) takes one stuck pattern per book, the kind that advice usually describes without explaining. The [Late-Diagnosed Workbooks](/topics/late-diagnosis/) are for the strange period after an adult diagnosis, when relief and grief arrive together and nobody warns you about the second one.
+## How they are written
 
-Every book is built around one specific way ADHD or autism shows up in adult life. None of them is a general productivity manual with a diagnosis printed on the cover.
+The books are written for adults who are often tired and have tried advice that did not fit. That means short sections, concrete steps, and systems that still work after a missed week.
 
-## How I write
+Where a book describes research, it should say how strong the evidence is and where it comes from. In 2026 every book is being revised against a written standard: facts checked against published sources, a list of sources at the back, stories about other people labeled as composites, and help lines in the places they are needed. Until a book's revised edition is out, its page on this site describes the edition that is on sale.
 
-Three rules, and I hold to them.
+Where something comes from J.M.'s own experience, the books say so. Experience can explain what something feels like. It is never offered as proof that a method works.
 
-Nothing invented. No statistics I cannot stand behind, no studies cited to sound authoritative, no numbers that appeared because a sentence wanted one. Where something is my experience rather than established fact, I say so.
-
-Not clinical. I am not a doctor, a therapist or a researcher, and I do not pretend otherwise. What I have is lived experience, a great deal of reading, and years of working out which strategies survive a bad week. Where the honest answer is "ask a professional", that is the answer you will get.
-
-Systems that assume you will fail sometimes. Most advice is built for consistency. Anything I write has to keep working on the weeks when you disappear, because those weeks are not an exception.
-
-## Why it is worth saying plainly
-
-The thing I most wanted to read, before I knew what was going on, was something that described the inside of the experience accurately and without flinching. Not a symptom list. Not an inspirational reframe. Just someone saying: yes, this happens, here is why it happens, here is what helped.
-
-Years of paying the ADHD tax. Of trying every productivity system that was never built for me. Of masking my way through rooms and realising afterwards there was nothing left. The point of writing it down is that it takes less time for the next person to find out.
+J.M. is not a doctor, therapist, dietitian, lawyer or financial adviser, and no clinician or other professional has reviewed the books. When the honest answer is to ask a professional, the books say that.
 
 ## Publishing
 
-Books are published independently through JMS Media Group LLC, a small Wyoming company I run myself. No conference circuit, no expensive course, no productivity-guru empire. Just the next manual, written carefully, for the next reader who needed it.
+The books are published independently by JMS Media Group LLC and sold on Amazon. No product, app or service named in the books or on this site pays the author or the publisher.
 
 ## Where to find things
 
 - [All the books](/books/), with a page for each explaining who it is for and what is inside
-- [All the articles](/blog/), or browse them [by topic](/topics/)
 - [Start here](/start/) if you are not sure where to begin
-- [The glossary](/glossary/) for the terms you will meet in ADHD and autistic communities
-- [Organisations and helplines](/resources/) beyond this site
+- [The free toolkit](/toolkit/), printable one-page tools sent by email
 - [Free tools](/tools/), including the ADHD Tax Calculator
+- [All the articles](/blog/), or browse them [by topic](/topics/)
+- [The glossary](/glossary/) for terms you will meet in ADHD and autistic communities
+- [Organizations and helplines](/resources/) beyond this site
 
-You can reach me at hello@jmstruijk.com. I read what people send.
+You can write to hello@jmstruijk.com.

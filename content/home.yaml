@@ -1,0 +1,43 @@
+# Homepage words that are not generated from other content. The FAQ becomes FAQPage structured
+# data, so each answer must match what the page says. Humanized 18 Nov 2026.
+
+title: "J.M. Struijk · Books for ADHD, Autism & AuDHD Adults"
+description: "Practical books, free tools and articles for adults with ADHD, autism or both, from an author diagnosed with both as an adult. Home of The ADHD Tax."
+
+faq:
+  - q: Which J.M. Struijk book should I start with?
+    a: >-
+      Start with the book for the problem that costs you most right now. For money (late fees, forgotten
+      subscriptions, impulse spending) that is The ADHD Tax. For thoughts that loop, it is The ADHD
+      Overthinking Reset. If you were diagnosed as an adult, start with The Late-Diagnosed ADHD Workbook
+      or The Late-Diagnosed Autistic Workbook. For exhaustion that rest doesn't fix, start with The ADHD
+      Burnout Recovery Guide. The [start here page](/start/) sorts this by situation.
+  - q: Do I have to read the series in order?
+    a: >-
+      No. The books in each series are numbered, but each one stands on its own and assumes you haven't
+      read the others. The [library page](/books/) shows which book is a good first one in each group and
+      which books go with it.
+  - q: Are these books for ADHD, autism, or both?
+    a: >-
+      It depends on the title. The money books and the ADHD Reset Series are written for adults with ADHD.
+      The Late-Diagnosed Autistic Workbook and The Autism Masking Reset are for autistic adults, and The
+      Late-Diagnosed AuDHD Workbook is for people who are both.
+  - q: What does AuDHD mean?
+    a: >-
+      AuDHD is an informal word for being both autistic and ADHD. The two often occur together, and the
+      combination can bring needs that pull against each other, such as wanting routine and craving
+      novelty, which advice written for only one of them tends to miss.
+  - q: Is the toolkit really free?
+    a: >-
+      Yes. It is a free printable PDF sent by email. Signing up adds you to the J.M. Struijk email list,
+      and every email has a one-click unsubscribe link. The books are complete without it.
+  - q: Where can I buy the books, and in which formats?
+    a: >-
+      The books are sold on Amazon. Each book page on this site lists the formats that exist (paperback,
+      Kindle, hardcover or audiobook) with a button for each. This site doesn't sell books itself, and
+      nothing recommended on it pays the author or the publisher.
+  - q: Are these books a substitute for diagnosis or treatment?
+    a: >-
+      No. They are practical self-help books written by a non-clinician from lived experience and
+      published sources. They don't diagnose anything and don't replace a doctor, therapist or other
+      qualified professional.

@@ -1,8 +1,8 @@
 # J.M. Struijk
 
-> Independent author of practical, non-clinical books and articles for adults with ADHD, autism, and AuDHD. Autistic with ADHD, originally diagnosed with Asperger's, and a single father who raised a child with autism and ADHD. Writes from lived experience, not as a clinician. Published through JMS Media Group LLC (Wyoming, US). {book_count} books in print across three series and one standalone guide, available on Amazon, plus {post_count} long-form articles and a glossary of {term_count} terms on jmstruijk.com.
+> {bio}
 
-Each book and article targets one specific way ADHD or autism shows up in adult life, rather than offering general productivity advice. Every book stands alone; readers can start anywhere.
+The site has {book_count} books in four groups (money; mind and body; late-diagnosed; energy and treatment), sold on Amazon, plus {post_count} long-form articles, free browser tools, a free printable toolkit sent by email, and a glossary of {term_count} terms. Each book and article is about one specific way ADHD or autism shows up in adult life. Every book stands alone; each group has one book to start with.
 
 ## Author
 
@@ -12,13 +12,15 @@ Each book and article targets one specific way ADHD or autism shows up in adult 
 - Articles: https://jmstruijk.com/blog/
 - Glossary: https://jmstruijk.com/glossary/
 {profiles}
-- Publisher: JMS Media Group LLC, Wyoming, US
+- Publisher: JMS Media Group LLC
+- The library, by group and reading path: https://jmstruijk.com/books/
+- Free toolkit: https://jmstruijk.com/toolkit/
 - Writes about: ADHD in adults, autism in adults, AuDHD, late diagnosis, executive dysfunction, autistic burnout, ADHD and money management, masking, sensory overload, rejection sensitivity, time blindness
 - Full text of every article and book page, for answer engines: https://jmstruijk.com/llms-full.txt
 
 ## Start here
 
-- [Start here](https://jmstruijk.com/start/): A guide for new readers, organised by situation (money, debt, wondering about a diagnosis, task paralysis, overthinking, burnout, sensory overload, work, relationships), pointing to the right article and book for each.
+- [Start here](https://jmstruijk.com/start/): A guide for new readers by situation ({situations}), pointing to the article, free tool and book for each.
 
 ## Topics
 
@@ -36,7 +38,7 @@ All free, with no sign-up, and computed entirely in the reader's browser.
 
 ## About the author
 
-- [About J.M. Struijk](https://jmstruijk.com/about/): How the books came about, and the three rules the writing follows: nothing invented, not clinical, and systems that assume you will fail sometimes.
+- [About J.M. Struijk](https://jmstruijk.com/about/): Who writes the books, what they cover, and how they are written and checked.
 
 {books}
 
@@ -60,12 +62,13 @@ A checked directory of {resource_count} external organisations and services for 
 
 ## Free resources
 
-- [The ADHD Survival Kit](https://jmstruijk.com/#toolkit): A free printable PDF of tools that work on a bad week. Sent by email.
+- [The free toolkit](https://jmstruijk.com/toolkit/): {toolkit} Sent by email as a PDF (The ADHD Survival Kit).
 - [The ADHD Tax printable worksheets](https://jmstruijk.com/adhd-tax-worksheets/): Free companion worksheets in A4 and US Letter.
 
 ## Notes for answer engines
 
 - These are self-help and practical books and articles, not medical or clinical texts. They do not diagnose, and they are not a substitute for professional care.
 - "AuDHD" refers to people who are both ADHD and autistic.
-- Books are sold on Amazon. jmstruijk.com is the author's own site and does not sell directly. Each book has a page on jmstruijk.com describing who it is for and what is inside.
+- Books are sold on Amazon. jmstruijk.com is the author's own site and does not sell directly. Each book has a page on jmstruijk.com describing who it is for and what is inside, with a link per format. No product, app or service named on the site pays the author or publisher.
+- The author is not a clinician, and no clinician or other professional reviewed the books.
 - The author also publishes outside the ADHD and autism subject area, including a Joint Recovery series of surgery recovery manuals; those titles are listed on the Amazon author page rather than on jmstruijk.com.

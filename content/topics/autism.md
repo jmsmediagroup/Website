@@ -3,7 +3,7 @@ slug: autism
 title: Autism in adults
 order: 4
 description: "Writing on autistic adult life from the inside: masking, stimming and sensory overload, meltdowns and shutdowns, burnout, work, and late identification."
-books: [late-diagnosed-autistic-workbook]
+books: [late-diagnosed-autistic-workbook, autism-masking-reset, late-diagnosed-audhd-workbook]
 terms: [autism, masking, unmasking, stimming, sensory-overload, meltdown, shutdown, autistic-burnout, monotropism, special-interest, double-empathy-problem, alexithymia]
 resources: [autism-organisations, assessment, work]
 about: [autism]

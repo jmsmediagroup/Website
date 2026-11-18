@@ -137,6 +137,14 @@ export default {
       return new Response(res.body, { status: 404, headers: { 'Content-Type': 'text/html; charset=utf-8', ...SECURITY } });
     }
 
+    // Every page lives at a trailing slash. The books print jmstruijk.com/toolkit and link to
+    // jmstruijk.com/books/<slug> without one, so those, and any other path without a file
+    // extension, get a single permanent redirect instead of the asset server's temporary one.
+    if (!path.endsWith('/') && !/\.[a-z0-9]+$/i.test(path)) {
+      url.pathname = path + '/';
+      return Response.redirect(url.toString(), 301);
+    }
+
     const res = await env.ASSETS.fetch(request);
     const out = new Response(res.body, res);
     for (const [k, v] of Object.entries(SECURITY)) out.headers.set(k, v);

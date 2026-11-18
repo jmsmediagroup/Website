@@ -1,8 +1,8 @@
 # J.M. Struijk
 
-> Independent author of practical, non-clinical books and articles for adults with ADHD, autism, and AuDHD. Autistic with ADHD, originally diagnosed with Asperger's, and a single father who raised a child with autism and ADHD. Writes from lived experience, not as a clinician. Published through JMS Media Group LLC (Wyoming, US). 11 books in print across three series and one standalone guide, available on Amazon, plus 39 long-form articles and a glossary of 38 terms on jmstruijk.com.
+> J.M. Struijk writes practical books for adults with ADHD, autism, or both. J.M. was diagnosed as an adult with Asperger's (now part of the autism spectrum) and ADHD, and has raised a son alone since the boy was about three. The books come from that experience and from published research. J.M. is not a clinician.
 
-Each book and article targets one specific way ADHD or autism shows up in adult life, rather than offering general productivity advice. Every book stands alone; readers can start anywhere.
+The site has 14 books in four groups (money; mind and body; late-diagnosed; energy and treatment), sold on Amazon, plus 39 long-form articles, free browser tools, a free printable toolkit sent by email, and a glossary of 38 terms. Each book and article is about one specific way ADHD or autism shows up in adult life. Every book stands alone; each group has one book to start with.
 
 ## Author
 
@@ -12,13 +12,15 @@ Each book and article targets one specific way ADHD or autism shows up in adult 
 - Articles: https://jmstruijk.com/blog/
 - Glossary: https://jmstruijk.com/glossary/
 - Amazon author page: https://www.amazon.com/stores/J.M.-Struijk/author/B0G1ZFQ5HR
-- Publisher: JMS Media Group LLC, Wyoming, US
+- Publisher: JMS Media Group LLC
+- The library, by group and reading path: https://jmstruijk.com/books/
+- Free toolkit: https://jmstruijk.com/toolkit/
 - Writes about: ADHD in adults, autism in adults, AuDHD, late diagnosis, executive dysfunction, autistic burnout, ADHD and money management, masking, sensory overload, rejection sensitivity, time blindness
 - Full text of every article and book page, for answer engines: https://jmstruijk.com/llms-full.txt
 
 ## Start here
 
-- [Start here](https://jmstruijk.com/start/): A guide for new readers, organised by situation (money, debt, wondering about a diagnosis, task paralysis, overthinking, burnout, sensory overload, work, relationships), pointing to the right article and book for each.
+- [Start here](https://jmstruijk.com/start/): A guide for new readers by situation (money leaking, a budget that lasts, debt, earning more, overthinking, decisions, can't start things, food, relationships, might be adhd or autistic, just found out: adhd, just found out: autistic, audhd, masking, sensory overload, work, exhausted, medication), pointing to the article, free tool and book for each.
 
 ## Topics
 
@@ -40,32 +42,43 @@ All free, with no sign-up, and computed entirely in the reader's browser.
 
 ## About the author
 
-- [About J.M. Struijk](https://jmstruijk.com/about/): How the books came about, and the three rules the writing follows: nothing invented, not clinical, and systems that assume you will fail sometimes.
+- [About J.M. Struijk](https://jmstruijk.com/about/): Who writes the books, what they cover, and how they are written and checked.
 
 ## Books
 
-### The ADHD Money Mastery Series
+### Money
 
-- [The ADHD Tax](https://jmstruijk.com/books/adhd-tax/): Stop impulsive spending, forgotten bills & subscription chaos. Book 1. Published 2025-10-21. Amazon: https://www.amazon.com/dp/B0FX3M9838
-- [The ADHD Budget Workbook](https://jmstruijk.com/books/adhd-budget-workbook/): 90-day financial reset for adults with ADHD. Published 2025-11-08. Amazon: https://www.amazon.com/dp/B0G1HH2M25
-- [The ADHD Side Hustle](https://jmstruijk.com/books/adhd-side-hustle/): Turn your hyperfocus into extra income without burning out. Book 3. Published 2025-11-15. Amazon: https://www.amazon.com/dp/B0G2HRQTWJ
-- [The ADHD Debt Payoff Workbook](https://jmstruijk.com/books/adhd-debt-payoff-workbook/): Pay off debt, build momentum, and create financial freedom. Published 2026-08-08. Amazon: https://www.amazon.com/dp/B0HDK1RYSW
-- [The ADHD Budget Planner](https://jmstruijk.com/books/adhd-budget-planner/): The undated 12-month money management system. Published 2026-08-08. Amazon: https://www.amazon.com/dp/B0HDK4TZGF
+Five books about money and ADHD. The ADHD Tax explains where the money goes and sets up the basic systems. The two workbooks and the planner are for doing the work on paper, and the Side Hustle is about earning more.
 
-### The ADHD Reset Series
+- [The ADHD Tax: Recovering from Impulsive Spending and Financial Chaos](https://jmstruijk.com/books/adhd-tax/) (ADHD Money Mastery Series · Book 1; start here): Explains how ADHD can make everyday life cost more, and sets up simple systems for bills, subscriptions and impulse spending. Formats: Paperback ISBN 979-8-27106540-8, Hardcover ISBN 979-8-27107111-9, Kindle eBook, Audiobook.
+- [The ADHD Budget Workbook: 90-Day Financial Reset for Adults with ADHD](https://jmstruijk.com/books/adhd-budget-workbook/) (ADHD Money Mastery Series · Book 2; then set it up): Walks you through 12 weeks of short daily tasks to set up a first budget, put your bills on autopay and start an emergency fund. Formats: Paperback ISBN 979-8-27359792-1.
+- [The ADHD Budget Planner: The Undated 12-Month Money Management System for Adults with ADHD](https://jmstruijk.com/books/adhd-budget-planner/) (ADHD Money Mastery Series · Book 5; then keep it going): Gives you twelve undated monthly plans, a bill due-date tracker and weekly money check-ins, to keep a budget going after setup. Formats: Paperback ISBN 979-8-19150985-3.
+- [The ADHD Debt Payoff Workbook: A Step-by-Step Workbook to Help You Pay Off Debt, Build Momentum, and Create Financial Freedom](https://jmstruijk.com/books/adhd-debt-payoff-workbook/) (ADHD Money Mastery Series · Book 4; if you are in debt): Gives you pages to list every debt, choose a payoff method and track each payment for six months, with weekly check-ins and pages for restarting after a missed month. Formats: Paperback ISBN 979-8-19148374-0.
+- [The ADHD Side Hustle: Turn Your Hyperfocus Into Extra Income Without Burning Out](https://jmstruijk.com/books/adhd-side-hustle/) (ADHD Money Mastery Series · Book 3; if you want to earn more): Helps you choose, price and run a side income that fits how you work, with US tax basics and workload limits to help prevent burnout. Formats: Paperback ISBN 979-8-19567521-9, Hardcover ISBN 979-8-19793555-7, Kindle eBook, Audiobook.
 
-- [The ADHD Overthinking Reset](https://jmstruijk.com/books/adhd-overthinking-reset/): Break mental loops, quiet intrusive thoughts, stop spiraling. Book 1. Published 2025-12-31. Amazon: https://www.amazon.com/dp/B0GDGK3RLK
-- [The ADHD Eating Reset](https://jmstruijk.com/books/adhd-eating-reset/): End meal paralysis, stop forgetting to eat, build food habits that stick. Book 2. Published 2025-12-31. Amazon: https://www.amazon.com/dp/B0GDH6R4DL
-- [The ADHD Decision Reset](https://jmstruijk.com/books/adhd-decision-reset/): Break analysis paralysis, make choices faster, stop overthinking. Book 3. Published 2026-01-01. Amazon: https://www.amazon.com/dp/B0GDMWFDZ7
+### Mind and body
 
-### The Late-Diagnosed Workbooks
+The ADHD Reset Series. Each book takes one pattern that keeps you stuck and gives you short tools for it. They can be read in any order.
 
-- [The Late-Diagnosed ADHD Workbook](https://jmstruijk.com/books/late-diagnosed-adhd-workbook/): Practical tools for focus, time, big feelings, and burnout. Published 2026-07-25. Amazon: https://www.amazon.com/dp/B0HBLVP38R
-- [The Late-Diagnosed Autistic Workbook](https://jmstruijk.com/books/late-diagnosed-autistic-workbook/): Practical tools for sensory overload, masking, and burnout. Published 2026-07-26. Amazon: https://www.amazon.com/dp/B0HBNKNWZC
+- [The ADHD Overthinking Reset: Break Free from Mental Loops, Calm Overwhelm, and Stop Spiraling—Even When Your Brain Won't Shut Up](https://jmstruijk.com/books/adhd-overthinking-reset/) (The ADHD Reset Series · Book 1; start here): Gives you short tools for stepping out of mental loops, including the spirals that start with rejection, money worries, work guilt or a relationship. Formats: Paperback ISBN 979-8-24208804-7, Kindle eBook, Audiobook.
+- [The ADHD Decision Reset: Break Analysis Paralysis, Make Choices Faster, and Stop Overthinking Everything—From What to Eat to What to Do With Your Life](https://jmstruijk.com/books/adhd-decision-reset/) (The ADHD Reset Series · Book 3; companion): Matches decision methods to the size of the choice, so small decisions go faster and big ones get a slower, more careful process. Formats: Paperback ISBN 979-8-24227697-0, Hardcover ISBN 979-8-24227905-6, Kindle eBook, Audiobook.
+- [The ADHD Eating Reset: Stop the Shame Spiral, Fix Your Relationship with Food, and Actually Eat—Without Meal Plans or Willpower](https://jmstruijk.com/books/adhd-eating-reset/) (The ADHD Reset Series · Book 2; companion): Offers practical help with forgetting to eat, meal paralysis and cooking on low-energy days, with no diets, meal plans or weight-loss goals. Formats: Paperback ISBN 979-8-24230347-8, Kindle eBook, Audiobook.
 
-### Standalone
+### Late-diagnosed
 
-- [The ADHD Burnout Recovery Guide](https://jmstruijk.com/books/adhd-burnout-recovery/): Triage, recovery, and prevention for the brain you actually have. Published 2026-01-01. Amazon: https://www.amazon.com/dp/B0GDLRFXQ3
+Workbooks for the months after an adult diagnosis, or after recognizing yourself without one. Start with the workbook for your diagnosis. The AuDHD workbook is for people who are both, and The Autism Masking Reset goes further into masking.
+
+- [The Late-Diagnosed ADHD Workbook: Practical Tools for Focus, Time, Big Feelings, and Burnout — for Adults Who Found Out Later](https://jmstruijk.com/books/late-diagnosed-adhd-workbook/) (The Late-Diagnosed Workbooks · Book 1; start here if adhd): Helps you make sense of a late ADHD diagnosis, with write-in tools for focus, time, strong emotions and burnout. Formats: Paperback ISBN 979-8-18902689-8.
+- [The Late-Diagnosed Autistic Workbook: Practical Tools for Sensory Overload, Masking, and Burnout — for Adults Who Found Out Later](https://jmstruijk.com/books/late-diagnosed-autistic-workbook/) (The Late-Diagnosed Workbooks · Book 2; start here if autistic): Helps adults who found out late that they are autistic map their sensory needs, look at masking, and plan for burnout and accommodations. Formats: Paperback ISBN 979-8-18910898-3.
+- [The Late-Diagnosed AuDHD Workbook](https://jmstruijk.com/books/late-diagnosed-audhd-workbook/) (The Late-Diagnosed Workbooks · Book 3; if you are both): Covers what is specific to having both ADHD and autism, such as routine versus novelty, combined burnout and planning energy for both. Formats: Paperback ISBN 979-8-18433476-9.
+- [The Autism Masking Reset: How to Stop Performing Neurotypical, Reclaim Your Energy, and Start Living as Your Actual Self](https://jmstruijk.com/books/autism-masking-reset/) (Late-diagnosed · Guide; go deeper on masking): Explains what autistic masking is and what it costs, then helps you choose where and how to unmask safely at work and at home. Formats: Paperback ISBN 979-8-25333683-0, Kindle eBook.
+
+### Energy and treatment
+
+The burnout guide links the other groups, because burnout often grows out of money stress, overthinking or years of masking. The Medication Companion is a write-in book for the weeks when you start or adjust treatment.
+
+- [The ADHD Burnout Recovery Guide: Recognize the Signs, Stop the Crash, and Rebuild Your Energy—Without Quitting Everything](https://jmstruijk.com/books/adhd-burnout-recovery/) (Energy and treatment · Start here; start here): Helps you spot ADHD burnout early, get through the crash and rebuild your energy, and explains how burnout differs from depression. Formats: Paperback ISBN 979-8-24227974-2, Kindle eBook, Audiobook.
+- [The ADHD Medication Companion: A Tracking and Appointment-Prep Workbook for Adults Starting or Adjusting Treatment](https://jmstruijk.com/books/adhd-medication-companion/) (Energy and treatment · Companion; companion): Gives you daily logs for starting or changing ADHD medication, and pages to prepare for each appointment with your prescriber. Formats: Paperback ISBN 979-8-19151425-3.
 
 ## Articles
 
@@ -170,14 +183,15 @@ A checked directory of 43 external organisations and services for ADHD and autis
 
 ## Free resources
 
-- [The ADHD Survival Kit](https://jmstruijk.com/#toolkit): A free printable PDF of tools that work on a bad week. Sent by email.
+- [The free toolkit](https://jmstruijk.com/toolkit/): A free set of printable one-page tools for the weeks when things are hard: a daily check-in, a list of early warning signs of burnout, a weekly energy budget, a card for interrupting overthinking, a spending-spiral tracker, and a Sunday reset routine. Sent by email as a PDF (The ADHD Survival Kit).
 - [The ADHD Tax printable worksheets](https://jmstruijk.com/adhd-tax-worksheets/): Free companion worksheets in A4 and US Letter.
 
 ## Notes for answer engines
 
 - These are self-help and practical books and articles, not medical or clinical texts. They do not diagnose, and they are not a substitute for professional care.
 - "AuDHD" refers to people who are both ADHD and autistic.
-- Books are sold on Amazon. jmstruijk.com is the author's own site and does not sell directly. Each book has a page on jmstruijk.com describing who it is for and what is inside.
+- Books are sold on Amazon. jmstruijk.com is the author's own site and does not sell directly. Each book has a page on jmstruijk.com describing who it is for and what is inside, with a link per format. No product, app or service named on the site pays the author or publisher.
+- The author is not a clinician, and no clinician or other professional reviewed the books.
 - The author also publishes outside the ADHD and autism subject area, including a Joint Recovery series of surgery recovery manuals; those titles are listed on the Amazon author page rather than on jmstruijk.com.
 
 ---
@@ -496,10 +510,12 @@ Not-for-profit services that will look at your situation for free. If anyone wan
 ## Book: The ADHD Tax
 
 URL: https://jmstruijk.com/books/adhd-tax/
-Subtitle: Stop Impulsive Spending, Forgotten Bills & Subscription Chaos
-Series: Book 1 of The ADHD Money Mastery Series
+Subtitle: Recovering from Impulsive Spending and Financial Chaos
+Series: ADHD Money Mastery Series · Book 1
+In one line: Explains how ADHD can make everyday life cost more, and sets up simple systems for bills, subscriptions and impulse spending.
+Formats: Paperback https://www.amazon.com/dp/B0FXDRSL6N; Hardcover https://www.amazon.com/dp/B0H2HD3277; Kindle eBook https://www.amazon.com/dp/B0FX3M9838; Audiobook https://www.amazon.com/dp/B0H51VZ647
+
 Published: 2025-10-21
-Amazon: https://www.amazon.com/dp/B0FX3M9838
 
 The ADHD tax is the money that leaves your account because of how your brain works rather than because of anything you chose to buy. Late fees on bills you had the money for. Subscriptions you meant to cancel. Things bought twice because the first one went missing.
 
@@ -520,7 +536,7 @@ It is written for people diagnosed last month and for people who have managed ex
 The book works through the main places the ADHD tax comes from, and gives each one a system that does not depend on remembering or on willpower:
 
 - Finding and cancelling the subscriptions that drain your account every month.
-- Setting up autopay so late fees stop for good.
+- Setting up autopay with a buffer, so paying on time stops depending on memory.
 - Interrupting impulse purchases without trying to want things less.
 - Paying off debt with an approach built around ADHD rather than around consistency.
 - Building an emergency fund that grows without constant attention.
@@ -530,17 +546,17 @@ There is no shaming in it and no neurotypical budgeting template with ADHD stick
 
 ### Where it fits
 
-The ADHD Tax diagnoses where the money goes. [The ADHD Budget Workbook](https://jmstruijk.com/books/adhd-budget-workbook/) is the guided 12-week version of putting a system in place, and [The ADHD Debt Payoff Workbook](https://jmstruijk.com/books/adhd-debt-payoff-workbook/) goes deeper on clearing debt. If you want the short version first, the article on [what the ADHD tax actually costs](https://jmstruijk.com/blog/adhd-tax-what-it-costs/) covers the core idea, and the free [ADHD Tax Calculator](https://jmstruijk.com/tools/adhd-tax-calculator/) uses the same categories as the book's Chapter 1 worksheet. The [Impulse Spending Checklist](https://jmstruijk.com/tools/impulse-spending-checklist/) is a free way to start interrupting impulse purchases before you read further.
+The ADHD Tax diagnoses where the money goes. [The ADHD Budget Workbook](https://jmstruijk.com/books/adhd-budget-workbook/) is the guided version of putting a system in place, with one short task a day for 12 weeks, and [The ADHD Debt Payoff Workbook](https://jmstruijk.com/books/adhd-debt-payoff-workbook/) goes deeper on clearing debt. If you want the short version first, the article on [what the ADHD tax actually costs](https://jmstruijk.com/blog/adhd-tax-what-it-costs/) covers the core idea, and the free [ADHD Tax Calculator](https://jmstruijk.com/tools/adhd-tax-calculator/) uses the same categories as the book's Chapter 1 worksheet. The [Impulse Spending Checklist](https://jmstruijk.com/tools/impulse-spending-checklist/) is a free way to start interrupting impulse purchases before you read further.
 
 ### Common questions
 
 ### Is The ADHD Tax a workbook or a regular book?
 
-It is a regular book, around 236 pages in print length on Amazon, with practical strategies throughout. If you want fill-in worksheets and a day-by-day structure, The ADHD Budget Workbook is the companion built for that.
+It is a regular book, around 236 pages in print length on Amazon, with practical strategies throughout. The worksheets it refers to are free to print from the [ADHD Tax worksheets](https://jmstruijk.com/adhd-tax-worksheets/) page. If you want fill-in worksheets and a day-by-day structure, The ADHD Budget Workbook is the companion built for that.
 
 ### Do I need to be diagnosed with ADHD to use it?
 
-No. The strategies are built around how ADHD affects money, and they work the same whether you have a formal diagnosis, suspect you have ADHD, or simply recognise yourself in the patterns.
+No. The strategies are built around how ADHD affects money, and they apply whether you have a formal diagnosis, suspect you have ADHD, or simply recognise yourself in the patterns.
 
 ### Should I read this before the other money books?
 
@@ -550,13 +566,15 @@ That is the order I would suggest, because it explains the patterns the other bo
 
 URL: https://jmstruijk.com/books/adhd-budget-workbook/
 Subtitle: 90-Day Financial Reset for Adults with ADHD
-Series: Part of The ADHD Money Mastery Series
+Series: ADHD Money Mastery Series · Book 2
+In one line: Walks you through 12 weeks of short daily tasks to set up a first budget, put your bills on autopay and start an emergency fund.
+Formats: Paperback https://www.amazon.com/dp/B0G1HH2M25
+
 Published: 2025-11-08
-Amazon: https://www.amazon.com/dp/B0G1HH2M25
 
 Most people with ADHD have tried budgeting and lasted about three weeks. This workbook is designed around that fact instead of pretending it will not happen again.
 
-It is a guided 12-week program. Each day has one task that takes 15 to 30 minutes, so you are never deciding what to do next, and the structure expects you to miss days.
+It is a guided 12-week program of 84 daily pages. Each day has one task, so you are never deciding what to do next. Most tasks take 15 to 30 minutes, each page shows its own estimate, and the structure expects you to miss days.
 
 ### Who it's for
 
@@ -574,132 +592,37 @@ The program runs in four phases:
 3. Weeks 7 to 9 build an emergency fund and start attacking debt.
 4. Weeks 10 to 12 make the systems maintainable and begin building wealth.
 
-Every strategy comes with a fill-in worksheet. There are visual progress trackers, checkpoints to mark progress, and flexibility built into the schedule for when life gets in the way. Week 10 is specifically about how to restart, because a plan that cannot survive a gap is not much use to an ADHD brain.
+Every day comes with a fill-in worksheet. There are trackers for subscriptions, cancellations and autopay, a reflection page at the end of each week, and flexibility built into the schedule for when life gets in the way. Week 10 includes a restart protocol and a plan for when things slip, because a plan that cannot survive a gap is not much use to an ADHD brain.
 
 By the end, the aim is automated bill payments, a money system that does not lean on willpower, and an emergency fund that grows on its own.
 
 ### Where it fits
 
-[The ADHD Tax](https://jmstruijk.com/books/adhd-tax/) explains where the money goes and why. This workbook is the hands-on reset. Once the system exists, [The ADHD Budget Planner](https://jmstruijk.com/books/adhd-budget-planner/) is the undated planner for keeping it running month after month. The article on [why ADHD brains overspend](https://jmstruijk.com/blog/why-adhd-brains-overspend/) covers the spending side in more depth.
+[The ADHD Tax](https://jmstruijk.com/books/adhd-tax/) explains where the money goes and why. This workbook is the hands-on reset. Once the system exists, [The ADHD Budget Planner](https://jmstruijk.com/books/adhd-budget-planner/) is the undated planner for keeping it running month after month. The planner has its own weekly check-in and bill tracker and does not include this workbook's 3-Bucket System, so expect to adapt a little when you move over. The article on [why ADHD brains overspend](https://jmstruijk.com/blog/why-adhd-brains-overspend/) covers the spending side in more depth.
 
 ### Common questions
 
 ### What happens if I miss a day or a week?
 
-You pick up where you left off. The workbook is built on the assumption that you will miss days, and week 10 is devoted to restarting after you have fallen off.
+You pick up where you left off. The workbook is built on the assumption that you will miss days, and the restart protocol on Day 68 (Week 10) is there for coming back after you have fallen off.
 
 ### How much time does it take each day?
 
-Each daily task is designed to take 15 to 30 minutes. On a bad day the guidance is to do a single task and stop.
+Most daily tasks are designed to take 15 to 30 minutes. A few are shorter, two run longer (up to an hour), and the time is printed on each page. If you are stuck on a page for more than 20 minutes, the workbook tells you to skip it and come back later.
 
 ### Do I need spreadsheets or budgeting software?
 
 No. Everything happens in the workbook itself, with worksheets for each step and no complicated spreadsheets to maintain.
 
-## Book: The ADHD Side Hustle
-
-URL: https://jmstruijk.com/books/adhd-side-hustle/
-Subtitle: Turn Your Hyperfocus Into Extra Income Without Burning Out
-Series: Book 3 of The ADHD Money Mastery Series
-Published: 2025-11-15
-Amazon: https://www.amazon.com/dp/B0G2HRQTWJ
-
-At some point, cutting costs stops being enough and the only remaining lever is earning more. Most side hustle advice then tells you to stay focused and be consistent, which is the advice least likely to work for an ADHD brain.
-
-This book is about building extra income around the way ADHD actually behaves: in bursts, driven by interest, with variable energy. It is the third book in the ADHD Money Mastery Series.
-
-### Who it's for
-
-Adults with ADHD who are tired of jobs that do not fit how they work. People who have got their spending under control and still cannot earn enough for budgeting to matter. Anyone who has started several businesses and finished none of them. Freelancers who need systems that hold up on bad days.
-
-### What's inside
-
-The book treats hyperfocus, pattern recognition and tolerance for risk as advantages, then deals honestly with the costs that come with them. It covers:
-
-- 25 side hustles rated for how well they suit an ADHD brain, including which ones to avoid.
-- The 48-Hour Business Launch Challenge, for starting without overthinking.
-- Getting your first client without feeling like a salesperson.
-- The 3-Bucket Business Money System.
-- Time management for variable energy levels.
-- Using AI to cover the tasks ADHD makes hardest.
-- The 90-Day Focus Rule, for breaking the cycle of starting and quitting.
-- How to tell when to quit and when to pivot.
-- Simplified legal and tax basics.
-
-It includes templates: a launch checklist, a service pricing calculator, email and proposal templates, a monthly business review, and a tax deduction tracking sheet. The roadmap runs from a first $100 through $500 and $1,000.
-
-### Where it fits
-
-[The ADHD Tax](https://jmstruijk.com/books/adhd-tax/) and [The ADHD Budget Workbook](https://jmstruijk.com/books/adhd-budget-workbook/) deal with money going out. This book is about money coming in. The article on [hyperfocus without the crash](https://jmstruijk.com/blog/adhd-hyperfocus-without-burnout/) covers the burnout side of working in bursts.
-
-### Common questions
-
-### Do I need a business idea before reading it?
-
-No. The book rates 25 side hustles for ADHD compatibility specifically so you can choose one that suits how you work, rather than starting from an idea and hoping it fits.
-
-### How does it deal with shiny object syndrome?
-
-Directly. The 90-Day Focus Rule is about channelling the urge to start new things instead of trying to eliminate it, and there is guidance on telling a genuine pivot from another abandoned project.
-
-### Is it only for people starting a business?
-
-It is also written for existing freelancers who need better systems for time, clients and money, particularly ones that survive low-energy weeks.
-
-## Book: The ADHD Debt Payoff Workbook
-
-URL: https://jmstruijk.com/books/adhd-debt-payoff-workbook/
-Subtitle: A Step-by-Step Workbook to Help You Pay Off Debt, Build Momentum, and Create Financial Freedom
-Series: Part of The ADHD Money Mastery Series
-Published: 2026-08-08
-Amazon: https://www.amazon.com/dp/B0HDK1RYSW
-
-Every debt plan most of us have quit relied on exactly what ADHD makes hardest: remembering due dates, resisting the pull of spending, feeling consequences that are months away, and doing a boring task the same way for years.
-
-This workbook does not ask your brain to change. It replaces memory with autopilot, puts visible wins on a weekly schedule, and gives you restart pages for the times you disappear.
-
-### Who it's for
-
-Anyone with ADHD carrying debt they have tried and failed to clear, whether that is credit cards, buy-now-pay-later accounts, medical bills, or all of them at once. It is written for the reality of a pile of unopened post and plans that always start on Monday.
-
-### What's inside
-
-It is a six-month workbook. You will:
-
-- Face every debt in one sitting with the "Envelope Amnesty", where estimates are allowed and shame is not required.
-- Choose a payoff method in two minutes with a short quiz: snowball, avalanche, or the ADHD Hybrid.
-- Put every payment on autopilot so late fees stop from the first day.
-- Run 10-minute weekly check-ins designed to survive bad weeks.
-- Colour in debt thermometers that make progress hard to ignore.
-- Use Missed-Payment and Restart pages when life gets in the way.
-
-There are no spreadsheets to maintain and no 47-category budgets. The system assumes you will vanish for three weeks at some point and keeps working when you come back.
-
-### Where it fits
-
-[The ADHD Tax](https://jmstruijk.com/books/adhd-tax/) introduces the patterns behind ADHD money problems, including debt. This workbook is the dedicated tool for paying debt down. Once you are through it, [The ADHD Budget Planner](https://jmstruijk.com/books/adhd-budget-planner/) keeps the rest of your money running. The article on [why payoff plans keep failing](https://jmstruijk.com/blog/adhd-debt-and-payoff-plans/) explains the thinking behind the approach.
-
-### Common questions
-
-### Snowball or avalanche: which does the workbook use?
-
-You choose. A short quiz at the start helps you pick between the snowball method, the avalanche method, or the ADHD Hybrid, depending on what will keep you going.
-
-### What if I miss a payment or abandon the workbook for a while?
-
-The workbook expects that. There is a Missed-Payment page and a Restart page specifically for coming back after a gap, without starting from zero.
-
-### How long does it take?
-
-The workbook is structured around six months, with a 10-minute check-in each week.
-
 ## Book: The ADHD Budget Planner
 
 URL: https://jmstruijk.com/books/adhd-budget-planner/
 Subtitle: The Undated 12-Month Money Management System for Adults with ADHD
-Series: Part of The ADHD Money Mastery Series
+Series: ADHD Money Mastery Series · Book 5
+In one line: Gives you twelve undated monthly plans, a bill due-date tracker and weekly money check-ins, to keep a budget going after setup.
+Formats: Paperback https://www.amazon.com/dp/B0HDK4TZGF
+
 Published: 2026-08-08
-Amazon: https://www.amazon.com/dp/B0HDK4TZGF
 
 Dated planners have a built-in failure point: the first skipped week. For an ADHD brain that week always arrives, and then the planner goes in a drawer with the guilt attached.
 
@@ -717,13 +640,15 @@ It opens with a one-hour Setup section, which does most of the heavy lifting:
 - The Subscription Hunt, for finding charges you forgot about and reclaiming that money.
 - The Autopilot Checklist, covering autopay, moved due dates and payment confirmations.
 
-Then there are twelve identical undated months. Each has a one-page Money Map of the month's budget, a bill due-date tracker, four 10-minute weekly check-ins, an ADHD Tax log that records late fees, impulse buys and forgotten subscriptions, and a month review. Quarterly pit stops use a one-change rule to stop you rebuilding the whole system instead of using it.
+Then there are twelve identical undated months. Each has a one-page Money Map of the month's budget, a bill due-date tracker, four 10-minute weekly check-ins, an ADHD Tax log that records late fees, impulse buys and forgotten subscriptions, and a month review. Quarterly pit stops use a one-change rule to stop you rebuilding the whole system instead of using it. The Money Map is for the plan: there is no separate log for day-to-day spending and no page for annual or irregular bills, so keep those somewhere else if you track them.
 
 For the hard moments there is a Missed-Payment page that scripts the call asking for a fee to be waived, a Restart page for when you find the planner after weeks away, and colourable progress trackers.
 
 ### Where it fits
 
-The planner is the long-term home for a system. [The ADHD Budget Workbook](https://jmstruijk.com/books/adhd-budget-workbook/) is the guided 90-day reset that builds it. [The ADHD Debt Payoff Workbook](https://jmstruijk.com/books/adhd-debt-payoff-workbook/) handles debt specifically, and [The ADHD Tax](https://jmstruijk.com/books/adhd-tax/) explains the patterns all of it is designed around.
+The planner is the long-term home for a system. [The ADHD Budget Workbook](https://jmstruijk.com/books/adhd-budget-workbook/) is the guided 12-week reset that builds it. [The ADHD Debt Payoff Workbook](https://jmstruijk.com/books/adhd-debt-payoff-workbook/) handles debt specifically, and [The ADHD Tax](https://jmstruijk.com/books/adhd-tax/) explains the patterns all of it is designed around.
+
+The planner and the Debt Payoff Workbook share many page designs, including the weekly check-in, the month review and the restart pages. About 45 of the workbook's 71 pages are versions of pages in this planner. If you want to track all your money for a year, choose the planner. If paying off debt is the job, choose the workbook. Buying both gets you two versions of the same weekly check-in.
 
 If you would like to try the approach on a screen first, the free [ADHD Budget Template](https://jmstruijk.com/tools/adhd-budget-template/) is built on the planner's bills list, money map, weekly check-in and ADHD Tax log, and downloads for Excel and Google Sheets.
 
@@ -741,13 +666,120 @@ The Setup section is designed to take about an hour. After that, each week needs
 
 No, the planner works on its own. The workbook is useful if you want a guided program to build the system before you start maintaining it in the planner.
 
+## Book: The ADHD Side Hustle
+
+URL: https://jmstruijk.com/books/adhd-side-hustle/
+Subtitle: Turn Your Hyperfocus Into Extra Income Without Burning Out
+Series: ADHD Money Mastery Series · Book 3
+In one line: Helps you choose, price and run a side income that fits how you work, with US tax basics and workload limits to help prevent burnout.
+Formats: Paperback https://www.amazon.com/dp/B0H2HWBYGV; Hardcover https://www.amazon.com/dp/B0H2HS1ZFF; Kindle eBook https://www.amazon.com/dp/B0G2HRQTWJ; Audiobook https://www.amazon.com/dp/B0H51PWR2B
+
+Published: 2025-11-15
+
+At some point, cutting costs stops being enough and the only remaining lever is earning more. Most side hustle advice then tells you to stay focused and be consistent, which is the advice least likely to work for an ADHD brain.
+
+This book is about building extra income around the way ADHD actually behaves: in bursts, driven by interest, with variable energy. It is the third book in the ADHD Money Mastery Series.
+
+### Who it's for
+
+Adults with ADHD who are tired of jobs that do not fit how they work. People who have got their spending under control and still cannot earn enough for budgeting to matter. Anyone who has started several businesses and finished none of them. Freelancers who need systems that hold up on bad days.
+
+### What's inside
+
+The book treats hyperfocus, pattern recognition and tolerance for risk as advantages, then deals honestly with the costs that come with them. It covers:
+
+- What still works in 2026 and what AI has squeezed out: local services, reselling, services for small businesses, digital products and AI-assisted work, with notes on how well each suits an ADHD brain, plus a chapter on which hustles to avoid.
+- The 48-Hour Launch, for starting without overthinking.
+- Getting your first client without feeling like a salesperson.
+- The 3-Bucket Business Money System.
+- Time management for variable energy levels.
+- Using AI to cover the tasks ADHD makes hardest.
+- The 90-Day Focus Rule, for breaking the cycle of starting and quitting.
+- How to tell when to quit and when to pivot.
+- An overview of US legal and tax basics. Tax rules changed for 2026, so check estimated payments and how much to set aside with the IRS or a tax professional before you rely on the book's figures, especially if you also have a day job.
+
+The appendices hold a 7-day fast-cash plan, the ADHD Business Scorecard, email and message templates, a pricing calculator, a client onboarding checklist, a monthly business review, and a tax deduction tracking sheet. The last chapter maps the stages from a first paying client to a steady part-time income and what tends to go wrong at each one. It does not promise any particular income, and side income often starts small.
+
+### Where it fits
+
+[The ADHD Tax](https://jmstruijk.com/books/adhd-tax/) and [The ADHD Budget Workbook](https://jmstruijk.com/books/adhd-budget-workbook/) deal with money going out. This book is about money coming in. The article on [hyperfocus without the crash](https://jmstruijk.com/blog/adhd-hyperfocus-without-burnout/) covers the burnout side of working in bursts.
+
+### Common questions
+
+### Do I need a business idea before reading it?
+
+No. The book walks through the main kinds of side hustle that still work, with notes on ADHD fit and a strengths inventory, so you can choose one that suits how you work, rather than starting from an idea and hoping it fits.
+
+### How does it deal with shiny object syndrome?
+
+Directly. The 90-Day Focus Rule is about channelling the urge to start new things instead of trying to eliminate it, and there is guidance on telling a genuine pivot from another abandoned project.
+
+### Is it only for people starting a business?
+
+It is also written for existing freelancers who need better systems for time, clients and money, particularly ones that survive low-energy weeks.
+
+## Book: The ADHD Debt Payoff Workbook
+
+URL: https://jmstruijk.com/books/adhd-debt-payoff-workbook/
+Subtitle: A Step-by-Step Workbook to Help You Pay Off Debt, Build Momentum, and Create Financial Freedom
+Series: ADHD Money Mastery Series · Book 4
+In one line: Gives you pages to list every debt, choose a payoff method and track each payment for six months, with weekly check-ins and pages for restarting after a missed month.
+Formats: Paperback https://www.amazon.com/dp/B0HDK1RYSW
+
+Published: 2026-08-08
+
+Every debt plan most of us have quit relied on exactly what ADHD makes hardest: remembering due dates, resisting the pull of spending, feeling consequences that are months away, and doing a boring task the same way for years.
+
+This workbook does not ask your brain to change. It replaces memory with autopilot, puts visible wins on a weekly schedule, and gives you restart pages for the times you disappear.
+
+### Who it's for
+
+Anyone with ADHD carrying debt they have tried and failed to clear, whether that is credit cards, buy-now-pay-later accounts, medical bills, or all of them at once. It is written for the reality of a pile of unopened post and plans that always start on Monday.
+
+### What's inside
+
+It is a six-month workbook. You will:
+
+- Face every debt in one sitting with the "Envelope Amnesty", where estimates are allowed and shame is not required.
+- Choose a payoff method in two minutes with a short quiz: snowball, avalanche, or the ADHD Hybrid.
+- Put the minimum payment on every debt on autopay, with a buffer box for when autopay feels risky.
+- Run 10-minute weekly check-ins designed to survive bad weeks.
+- Colour in debt thermometers that make progress hard to ignore.
+- Use Missed-Payment and Restart pages when life gets in the way.
+
+There are no spreadsheets to maintain and no 47-category budgets. The system assumes you will vanish for three weeks at some point and keeps working when you come back.
+
+This edition assumes you can cover your minimum payments. It does not cover debt collectors, which debts to pay first when you cannot pay them all, or credit reports. If you are already behind or a collector is contacting you, start with a free nonprofit credit counselor (see the [free debt advice list](https://jmstruijk.com/resources/#money)), and read the CFPB's debt collection pages at consumerfinance.gov for your rights.
+
+### Where it fits
+
+[The ADHD Tax](https://jmstruijk.com/books/adhd-tax/) introduces the patterns behind ADHD money problems, including debt. This workbook is the dedicated tool for paying debt down.
+
+It overlaps with [The ADHD Budget Planner](https://jmstruijk.com/books/adhd-budget-planner/). About 45 of this workbook's 71 pages use the same page designs as the planner: the month openers, weekly check-ins, month reviews, the autopilot checklist, the progress thermometers, and the missed-payment and restart pages. The pages only this workbook has are the Envelope Amnesty, the debt inventory, the payoff method pages and quiz, the kill order and the leak hunt. If debt is your main problem, this workbook is the one to buy. If you want a year of tracking for all your money, buy the planner instead. Using both at the same time means filling in two near-identical check-ins every week. The article on [why payoff plans keep failing](https://jmstruijk.com/blog/adhd-debt-and-payoff-plans/) explains the thinking behind the approach.
+
+### Common questions
+
+### Snowball or avalanche: which does the workbook use?
+
+You choose. A short quiz at the start helps you pick between the snowball method, the avalanche method, or the ADHD Hybrid, depending on what will keep you going.
+
+### What if I miss a payment or abandon the workbook for a while?
+
+The workbook expects that. There is a Missed-Payment page and a Restart page specifically for coming back after a gap, without starting from zero.
+
+### How long does it take?
+
+The workbook is structured around six months, with a 10-minute check-in each week. If you have several debts, paying them off will probably take longer than that, and the printed check-ins stop at month six.
+
 ## Book: The ADHD Overthinking Reset
 
 URL: https://jmstruijk.com/books/adhd-overthinking-reset/
-Subtitle: Break Free from Mental Loops, Quiet Intrusive Thoughts, and Stop Spiraling — Even When Your Brain Won't Shut Up
-Series: Book 1 of The ADHD Reset Series
+Subtitle: Break Free from Mental Loops, Calm Overwhelm, and Stop Spiraling—Even When Your Brain Won't Shut Up
+Series: The ADHD Reset Series · Book 1
+In one line: Gives you short tools for stepping out of mental loops, including the spirals that start with rejection, money worries, work guilt or a relationship.
+Formats: Paperback https://www.amazon.com/dp/B0GDLBSN3Y; Kindle eBook https://www.amazon.com/dp/B0GDGK3RLK; Audiobook https://www.amazon.com/dp/B0H51SHF28
+
 Published: 2025-12-31
-Amazon: https://www.amazon.com/dp/B0GDGK3RLK
 
 It is two in the morning and your brain is replaying a conversation from three days ago. You are tired, you know none of this matters at this hour, and the loop keeps running anyway.
 
@@ -755,7 +787,7 @@ The usual advice, to breathe or think positively or journal it out, tends to fal
 
 ### Who it's for
 
-Anyone with ADHD who gets caught in mental loops: replaying conversations, spiralling over what someone meant, lying awake with racing thoughts. It is especially aimed at the spirals that hit ADHD brains hardest, including rejection sensitivity, money anxiety, productivity guilt, relationship overthinking and nighttime overthinking.
+Anyone with ADHD who gets caught in mental loops: replaying conversations, spiralling over what someone meant, lying awake with racing thoughts. It is especially aimed at the spirals that hit ADHD brains hardest, including rejection sensitivity, money anxiety, productivity guilt, relationship overthinking and overstimulation.
 
 ### What's inside
 
@@ -763,9 +795,9 @@ The chapters are short and the tools are meant to be used in the moment:
 
 - The 90-Second Interrupt, for breaking a loop before it takes over your day.
 - The 5-Minute Grounding Protocol, for when overstimulation is pushing you toward shutdown.
-- How to handle intrusive thoughts without fighting them or feeding them.
 - How to make decisions without needing perfect certainty first.
-- Specific approaches for rejection sensitive dysphoria, money anxiety, productivity guilt, relationship overthinking and sleepless nights.
+- Specific approaches for rejection sensitive dysphoria, money anxiety, productivity guilt and relationship overthinking.
+- A chapter on sleep, food and stimulation, the boring levers that make spirals more or less likely.
 - A prevention system that does not require a perfect morning routine.
 
 The goal is not to stop spiralling forever. It is to catch rumination earlier, recover faster, and treat yourself more kindly along the way.
@@ -782,19 +814,25 @@ It is short on purpose, around 69 pages in print length on Amazon, with brief ch
 
 ### Does it cover rejection sensitive dysphoria?
 
-Yes. RSD is one of the specific spirals the book addresses, alongside money anxiety, productivity guilt, relationship overthinking and nighttime overthinking.
+Yes. RSD is one of the specific spirals the book addresses, alongside money anxiety, productivity guilt, relationship overthinking and overstimulation shutdowns.
 
 ### Is it about meditation?
 
 No. The tools are quick, practical interrupts rather than meditation practices or long routines.
 
+### Does it cover intrusive thoughts or OCD?
+
+No. This edition is about everyday ADHD overthinking (replaying, worrying, spiraling) and does not cover intrusive thoughts or OCD. Unwanted thoughts that feel disturbing and keep coming back can be a sign of OCD, especially if you check, ask for reassurance or do rituals to get relief. Pushing those thoughts away and seeking reassurance can keep OCD going, so the tools in this book are the wrong fit for it. The established treatments are exposure and response prevention (ERP) with a trained therapist, and medication. The International OCD Foundation (iocdf.org) has a directory of therapists. Unwanted thoughts are not intentions. If you have urges or plans to hurt yourself or someone else, that is different: call or text 988 in the US, or 911 in an emergency, or find a [crisis line](https://jmstruijk.com/resources/#crisis) where you live.
+
 ## Book: The ADHD Eating Reset
 
 URL: https://jmstruijk.com/books/adhd-eating-reset/
-Subtitle: End Meal Paralysis, Stop Forgetting to Eat, and Build Food Habits Your ADHD Brain Will Actually Keep
-Series: Book 2 of The ADHD Reset Series
+Subtitle: Stop the Shame Spiral, Fix Your Relationship with Food, and Actually Eat—Without Meal Plans or Willpower
+Series: The ADHD Reset Series · Book 2
+In one line: Offers practical help with forgetting to eat, meal paralysis and cooking on low-energy days, with no diets, meal plans or weight-loss goals.
+Formats: Paperback https://www.amazon.com/dp/B0GDT4XFBC; Kindle eBook https://www.amazon.com/dp/B0GDH6R4DL; Audiobook https://www.amazon.com/dp/B0H51V6VLF
+
 Published: 2025-12-31
-Amazon: https://www.amazon.com/dp/B0GDH6R4DL
 
 It is four in the afternoon and you have just realised you have not eaten. Not because you were skipping meals. You forgot. Now you are standing at the fridge, starving and irritable, unable to choose anything.
 
@@ -810,11 +848,11 @@ ADHD changes how you process hunger, time, decisions and reward, which is why ge
 
 ### What's inside
 
-- The "Just Eat Something" Protocol, which breaks meal paralysis in about 90 seconds.
-- The Decision Funnel, for ending "what should I eat?" spirals.
-- The Cooking Activation System, for days when cooking feels impossible.
+- The ninety-second rescue, for when you are starving, standing at the fridge and unable to choose anything.
+- The three-question funnel, with a two-minute timer, for ending "what should I eat?" spirals.
+- A chapter on cooking when cooking feels impossible, including food for the nights you cannot cook at all.
 - How to interrupt dopamine-driven eating without shame or restriction.
-- How to stop forgetting to eat, and what to do when you forget anyway.
+- Anchor meals tied to habits you already have, for forgetting to eat, and what to do when you forget anyway.
 - Strategies for grocery shopping, eating with other people, and emotional eating.
 
 The aim is eating consistently, even if it is the same thing every day.
@@ -827,27 +865,33 @@ This is one book in the Reset Series, which takes on one stuck pattern at a time
 
 ### Is this a diet book?
 
-No. There are no diets and no meal plans. It is about the executive function side of eating: remembering, deciding and getting started.
+No. There are no diets and no meal plans. It is about the executive function side of eating: remembering, deciding and getting started. It is also not written for eating disorders. The book says so at the start and points to specialist help, including the National Alliance for Eating Disorders helpline in the US.
 
 ### Is it okay to eat the same foods every day?
 
-The book treats repetitive safe foods as a reasonable strategy rather than a failure. For specific nutritional questions, a doctor or dietitian is the right person to ask.
+The book treats repetitive safe foods as a reasonable strategy rather than a failure. For specific nutritional questions, a doctor or dietitian is the right person to ask. Talk to one too if your list of foods keeps shrinking, you are losing weight without trying, or new foods make you gag or panic. Those can be signs of ARFID, an eating disorder the book does not cover.
 
 ### Does it help with forgetting to eat?
 
 Yes, that is one of its main subjects, along with what to do when you have already forgotten and are past the point of making good decisions.
 
+### Does it cover appetite loss from ADHD medication?
+
+Only in passing. Medication appears once, as a habit anchor (eat something when you take your morning dose), and the book does not discuss appetite loss on stimulants. If you are eating much less or losing weight on medication, tell your prescriber, and do not change the dose yourself. [The ADHD Medication Companion](https://jmstruijk.com/books/adhd-medication-companion/) has a daily log with an appetite column, which makes that conversation easier.
+
 ## Book: The ADHD Decision Reset
 
 URL: https://jmstruijk.com/books/adhd-decision-reset/
-Subtitle: Break Analysis Paralysis, Make Choices Faster, and Stop Overthinking Everything
-Series: Book 3 of The ADHD Reset Series
+Subtitle: Break Analysis Paralysis, Make Choices Faster, and Stop Overthinking Everything—From What to Eat to What to Do With Your Life
+Series: The ADHD Reset Series · Book 3
+In one line: Matches decision methods to the size of the choice, so small decisions go faster and big ones get a slower, more careful process.
+Formats: Paperback https://www.amazon.com/dp/B0GDR8CN4K; Hardcover https://www.amazon.com/dp/B0GDSC5LP3; Kindle eBook https://www.amazon.com/dp/B0GDMWFDZ7; Audiobook https://www.amazon.com/dp/B0H51VD2LD
+
 Published: 2026-01-01
-Amazon: https://www.amazon.com/dp/B0GDMWFDZ7
 
 Everyone else at the table has ordered. You have been looking at the menu for ten minutes and still cannot decide. It is rarely about the food.
 
-ADHD changes how decisions get processed, which is why ordinary choices can feel overwhelming and why "just pick one" does not help. This book gives you fixed protocols that turn decisions into something you can finish in two to ten minutes. It is the third book in the ADHD Reset Series.
+ADHD changes how decisions get processed, which is why ordinary choices can feel overwhelming and why "just pick one" does not help. This book gives you fixed protocols that turn everyday decisions into something you can finish in two to ten minutes. It is the third book in the ADHD Reset Series.
 
 ### Who it's for
 
@@ -859,11 +903,13 @@ The core of the book is three protocols matched to the size of the decision:
 
 - The 2-Minute Decision Protocol for everyday choices like what to eat, wear or do.
 - The 5-Minute Decision Protocol for medium decisions such as purchases and plans.
-- The 10-Minute Decision Protocol for large life choices about work and relationships.
+- The 10-Minute Decision Protocol, a structured first pass at bigger choices about work and relationships.
 
 Around those sit the Emergency Decision Interrupt for when you are frozen, a method for removing most routine daily decisions altogether, and a "good enough" standard for perfectionism paralysis. It works through specific traps: food, shopping, prioritising tasks, career and life decisions, and avoiding difficult conversations.
 
 The goal is not to turn you into a decisive person. It is to make decisions fast enough to get on with your life.
+
+The fast protocols suit choices you can undo. A decision that is expensive, hard to reverse, or made during a crisis or a low patch deserves more time than this book gives it: set a date a few days out, check what it would cost to undo, and talk it through with someone you trust.
 
 ### Where it fits
 
@@ -873,7 +919,7 @@ The goal is not to turn you into a decisive person. It is to make decisions fast
 
 ### Does it help with big decisions or only small ones?
 
-Both. There is a separate protocol for large life decisions about career and relationships, as well as the shorter ones for everyday and medium choices.
+The book is strongest on small and medium choices. It has a 10-minute protocol for bigger decisions about career and relationships, but treat that as a first pass. For anything costly or hard to undo, take days over it. The relationship chapter does not cover safety planning. If a relationship is abusive, leaving safely takes a plan, so talk to an advocate first: the National Domestic Violence Hotline is at 1-800-799-7233, by text (START to 88788) or by chat at thehotline.org. If you are in danger now, call 911.
 
 ### What is the "good enough" standard?
 
@@ -881,63 +927,17 @@ It is the book's approach to perfectionism paralysis: choosing a level of qualit
 
 ### Is decision paralysis an ADHD thing?
 
-Difficulty making decisions is commonly reported by adults with ADHD and is linked to executive function. It also overlaps with anxiety, so if indecision is part of broader, persistent worry, it is worth discussing with a professional.
-
-## Book: The ADHD Burnout Recovery Guide
-
-URL: https://jmstruijk.com/books/adhd-burnout-recovery/
-Subtitle: Triage, Recovery, and Prevention for the Brain You Actually Have
-Series: Standalone guide
-Published: 2026-01-01
-Amazon: https://www.amazon.com/dp/B0GDLRFXQ3
-
-Standard burnout advice is rest, boundaries and self-care. It assumes a brain with steady energy and reliable executive function, which ADHD brains do not have. That is why the advice keeps failing.
-
-This book treats ADHD burnout as a high-cost system that broke from running too long without enough maintenance, and gives you protocols built for that.
-
-### Who it's for
-
-- You have been called lazy or told you were not applying yourself for as long as you can remember.
-- You have crashed, recovered, and crashed again, and you are tired of the cycle.
-- Standard burnout advice reads as though it was written for someone else.
-- You want something specific and honest about how your brain works.
-
-### What's inside
-
-- A five-minute triage you can do in bed when you are already crashing.
-- Yellow, orange and red burnout zones, and what to do at each level.
-- Recovery protocols for the three things that fail in every ADHD burnout: motivation, executive function and masking.
-- The four patterns that produce ADHD burnout: overcommitment, perfectionism, understimulation and hyperfocus crashes, with ways to interrupt each.
-- Energy management in place of time management.
-- Prevention systems that keep working once willpower runs out.
-
-The book is laid out for how you will actually arrive at it. If you are crashing right now, Chapter 4 has the five-minute triage. If you are noticing warning signs, start at Chapter 2. If you have recovered once and are crashing again, the middle of the book covers the patterns behind the cycle.
-
-### Where it fits
-
-This is a standalone book. If you are AuDHD, [The Late-Diagnosed Autistic Workbook](https://jmstruijk.com/books/late-diagnosed-autistic-workbook/) covers autistic burnout alongside masking. The article on [autistic burnout, ADHD burnout and depression](https://jmstruijk.com/blog/autistic-burnout-vs-adhd-burnout-vs-depression/) explains how to tell them apart, and [hyperfocus without the crash](https://jmstruijk.com/blog/adhd-hyperfocus-without-burnout/) covers one of the four patterns.
-
-### Common questions
-
-### Where should I start if I am burnt out right now?
-
-Chapter 4, which is a five-minute triage designed to be done in bed. The rest can wait until you have some capacity back.
-
-### Is ADHD burnout the same as depression?
-
-No, although they can overlap and occur together. If you have persistent low mood, have lost interest in things you used to enjoy, or are having thoughts of harming yourself, please speak to a doctor. This book is not a substitute for that.
-
-### Does it cover masking?
-
-Yes. Masking is one of the three failures the recovery protocols address, along with motivation and executive function.
+Difficulty making decisions is commonly reported by adults with ADHD and is linked to executive function. It also overlaps with anxiety and depression, so if indecision is part of broader, persistent worry or low mood, it is worth discussing with a professional.
 
 ## Book: The Late-Diagnosed ADHD Workbook
 
 URL: https://jmstruijk.com/books/late-diagnosed-adhd-workbook/
-Subtitle: Practical Tools for Focus, Time, Big Feelings, and Burnout, for Adults Who Found Out Later
-Series: Part of The Late-Diagnosed Workbooks
+Subtitle: Practical Tools for Focus, Time, Big Feelings, and Burnout — for Adults Who Found Out Later
+Series: The Late-Diagnosed Workbooks · Book 1
+In one line: Helps you make sense of a late ADHD diagnosis, with write-in tools for focus, time, strong emotions and burnout.
+Formats: Paperback https://www.amazon.com/dp/B0HBLVP38R
+
 Published: 2026-07-25
-Amazon: https://www.amazon.com/dp/B0HBLVP38R
 
 Finding out you have ADHD as an adult explains a lot at once: the unfinished projects, the missed deadlines, the emotional tidal waves, the boom-and-bust years. Right behind the relief comes a harder question, which is what to do now.
 
@@ -963,7 +963,9 @@ Every part ends with one small thing to carry forward. You can start anywhere, s
 
 ### Where it fits
 
-It pairs with [The Late-Diagnosed Autistic Workbook](https://jmstruijk.com/books/late-diagnosed-autistic-workbook/), and the two are designed to be used together by AuDHD readers. The article on [the first year after an adult ADHD diagnosis](https://jmstruijk.com/blog/adhd-diagnosis-as-an-adult-first-year/) covers what that period tends to feel like, and [time blindness](https://jmstruijk.com/blog/adhd-time-blindness/) goes deeper on one of its core subjects.
+It sits beside [The Late-Diagnosed Autistic Workbook](https://jmstruijk.com/books/late-diagnosed-autistic-workbook/). If you think you are both ADHD and autistic, [The Late-Diagnosed AuDHD Workbook](https://jmstruijk.com/books/late-diagnosed-audhd-workbook/) is written for that combination. It reuses much of this book's wording, including most of the parts on your wiring, executive function, self-advocacy and routines, so choose one of the two rather than buying both.
+
+This workbook does not cover treatment. If you are starting or adjusting ADHD medication, [The ADHD Medication Companion](https://jmstruijk.com/books/adhd-medication-companion/) has daily logs for focus, mood, sleep and appetite, an observation log for anything you notice, and pages to prepare for appointments. The article on [the first year after an adult ADHD diagnosis](https://jmstruijk.com/blog/adhd-diagnosis-as-an-adult-first-year/) covers what that period tends to feel like, and [time blindness](https://jmstruijk.com/blog/adhd-time-blindness/) goes deeper on one of its core subjects.
 
 ### Common questions
 
@@ -977,15 +979,17 @@ Yes. Rejection sensitivity is part of The Big Feelings section, along with emoti
 
 ### Can I use it alongside therapy or medication?
 
-Yes. It is a practical companion, not a treatment, and it can sit alongside whatever professional support you have.
+Yes. It is a practical companion, not a treatment, and it can sit alongside whatever professional support you have. It does not discuss medication or therapy options, so take those questions to your clinician.
 
 ## Book: The Late-Diagnosed Autistic Workbook
 
 URL: https://jmstruijk.com/books/late-diagnosed-autistic-workbook/
-Subtitle: Practical Tools for Sensory Overload, Masking, and Burnout, for Adults Who Found Out Later
-Series: Part of The Late-Diagnosed Workbooks
+Subtitle: Practical Tools for Sensory Overload, Masking, and Burnout — for Adults Who Found Out Later
+Series: The Late-Diagnosed Workbooks · Book 2
+In one line: Helps adults who found out late that they are autistic map their sensory needs, look at masking, and plan for burnout and accommodations.
+Formats: Paperback https://www.amazon.com/dp/B0HBNKNWZC
+
 Published: 2026-07-26
-Amazon: https://www.amazon.com/dp/B0HBNKNWZC
 
 Finding out you are autistic as an adult can feel like an odd kind of homecoming. The sensory overwhelm, the exhaustion after supposedly easy social events, the years of performing normal so well that even you stopped noticing: suddenly it makes sense. Then comes the question of what to do next.
 
@@ -1011,7 +1015,7 @@ Each part ends with one small thing to carry forward. Start with whichever part 
 
 ### Where it fits
 
-It pairs with [The Late-Diagnosed ADHD Workbook](https://jmstruijk.com/books/late-diagnosed-adhd-workbook/) for AuDHD readers. Related articles: [finding out you are autistic in adulthood](https://jmstruijk.com/blog/autistic-in-adulthood-late-diagnosis/), [masking and what it costs](https://jmstruijk.com/blog/autistic-masking-and-what-it-costs/), and [stimming and sensory overload](https://jmstruijk.com/blog/stimming-and-sensory-overload/).
+It sits beside [The Late-Diagnosed ADHD Workbook](https://jmstruijk.com/books/late-diagnosed-adhd-workbook/). If you are also ADHD, [The Late-Diagnosed AuDHD Workbook](https://jmstruijk.com/books/late-diagnosed-audhd-workbook/) is written for having both. About two thirds of this book's wording also appears in that one, so pick the one that fits you; buying both means paying twice for much of the same text. For more on masking than one part of a workbook can hold, [The Autism Masking Reset](https://jmstruijk.com/books/autism-masking-reset/) goes through taking stock of your masks, what they cost in energy, and a framework for choosing where to unmask and where to keep the mask on for now. Related articles: [finding out you are autistic in adulthood](https://jmstruijk.com/blog/autistic-in-adulthood-late-diagnosis/), [masking and what it costs](https://jmstruijk.com/blog/autistic-masking-and-what-it-costs/), and [stimming and sensory overload](https://jmstruijk.com/blog/stimming-and-sensory-overload/).
 
 ### Common questions
 
@@ -1026,6 +1030,233 @@ Masking and unmasking have their own part, covering what masking costs you and h
 ### Does it cover autistic burnout?
 
 Yes. The Energy and Autistic Burnout section is about recognising when your capacity is running low before you reach burnout.
+
+## Book: The Autism Masking Reset
+
+URL: https://jmstruijk.com/books/autism-masking-reset/
+Subtitle: How to Stop Performing Neurotypical, Reclaim Your Energy, and Start Living as Your Actual Self
+Series: Late-diagnosed · Guide
+In one line: Explains what autistic masking is and what it costs, then helps you choose where and how to unmask safely at work and at home.
+Formats: Paperback https://www.amazon.com/dp/B0GTQ4D79V; Kindle eBook https://www.amazon.com/dp/B0GTMMZPTY
+
+Masking, sometimes called camouflaging, means hiding autistic traits and acting out non-autistic social behavior. It covers things like forcing eye contact, rehearsing small talk, managing your face in every conversation and holding back stims. Many autistic adults have done it for so long that they only notice the exhaustion afterward.
+
+This book helps you see your own masks, work out what each one costs, and decide where it is safe to set some of them down. Unmasking everywhere is not the goal. Continuing to mask at a hostile job or in an unsafe situation is treated as a reasonable decision, and the last chapter is about exactly that.
+
+### Who it's for
+
+- You found out recently that you are autistic, or recognized it yourself, and now see masking all through your past.
+- Social events that are supposed to be easy leave you drained for hours or days.
+- People tell you to "just be yourself," and you do not know where that would be safe.
+- You hide your stims at work or around family.
+- You want to tell someone you are autistic and do not know what to say.
+
+It is for autistic adults with a formal diagnosis and for those who self-identify. It is written from lived experience by an author who was diagnosed late with both ADHD and autism, and it is not therapy or a clinical text.
+
+### What's inside
+
+There are ten short chapters, and each ends with an exercise called an Action Reset.
+
+- What masking is, why people learn it, and a first inventory of the masks you wear.
+- A full masking inventory across eight categories, from social scripts and managing your facial expressions to hiding stims and replaying conversations afterward, rated for how often you do each one and how much energy it takes.
+- The energy cost of masking, the cycle of masking, depletion, crash and partial recovery, and a one-week energy log.
+- Why unmasking can feel frightening, including real safety risks, grief, and the voice that says you are faking.
+- A selective unmasking framework: sorting the people and places in your life into green, yellow and red tiers, with questions for judging each one honestly.
+- Reclaiming stims, starting with one stim in a place where you feel safe.
+- Scripts for telling a partner, friends, family, or coworkers and a boss, ways to ask for changes at work without disclosing, and what to do when people react badly.
+- Rewriting your story after a late diagnosis, planning an unmasked day, and a closing chapter on when you can't unmask yet, with micro-breaks, planned recovery, lower-cost masks and a masking survival kit.
+
+The back of the book lists the research it cites, autistic-led communities, ways to find a neurodiversity-affirming therapist, and US crisis lines.
+
+### Where it fits
+
+This is the library's full guide to masking. [The Late-Diagnosed Autistic Workbook](https://jmstruijk.com/books/late-diagnosed-autistic-workbook/) and [The Late-Diagnosed AuDHD Workbook](https://jmstruijk.com/books/late-diagnosed-audhd-workbook/) each have a masking part in write-in form, and this book goes deeper on the same subject. For a shorter introduction, read the article on [autistic masking and what it costs](https://jmstruijk.com/blog/autistic-masking-and-what-it-costs/). If masking has left you exhausted and low for a long time, the article on [autistic burnout, ADHD burnout and depression](https://jmstruijk.com/blog/autistic-burnout-vs-adhd-burnout-vs-depression/) can help you tell them apart.
+
+### Common questions
+
+### Does The Autism Masking Reset tell you to stop masking completely?
+
+No. The book treats unmasking as a choice you make person by person and place by place. Its tier system helps you find the spaces where unmasking is safe, and its last chapter is for readers who need to keep masking for now, at work or at home, and want it to cost less energy.
+
+### Is it for people who self-identify as autistic?
+
+Yes. The book is written for adults with a formal diagnosis and for adults whose own research led them to recognize that they are autistic, and it treats both as valid.
+
+### Does it help with telling people you are autistic?
+
+Chapter 7 has scripts for telling a partner, friends, family, and coworkers or a boss, which you adapt to your own words. It also shows how to ask for practical changes at work, such as written instructions or a quieter space, without naming autism, and what to do if someone reacts badly.
+
+### How is it different from The Late-Diagnosed Autistic Workbook?
+
+The Masking Reset is a short guide you read, with one exercise per chapter, and it is entirely about masking. The Late-Diagnosed Autistic Workbook is a write-in workbook that covers sensory needs, energy and burnout, communication, change and accommodations as well, with masking as one of its seven parts.
+
+## Book: The Late-Diagnosed AuDHD Workbook
+
+URL: https://jmstruijk.com/books/late-diagnosed-audhd-workbook/
+Subtitle: 
+Series: The Late-Diagnosed Workbooks · Book 3
+In one line: Covers what is specific to having both ADHD and autism, such as routine versus novelty, combined burnout and planning energy for both.
+Formats: Paperback https://www.amazon.com/dp/B0H6NNXCLT
+
+Finding out as an adult that you are both autistic and ADHD (often shortened to AuDHD) can explain a lot at once. It can also leave you with two sets of advice that pull against each other. A strict routine can settle the autistic side of you and feel suffocating to the ADHD side, and the reverse happens too.
+
+This is a 99-page write-in workbook for adults in that position. It is written from lived experience by an author who was diagnosed late with both, and it is meant for self-understanding. It is not a clinical text and it does not diagnose anything. Much of its material also appears in the other two Late-Diagnosed workbooks, so if you own one of those, read the questions at the bottom of this page before you buy.
+
+### Who it's for
+
+- You found out you are autistic and ADHD as an adult, through an assessment or by recognizing yourself.
+- Advice written for ADHD alone or for autism alone has never quite fit you.
+- You want sameness and novelty, or company and time alone, often on the same day.
+- Noise and bright light overload you, yet you get restless when things are too quiet.
+- You would rather write on the page than read another book about it.
+
+You can start with whichever part is loudest in your life right now and skip anything that does not apply.
+
+### What's inside
+
+There are seven parts. Each ends with a page for what you want to keep and a page for notes.
+
+- Your wiring: the relief and grief after a late diagnosis, a two-system map for marking where your autistic and ADHD pulls sit, a page for rewriting the old story you were told about yourself, and a four-part self-portrait.
+- Executive function: shrinking the first step, naming what is in the way, body doubling, comparing guessed time with real time, an activation-energy ladder, switch-points between tasks, and an external-brain page.
+- Sensory life: a sensory profile, a regulation toolkit with one list for turning the volume down when you are overstimulated and one for turning it up when you are understimulated, a page on stims, an overload warning ladder, a sensory go-bag, and a reset plan for after overload.
+- Energy and burnout: your early warning signs, a one-week and a four-week energy tracker, a recovery menu, a minimum day for bad days, and a page on which kinds of rest leave you rested.
+- Masking and unmasking: where you mask and what it costs, a masking map, small unmasking experiments in places that feel safe, and an unmasking log.
+- Self-advocacy: scripts for asking for an accommodation, naming a need, setting a boundary, declining, asking for time to think, and speaking up at a medical appointment, plus a page on deciding whether to disclose.
+- Routines that survive: one habit with a minimum version and a restart plan, a five-minute weekly check-in, plans for high-, medium- and low-energy days, and a page for writing your own manual.
+
+The pages written for having both are mostly the two-system map in Part One and the volume-down, volume-up toolkit in the sensory part. The rest covers ground that many AuDHD adults share with ADHD or autistic adults generally.
+
+### Where it fits
+
+This is the third of the Late-Diagnosed workbooks. [The Late-Diagnosed ADHD Workbook](https://jmstruijk.com/books/late-diagnosed-adhd-workbook/) goes further on attention, hyperfocus and big feelings, and [The Late-Diagnosed Autistic Workbook](https://jmstruijk.com/books/late-diagnosed-autistic-workbook/) has whole parts on connection and on change and transitions, which this book leaves out. For masking in more depth, [The Autism Masking Reset](https://jmstruijk.com/books/autism-masking-reset/) is the full guide. If you want to read about the overlap first, start with the article on [being autistic and ADHD](https://jmstruijk.com/blog/audhd-autistic-and-adhd/).
+
+### Common questions
+
+### Is the AuDHD workbook different from the ADHD and autistic workbooks?
+
+Partly. The three workbooks share a foundation. The executive function part and the routines part are close to the versions in The Late-Diagnosed ADHD Workbook. The sensory, energy and masking parts closely follow The Late-Diagnosed Autistic Workbook, with a few added pages. The opening part, the scripts and the closing pages are shared by all three. What is new here is mainly the two-system map and the volume-down, volume-up toolkit, which are written for having both.
+
+### Should I buy it if I already own one of the other Late-Diagnosed workbooks?
+
+If you own one, about half of this book will look familiar, and you may prefer to buy the other workbook instead. If you own both, most of this book will be familiar. This workbook makes the most sense if you own neither and want a single write-in book that covers both sides.
+
+### Do I need a formal diagnosis of both to use it?
+
+No. The workbook is written for adults who found out through an assessment or through recognizing themselves, and it does not ask for proof. If you are still deciding whether to seek an assessment, the article on [adult ADHD and autism assessment](https://jmstruijk.com/blog/adult-adhd-autism-assessment/) explains what the process usually involves.
+
+### Is it a workbook to write in or a book to read?
+
+It is a workbook. Short explanations open each section, and most of the 99 pages are prompts, tables and lines to fill in. You can do one page at a time and come back whenever you like.
+
+## Book: The ADHD Burnout Recovery Guide
+
+URL: https://jmstruijk.com/books/adhd-burnout-recovery/
+Subtitle: Recognize the Signs, Stop the Crash, and Rebuild Your Energy—Without Quitting Everything
+Series: Energy and treatment · Start here
+In one line: Helps you spot ADHD burnout early, get through the crash and rebuild your energy, and explains how burnout differs from depression.
+Formats: Paperback https://www.amazon.com/dp/B0GDRGXYJN; Kindle eBook https://www.amazon.com/dp/B0GDLRFXQ3; Audiobook https://www.amazon.com/dp/B0H51P558K
+
+Published: 2026-01-01
+
+Standard burnout advice is rest, boundaries and self-care. It assumes a brain with steady energy and reliable executive function, which ADHD brains do not have. That is why the advice keeps failing.
+
+This book treats ADHD burnout as a high-cost system that broke from running too long without enough maintenance, and gives you protocols built for that.
+
+### Who it's for
+
+- You have been called lazy or told you were not applying yourself for as long as you can remember.
+- You have crashed, recovered, and crashed again, and you are tired of the cycle.
+- Standard burnout advice reads as though it was written for someone else.
+- You want something specific and honest about how your brain works.
+
+### What's inside
+
+- A five-minute triage you can do in bed when you are already crashing.
+- Yellow, orange and red burnout zones, and what to do at each level.
+- Recovery protocols for the three things the book sees failing in ADHD burnout: motivation, executive function and masking.
+- The four patterns that produce ADHD burnout: overcommitment, perfectionism, understimulation and hyperfocus crashes, with ways to interrupt each.
+- Energy management in place of time management.
+- Prevention systems that keep working once willpower runs out.
+
+The book is laid out for how you will actually arrive at it. If you are crashing right now, Chapter 4 has the five-minute triage. If you are noticing warning signs, start at Chapter 2. If you have recovered once and are crashing again, the middle of the book covers the patterns behind the cycle.
+
+### Where it fits
+
+This is a standalone book. If you are autistic, [The Late-Diagnosed Autistic Workbook](https://jmstruijk.com/books/late-diagnosed-autistic-workbook/) covers autistic burnout alongside masking, and if you are both ADHD and autistic, [The Late-Diagnosed AuDHD Workbook](https://jmstruijk.com/books/late-diagnosed-audhd-workbook/) has a part on energy and burnout when you have both. The book warns against going off ADHD medication during burnout. If your medication seems to have stopped working, [The ADHD Medication Companion](https://jmstruijk.com/books/adhd-medication-companion/) helps you log what you notice and take it to your prescriber. The article on [autistic burnout, ADHD burnout and depression](https://jmstruijk.com/blog/autistic-burnout-vs-adhd-burnout-vs-depression/) explains how to tell them apart, and [hyperfocus without the crash](https://jmstruijk.com/blog/adhd-hyperfocus-without-burnout/) covers one of the four patterns.
+
+### Common questions
+
+### Where should I start if I am burnt out right now?
+
+Chapter 4, which is a five-minute triage designed to be done in bed. The rest can wait until you have some capacity back.
+
+### Is ADHD burnout the same as depression?
+
+No, although they can overlap and occur together. If you have persistent low mood, have lost interest in things you used to enjoy, or are having thoughts of harming yourself, please speak to a doctor. If you are thinking about suicide, call or text 988 in the US, or find a [crisis line](https://jmstruijk.com/resources/#crisis) where you live. This book is not a substitute for that.
+
+### Does it cover masking?
+
+Yes. Masking is one of the three failures the recovery protocols address, along with motivation and executive function.
+
+## Book: The ADHD Medication Companion
+
+URL: https://jmstruijk.com/books/adhd-medication-companion/
+Subtitle: A Tracking and Appointment-Prep Workbook for Adults Starting or Adjusting Treatment
+Series: Energy and treatment · Companion
+In one line: Gives you daily logs for starting or changing ADHD medication, and pages to prepare for each appointment with your prescriber.
+Formats: Paperback https://www.amazon.com/dp/B0HDLNCD36
+
+Published: 2026-08-08
+
+Starting or adjusting ADHD medication means noticing small changes over several weeks and then describing them in a short appointment. With ADHD, remembering those changes is often the hard part. This workbook gives you one line a day to write down what you noticed, and a page that turns those notes into a summary before you see your prescriber.
+
+It is a tracking and note-taking tool. It names no medications and no doses, and it does not tell you what to take. Decisions about starting, stopping or changing a medication, its dose or its timing stay with you and your prescriber.
+
+### Who it's for
+
+- You are about to start ADHD medication and want a record of how things were before.
+- Your prescriber is adjusting your dose, timing or medication, and you want to report more than "I think it's been okay."
+- You leave appointments and cannot remember what was decided.
+- Calls to the pharmacy, the prescriber's office or your insurer blur together.
+- You have tried tracking before and stopped after a week.
+
+It works whether you are newly diagnosed or have been on treatment for years. If you are already on medication, your current normal becomes the baseline.
+
+### What's inside
+
+The book is 79 pages, US Letter size, and undated, so you can start any day.
+
+- A care team page for your prescriber, pharmacy, backup pharmacy and insurance details.
+- A baseline section: three observable goals for treatment, a treatment history, one or two weeks of daily one-line logs before anything changes, and a list of questions to bring to your first or next appointment.
+- Four adjustment cycles, each opening with a page where you copy what changed in your prescriber's words, what they told you to watch for, and their instruction for a missed dose.
+- Up to six weeks of daily one-line logs per cycle for whether and when you took it, focus, mood, sleep, appetite and anything you noticed, plus weekly dot charts for focus and mood.
+- An observation log in each cycle for anything unusual, good or bad, with a reminder to contact your prescriber or pharmacist promptly about anything severe or worrying.
+- An appointment prep page in each cycle that pulls your logs into a short summary, your top three things to report and your questions, followed by visit notes and a "what we decided" page.
+- Paperwork pages: a phone-call log, a prior authorization tracker, a copay and cost log, a page of ideas for remembering to take it, a wallet card, an appointment history index, and a restart page for when the book turns up again after weeks in a drawer.
+
+The book does not list side effects or warning signs for any particular medication. Your prescriber, your pharmacist and the patient information that comes with your prescription cover that. If something feels like an emergency, see the [crisis resources](https://jmstruijk.com/resources/#crisis).
+
+### Where it fits
+
+It is the practical companion to [The Late-Diagnosed ADHD Workbook](https://jmstruijk.com/books/late-diagnosed-adhd-workbook/), which helps you make sense of the diagnosis itself. If eating has become harder, [The ADHD Eating Reset](https://jmstruijk.com/books/adhd-eating-reset/) helps with forgetting to eat and meal paralysis; appetite changes on medication are a question for your prescriber. The article on [your first year after an adult ADHD diagnosis](https://jmstruijk.com/blog/adhd-diagnosis-as-an-adult-first-year/) is a good place to start if you were diagnosed recently.
+
+### Common questions
+
+### Does The ADHD Medication Companion tell me which medication or dose to take?
+
+No. It names no medications, doses or schedules, and it gives no advice about starting, stopping, skipping or changing anything. You record what you notice, and your prescriber decides what it means and what to do next.
+
+### Can I use it if I have been on ADHD medication for years?
+
+Yes. Your current normal becomes the baseline. The cycles are undated, so you can start one whenever your prescriber makes a change or whenever you want a clearer picture before your next review.
+
+### Do I have to fill it in every day?
+
+No. Each daily entry is one row that takes about two minutes, and blank days are expected. A restart page at the back walks you back in after a gap without starting over.
+
+### How long does the book last?
+
+It has a baseline section and four adjustment cycles of four to six weeks each, enough for several medication changes or reviews. Notes pages at the back give you extra space.
 
 ## Article: Why you shut down after work, and what helps
 

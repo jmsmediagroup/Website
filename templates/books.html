@@ -11,20 +11,24 @@
 </head>
 <body>
 {header}
-<main id="main">
+<main id="main" class="container">
 
   <header class="page-header">
     <nav class="crumbs" aria-label="Breadcrumb">
-      <a href="/">Home</a> <span>/</span> <span>Books</span>
+      <a href="/">Home</a> <span aria-hidden="true">/</span> <span>Books</span>
     </nav>
-    <span class="section-tag">The catalogue</span>
-    <h1>Books for the brain you <em>actually have.</em></h1>
-    <p class="page-lede">
-      {count} practical books for adults with ADHD, autism and AuDHD, across three series and one standalone guide. Every book stands alone, so start with whichever problem is costing you most right now.
-    </p>
+    <span class="eyebrow">The library</span>
+    <h1>Books for the brain you <em>actually have</em></h1>
+    <p class="page-lede">{count} practical books for adults with ADHD, autism, or both, in four groups. Each group has one book to start with and others that go with it. Not sure which group? <a class="textlink" href="/start/">Start here</a>.</p>
   </header>
 
-{shelves}
+  <section aria-labelledby="map-h">
+    <h2 id="map-h" class="sr-only">The library at a glance</h2>
+    {library_map}
+    <p class="map-note">{map_note}</p>
+  </section>
+
+{groups}
 
 </main>
 

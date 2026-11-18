@@ -11,41 +11,49 @@
 </head>
 <body>
 {header}
-<main id="main">
+<main id="main" class="full">
 
-  <article class="book-page">
-
-    <nav class="crumbs" aria-label="Breadcrumb">
-      <a href="/">Home</a> <span>/</span> <a href="/books/">Books</a>
-    </nav>
+  <article class="book-page" style="{style}">
 
     <header class="book-hero">
-      <div class="book-hero-cover">{cover}</div>
-      <div class="book-hero-info">
-        <div class="book-series-label">{series_label}</div>
-        <h1>{title}</h1>
-        <p class="book-hero-subtitle">{subtitle}</p>
-        <div class="book-facts">{facts}</div>
-        <a class="btn-amazon" href="https://www.amazon.com/dp/{asin}" target="_blank" rel="noopener">View on Amazon</a>
-        <p class="book-hero-note">Kindle and print editions, where available, are listed on the Amazon page.</p>
+      <div class="container">
+        <div class="book-hero-inner">
+          <div class="book-hero-cover">{cover}</div>
+          <div class="book-hero-info">
+            <nav class="crumbs" aria-label="Breadcrumb">
+              <a href="/">Home</a> <span aria-hidden="true">/</span> <a href="/books/">Books</a> <span aria-hidden="true">/</span> <a href="/books/#{group}">{group_title}</a>
+            </nav>
+            <span class="eyebrow">{series_label}</span>
+            <h1>{title}</h1>
+            {subtitle}
+            <p class="book-pitch">{pitch}</p>
+            <div class="btn-row">
+              <a class="btn btn-light" href="#get-the-book">Get the book</a>
+              <a class="btn btn-outline" href="#inside">What is inside</a>
+            </div>
+            <div class="book-facts">{facts}</div>
+          </div>
+        </div>
       </div>
     </header>
 
-    <div class="post-body book-body">
+    <div class="container">
+      <div class="book-layout">
+        <div class="book-main">
+          <div class="post-body book-body" id="inside">
 {body}
+          </div>
+          {related}
+          {articles}
+          {author_box}
+          <p class="disclaimer">{disclaimer}</p>
+        </div>
+        <aside class="book-aside" aria-label="Formats and series">
+          {get_book}
+          {series_box}
+        </aside>
+      </div>
     </div>
-
-    <div class="book-buy-again">
-      <a class="btn-amazon" href="https://www.amazon.com/dp/{asin}" target="_blank" rel="noopener">Get {title} on Amazon</a>
-    </div>
-
-    {articles}
-
-    {series_more}
-
-    {author_box}
-
-    <p class="disclaimer">{disclaimer}</p>
 
   </article>
 
